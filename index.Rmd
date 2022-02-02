@@ -1,16 +1,21 @@
 ---
-title: 'My Final College Paper'
-author: 'Your R. Name'
-date: 'May 20xx'
-institution: 'Reed College'
-division: 'Mathematics and Natural Sciences'
-advisor: 'Advisor F. Name'
+title: 'Examining the Role of Inequality in Security Consumption'
+author: 'Dallas R. Novakowski'
+date: 'AAAA 2022'
+month: 'xxxxx'
+year: '2022'
+institution: 'UNIVERSITY OF CALGARY'
+division: 'HASKAYNE SCHOOL OF BUSINESS'
+advisor: 'Mehdi Mourali'
 # If you have more two advisors, un-silence line 7
 #altadvisor: 'Your Other Advisor'
-department: 'Mathematics'
-degree: 'Bachelor of Arts'
+department: 'Marketing'
+degree: 'DOCTOR OF PHILOSOPHY'
+location: 'CALGARY, ALBERTA'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
+link-citations: yes
+
 
 # The next two lines allow you to change the spacing in your thesis. You can 
 # switch out \onehalfspacing with \singlespacing or \doublespacing, if desired.
@@ -39,12 +44,13 @@ abstract: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims"
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
 acknowledgements: |
-  I want to thank a few people.
+  Mehdi, Scott Radford, James, Bierman, John Van Kesteren, Sharon, 
+  philip, Zhanna, Quan, Kerry
+  Open science communities - R, Otree 
 dedication: |
   You can have a dedication here if you wish. 
 preface: |
-  This is an example of a thesis setup to use the reed thesis document class 
-  (for LaTeX) and the R bookdown package, in general.
+  This thesis is original, unpublished, independent work by the author, D. Novakowski
   
 # Specify the location of the bibliography below
 bibliography: bib/thesis.bib

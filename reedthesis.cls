@@ -31,6 +31,7 @@
 \RequirePackage{fancyhdr}
 % Added by CII to produce nice looking code in BeginVerbatimEnvironment
 \RequirePackage{fancyvrb}
+\RequirePackage{geometry}
 
 % Added by CII
 \usepackage{ifxetex,ifluatex}
@@ -116,12 +117,12 @@
   \pagestyle{fancy}
 
 % Psych majors: You do not need the following six lines, as it conflicts with apacite, so comment them out.
-  \let\oldthebibliography=\thebibliography
-  \let\endoldthebibliography=\endthebibliography
-  \renewenvironment{thebibliography}[1]{
-    \oldthebibliography{#1}
-    \addcontentsline{toc}{chapter}{\bibname}
-  }{\endoldthebibliography}
+  % \let\oldthebibliography=\thebibliography
+  % \let\endoldthebibliography=\endthebibliography
+  % \renewenvironment{thebibliography}[1]{
+  %   \oldthebibliography{#1}
+  %   \addcontentsline{toc}{chapter}{\bibname}
+  % }{\endoldthebibliography}
  %%%%%% end of things for psych majors to comment out
 
   \let\oldtheindex=\theindex
@@ -134,12 +135,14 @@
 
 % Stolen from book.cls and modified
 \let\RToldchapter\chapter
-\renewcommand{\chapter}{\if@openright\RTcleardoublepage
-		    \else\clearpage\fi
-		    \thispagestyle{empty}%
-		    \global\@topnum\z@
-		    \@afterindentfalse
-		    \secdef\@chapter\@schapter}
+% \renewcommand{\chapter}{\if@openright\RTcleardoublepage 
+% 		    \else\clearpage\fi
+% 		    \thispagestyle{empty}%
+% 		    \global\@topnum\z@
+% 		    \@afterindentfalse
+% 		    \secdef\@chapter\@schapter}
+
+% Disabled for displaying page numbers in front matter 
 
 % Stolen from book.cls PBC 5/12/05
 % Using this to actually show "Chapter 1" in TOC instead of "1"
@@ -172,6 +175,22 @@
 
 \let\RToldcleardoublepage\cleardoublepage
 \renewcommand{\cleardoublepage}{\RTcleardoublepage}
+
+%% As required by the University of Calgary 
+%% 2014 thesis guidelines, all margins must
+%% be exactly 1 inch on all sides.
+
+%% Submitted theses must not be bound. 
+%% Extra copies of the thesis that are 
+%% printed for personal use may be bound,
+%% in which case 1.5 inch margins shall 
+%% be used on the binding edge.
+% \if@binding
+%  \geometry{bindingoffset=0.5in}
+% \else
+%  \geometry{bindingoffset=0in}
+% \fi
+
 
 % adjust margins for binding  (changed 2007-04-24 tgp)
 \setlength{\oddsidemargin}{.5in}
@@ -211,6 +230,16 @@
 \newif\if@altadvisor
 \@altadvisorfalse
 
+\def\month#1{\gdef \@month{#1}}
+\def\@month{\@latex@warning@no@line{No \noexpand\month given}}
+
+\def\year#1{\gdef \@year{#1}}
+\def\@year{\@latex@warning@no@line{No \noexpand\year given}}
+
+\def\location#1{\gdef \@location{#1}}
+\def\@location{\@latex@warning@no@line{No \noexpand\location given}}
+
+
 \renewcommand\l@chapter[2]{%
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}%
@@ -230,6 +259,18 @@
   \fi}
 
 %%% Added by CII
+
+\newenvironment{abstract}{%
+  \setcounter{page}{2}
+  \if@twocolumn
+    \@restonecoltrue\onecolumn
+  \else
+    \@restonecolfalse
+  \fi
+  \chapter*{Abstract}
+  \fontsize{12}{14}\selectfont
+}{\clearpage \if@restonecol\twocolumn\fi}%
+
 \newenvironment{acknowledgements}{%
   \if@twocolumn
     \@restonecoltrue\onecolumn
@@ -251,15 +292,6 @@
 }{\clearpage \if@restonecol\twocolumn\fi}%
 % End of CII add
 
-\newenvironment{abstract}{%
-  \if@twocolumn
-    \@restonecoltrue\onecolumn
-  \else
-    \@restonecolfalse
-  \fi
-  \chapter*{Abstract}
-  \fontsize{12}{14}\selectfont
-}{\clearpage \if@restonecol\twocolumn\fi}%
 
 \newenvironment{dedication}{%
   \if@twocolumn
@@ -285,65 +317,81 @@
 
 \renewcommand{\maketitle}{%
   {\pagestyle{empty}
-  \fontsize{12}{14}\selectfont
+  % \fontsize{12}{14}\selectfont
   \begin{titlepage}
   \newpage
-  \let\footnotesize\small
-  \let\footnoterule\relax
-  \let \footnote \thanks
-
-  \baselineskip = 1.4\baselineskip
-  \setbox0=\hbox{of the Requirements for the Degree}
-
+  % \let\footnotesize\small
+  % \let\footnoterule\relax
+  % \let \footnote \thanks
+  % 
+  \baselineskip = 2\baselineskip
+  % \setbox0=\hbox{of the Requirements for the Degree}
+  % 
   \begin{center}
     \setcounter{page}{1}
-    \null\vfil
-    {\fontsize{12}{14}\selectfont \@title}
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \vfil
-    A Thesis \\
-    Presented to \\
-    \@thedivisionof \ \@division \\
-    \@institution
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \vfil
-    In Partial Fulfillment \\
-    of the Requirements for the Degree \\
-    \@degree
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \bigskip
-    \centerline{}
-    \bigskip
-    {\fontsize{12}{14}\selectfont \lineskip .75em
-    \begin{tabular}[t]{c}%
-      \@author
-    \end{tabular}\par}
-    \vskip 1.5em
-    {\fontsize{12}{14}\selectfont \@date \par}
+    \@institution \\
+    \vfill
+      {\@title \par}
+    % \vfil
+    % {\fontsize{12}{14}\selectfont \@title}
+    \vfill   
+    % \vfil
+    by \\
+    \vfill
+    % \vfil
+    % \vfil
+    % {\fontsize{12}{14}\selectfont \lineskip .75em
+    % \begin{tabular}[t]{c}%
+      {\@author \par }
+    % \end{tabular}\par}
+    % \vskip 1.5em
+    \vfill
+    % \vfil
+    % \vfil
+    A DISSERTATION \par
+    SUBMITTED TO THE FACULTY OF GRADUATE STUDIES \par
+    IN PARTIAL FULFILLMENT OF THE REQUIREMENTS FOR THE \par
+    DEGREE OF \@degree \par
+    \vfill
+    \@division \par
+    \vfill
+    \@location \par
+    \vfill
+    % \vfil
+    \@month, \@year \par
+    \vfill
+    % \vfil
+    © \@author \, \@year\par
+
+    % \vfil
+    % \bigskip
+    % \centerline{}
+    % \bigskip
   \end{center}\par
   \end{titlepage}
 
-%% Approved for the division page
-  \cleardoublepage
-  {\fontsize{12}{14}
-  \setbox0=\hbox{Approved for the \@approvedforthe}
-  \thispagestyle{empty}
-  \null\vfil		% just below center of page
-  \par\vskip 6cm	% below center, not center
-  \centerline{\copy0}	% approved
-  \centerline{(\@department)} %major
-  \vskip 1cm		%space to sign
-  \centerline{\makebox[\wd0][c]{\hrulefill}
-	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\hrulefill} \fi}
-  \centerline{\makebox[\wd0][c]{\@advisor}
-	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\@altadvisor} \fi}
-  \par\vfil\null}
-  \cleardoublepage
+% Approved for the division page
+%   \cleardoublepage
+%   {\fontsize{12}{14}
+%   \setbox0=\hbox{Approved for the \@approvedforthe}
+%   \thispagestyle{empty}
+%   \null\vfil		% just below center of page
+%   \par\vskip 6cm	% below center, not center
+%   \centerline{\copy0}	% approved
+%   \centerline{(\@department)} %major
+%   \vskip 1cm		%space to sign
+%   \centerline{\makebox[\wd0][c]{\hrulefill}
+% 	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\hrulefill} \fi}
+%   \centerline{\makebox[\wd0][c]{\@advisor}
+% 	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\@altadvisor} \fi}
+%   \par\vfil\null}
+%   \cleardoublepage
   }
 }
+
+
+
+
 
 % From JSS
 % Added by CII

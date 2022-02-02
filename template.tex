@@ -24,7 +24,7 @@
 %% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\documentclass[12pt,twoside]{reedthesis}
+\documentclass[12pt,oneside]{reedthesis}
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
@@ -80,6 +80,9 @@ $endif$
 \author{$author$}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
 \date{$date$}
+\month{$month$}
+\year{$year$}
+\location{$location$}
 \division{$division$}
 \advisor{$advisor$}
 \institution{$institution$}
@@ -160,6 +163,11 @@ $endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+\Abstract{
+$abstract$
+}
+
+
 \Acknowledgements{
 $acknowledgements$
 }
@@ -172,9 +180,6 @@ $dedication$
 $preface$
 }
 
-\Abstract{
-$abstract$
-}
 
 $for(header-includes)$
 	$header-includes$
@@ -187,13 +192,29 @@ $endfor$
 
 \begin{document}
 
+
+
 % Everything below added by CII
 $if(title)$
   \maketitle
 $endif$
 
 \frontmatter % this stuff will be roman-numbered
-\pagestyle{empty} % this removes page numbers from the frontmatter
+% \pagestyle{empty} % this removes page numbers from the frontmatter
+\pagestyle{fancyplain} % this moves page numbers to the top right 
+
+$if(abstract)$
+  \begin{abstract}
+    $abstract$
+  \end{abstract}
+$endif$
+
+
+$if(preface)$
+  \begin{preface}
+    $preface$
+  \end{preface}
+$endif$
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -201,11 +222,12 @@ $if(acknowledgements)$
   \end{acknowledgements}
 $endif$
 
-$if(preface)$
-  \begin{preface}
-    $preface$
-  \end{preface}
+$if(dedication)$
+  \begin{dedication}
+    $dedication$
+  \end{dedication}
 $endif$
+
 
 $if(toc)$
   \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
@@ -220,18 +242,6 @@ $endif$
 
 $if(lof)$
   \listoffigures
-$endif$
-
-$if(abstract)$
-  \begin{abstract}
-    $abstract$
-  \end{abstract}
-$endif$
-
-$if(dedication)$
-  \begin{dedication}
-    $dedication$
-  \end{dedication}
 $endif$
 
 \mainmatter % here the regular arabic numbering starts

@@ -1,10 +1,32 @@
-<!--
-This is for including Chapter 1.  Notice that it's also good practice to name your chunk.  This will help you debug potential issues as you knit.  The chunk above is called intro and the one below is called chapter1.  Feel free to change the name of the Rmd file as you wish, but don't forget to change it here from chap1.Rmd.
--->
 
+---
+bibliography: bib/thesis.bib
+---
+
+```{=html}
 <!--
 The {#rmd-basics} text after the chapter declaration will allow us to link throughout the document back to the beginning of Chapter 1.  These labels will automatically be generated (if not specified) by changing the spaces to hyphens and capital letters to lowercase.  Look for the reference to this label at the beginning of Chapter 2.
 -->
+```
+# Experiments on Inequality and Security Consumption {#ineq-exp}
 
-# R Markdown Basics {#rmd-basics}
 
+Despite evidence for inequality's role in increasing risk-taking, simulation, cross-country, and panel data suggest that inequality also fosters a special case of risk aversion: low social trust [@knack1997; @zak2001; @berggren2006; @leigh2006; @bjørnskov2007; @wilkinson2010; @elgar2010; @barone2016; @decourson2021]. For instance, @barone2016 found that among OECD countries, inequality is associated with lower country-level trust, as computed from the World Values Survey. Several theoretical streams have emerged to explain how inequality reduces trust. Each of these explanations are limited to certain contexts; for example, ranging from changes in intergroup contact, opportunity costs of vigilance, and incentives for antisocial behaviour [reviewed in @jordahl2007].
+
+<!--# Despite evidence for the risk-inducing effects of inequality, simulation and panel data suggest that inequality also fosters a special case of risk aversion: low social trust [@elgar2010; @barone2016; @decourson2021a]. At least in part, (dis)trust reflects one's expectation that others will cause them harm/benefit [@schul2008; @hardin2006]. Accordingly, distrustful behaviours incur costs (or forego benefits) in order to reduce one's vulnerability to other actors [@mcevily2012].  -->
+
+<!--# Scholarly work on the relationship between inequality and trust remains in its early stages, although a few theoretical streams have emerged for different mechanisms by which inequality reduces trust. The social barriers argument suggests that with inequality, income level increasingly becomes a source of dissimilarity between individuals, and that individuals begin to demonstrate a group membership bias towards individuals of their own income group, and exhibit less trust for the income outgroup. The inference on social relationship explanation argues that people interpret the presence of inequality as evidence of exploitation and injustice, and infer that other individuals (especially those at the top of the income distribution) are untrustworthy. The resource conflict explanation posits that inequality "magnifies the incentives for deceitful behaviour," which "will make people with more resources less inclined to trust [poor people]" (p. 5) [@jordahl2007]. The opportunity cost explanation lastly assumes that inequality causes poor people to spend more time verifying whether social partners can be trusted, because their opportunities are far less profitable (i.e., their opportunity costs of distrusting are lower) than for wealthy people.  -->
+
+## Envy avoidance
+
+Currently, the most rigorous investigation of how inequality impacts distrust in populations is found in a simulation study by @decourson2021. They found that in unequal environments, worse-off individuals will tend to be in poverty, and will try to exploit cooperative groups (as suggested by risk-sensitivity theory), leading others in a population to eventually avoid cooperation altogether. @decourson2021's theory is explicitly focused on poverty (i.e. absolute deprivation). However, in many instances, poverty and inequality do not co-occur. For instance, some workplaces and neighborhoods have little to no absolute deprivation, but they can still exhibit substantial stratification; in such a circumstance, @decourson2021's compositional model of inequality would not predict any reduced trust. We argue that considerations of others' relative deprivation can help to extend this inequality-trust theory to other important contexts.
+
+People appear to demonstrate an aversion to being the subject of social comparisons and feelings of envy. Data from small-scale preindustrial societies suggests that many individuals hold "evil eye beliefs;" superstitions that a mere envious glance can cause material harm. Moreover, these beliefs are most prevalent in societies with high wealth inequality [@gershman2015]. Likewise, a major feature of scandinavian culture is the "Jante Law" (or Janteloven/Jantelagen), which explicitly discourages individual superiority, ambition, and nonconformity. [e.g., "You musn't think you are anything special;" @sandemose1936]. Anglo-Saxon societies refer to the 'cutting down' of 'tall poppies', and in Asian cultures, 'the nail that stands out gets hammered down'
+
+If envious peers are more likely to act spitefully and take risks, being able to anticipate or detect disparities among peers may be helpful in protecting oneself from harmful behaviours. These patterns of envy aversion seem adaptive when considering the risk- and conflict- inducing effects of inequality. Indeed, theories have been proposed that predict a "fear-of-envy" equilibrium, where concerns over partner's destructive envy can reduce people's likelihood to engage in wealth-creating behaviours [@gershman2014; @brams2005].
+
+## Methods
+
+The Prolific-recruited participants will complete the studies on oTree [@chen2016], an open-source platform for conducting single- and multiplayer experiments and surveys. oTree studies are written largely in html, python, and javascript, which can be saved and shared in their raw code form, allowing for easy sharing, reproduction, and modification of protocols.
+
+The experiments will be conducted in the context of two-player economic game, called the security game [@tambe2011]. In this modification of the security game, participants are paired with an anonymous partner, with each being given an endowment of funds. Then, participants are told that their partner will have the opportunity to try to steal money from them (with failed thievery attempts instead making the partner lose money). After learning this information, participants can spend some of their money on security products, with each unit of security visibly reducing the probability of a successful thievery attempt.

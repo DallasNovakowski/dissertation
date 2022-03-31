@@ -70,7 +70,125 @@ library(ggplot2)
 library(knitr)
 ```
 
-# Nation-level Inequality and Security Consumption {#nat-ineq}
+# Nation-Level Inequality and Individual-Level Security Consumption {#nat-ineq}
+
+The highly-controlled nature of the experiments in Studies 1 and 2 allow for precise tests of the hypothesized inequality-security consumption relationship. Although one proposed experiment offers real consequences for participants' choices, economic games are highly artificial by design. Insights generated from the security game may not be generalizable to consumers' daily consumption context. To provide a test with greater external validity, this project supplements experimental results with the multilevel analysis of archival data on respondents' use of security products, to test whether **H5)** `r tolower(hypotheses[4])` (versus **H5~0~)** no significant effect of nation-level inequality).
+
+The format of a registered report carries substantial benefit when analyzing archival data, as such data-dependent analysis, the so-called "garden of forking paths"[@gelman2014] allows a researcher to pick and choose those data and analyses that best suit their preferred conclusions [@simmons2011]. We therefore hope that a pre-commitment to reprocessing and analysis plans before model estimation helps to reduce these researcher degrees of freedom.
+
+## Methods
+
+The relationship between country-level inequality and the consumption of security products will be tested using a multilevel ordinal regression. This analysis will be accomplished using a combination of three archival datasets: the ICVS [@vankesteren2010], the Standardized World Income Inequality Database [SWIID; Solt, -@solt2020]
+, and the Penn World Tables [PWT, version 10.0; Feenstra, Inklaar, & Timmer, -@feenstra2015].
+
+<!-- Atkinson and Brandolini (2001) discuss these and several related pitfalls in their excellent survey on the use of secondary data sets in studies of income inequality. -->
+
+First, individual measures and indicators of security consumption have been accessed from the ICVS [@vankesteren2010], which has surveyed over 300,000 people across `r cleaned_countries` different countries on householders' experiences with crime, policing, crime prevention, and feelings of unsafety. Second, nation-level inequality in disposable income was accessed through the SWIID [@solt2020]. The SWIID consists of 100 separate dataframes, with varying gini values to reflect the values' uncertainty (i.e., larger standard errors) when making comparisons across different countries or time periods. Lastly, countries' expenditure-side real GDP and populations were retrieved from the PWT. The selected values were adjusted for Purchasing Power Parity, and divided by their nations' population sizes to yield a per-capita GDP value [@feenstra2015].
+
+Although the ICVS, PWT, and SWIID extend across multiple years, the current analysis will be limited to observations across 2004-2006. After excluding for missing data on security and key independent variables, k = `r sum(summary(iv_2005$country)>0)` countries, and n = `r format(nrow(iv_2005), big.mark = ",", scientific = FALSE)` participants were retained for primary analyses. Further screening information can be found in the supplementary materials, but as a summary, this sample specification provides a balance of relative data recency, larger sample size, and a larger range of values on key variables such as inequality and victimization experiences.
+
+<!-- comment on confounds between security measures and home ownership -->
+
+### Measurement and Variables
+
+#### Outcome variable
+
+```{r prev-var-recode, echo = FALSE}
+prevention_min2 <- dplyr::recode(prevention_min2, "prev_burglar_alarm" = "burglar alarm", "prev_special_door_locks" = "special door locks", "prev_special_grills" = "window grills", "prev_high_fence" = "high perimeter fence", "prev_caretaker_security" = "presence of a caretaker who provides security")
+
+```
+
+Security consumption (*M* = `r round(mean(iv_2005$total_security),2)`, *SD* = `r round(sd(iv_2005$total_security),2)`) has been computed by summing respondents' self-reported ownership of `r as.english(length(prevention_min2))` different preventative measures: `r glue::glue_collapse(x = prevention_min2, ", ", last = ", and ")`. This variable excludes several security items in the ICVS due to missing data, such as owning a watch dog, having surveillance arrangements with neighbors, and purchasing insurance against criminal activities.
+
+(ref:icvs-security-hist) Histogram for reported security measures in the ICVS (Study 3).
+
+```{=latex}
+\begin{figure}[t]
+\caption{(ref:icvs-security-hist) \label{fig:icvs-security-hist}}
+```
+```{r icvs-security-hist,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_hist_iv.png")
+```
+
+```{=latex}
+\textit{Notes:}  Dotted line indicates mean ($M$ =`r round(mean(iv_2005$total_security),2)`)
+\end{figure}
+```
+<!-- a burglar alarm, special door locks, special grills, a high perimeter fence, and caretaker security. -->
+
+#### Predictor variables
+
+The targeted model will include predictor variables at country- and individual-levels: at the nation level, 1) nation-level inequality (gini - disposable income), 2) expenditure-side GDP per capita (matched purchasing power parity), and 3) nation-level self-reported crime victimization; and at the respondent level: 1) age (five-year increments), 2) gender (`r round(summary(iv_2005$gender)["female"]/nrow(iv_2005)*100,0)`% female), 3) employment status (`r round(summary(iv_2005$employed)[1]/nrow(iv_2005)*100,0)`% employed), and 4) number of individual victimization experiences. See Table \@ref(tab:s2desc-tab) for remaining descriptive statistics.
+
+```{r s2desc-tab}
+s2desc_columns <- c("Variable",	"Mean",	"SD")
+
+Variable <- c("gini","GDP per-capita","nation-level victimization","age",
+              # "income quartile",
+              "individual victimizations",
+              # "police effectiveness",
+              "security consumed")
+Mean <-
+  c(round(mean(gd$gini_2004_6),2),
+    format(round(mean(gd$gdppc_2004_6)), big.mark = ",", scientific = FALSE),
+    round(mean(gd$num_victim_5yr),2),
+    round(mean(iv_2005$age_num),2),
+    # round(mean(iv_2005$income_quartile),2),
+    round(mean(iv_2005$num_victim_5yr),2),
+    # round(mean(iv_2005$police_effective),2),
+    round(mean(iv_2005$total_security),2)
+    )
+SD <-
+  c(round(sd(gd$gini_2004_6),2),
+    format(round(sd(gd$gdppc_2004_6)), big.mark = ",", scientific = FALSE),
+    round(sd(gd$num_victim_5yr),2),
+    round(sd(iv_2005$age_num),2),
+    # round(sd(iv_2005$income_quartile),2),
+    round(sd(iv_2005$num_victim_5yr),2),
+    # round(sd(iv_2005$police_effective),2),
+    round(sd(iv_2005$total_security),2)
+    )
+
+s2_desc <- data.frame(Variable, Mean, SD)
+
+s2_desc_tab <- knitr::kable(s2_desc, caption = 'Study 3 Descriptive Statistics',
+                   # booktabs = TRUE, 
+                   col.names = s2desc_columns, booktabs = T,
+             linesep = "") %>%
+  kable_styling(full_width = FALSE) %>%
+  column_spec(1,width = "2in") %>%
+  column_spec(2,width = ".6in") %>%
+  column_spec(3,width = ".6in") %>%
+  kable_styling(latex_options = "striped")
+
+s2_desc_tab
+```
+
+```{r vic-var-assault-recode, echo = FALSE}
+vic_var_assault <- dplyr::recode(vic_var_assault, "cartheft_5yrs" = "car thefts", "motortheft_5yrs" = "motor vehicle thefts", "bicyctheft_5yrs" = "bicycle thefts", "burglar_5yrs" = "burglaries", "attempt_5yrs" = "attempted burglaries", "robbery_5yrs" = "robberies", "pers_theft_5yrs" = "thefts", "assault_5yrs"="physical assaults")
+```
+
+```{r vic-var-recode, echo = FALSE}
+vic_var_drop <- dplyr::recode(vic_var_drop, "cartheft_5yrs" = "car thefts", 
+                              # "motortheft_5yrs" = "motor vehicle thefts", 
+                              "bicyctheft_5yrs" = "bicycle thefts", 
+                              "burglar_5yrs" = "burglaries", 
+                              "attempt_5yrs" = "attempted burglaries",
+                              "robbery_5yrs" = "robberies",
+                              "pers_theft_5yrs" = "thefts"
+                              # , "assault_5yrs"="physical assaults"
+                              )
+```
+
+Self-reported crime victimization will likewise be computed as a count variable for the following items: `r glue::glue_collapse(x = vic_var_drop, ", ", last = ", and ")`, summing `r as.character(as.english(length(vic_var_drop)))` binary items on respondent's experiences of victimization. This variable will be represented twice in the analyses - once as a nation-average value, and again for the individual respondent.
+
+### Proposed analysis pipeline, including all preprocessing steps, precise description of all planned analyses
+
+Since the ICVS, SWIID, and PWT are publicly available, preprocessing and inclusion/exclusion steps have already been implemented, and are available in the sourced and attached code. A notable preprocessing steps is that gini and GDP values were averaged across 2004-2006 into single indices, to reflect the years where the survey sweeps were conducted.
+
+Analyses will predict security consumption as an ordinal variable (0: no security consumption, 1: one unit of security consumption, 2: two units, or 3: three or more units), using a cumulative link mixed model. The outcome variable exhibits excessive skewness, and is not suitable to a linear model. Likewise, despite security consumption being a count variable of multiple binary occurrences, it is unlikely to meet the assumptions for a poisson process, which assumes that the maximum value stretches out indefinitely. Because of these limitations, treating the dependent variable as ordinal strikes a balance of model parsimony (minimizing assumptions about the variable structure), while reaping some benefits of the data's ranked structure.
+
+The coefficient estimates and standard errors will be extracted through simulations. The distributions for fixed-effects estimates will be generated by simulation from 100 dataframes, which each consist of coefficients and variance/covariance matrices from a separate model. These fixed-effects distributions will be used to calculate point estimates and standard errors for each coefficient. If the weighted ordinal regression fails to converge, the model will be conducted without frequency weights. Likewise, if the unweighted ordinal regression fails to converge, a weighted mixed logistic regresssion will be conducted. If the weighted mixed logistic regression fails to converge, an unweighted mixed logistic regression will be conducted instead. In addition, supplementary analyses will assess whether the effects of inequality persist in a smaller, variable-maximizing dataset (`r sum(summary(iv_2005_mod$country)>0)` countries, `r format(nrow(iv_2005_mod), big.mark = ",", scientific = FALSE)` respondents).
 
 \clearpage
 

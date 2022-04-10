@@ -4,25 +4,55 @@ bibliography: bib/thesis.bib
 
 # Effects of Fairness on Security Consumption {#ineq-fair}
 
-Inequality has been a persistent topic in public and scientific dialogue because it is fundamental to describing whether valued resources are being shared or monopolized. Distributional fairness has likewise proven to be inextricable from inequality, since it captures the various rules defining how resources *should* (or should not) be shared. Since Chapter 1 focuses on the main effects of inequality on security consumption, this chapter seeks to examine whether distributional fairness intersects with inequality to impact distrust in populations, and consequently individuals' willingness to consume security products.
+Inequality is a reasonable starting point to describe whether valued resources are being distributed fairly. If only some people receive desired goods, with others receiving little, it quickly prompts questions as to why some individuals are being left worse-off. For instance, among Norwegian youths making decisions whether to share a resource, @almås2010 found that their younger participants were strict egalitarians (averse to any inequality). However, adolescent participants increasingly accepted inequality when the disparities came from differences in productivity. This is only one example of a broad literature suggesting that concerns over equity, deservingness, and fairness are critical in understanding how people respond to inequality. The following chapter will examine whether distributional fairness impacts distrust and security consumption within individuals.
 
-Behavioural economists have found that in both Ultimatum and Dictator games, participants that earned an advantaged position (versus random assignment) make less generous offers to their fellow participants (Hoffman, McCabe, Shachat, & Smith, 1994). Similarly, van de Ven et al. (2010) found that under conditions of inequality, those who are better off are more likely to engage in helping behaviours when they believe that their disadvantaged partner is frustrated by the disparity and harboring antagonistic motivations (i.e., "malicious envy" Crusius & Lange, 2014). By contrast, "winners" are actually less likely to help if they believe that the observed disparity has motivated their partner to improve themselves (i.e., the partner experiences "benign envy").
+When describing human preferences over wealth distribution, equality has often been contrasted with equity. While equality describes whether resources are shared or hoarded, equity captures how resources *should* (or should not) be shared. The historical definition of inequity is a mismatch between the ratios of individuals' inputs (e.g., effort) versus their outputs (e.g,. wages) [@cook1977; @adams1965]. However, (in)equity has never been conceptualized as a strictly objective and concrete feature of an exchange; rather, equity's "[inputs] are what a man perceives as his contributions to the exchange, for which he expects a just return" [@adams1965, p. 277]. So, any consideration of equity assumes a major role of individuals' mental representations of their circumstances.
+
+When representing an exchange (e.g., a business contract), individuals' inputs and outputs can have multiple potential currencies (e.,g money, time, experience, company equity, social contacts), which must be assigned some recognition and relevance to arrive at a judgment of (in)equity. Accordingly, equity can be characterized as a process of negotiation, with agents seeking to persuade other parties of their own large contributions and small rewards, compared to their partners. This broad definition of equity has led to it often being used interchangeably with unfairness [e.g., @camerer1995; @henrich2005].
+
+Important to this project's theory of envy anticipation, some authors suggest that people are not actually inequality-averse, but instead inequity-averse, predicting that people can actually be very tolerant of an unequal, but fair outcome. In fact, the idea of inequity aversion has been specifically formulated in response to explain the proposer/responder patterns in the Ultimatum and Dictator games [@fehr1999].
+
+SUPPORTING EVIDENCE HERE. THEN IMPLICATIONS FOR RISKY/FRUSTRATED BEHAVIOUR
+
+In fact, models in behavioural economics regarding social preferences have been specifically designed to explain the proposer/responder patterns in the Ultimatum games.
+
+<!--# Individuals are argued to demonstrate both disadvantageous inequity aversion (receiving less than a partner) as well as a weaker aversion to advantageous inequity [receiving more; @fehr1999; @loewenstein1989]. this is in chapter 1 -->
+
+The argument for fairness considerations in inequality aligns well with some theories of envy, namely those positing a "benign" as well as a "malicious" envy. Benign envy is argued occur when the person believes that the envied person's advantage is deserved, and to be associated with a motivation to improve oneself. By contrast, malicious envy is characterized by a desire to harm the comparison target, and is elicited when the individual believes that their environment is unfair [@vandeven2012].
+
+(e.g., "the social disappointment hypothesis---according to which food refusals express chimpanzees' disappointment in the human experimenter for not rewarding them as well as they could have" [@engelmann2017]
+
+@dawes2007 and @wobker2015 found that individuals are willing to spend their own money to reduce the payoffs of better-off partners
+
+<!--# theoretical development in behavioural economics has tended to downplay the role of strict  -->
+
+Inequality has been a persistent topic in public and scientific dialogue because it is fundamental to describing whether valued resources are being shared or monopolized. Distributional fairness has likewise proven to be inextricable from inequality; it captures the various rules defining how resources *should* (or should not) be shared (REF). Since Chapter 1 focuses on the main effects of inequality on security consumption, this chapter seeks to examine whether distributional fairness intersects with inequality to impact distrust in populations, with less fairness increasing individuals' willingness to consume security products.
+
+Behavioural economists have found that participants who earned an advantaged position (versus random assignment) are less generous towards their fellow participants (Hoffman, McCabe, Shachat, & Smith, 1994). Similarly, van de Ven et al. (2010) found that under conditions of inequality, those who are better off are more likely to engage in helping behaviours when they believe that their disadvantaged partner is frustrated by the disparity and harboring antagonistic motivations (i.e., "malicious envy" Crusius & Lange, 2014). By contrast, "winners" are actually less likely to help if they believe that the observed disparity has motivated their partner to improve themselves (i.e., the partner experiences "benign envy").
 
 Together, these results suggest that perceived deservingness or fairness may play a role in individuals' willingness to consume security goods. Importantly, a growing body of evidence suggests that the roots of fairness lie in the avoidance of favoritism (Choshen-Hillel, Shaw, & Caruso, 2018; Shaw, 2013, 2017; Shaw et al., 2014; Shaw & Olson, 2012). As such, any mechanism allowing for impartial distribution of resources (e.g., a coin flip), ostensibly satisfies the need to justify a privileged position, and may reduce the felt need to consume security products.
+
+in henrich 2005:
+
+> Responders reject offers of 20% about half the time, and rejection is associated with emotional activation in the insula cortex (Sanfey et al. 2003).
+
+## Fairness as partiality
+
+Although many studies focus on the psychological and behavioural impacts of inequality aversion (especially those at a macro level; REF), much focus (especially in behavioural economics) has shifted to the prevalence of *inequity aversion* in humans
+
+-   Clarify Inequality vs. inequity
 
 The presence of multiple potential norms for guiding resource allocation inevitably leads to disagreements over what constitutes a fair allocation. Such potential for norm conflict is seen in cross-cultural variations in Proposer and Responder behaviours in the Ultimatum Game (Henrich et al., 2005); participants frequently exhibited seemingly aberrant patterns, such as offering more than 50% of the wealth, or rejecting offers above 50%. Particularly amongst societies with little market participation, groups appear to adhere to locally-developed norms of fairness.
 
 Acts of partiality often signify the formation of alliances, which inherently exclude others (DeScioli & Kurzban, 2009). Since substantial interpersonal and intergroup conflict is rooted in the perception of unfairness and discrimination (Tajfel & Turner, 1979), it is thus important to understand how fairness influences willingness to consume security goods.
 
-This envy-avoidance theory of distrust also considers the role of fairness in shaping individuals' experiences of envy, which can vary in their underlying attributions and motivations. For instance, benign envy is associated with a motivation to improve oneself, and occurs when the person believes that the envied person's advantage is deserved. By contrast, malicious envy is characterized by a desire to harm the comparison target, and is elicited when the individual believes that their environment is unfair [@vandeven2012]. When participants believe that their partner is experiencing malicious envy, they are more likely to engage in helping behaviours [@vandeven2010]. In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. Together, the existing research suggests that people are not just sensitive to inequality and fairness, but that their decision-making also considers and anticipates others' psychological reactions to disparities.
+This envy-avoidance theory of distrust also considers the role of fairness in shaping individuals' experiences of envy, which can vary in their underlying attributions and motivations.
+
+<!--# For instance, benign envy is associated with a motivation to improve oneself, and occurs when the person believes that the envied person's advantage is deserved. By contrast, malicious envy is characterized by a desire to harm the comparison target, and is elicited when the individual believes that their environment is unfair [@vandeven2012]. --> When participants believe that their partner is experiencing malicious envy, they are more likely to engage in helping behaviours [@vandeven2010]. In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. Together, the existing research suggests that people are not just sensitive to inequality and fairness, but that their decision-making also considers and anticipates others' psychological reactions to disparities.
 
 To this end, Study 2 will examine whether merit-based and apparently group-based allocations of wealth impact security spending in the context of inequality.
 
 under a state of inequality, group membership and agentic distributions of wealth have main and interacting effects on security consumption.
-
-## Fairness/Equity
-
--   Clarify Inequality vs. inequity
 
 ## Merit as a fairness norm
 
@@ -42,7 +72,7 @@ Given the unknown size of the hypothesized inequality\*merit interaction, this s
 
 ```{=latex}
 \begin{figure}[t]
-\caption{(ref:2b2b-powerplot) \label{fig:2b2b-design}}
+\caption{(ref:2b2b-design) \label{fig:2b2b-design}}
 ```
 ```{r 2b2b-design,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
 # , fig.cap="(ref:2b2b-design)"

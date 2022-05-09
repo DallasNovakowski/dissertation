@@ -1,3 +1,3 @@
 # Conclusion {-}
 
-If we don't want Conclusion to have a chapter number next to it, we can add the `{-}` attribute.
+If someone locks their doors to their neighbors, should they be commended for their prudence or ridiculed for their suspicion? A normative prescription for how much security people should consume is unclear; the “right” amount of security consumption can vary both within and across individuals and circumstances (e.g., a rich vs. poor person purchasing security, or weighing the “ultimate price” of dying). 

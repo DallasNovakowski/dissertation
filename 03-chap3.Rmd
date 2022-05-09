@@ -1,3 +1,7 @@
+---
+bibliography: bib/thesis.bib
+---
+
 ```{r include_packages_2, include = FALSE}
 # This chunk ensures that the thesisdown package is
 # installed and loaded. This thesisdown package includes
@@ -72,18 +76,272 @@ library(knitr)
 
 # Nation-Level Inequality and Individual-Level Security Consumption {#nat-ineq}
 
-The highly-controlled nature of the experiments in Studies 1 and 2 allow for precise tests of the hypothesized inequality-security consumption relationship. Although one proposed experiment offers real consequences for participants' choices, economic games are highly artificial by design. Insights generated from the security game may not be generalizable to consumers' daily consumption context. To provide a test with greater external validity, this project supplements experimental results with the multilevel analysis of archival data on respondents' use of security products, to test whether **H5)** `r tolower(hypotheses[4])` (versus **H5~0~)** no significant effect of nation-level inequality).
+Security consumption is a particularly interesting phenomenon because it reflects an individual-level effort to address a collective problem. In fact, a consumer's efforts to improve security generally attempt to decouple oneself or a smaller subgroup (e.g., family) from the shared risks of victimization. These consumption decisions allow individuals to tailor their protection to their unique perceived need, but they may also introduce inefficiencies into the collective pursuit of security.
 
-The format of a registered report carries substantial benefit when analyzing archival data, as such data-dependent analysis, the so-called "garden of forking paths"[@gelman2014] allows a researcher to pick and choose those data and analyses that best suit their preferred conclusions [@simmons2011]. We therefore hope that a pre-commitment to reprocessing and analysis plans before model estimation helps to reduce these researcher degrees of freedom.
+For instance, in some cases, security consumption is clearly an overreaction to perceived threats. Consider the case of building high walls around one's home, as seen extensively in high-inequality regions such as South Africa. Paradoxically, costly fortifications can actually increase the vulnerability of one's home and community, as reduced visibility within the neighborhood allows for criminals to enter properties without detection [@marks2015]. This chapter seeks to elaborate on the collective (nation-level) effects of inequality on individual-level security consumption.
+
+The highly-controlled nature of the experiments in Studies 1 and 2 allow for precise tests of the hypothesized inequality-security consumption relationship. Although one experiment offered real consequences for participants' choices, economic games are highly artificial by design. Insights generated from the security game might not generalize to consumers' daily consumption context. To provide a test with greater external validity, this project supplements these previous experimental results with a multilevel analysis of archival data on respondents' use of security products, to test whether **H5)** `r tolower(hypotheses[4])` (versus **H5~0~)** no significant effect of nation-level inequality).
+
+**What does an archival data offer us?**
+
+## Fear and Security in the Real World
+
+Borrowing from methods used in sociology, an multilevel analysis allows for participants to be compared both as individuals, as well as members of higher-level groups (e.g., countries, neighborhoods). Moreover, cross-national survey data is generated through responses to survey items that explicitly assess community members' real-life experiences, instead of the fabricated circumstances and measures used in experimental designs.
+
+Individuals' experiences of crime, and their efforts to protect themselves against it, have been extensive subjects of study in subfields of sociology: criminology and victimology. Perhaps one of the most striking findings from these inquiries is that people's perception of crime rates, as well as their fear of crime, have tended to remain high despite objective crime rate estimates dropping. For instance, official crime estimates declined in the U.S. between 1980 and 2013 (for instance, homicides dropping from 20,000 homicides in 1980 to 12,000 in 2013). However, during this same period, surveys on perceptions and fear of crime remained essentially the same; in 1980, 37% of respondents reported a perceived in increase in crime since the last year, in 2013, 41% reported an increase [reviewed in @rader2017]. This gap between real and perceived crime rates suggests that people's thinking on crime emerges from something more than simply reacting to criminality.
+
+(ref:crime-trends) Actual and perceived U.S. crime trends [@gramlich2020]
+
+```{=latex}
+\begin{figure}[H]
+\caption{(ref:crime-trends) \label{fig:crime-trends}}
+```
+```{r crime-trends, fig.align="center", fig.show='hold', eval = TRUE, include=TRUE, echo=FALSE, out.width='49%'}
+# , fig.cap='(ref:swiid-trends)'
+
+# knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/pew_crime_violent_trend.png")
+# 
+# knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/pew_crime_trend_prop.png")
+
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/pew_crime_trend.png")
+
+
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/pew_crime_percep_trend.png")
+
+
+```
+
+```{=latex}
+\end{figure}
+```
+
+### Fear of crime and Perceived Victimization Risk
+
+How do people think about crime? Two major ideas have emerged when when thinking about individuals' anticipation of crime: perceived victimization risk, and fear of crime. Parallel to the notions of "cold" and "hot" cognition, perceived victimization risk refers to one's perceived likelihood of being a victim to crime ("e.g., *How safe would you feel being home alone?*"), whereas fear of crime best captures a specific and emotion-laden worry of being victimized *(e.g., "how worried are you about the crime of rape happening in your neighborhood?*" [reviewed in @rader2017] <!--# Ferraro, 1995; Ferraro & Lagrange, 1998) --> *.* @guedes2018 provide cross-sectional evidence that perceived victimization risk is associated with fear of crime (*r* = .49), and each of these psychological phenomena are associated with the adoption of security behaviours (*r*s = .22, .23, respectively).
+
+Although no unifying theory has been offered to explain fear of crime, @taylor1986 summarized three models of how fear of crime originates: 1) indirect victimization (those more likely to be a) exposed to crime information, and/or b) those least able to cope with criminal attempts), 2) perceived disorder (increased exposure to 'incivilities'), 3) community concern (interaction of high or increasing crime\*lack of structural characteristics like social/power structure ties) -\> increased concerns over quality of present and future residents --\> increased fear).
+
+@kleck2011 found that perceived risk of criminal victimization, <!--# even after controlling for past criminal victimization experiences,  --> increases gun purchasing intentions amongst non-owners (and increases the likelihood of owning a gun for defensive reasons).
+
+[@rader2017]
+
+> rader (2004) argued that fear of crime should not be the sole focus of studies but instead should be one of a three-pronged approach to studying the larger concept of the "threat of victimization" (which includes fear of crime, perceived risk, and constrained behaviors)
+>
+> In other words, individuals manage the threat of victimization not only with emotion (fear of crime) but also with cognition (perceived risk) and behavior (constrained behaviors). So, the focus on fear of crime as the most important element may not be the best way to define the threat of victimization. Rader and colleagues (2007) tested this theoretical model and found that while fear of crime was important in determining the threat of victimization, analyzing perceived risk and constrained behaviors as outcomes yielded much information about the larger threat of victimization concept.
+
+Early researchers found that "safety" measures were really tapping into perceived risk (how likely you are to be a victim of crime or your perception of that likelihood) instead of truly measuring fear of crime (how afraid you are of a crime happening to you; Baumer, 1978; Ferraro & LaGrange, 1987).
+
+Using the European Social Survey, @vauclair2017 found that individuals in more unequal countries reported a greater fear of crime. The authors also report that income inequality's effect on fear of crime is strongest among ethnic *majority* members. This inequality\*ingroup interaction was in direct contradiction to a key hypothesis in the fear of crime literature: the sense of vulnerability, which predicts that the groups most vulnerable to crime (e.g., older individuals, women, minority groups REF) should be the most afraid. One sobering interpretation of this fear amongst majority groups is the notion of fear of crime as a "sponge," suggesting that 'people are not as "fearful" of personally being victimized as often we think; rather, they are expressing their social concerns through the symbolically dense concept of crime' [@jackson2004, p. 962]. In particular, majority groups may be using fear of crime as a way to express prejudices against minority groups [@ceobanu2011].
+
+[@cops2012]
+
+> Fear of crime was empirically discovered as a result of the crime victim surveys, which were first administered in the USA at the end of the 1960s. These surveys resulted in the 'discovery' of a widespread anxiety about crime, being much more salient than criminal victimisation itself (Lee 2007).
+
+> fear of crime, as measured in survey research, must be seen as an expression of both experienced emotions and broader, more vague and ambiguous insecurities that have to do with '(...) one's neigbourhood, its social make-up and status, its place in the world, and the sense that problems from outside were creeping in' (Jackson 2004a, p. 950, Mosconi and Padovan 2004). Fear of crime can function as a metaphor or 'sponge' for the social problems of a neighbourhood or society; 'we have increasingly come to use the language of crime and concern to express daily encounters with anti-social behaviour and the deterioration of social control; with perceived diversity and conflict in the norms and values of individuals and groups; and with a myriad of other related social changes.
+
+No comprehensive theory of fear (of crime?;hale, 1996)
+
+<!--# fear of crime is more than just fear of crime, but equally functions as an easy accessible discourse to express more fundamental and abstract feelings of social uncertainties (Hollway and Jefferson 1997, Walklate and Mythen 2008). Hence, fear of crime can also be seen as an 'umbrella sentiment' that expresses socio-economic insecurities rather than actual crime-related insecurities (Vieno et al., 2013). -->
+
+concept of worry has been found to be a preferable way to measure the vague term of fear of crime (Williams et al. 2000)
+
+> emotional feeling, and can be described as how much someone worries about being victimized (Ferraro 1995; Ferraro and LaGrange 1987).
+
+Our rationale for why this is the case relates to how we think potential criminals and their victims will be affected by extreme income discrepancies. Local elites interpreting inequality as a reason to invest in private security may introduce non-linearity into the relationship, for example (Bourguignon, 2000)
+
+Security measures are a natural response to anticipated, as well as experienced, crime victimzation.
+
+[@vauclair2017]
+
+> vulnerability hypothesis (see, for example, Pain, 2000)
+>
+> A great deal of individual-level research has indeed corroborated that fear of crime is detrimental to people's subjective well-being (for example, Cohen, 2008; Hanslmaier, 2013; Lane et al., 2014; Michalos and Zumbo, 2000; Moore, 2006).
+>
+> individual-level research, the more sociological tradition has focused on the wider social context in which individuals reside in order to explain their fear of crime (Brunton-Smith and Sturgis, 2011)
+>
+> Traditionally, these context variables are located at the mesolevel by describing the neighbourhood and community characteristics in which individuals live (for a recent review, see Lorenc et al., 2014).
+>
+> very little research has examined the macro-level context and its relation to fear of crime (Hummelsheim et al., 2011)
+>
+> One of the most obvious explanations is that greater crime rates should produce greater fear of crime in the population. If individuals live in an environment that provides them with information about crime rates, they should process this information into their risk perceptions, leading to greater fear of crime (Lorenc et al., 2012). Yet one recent macro-level study using cross-national data from the European region found that registered crime rates actually had little explanatory power in explaining fear of crime (Hummelsheim et al., 2011).
+>
+> Wealth did not emerge as a significant predictor of fear of crime in Ceobanu's (2010) study; however, **social protection expenditures** seem to be consistently predictive of fear of crime (Vieno et al., 2013; Visser et al., 2013; Hummelsheim et al., 2011).
+>
+> socio-demographic covariates...
+>
+> Income inequality correlates with subjective well-being at r = -.61, p \< .001, and therefore it shares 37 percent of the variance with individuals' subjective well-being. There is a relatively strong country-level correlation between fear of crime and subjective well-being, r = -.67, p \< .001.
+>
+> n\. This association remains significant even if the effect of crime rates or the socio-economic, structural and social characteristics of a country, as well as relevant individual-level predictors (for example past victimization),
+>
+> It might also be that income inequality does not affect physically vulnerable groups in their fear of crime more than others in society because everyone in an unequal society is affected by a social climate in which status competition and relative deprivations stir anxieties about crime and violence.
+
+country-level data from Eurostat/ESSPROS
+
+Security consumption offers some tradeoffs in assessing consumer distrust and fear. Most notably, as a measure, self-reports of fear carry measurement error, since they include cognitive, emotional, and behavioural components (Ferraro and LaGrange, 1987) (see Fattah and Sacco, 1989). The conceptual clarity of fear of crime may be muddled, consider that @vauclair2017 found that country-level fear of crime was strongly correlated with subjective well-being, r = -.67 (but Income inequality also correlates with subjective well-being at r = -.61).
+
+<!--# growth rate, the unemployment rate, the urbanization rate, the female labour force participation rate and the share of males in the age group 15 to 64. (neumayer, 2005) -->
+
+**Macro-level effects on security consumption**
+
+**Data on real-life security measures**
+
+## Victimization and Crime
+
+<!--# To understand how inequality might influence individual security consumption in a traditional consumer context, it first seems necessary to examine security's antecedents and context, namely crime and the fear of crime. -->
+
+Repeated victimizations have been found to be a general feature of crime (Farrell and Pease, 1993; the British Crime Survey). For instance, "18 percent of burglary victims suffer 35 percent of all domestic burglaries" [@laycock2001, p. 67; citing the British Crime Survey]. These patterns of repeat victimization are echoed for other types of crime (racial attacks, fraud, vandalism).
+
+Experiments have consistently found support for a causal relationship between inequality and antisocial behaviours/conflict [@krupp2018; @wobker2015; @steinbeis2013; @dawes2007]. However, evidence for this link has been more inconsistent when analyzed across countries and some smaller regions
+
+The link between inequality and crime has been the subject of extensive research and debate. For instance, inequality has been linked to higher nation-level homicide rates across countries [@daly2016], but such links to violent crimes are not seen across time points [@neumayer2005]. One compelling account for this discrepancy is that inequality's effect on conflict and criminality is moderated by the degree to which individuals compete with their local neighbors [@krupp2018]. For instance, consider scholarship competitions that are either limited to a single university department, versus those that are available for international applicants. For these smaller-scale, or "local" competitions, individuals have much more to gain by outcompeting and undermining their proximate peers; if one refuses an opportunity to study or collaborate together.
+
+In this sense, inequality at a country-level represents a "global" scale of competition; a person in Alabama may be far worse off than someone in the Hamptons, but they are unlikely to compete with one another for money or status. At such a large scale, inequality has a smaller effect on individuals' willingness to engage in costly and risky conflict. Conversely, inequality has a larger effect when competition is at a smaller scale, such as within a family, neighborhood, or workplace. Together these results indicate that observations at the level of countries are likely to produce the weakest estimates of the effects of inequality.
+
+Null effects of gini and crime
+
+[@vieno2013] general crime rate n = 27
+
+With a "global" scale of competition, such as an international job search, individuals are unlikely to be competing
+
+cross-region/nation (scale of competition)
+
+intertemporal comparisons
+
+> or instance, income inequality is a reliable predictor of the homicide rate in cross-sectional analyses (Daly, 2016) but not in longitudinal analyses (Neumayer, 2005).
+>
+> A clear implication of our work is that measures of inequality ought to reflect the relevant scale of competition. Indeed, a failure to do so may explain why observational studies sometimes do not find a positive relationship between inequality and conflict (e.g., Collier & Hoeffler, 2004; Fearon & Laitin, 2003; Neumayer, 2005). For instance, it has been argued that inequality is not a plausible explanation for homicide because, throughout the 1990s, income inequality increased while the homicide rate decreased in the United States (Pinker, 2011).
+>
+> First, the increase in inequality in the United States over the 1990s took place mainly in the upper tail of the income distribution (Piketty & Saez, 2003). Second, this appears to have led to the spatial segregation of wealthier households from the rest of the population (Reardon & Bischoff, 2011)
+>
+> @krupp2018
+
+[@daly2016] suggests that "If inequality affects our behaviour, its effects must be mediated by some sort of cumulative influence of our experiences. In other words, any genuine effect of inequality will necessarily be a "lagged" effect: an effect of past inequality on present behaviour.
+
+perceived risk is best understood as capturing an individual's cognitive assessment of the risk of victimization (see also DuBow et al., 1979, p. 3).
+
+**Exploratory analysis: 5-year lagged inequality, gini\*GDP**
+
+property vs. personal crime
+
+One particularly informative analysis is a cross-level interaction between inequality and personal income. In a high-inequality environment, low income individuals may experience a disproportionate contact with envious individuals, combined with an overall increased burden of past victimizations.
+
+"fear of crime as a sponge" **cross-level interaction of inequality and relative income**
+
+[@hox2018]
+
+> Kreft (1996) suggests a rule of thumb, which she calls the '30/30 rule.' To be on the safe side, researchers should strive for a sample of at least 30 groups with at least 30 individuals per group (p. 215)
+>
+> Specifically, if there is strong interest in cross-level interactions, the number of groups should be larger, which leads to a 50/20 rule: about 50 groups with about 20 individuals per group (p. 216)
+
+**Contextual effects on security vs. crime**
+
+**What does multilevel analysis offer marketing science?**
+
+Compared to other social sciences, the marketing discipline is compelling because it is comparatively contextualized, interdisciplinary, and applied.
+
+allows an assessment of contextual (e.g., societal, group-level) factors on individual outcomes,
+
+archival data sampled from community members offers
+
+contextual analysis of macro (societal) and/or group-level (meso) effects on individual outcomes.
+
+**Region- and nation-level Inequality and Crime**
+
+## Nation-level Inequality and Security
+
+Sociological inquiries into risky decision-making often invoke the notion of a "risk society," referring to society-level traditions (anxious preoccupation - "everyday culture of risk") and institutions (systems for managing hazards) that have developed in response to the unique harms introduced by modernization. Together, a risk society suggests that both people's psychology, as well as economy and governance, have drifted towards the individual-level burden of managing universal risks, which are consistent across time and space (Mythen and Walklate, 2006).
+
+In a world-spanning, and constantly changing risk society, risk is said to manifest in a "generalized anxiety," which is expressed through 'discourses' (e.g., fear of crime, health promotion, home safety), that help to structure thinking, and identify threats and the means to protect oneself. In this perspective, discrete prevention activities are seen as *outlets of expression* (presumably how individuals' concerns/anxieties manifest in behaviour), in which any number of anxieties (varying in types/sources and intensities; Hunt 1999) combine with *social context* (demographics - life experience, world views), *perceived proximity to threats*, and *individual biographies* (e.g., experiential - victimization experiences; perceptions of future - e.g., general anxiety; personal coping style - thoughts and effort preparing, risk-taking) to yield protective and preventative behaviours (Krewski et al., 2008).
+
+The idea or a risk society may be best captured as a 'cascade/spillway of anxiety expression,' where an society-wide, generalized anxiety spills into different, domain-specific discourses (anxieties; fear of crime, home safety, health promotion), the number and intensities of these anxieties then reach a tipping point to elicit a protective behaviour. At these different stages/outlets, social context, individual biographies, and perceived proximity to threats interact with these anxieties and each other to channel the flow of anxiety to behaviour.
+
+@hollway1997 and @vanbrunschot2009 suggest that crime prevention measures (such as home safety preparedeness - **preventive and protective** behaviours) are a behavioural expression of anxiety
+
+@corvalan2022 reports significant relationship between nation-level inequality and aggregated "private security" measures. However, the authors do not report any methodological details for their analysis, and only report on effects at the country-level. One must be cautious in such a case to avoid the ecological fallacy, where observations and inferences of groups are erroneously applied to the group members. In this case, while an aggregate inequality-security correlation may be observed, this relationship may not persist when making predictions for individuals. Likewise, they present a model whereby inequality increases crime and security consumption, through the increased material incentives of (preventing) criminality.
+
+> Following the early contributions, the subsequent studies on the income inequality-crime relationship almost unanimously confirmed their positive associations (Chiu and Madden, 1998; Bourguignon et al., 2003). Despite having a consensus from a theoretical point of view, the empirical evidence presents mixed findings. While several studies found a positive relation (Fajnzylber et al., 2002; Choe, 2008), some others demonstrated that inequality has a negative, or no effect, on property crime (Kelly, 2000; Neumayer, 2005; Brush, 2007).
+
+EVIDENCE FOR INCREASED PREVENTION MEASURES... Particularly when testing for an effect of envy anticipation, an analysis of the effects of inequality on security consumption should control for experiences and overall prevalence of crime victimization.
+
+@corvalan2022 reports significant relationship between nation-level inequality and aggregated "private security" measures.
+
+[@chadee2020]
+
+The association between traumatic experiences and subsequent increased adoption of preventive measures has long been acknowledged (e.g., experience--behaviour hypothesis; Norris & Kaniasty, 1991).
+
+> Following victimization, victims may engage in behaviours aimed at averting revictimization (i.e., preventive measures), such as relocating, decreasing social participation, purchasing a weapon or increasing readiness to use one, seeking others' assistance, and becoming more vigilant (Barnes & Ephross, 1994; Frieze, Hymer, & Greenberg, 1987; Giblin, Burruss, Corsaro, & Schafer, 2012; Smith & Uchida, 1988). Despite mixed reviews on the strength of this relationship, the general consensus has been that victimization elicits greater preventive measures usage (see Barnes & Ephross, 1994; San‐Juan, Vozmediano, & Vergara, 2012; Weinstein, 1989).
+
+> Giblin et al. (2012) also recognized the relevance of risk perception, identifying perceived risk of victimization as a mediator between victimization experience and self‐protective behaviour.
+
+> fear may act as a motivating force, encouraging vigilance, and stimulating preventive action (Jackson & Gray, 2010; Riger, Gordon, & LeBailly, 1982; Williams, Singh, & Singh, 1994)
+
+> Lastly, emotional distress was significantly and positively correlated to preventive measures for males (r=.21, p=.015) but not for females (r = .17, p = .097).
+>
+> **Fear of crime (beta = .267, p \< .001) and perceived risk of victimization (beta = .212, p = .005) were the strongest direct predictors of preventive measures usage.**
+>
+> the recognition of fear of crime and perceived risk as key motivating forces **in the often maladaptive usage of preventive measures** (cf. Jackson & Stafford, 2009; Stafford et al., 2007)
+
+@san-juan2012
+
+> It has also been perceived as an antecedent, in an escalating loop where fear leads to avoidance and these measures influence the fear of crime (Liska et al., 1988).
+
+> although we are aware that ecological factors play a role in self-protective behaviours (Vozmediano et al., 2010) and we intend to address influences of level-two variables in future work.
+
+> Was this relatively small proportion of subjects who have recently experienced victimization adopting self-protective behaviours to a greater extent? The data indicate that this is the case. The Chi-squared test (chi2(3) = 24,969; p = .000) found a **statistically significant relationship: among victims of crimes, not taking precautions was more infrequent.**
+
+> According to Dolan and Peasgood (2006), fear of crime is, above all, a reason to be concerned about people's self-protective and avoidance measures in response to it, which can have a significant impact
+
+> consistent with those of Gilchrist et al. (1998), who found striking similarities between men's and women's fear of crime and the steps taken to avoid crime.
+
+[@warr2000]
+
+> Over the years, investigators have identified many behavioral precautions associated with fear of crime. These range from relatively trivial and nearly universal behaviors (e.g., turning on lights and locking doors when leaving home) to more personally and socially consequential actions (not leaving the house at night or going out alone) (cf. Skogan and Maxfield 1981; Warr 1994).
+
+> Along with spatial avoidance per se, fear of crime also seems to affect the routes that people take when they travel, the form of transportation they employ, and the times they choose to leave their residence (see DuBow, McCabe, and Kaplan 1979; Warr 1994)
+
+@rader2004
+
+> Studies show that fear of crime and perceived risk and fear of crime and constrained behaviors are closely tied and, in fact, may be reciprocal (Ferraro 1995; Rountree 1998; Smith and Torstensson 1997).
+>
+> In addition, these studies suggest that individuals who express increased perceived risk and engage in some form of constrained behaviors are more likely to be afraid (Dull and Wint 1997; Ferraro 1995; Forde 1993; Keane 1998; LeGrange et al. 1992; Liska et al. 1988; Mesch 2000; Miethe 1995; Myers and Chung 1998; Ortega and Myles 1987; Parker and McMorris 1993; Reid et al. 1998; Rountree 1998; Rountree and Land 1996; Smith and Hill 1991; Stanko 1995; Warr 1987).
+>
+> Liska et al. (1988) argued that fear of crime and constrained behaviors were involved in a reciprocal relationship. They found that fear may constrain behaviors, which in turn increases fear, claiming that fear ''constrains social behavior and thus results in avoiding such situations, which in turn accentuates fear'' (Liska et al. 1998, p. 835)
+
+## Outstanding question: Dynamics of inequality, security, and crime
+
+However, the dynamics between fear of crime and security behaviours have yet to be investigated. For instance, fear of crime may have a larger positive correlation with later (vs. current) security consumption, reflecting the potentially fear-reducing effects of security consumption. Conversely, security measures may have a role in increasing fear of crime at later time points, with the presence of security measures providing readily available evidence of one's fear.
+
+Liska, A. E., Sanchirico, A., & Reed, M. D. (1988). Fear of crime and ,ed behavior: Specifying and estimating a reciprocal effects model. Social Forces, 66, 827--837.
+
+Liska and colleagues (1988) did indeed find that constrained behaviors and fear of crime were reciprocal, with a feedback loop occurring between these two concepts
+
+> Liska et al. (1988) argued that fear of crime and constrained behaviors were involved in a reciprocal relationship. They found that fear may constrain behaviors, which in turn increases fear, claiming that fear ''constrains social behavior and thus results in avoiding such situations, which in turn accentuates fear'' (Liska et al. 1998, p. 835)
+
+[@rader2004]
+
+> It may be the case that people remain afraid even after buying a security system because the security system is a constant reminder of the potential threat of victimization that might occur if they do not continue to engage in such behaviors
+>
+> perceived risk and constrained behaviors. These two variables have almost always been considered causes of fear of crime (an exception was provided above by Smith and Torstennson 1997).
+>
+> For instance, taking a self-defense class (a constrained behavior) may cause women to believe that their risk of victimization is greater than expected (perceived risk), which in turn increases their fear of crime.
+
+[@bourguignon2000]
+
+> If the social class that can afford this type of private security can influence political decisions, nothing substantial may be done to increase public security despite mounting crime. An extreme example of this situation is the development of private militias and paramilitaries in Colombia.
+>
+> Private protection against crime modifies the relationship between poverty and inequality and crime.The possibility of self-protection against criminals logically eases the relationship between poverty and the crime rate. This works as follows. Potential victims anticipate that more poverty and inequality, due for instance to unbalanced development, increase crime risks. These people buy additional protection, which may reduce the actual change in crime. But the marginal social cost of poverty and inequality going directly or indirectly through crime remains the same. When private and public crime protection benefit the rich, the relative poverty that may initially be responsible for criminality has an additional social cost: whatever crime remains will necessarily be directed toward the middle class and the poor. In other words, the negative social externality arising from excessive relative poverty through criminal activity is distributed in a regressive way.Thus both criminals and victims would have to be found in the lower range of the income distribution.
 
 ## Methods
 
-The relationship between country-level inequality and the consumption of security products will be tested using a multilevel ordinal regression. This analysis will be accomplished using a combination of three archival datasets: the ICVS [@vankesteren2010], the Standardized World Income Inequality Database [SWIID; Solt, -@solt2020]
-, and the Penn World Tables [PWT, version 10.0; Feenstra, Inklaar, & Timmer, -@feenstra2015].
+While I have conducted substantial data cleaning and some pilot testing, this hypothesis, and the following procedure, has been pre-registered and time-stamped prior to any hypothesis-relevant analyses. Pre-registration be very beneficial when analyzing archival data, as such data-dependent analysis, the so-called "garden of forking paths" [@gelman2014] allows a researcher to pick and choose those data and analyses that best suit their preferred conclusions [@simmons2011]. Hopefully, a pre-commitment to preprocessing and analysis plans before model estimation reduces these researcher degrees of freedom, and leads to the selection of a more procedurally-sound model.
+
+The relationship between country-level inequality and the consumption of security products will be tested using a multilevel ordinal regression. This analysis will be accomplished using a combination of three archival datasets: the ICVS [International Crime Victimization Survey; @vankesteren2010], the Standardized World Income Inequality Database [SWIID; Solt, -@solt2020] , and the Penn World Tables [PWT, version 10.0; Feenstra, Inklaar, & Timmer, -@feenstra2015]. These databases were accessed as follows: ICVS, September 1, 2020; SWIID, October 21, 2020, and PWT, March 17, 2021.
 
 <!-- Atkinson and Brandolini (2001) discuss these and several related pitfalls in their excellent survey on the use of secondary data sets in studies of income inequality. -->
 
-First, individual measures and indicators of security consumption have been accessed from the ICVS [@vankesteren2010], which has surveyed over 300,000 people across `r cleaned_countries` different countries on householders' experiences with crime, policing, crime prevention, and feelings of unsafety. Second, nation-level inequality in disposable income was accessed through the SWIID [@solt2020]. The SWIID consists of 100 separate dataframes, with varying gini values to reflect the values' uncertainty (i.e., larger standard errors) when making comparisons across different countries or time periods. Lastly, countries' expenditure-side real GDP and populations were retrieved from the PWT. The selected values were adjusted for Purchasing Power Parity, and divided by their nations' population sizes to yield a per-capita GDP value [@feenstra2015].
+Indicators of individual security consumption and other person-level measures have been accessed from the ICVS [@vankesteren2010], which has surveyed over 300,000 people across `r cleaned_countries` different countries on householders' experiences with crime, policing, crime prevention, and feelings of unsafety. Second, nation-level inequality in disposable income was accessed through the SWIID [@solt2020]. The SWIID consists of 100 separate dataframes, with varying gini values to reflect the values' uncertainty (i.e., larger standard errors) when making comparisons across different countries or time periods. Lastly, countries' expenditure-side real GDP and populations were retrieved from the PWT. The selected values were adjusted for Purchasing Power Parity, and divided by their nations' population sizes to yield a per-capita GDP value [@feenstra2015].
+
+### Data Inclusion and Exclusion
 
 Although the ICVS, PWT, and SWIID extend across multiple years, the current analysis will be limited to observations across 2004-2006. After excluding for missing data on security and key independent variables, k = `r sum(summary(iv_2005$country)>0)` countries, and n = `r format(nrow(iv_2005), big.mark = ",", scientific = FALSE)` participants were retained for primary analyses. Further screening information can be found in the supplementary materials, but as a summary, this sample specification provides a balance of relative data recency, larger sample size, and a larger range of values on key variables such as inequality and victimization experiences.
 
@@ -98,7 +356,9 @@ prevention_min2 <- dplyr::recode(prevention_min2, "prev_burglar_alarm" = "burgla
 
 ```
 
-Security consumption (*M* = `r round(mean(iv_2005$total_security),2)`, *SD* = `r round(sd(iv_2005$total_security),2)`) has been computed by summing respondents' self-reported ownership of `r as.english(length(prevention_min2))` different preventative measures: `r glue::glue_collapse(x = prevention_min2, ", ", last = ", and ")`. This variable excludes several security items in the ICVS due to missing data, such as owning a watch dog, having surveillance arrangements with neighbors, and purchasing insurance against criminal activities.
+Security consumption (*M* = `r round(mean(iv_2005$total_security),2)`, *SD* = `r round(sd(iv_2005$total_security),2)`) has been computed by summing respondents' self-reported ownership of `r as.english(length(prevention_min2))` different preventative measures: `r glue::glue_collapse(x = prevention_min2, ", ", last = ", and ")`. This consumption variable excludes several security items in the ICVS due to missing data, such as owning a watch dog, having surveillance arrangements with neighbors, and purchasing insurance against criminal activities.
+
+As much as it pertains to a sense of fear and vulnerability in individuals, security consumption may hold some distinct benefits from psychological self-report measures. For instance, a reported sense of fear or vulnerability may be viewed as unfavorable attitudes to report, especially for men. "Sutton and Farral (2005) even argue that, in reality, men might have a greater fear of crime than women but it is a private experience." In order to avoid reporting their fear, individuals might under-report out of social desirability. By comparison, the existence of a security measure is a far more concrete, and less subjective question; rather than having to guage a potentially uncomfortable belief or feeling, individuals just have to make a binary observation about a feature of their living space, arguably leaving less room for biased responses.
 
 (ref:icvs-security-hist) Histogram for reported security measures in the ICVS (Study 3).
 
@@ -118,7 +378,13 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 
 #### Predictor variables
 
-The targeted model will include predictor variables at country- and individual-levels: at the nation level, 1) nation-level inequality (gini - disposable income), 2) expenditure-side GDP per capita (matched purchasing power parity), and 3) nation-level self-reported crime victimization; and at the respondent level: 1) age (five-year increments), 2) gender (`r round(summary(iv_2005$gender)["female"]/nrow(iv_2005)*100,0)`% female), 3) employment status (`r round(summary(iv_2005$employed)[1]/nrow(iv_2005)*100,0)`% employed), and 4) number of individual victimization experiences. See Table \@ref(tab:s2desc-tab) for remaining descriptive statistics.
+@dijk2007
+
+> Correlations between the two measures of the levels of different types of crime among industrialised nations were stronger when victimisation rates were adjusted for reporting to the police. In other words there is closer correspondence in relative risks of crime when account is taken of differences in reporting to the police... Correlations between unadjusted victimisation rates and police figures are mostly weak and rarely statistically significant.
+>
+> These results confirm that levels of recorded crimes cannot be reliably used for comparing levels of common crime across countries. Crime victim surveys seem a better source of information on levels of crime across countries.
+
+The targeted model will include predictor variables at country- and individual-levels: at the nation level, 1) nation-level inequality (gini - disposable income), 2) expenditure-side GDP per capita (matched purchasing power parity), and 3) nation-level self-reported crime victimization. A notable preprocessing steps is that gini and GDP values were averaged across 2004-2006 into single indices, to reflect the years where the survey sweeps were conducted. At the respondent level: 1) age (five-year increments), 2) gender (`r round(summary(iv_2005$gender)["female"]/nrow(iv_2005)*100,0)`% female), 3) employment status (`r round(summary(iv_2005$employed)[1]/nrow(iv_2005)*100,0)`% employed), and 4) number of individual victimization experiences. See Table \@ref(tab:s2desc-tab) for remaining descriptive statistics.
 
 ```{r s2desc-tab}
 s2desc_columns <- c("Variable",	"Mean",	"SD")
@@ -182,15 +448,52 @@ vic_var_drop <- dplyr::recode(vic_var_drop, "cartheft_5yrs" = "car thefts",
 
 Self-reported crime victimization will likewise be computed as a count variable for the following items: `r glue::glue_collapse(x = vic_var_drop, ", ", last = ", and ")`, summing `r as.character(as.english(length(vic_var_drop)))` binary items on respondent's experiences of victimization. This variable will be represented twice in the analyses - once as a nation-average value, and again for the individual respondent.
 
+Self-reported victimization has been suggested to be a superior way to measure a country's crime rates, as official crime statistics can face many data integrity issues (REF = van kestern?). For instance, Soares (2002) suggests that poor countries tend to under-report crime more than rich countries. Under-reporting might also be a problem in autocratic regimes.
+
 ### Proposed analysis pipeline, including all preprocessing steps, precise description of all planned analyses
 
-Since the ICVS, SWIID, and PWT are publicly available, preprocessing and inclusion/exclusion steps have already been implemented, and are available in the sourced and attached code. A notable preprocessing steps is that gini and GDP values were averaged across 2004-2006 into single indices, to reflect the years where the survey sweeps were conducted.
+Main analyses will be conducted using the r package ordinal, with the following mixed model specification: `ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation + num_victim_5yr + age_cent + employed + male + (1 | country)`
 
-Analyses will predict security consumption as an ordinal variable (0: no security consumption, 1: one unit of security consumption, 2: two units, or 3: three or more units), using a cumulative link mixed model. The outcome variable exhibits excessive skewness, and is not suitable to a linear model. Likewise, despite security consumption being a count variable of multiple binary occurrences, it is unlikely to meet the assumptions for a poisson process, which assumes that the maximum value stretches out indefinitely. Because of these limitations, treating the dependent variable as ordinal strikes a balance of model parsimony (minimizing assumptions about the variable structure), while reaping some benefits of the data's ranked structure.
+Analyses will predict security consumption as an ordinal variable (0: no security consumption, 1: one unit of security consumption, 2: two units, or 3: three or more units), using a cumulative link mixed model. The outcome variable exhibits excessive skewness, and is not suitable to a linear model. Likewise, despite security consumption being a count variable of multiple binary occurrences, it is unlikely to meet the assumptions for a poisson process, which assumes that the maximum value stretches out indefinitely. Because of these limitations, treating the dependent variable as ordinal strikes a balance of model parsimony (minimizing assumptions about the variable structure), while reaping some benefits of the data's ranked structure. The coefficient estimates and standard errors will be extracted through simulations. The distributions for fixed-effects estimates will be generated by simulation from 100 dataframes, which are initially supplied by the SWIID, each consisting of coefficients and variance/covariance matrices from a separate model. These fixed-effects distributions will be used to calculate point estimates and standard errors for each coefficient.
 
-An ordinal regression also carries an assumption of proportional odds: that the predictors' effects are consistent across the different levels of the dependent variable. Currently, we are not aware of any available methods for testing the proportional odds assumption for a mixed ordinal regression; existing methods only serve as a test on single-level data. As such, we will attempt to test this assumption using multiple logistic regressions, conducted for each rank threshold (e.g., 0\|1, 1\|2, 2\|3). Since inequality is the major predictor of interest, only this coefficient will be compared across logistic models, which will help attenuate the impact of Type I errors. The proportional odds assumption will be deemed as violated if the regression coefficients for inequality are significantly different across models.
+#### Assumptions and Robustness
 
-The coefficient estimates and standard errors will be extracted through simulations. The distributions for fixed-effects estimates will be generated by simulation from 100 dataframes, which each consist of coefficients and variance/covariance matrices from a separate model. These fixed-effects distributions will be used to calculate point estimates and standard errors for each coefficient. If the weighted ordinal regression fails to converge, the model will be conducted without frequency weights. Likewise, if the unweighted ordinal regression fails to converge, a weighted mixed logistic regresssion will be conducted. If the weighted mixed logistic regression fails to converge, an unweighted mixed logistic regression will be conducted instead. In addition, supplementary analyses will assess whether the effects of inequality persist in a smaller, variable-maximizing dataset (`r sum(summary(iv_2005_mod$country)>0)` countries, `r format(nrow(iv_2005_mod), big.mark = ",", scientific = FALSE)` respondents).
+An ordinal regression also carries an assumption of proportional odds: that the predictors' effects are consistent across the different levels of the dependent variable. Currently, we are not aware of any available methods for testing the proportional odds assumption for a mixed ordinal regression; existing methods only serve as a test on single-level data. As such, we will attempt to test this assumption using multiple logistic regressions, conducted for each rank threshold (e.g., 0\|1, 1\|2, 2\|3). Since inequality is the major predictor of interest, only this coefficient will be compared across logistic models, which will help attenuate the impact of Type I errors. The proportional odds assumption will be deemed as violated if the regression coefficients for inequality are significantly different across models. If there is a significant difference amongst the predictors (suggesting a violation of the proportional odds assumption), then the separate logistic regressions will be presented as the primary analysis instead.
+
+The ICVS dataset includes frequency weights for all included participants. These weights will be used whenever possible, as country-wide household surveys are unlikely to yield samples that are perfectly representative of their populations. Pilot analyses did indicate possible convergence issues when weights are included. As such, the following contingency plan will be followed during analysis. 1) Attempt weighted ordinal regression, if the weighted ordinal model fails to converge, 2) the model will be conducted without frequency weights, elsewise, 3) a weighted mixed logistic regresssion will be conducted, then 4) an unweighted mixed logistic regression will be attempted. instead. In addition, supplementary analyses will assess whether the effects of inequality persist in a smaller, variable-maximizing dataset (`r sum(summary(iv_2005_mod$country)>0)` countries, `r format(nrow(iv_2005_mod), big.mark = ",", scientific = FALSE)` respondents).
+
+The robustness of the mixed model results will be examined by repeating the analyses on the smaller subsample of observations (k = 28, and n = 48,178), both with the same variables, and with additional variables. We will report on any changes in the patterns of significance.
+
+### Sample size
+
+bierman lecture 3
+
+> In an oft-cited paper, Maas and Hox (2005), used simulation methods to examine the effects of varying sample sizes at both levels and varying ICCs
+>
+> They concluded, "The results show that only a small sample size at level two (meaning a sample of 50 or less) leads to biased estimates of the second-level standard errors. In all of the other simulated conditions the estimates of the regression coefficients, the variance components, and the standard errors are unbiased and accurate" (pg. 86).
+
+
+## Analysis
+
+If you mean intraclass correlation coefficient when you mention ICC, as far as I know you can only calculate it by yourself as of today. According to
+
+[Liu,2005](https://books.google.com.tw/books?id=emGkCgAAQBAJ&lpg=PP1&ots=pqZxjzn0t7&dq=mixed%20model%20ordinal%20logistic%20icc%20Applied%20ordinal%20logistic%20regression%20using%20Stata%20%3A%20from%20single-level%20to%20multilevel%20modeling&lr&hl=zh-TW&pg=PA414#v=onepage&q=ICC&f=false), p.414, ICC= tau/(tau+3.29), where tau is between-group variance.
+
+As of the assessing model fit part, you can provide -2LL, LR, delta(df), AIC, BIC, SABIC, log-likelihood, SABIC values, and also [MuMIn Multi-Model Inference R package](https://cran.r-project.org/web/packages/MuMIn/index.html) provide AICc value and model comparision functionality for ordinal clmm objects.
+
+<!-- If the unweighted mixed logistic regression fails to converge, a 5) weighted mixed linear regression will be conducted.  -->
+
+<!-- If the weighted mixed linear regression fails to converge, an 6) unweighted mixed linear regression will be conducted. -->
+
+[@vauclair2017]
+
+> For Model 3, we used group-mean centring for all individual-level predictors because it removes all country-level variation from the predictor variable and yields slope coefficients that can be unambiguously interpreted as the pooled within-cluster regression of the respective predictor on fear of crime. This is the most appropriate centring strategy when associations between predictors and outcome variables at the lowest level are of substantive interest and is also preferable for examining cross-level interactions (Enders and Tofighi, 2007).
+
+## reporting
+
+> ncome inequality and fear of crime The ICC showed that a large proportion of the total variance in respondents' fear of crime was due to individual differences (90.9 percent). Consequently, 9.1 percent of the total variance was associated with differences between countries and the chi-square statistic indicated that the differences in mean scores were significant (chi2(28) = 5708.13, p \< .001), justifying follow-up analyses using country-level predictors.
+>
+> Consistent with our hypothesis (H1), income inequality predicted fear of crime (Model 1). Figure 1 shows the association between income inequality and country-level scores of fear of crime, r(28) = .46, p \< .05. T
 
 \clearpage
 

@@ -122,6 +122,9 @@ load("C:/Users/dalla/Google Drive/offline_data_files/icvs_pwt_swiid/data/iv_2005
 load("C:/Users/dalla/Google Drive/offline_data_files/icvs_pwt_swiid/data/icvs_solo_datafiles.RData")  # loads indidividual dataframes for different icvs configurations
 
 load("C:/Users/dalla/Google Drive/project_files/inequality_security/output/icvs_output.RData") #icvs models, tidy tables, convergence stats
+
+load("C:/Users/dalla/Google Drive/offline_data_files/icvs_pwt_swiid/data/icvs_joined_samples.RData")
+
 load("C:/Users/dalla/Google Drive/project_files/inequality_security/output/pretest_output.RData")    # Experiment power analyses and pretest output 
 load("C:/Users/dalla/Google Drive/project_files/inequality_security/output/manuscript_objects.RData")  # design tables and hypotheses
 
@@ -161,9 +164,26 @@ Alternatively, you can put that content in files like 00--prelim.Rmd and
 
 <!-- Debates regarding whether inequality reflects a pattern of social exploitation, or a necessary and useful payoff structure to incentivize productive behaviours. -->
 
-Income and wealth inequalities have risen sharply in the US in the past 30 years [@horowitz2020] Inequality's moral and political significance is closely linked to its impacts on people's psychology and behaviour. At a societal level, inequality has been associated with higher nation-level homicide rates [@daly2016], consumer debt [@christen2005], and reduced cooperation [@burton-chellew2013 ; @anderson2008], while at an individual level, inequality causes people to be more likely to resort to risky and hostile activities in desperate attempts to compete for otherwise inaccessible positions and resources [@mishra2015; @payne2017; @krupp2018]. This dissertation seeks to examine whether inequality causes a special case of risk aversion: social distrust, and increases individuals' willingness to consume security products.
+(ref:swiid-trends) Income inequality trends for select countries.
 
-This project aims to test an envy aversion model of distrust and its ability to predict security consumption. This theory will be tested through a multimethod project of four experiments (Studies 1a&b, 2a&b) and a multilevel analysis of archival data using the International Crime Victimization Survey (ICVS; Study 3). Chapter 1 will provide an initial test of the inequality-distrust relationship through a series of economic games, using crowdsourced participants. These experiments will manipulate inequality and test a mechanism of envy avoidance: that **H1)** `r tolower(hypotheses[1])` (see Table \@ref(tab:design-table) for hypotheses and design table) because **H2)** people expect disadvantaged peers to experience envy. Using the same game context with crowdsourced participants, Chapter 2 examines the impact of distributional fairness on security consumption, testing the predictions that **H3)** `r tolower(hypotheses[2])`, and that **H4)** Individuals will consume more security when inequality is the apparent result of group-based favoritism. Lastly, Chapter 3 describes a multilevel analysis using the International Crime Victimization Survey [@vankesteren2010], to test whether **H5)** `r tolower(hypotheses[4])`.
+```{=latex}
+\begin{figure}[H]
+\caption{(ref:swiid-trends) \label{fig:swiid-trends}}
+```
+```{r swiid-trends, fig.align="center", eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
+# , fig.cap='(ref:swiid-trends)'
+
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/swiid_ineq_trends.png")
+```
+
+```{=latex}
+\end{figure}
+```
+Income and wealth inequalities can vary dramatically between countries, cities, and time periods. For instance, inequality has risen in the US over the past 30 years [@horowitz2020], and even moreso in China. There is substantial debate whether such an increase in inequality should be embraced as a byproduct of differences in productivity, or resisted as a corrosive force of injustice.
+
+Inequality's moral and political significance is closely linked to its impacts on people's psychology and behaviour. At a societal level, inequality has been associated with higher homicide rates [@daly2016], consumer debt [@christen2005], and reduced cooperation [@burton-chellew2013 ; @anderson2008], while at an individual level, inequality causes people to be more likely to resort to risky and hostile activities in desperate attempts to compete for otherwise inaccessible positions and resources [@mishra2015; @payne2017; @krupp2018]. This dissertation seeks to examine whether inequality causes a special case of risk aversion: social distrust, and increases individuals' willingness to consume security products.
+
+This project aims to test an envy anticipation model of distrust and its ability to predict security consumption. This theory will be tested through a multimethod project of four experiments (Studies 1a&b, 2a&b) and a multilevel analysis of archival data using the International Crime Victimization Survey (ICVS; Study 3). Chapter 1 will provide an initial test of the inequality-distrust relationship through a series of economic games, using crowdsourced participants. These experiments will manipulate inequality and test a mechanism of envy avoidance: that **H1)** `r tolower(hypotheses[1])` (see Table \@ref(tab:design-table) for hypotheses and design table) because **H2)** people expect disadvantaged peers to experience envy. Using the same game context with crowdsourced participants, Chapter 2 examines the impact of distributional fairness on security consumption, testing the predictions that **H3)** `r tolower(hypotheses[2])`, and that **H4)** Individuals will consume more security when inequality is the apparent result of group-based favoritism. Lastly, Chapter 3 describes a multilevel analysis using the International Crime Victimization Survey [@vankesteren2010], to test whether **H5)** `r tolower(hypotheses[4])`.
 
 <!-- manipulating whether incomes are deserved, and whether incomes are allocated as a product of group-based discrimination.  testing whether the country-level income inequality is associated with individual-level security consumption. -->
 
@@ -181,7 +201,7 @@ The effect of relative deprivation on risk-taking is a fairly recent extension o
 
 Together, inequality fosters risk-taking by increasing the distance between individuals and their goals. Inequality causes absolute deprivation because the skewed distribution of resources make it increasingly difficult for a person to meet a relatively stable level of need (e.g., paying rent). By contrast, inequality causes relative deprivation through increasingly extreme social comparisons, leading individuals to similarly skew their aspiration levels ever higher.
 
-This dissertation is inspired by considering the social consequences of this inequality-risk relationship. If inequality causes people to take more risks and/or behave in a hostile manner, would people in the same unequal environment come to expect harmful behaviours from their neighbors? Chapter one will elaborate on this envy aversion hypothesis of distrust, which predicts that in the presence of inequality, concerns over partners' envy will drive people to pay to secure themselves against social threats.
+This dissertation is inspired by considering the social consequences of this inequality-risk relationship. If inequality causes people to take more risks and/or behave in a hostile manner, would people in the same unequal environment come to expect harmful behaviours from their neighbors? Chapter one will elaborate on this envy anticipation hypothesis of distrust, which predicts that in the presence of inequality, concerns over partners' envy will drive people to pay to secure themselves against social threats.
 
 <!--# predicts that across domains of darwinian fitness (e.g., status, mate access), individuals will generally be averse to risk, but will switch to risk-seeking when they expect to fall short of their goals using predictable strategies. -->
 
@@ -217,7 +237,7 @@ This dissertation is inspired by considering the social consequences of this ine
 
 <!--# Relative deprivation theory [@smith2012] and unfairness theory [@cropanzano2001] also both suggest that individuals' judgments of satisfaction and unfairness are largely formed by counterfactual comparisons. According to these theories, people judge whether they are worse off compared to another potential state of being, which can be heavily influenced by past states or social comparisons with other individuals. -->
 
-## Security - A Typology of Self-Protection
+## Security - A Typology of Protection
 
 <!-- Protective consumption -->
 
@@ -231,6 +251,32 @@ This dissertation is inspired by considering the social consequences of this ine
 
 The pursuit of security is fundamental to human life; we lock our car doors, purchase insurance, stockpile protective equipment, and flee unstable countries. Many markets are directly and indirectly influenced by this desire for security. In the United States, insurance premiums totaled to \$1.2 trillion in 2017 [@insuranceinformationinstitute2020a]. Likewise, people who are concerned for their safety are less likely to use of public transportation [@delbosc2012; @loukaitou-sideris1997]. The pursuit of security can require large tradeoffs for consumers; every dollar spent on a heavy-duty deadbolt or theft insurance cannot be spent on other goods such as savings, recreation, or healthcare. Individuals' purchasing and use of products that seek to increase one's security are of particular interest for this project, or what will be termed security consumption.
 
+As much as I would like to take credit for being original in thinking about security, there has been plenty of work on this topic, particularly within sociology. The pursuit of security can be found under many different names: <!--# constrained behaviors, defensive behaviours, precautions, precautionary behaviours, precautionary measures, preventive measures, protective behaviours, routine activities, safety measures, safety behaviours, safety precautions, security behaviours,  self-protection, self-protective behaviours (avoidance, active security)  -->
+
+> *constrained behaviors, defensive behaviours, precautions, preventive measures, protective behaviours, routine activities, safety precautions, security behaviours, self-protection (avoidance, active security)*
+
+Take your pick. In addition to increasing the difficulty of searching the literature, this flood of labels also obscures when articles are examining the same constructs and theories. However, throughout this literature, all of these terms seem to consistently share four aspects. They capture an expenditure of resources (money, time, effort, space, attention, social capital, opportunity) that helps the agent and/or their ingroup (e.g., family, neighbors, co-workers) to (a) recover from, (b) cope with, (c) avoid, and/or (d) deter hazards.
+
+(before encountering a harm): avoid, deter
+
+@shavell1991 invokes the varying visibility of protective measures
+
+(upon encountering a harm): coping, recovery
+
+avoidance and defensive behaviours have been examined in the past [e.g., avoidance and defensive behavior @rader2007]
+
+'items that people place in their homes for security reasons'' (hereafter referred to as defensive behaviors)'
+
+All things being equal, an effective avoidance strategy should be preferred to any other security measure. Given the sequential nature of these measures, successful avoidance can effectively stop thefts before they've had a chance to begin; a prospective thief will have a hard time breaking into a house that they do not see or know about. Similarly, if a thief does detect an opportunity, an effective deterrence measure can dissuade the thief from even attempting a criminal activity, perhaps having them select a neighbor instead, or abandoning the thieving enterprise altogether (diversion and deterrence respectively, in @shavell1991).
+
+@san-juan2012
+
+> According to the study by Killias (1990), vulnerability is related to exposure to risk (for example, the case of taxi drivers), the damage incurred (the consequences of an attack involving physical harm are more serious for an elderly person), or the inability to deal with an attack (women or physically weak people can feel defenceless against possible attack).
+
+Includes 'Incidental security,' as part of a bundle? (e.g., apartment with improved locks, but you bought it as a bundle). Incidental security will be more common with more expensive product categories, as well as the more expensive alternatives within those categories
+
+security measures vs. behaviours: measures can be put in place and kept with little concern or upkeep, others need to be actively done repeatedly (potential overlap - subscription based services, more likely to be a measure though)
+
 The idea of security is expansive, rooted in the Latin term *securitas*, meaning freedom from care or anxiety. So, (in)security can occur in many areas, ranging from health, employment, natural disasters, nutrition, as well as conflicts between individuals or nations. Given its potential breadth, a concept of security consumption must be clarified in terms of its relevant domains and forms. At its most comprehensive, security consumption could be considered as any prevention-focused activity, conducted by an agent seeking to minimize the expected costs from harms. With such a wide-ranging definition, security consumption can be carried out by individual consumers, organizations, as well as nation-states.
 
 Scholars in risk management classify any source of costs as a hazard, whereas threats are defined as warnings that something unpleasant may occur [@brunschot2007]. Given the conceptual breadth of consumer behaviour [@macinnis2010], security consumption can be defined as an expenditure of resources in the consumer context that helps the agent to (a) recover from, (b) cope with, (c) avoid, and/or (d) deter hazards. Notably, security behaviours do not always manifest in the consumer context; for instance, someone might be concerned about being victimized by a burglary and develop habits of checking their locks, or limiting their exposure to high-risk areas. Although such vigilance might improve one's ability to cope with an intruder, or prevent victimization altogether, it does not manifest in meaningful exchanges within the security market. Thus, security behaviours are best understood as antecedent or moderating variables in the decision to consume security goods and services.
@@ -238,6 +284,12 @@ Scholars in risk management classify any source of costs as a hazard, whereas th
 *Recovery* corresponds namely to purchasing insurance. Although many types of insurance are necessary for all drivers, some people purchase extra insurance to help recuperate costs from events like collisions or vandalism. *Coping* refers to goods and services that help agents reduce the costs incurred when exposed to harms. For instance, a fire extinguisher helps in coping with flammable hazards, such that when it occurs, a fire can be smothered before it causes substantial harm. Likewise, individuals can expend resources to *avoid* certain hazards, for instance, people might invest substantial resources in the process of moving away from regions that suffer from crime, air pollution, or natural disasters. Lastly, agents can consume security goods that are meant as *deterrents* for potentially antagonistic actors. For instance, someone might purchase a "beware of dog" sign for their property to deter intruders, when they in fact do not own a dog.
 
 Importantly, many security goods and services fill multiple roles simultaneously. For example, moving into a gated community may 1) help their residence avoid being near and visible to criminals, 2) have protective measures that help to cope with attempted thefts, and 3) deter criminals' willingness to attempt a theft, due to the perceived risk of getting caught or hurt. This definition of security consumption appears to be capable of incorporating and differentiating a wide variety of security behaviours.
+
+Security consumption has been argued to be a form of 'grudge spending,' non-conspicuous mode of consumption that typically exists outside of the paraphernalia of consumer culture where consumers do not want to invest in security or see it as a benefit [@loader2015]
+
+Security consumption being both direct and indirect - security concerns can change other consumption behaviours, for instance fostering a reluctance to consume certain products or in certain spaces [@goold2010] [@delbosc2012; @loukaitou-sideris1997]
+
+> other words, organizational security consumption isperformed onbehalf ofothers bypurchasers whoaimtocreate physical (andvirtual)spaces thatfeelappropriately secure totheirusers, andaretherefore likely toattract andretain customers
 
 The physical security industry has been projected to increase 29% between 2021 and 2025 [@marketsandmarkets2021], which likely is heavily impacted by organizations and nations. Understanding security consumption by institutions (i.e., business-to-business and business-to-government marketing) is important, as government and private organizations likewise seek to recover from, cope with, avoid, and deter harms. However, the contexts of such institutional decisions (e.g., institutional prestige, political leverage), the hazards (nuclear strikes by other countries), and the products available (armed drones), are distinct from the security decisions of everyday consumers. To avoid confusing organizations and individuals, this proposal will focus on security consumption amongst individual consumers, such limitation in scope will help to develop and explicate microfoundations of security consumption, which may eventually be generalized or modified to other security market contexts.
 
@@ -253,7 +305,7 @@ As mentioned earlier, hazards can come from a variety of sources (natural disast
 
 Some behavioural evidence suggests that people can be overly distrustful. @mcevily2012 found that in a behavioural distrust game, participants tended to spend too much money to prevent their partner from keeping large sums of shared wealth. Paradoxically, security consumption can increase one's vulnerability to victimizations. Surveying South African suburbs and security practitioners, @marks2015 found that households surrounded with high walls have obstructed lines of sight to and from the property, reducing the effectiveness of police patrols and "natural surveillance" by neighbors.
 
-<!-- This project aims to test an envy aversion model of distrust and its ability to predict security consumption. Specifically, this project will test the prediction that **H1)** `r tolower(hypotheses[1])` (see Table @ref(tab:design-table) for hypotheses and design table) because **H2)** people expect disadvantaged peers to experience envy. Addressing the moderating effects of fairness on the effects of inequality, this project will also test the prediction that **H3)** `r tolower(hypotheses[2])`, and that **H4)** Individuals will consume more security when inequality is the apparent result of group-based favoritism. This theory will be tested through a multimethod project of four experiments (Studies 1a&b, 2a&b) and a multilevel analysis of archival data using the International Crime Victimization Survey (ICVS; Study 3) [@vankesteren2010] to test whether **H5)** `r tolower(hypotheses[4])` . -->
+<!-- This project aims to test an envy anticipation model of distrust and its ability to predict security consumption. Specifically, this project will test the prediction that **H1)** `r tolower(hypotheses[1])` (see Table @ref(tab:design-table) for hypotheses and design table) because **H2)** people expect disadvantaged peers to experience envy. Addressing the moderating effects of fairness on the effects of inequality, this project will also test the prediction that **H3)** `r tolower(hypotheses[2])`, and that **H4)** Individuals will consume more security when inequality is the apparent result of group-based favoritism. This theory will be tested through a multimethod project of four experiments (Studies 1a&b, 2a&b) and a multilevel analysis of archival data using the International Crime Victimization Survey (ICVS; Study 3) [@vankesteren2010] to test whether **H5)** `r tolower(hypotheses[4])` . -->
 
 ```{r dis-design}
 
@@ -318,3 +370,4 @@ All procedures for this project have been approved by the University of Calgary 
 -   State the general theme(s) of your research and the papers you've included
 -   Include a Statement of Contribution that outlines the work you and your co- authors contributed to each paper with multiple authors
 -   May include literature relevant to your topic that doesn't appear in the chapt
+-   

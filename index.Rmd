@@ -14,7 +14,7 @@ degree: 'DOCTOR OF PHILOSOPHY'
 location: 'CALGARY, ALBERTA'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
-link-citations: yes
+link-citations: no
 
 
 # The next two lines allow you to change the spacing in your thesis. You can 
@@ -251,11 +251,15 @@ This dissertation is inspired by considering the social consequences of this ine
 
 The pursuit of security is fundamental to human life; we lock our car doors, purchase insurance, stockpile protective equipment, and flee unstable countries. Many markets are directly and indirectly influenced by this desire for security. In the United States, insurance premiums totaled to \$1.2 trillion in 2017 [@insuranceinformationinstitute2020a]. Likewise, people who are concerned for their safety are less likely to use of public transportation [@delbosc2012; @loukaitou-sideris1997]. The pursuit of security can require large tradeoffs for consumers; every dollar spent on a heavy-duty deadbolt or theft insurance cannot be spent on other goods such as savings, recreation, or healthcare. Individuals' purchasing and use of products that seek to increase one's security are of particular interest for this project, or what will be termed security consumption.
 
-As much as I would like to take credit for being original in thinking about security, there has been plenty of work on this topic, particularly within sociology. The pursuit of security can be found under many different names: <!--# constrained behaviors, defensive behaviours, precautions, precautionary behaviours, precautionary measures, preventive measures, protective behaviours, routine activities, safety measures, safety behaviours, safety precautions, security behaviours,  self-protection, self-protective behaviours (avoidance, active security)  -->
+As much as I would like to take credit for being original in thinking about security, there has been plenty of work on this topic, particularly within sociology. The pursuit of security can be found under many different names: <!--# constrained behaviors, defensive behaviours, guardianship, precautions, precautionary behaviours, precautionary measures, preventive measures, protective behaviours, Protective Actions, risk avoidance, risk-reducing behaviours, routine activities, safety measures, safety behaviours, safety precautions, security behaviours,  self-protection, self-protective behaviours (avoidance, active security)  -->
 
 > *constrained behaviors, defensive behaviours, precautions, preventive measures, protective behaviours, routine activities, safety precautions, security behaviours, self-protection (avoidance, active security)*
 
 Take your pick. In addition to increasing the difficulty of searching the literature, this flood of labels also obscures when articles are examining the same constructs and theories. However, throughout this literature, all of these terms seem to consistently share four aspects. They capture an expenditure of resources (money, time, effort, space, attention, social capital, opportunity) that helps the agent and/or their ingroup (e.g., family, neighbors, co-workers) to (a) recover from, (b) cope with, (c) avoid, and/or (d) deter hazards.
+
+@dubow1979 defined a similar suite of 'behavioural reactions to crime': a) avoidance ("increasing distance from situations [perceived to be risky], b) personal and home protection ("increasing resistance to victimization), c) insurance (minimizing costs without reducing exposure or resistance... keeping valuables in a safe deposit box to reduce the potential loss when victimized), d) communicative behaviour ("sharing of information and emotions related to crime with others"), e) participatory behaviour ("action taken with others... may be informally or formally organized"). They also provide a detailed breakdown of each of these components (e.g., avoidance consisting of i) spatial/temporal, ii) situational, iii) activity-specific, iv) supervision of yoith, v) transportation choices, vi) relocation decisions).
+
+@miethe1995 talks about avoidance, protective, general behavioural and lifestyl changes, and collective activities
 
 (before encountering a harm): avoid, deter
 
@@ -276,6 +280,10 @@ All things being equal, an effective avoidance strategy should be preferred to a
 Includes 'Incidental security,' as part of a bundle? (e.g., apartment with improved locks, but you bought it as a bundle). Incidental security will be more common with more expensive product categories, as well as the more expensive alternatives within those categories
 
 security measures vs. behaviours: measures can be put in place and kept with little concern or upkeep, others need to be actively done repeatedly (potential overlap - subscription based services, more likely to be a measure though)
+
+@mesch1998 makes a distinction between personal and household protective behaviours.
+
+> Individual crime prevention is based on the assumption that the anticipation or recognition of a crime risk naturally calls for some action to remove the threat (Rosenbaum, 1988). Most studies on individual crime prevention have limited themselves to one kind of behaviour: either household protection (Lab, 1990; Garofalo and Clark, 1992) or personal protection (Smith and Uchida, 1988; Young et al., 1987). Such compartmentalization does not allow us to fully understand the nature of protective behaviour and whether personal and household crime protective behaviours are driven by the same factors (see Skogan and Maxfield, 1981 for an exception).
 
 The idea of security is expansive, rooted in the Latin term *securitas*, meaning freedom from care or anxiety. So, (in)security can occur in many areas, ranging from health, employment, natural disasters, nutrition, as well as conflicts between individuals or nations. Given its potential breadth, a concept of security consumption must be clarified in terms of its relevant domains and forms. At its most comprehensive, security consumption could be considered as any prevention-focused activity, conducted by an agent seeking to minimize the expected costs from harms. With such a wide-ranging definition, security consumption can be carried out by individual consumers, organizations, as well as nation-states.
 

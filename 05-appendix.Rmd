@@ -9,6 +9,10 @@
 If you feel it necessary to include an appendix, it goes here.
 -->
 
+## Ethics information
+
+All procedures for this project have been approved by the University of Calgary Conjoint Faculties Research Ethics Board (REB 20-1860). For the experimental studies, informed consent will be obtained for all participants, who, unless otherwise noted, will be compensated at a rate of \$12.48 CAD/hour. For multilevel analyses, the datasets are archival and publicly-available. As such, ethics approval and informed consent was obtained, and compensation disbursed, by the original researchers.
+
 This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.
 
 **In the main Rmd file**

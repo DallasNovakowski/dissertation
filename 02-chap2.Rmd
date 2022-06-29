@@ -4,7 +4,7 @@ bibliography: bib/thesis.bib
 
 # Effects of Fairness on Security Consumption {#ineq-fair}
 
-When considering how inequality affects individuals and groups, it is important to consider not just whether resources are being shared evenly, but also whether the distribution is fair. In particular, inequality coupled with unfairness should make individuals increasingly unaccepting of disparities, and increasingly likely to engage in risky and hostile behaviours (REF). Conversely, an unequal, but fair allocation of wealth should reduce partners' damaging tendencies. In the same spirit as Chapter One, the following chapter will explore whether distributional fairness has cascading effects on distrust and security consumption within individuals.
+When considering how inequality affects individuals and groups, it is important to consider not just whether resources are being shared evenly, but also whether the distribution is fair. In particular, inequality coupled with unfairness should make individuals increasingly unaccepting of disparities, and increasingly likely to engage in risky and hostile behaviours [@vandeven2009]. Conversely, an unequal, but fair allocation of wealth should reduce partners' damaging tendencies. In the same spirit as Chapter One, the following chapter will explore whether distributional fairness has cascading effects on distrust and security consumption within individuals.
 
 ## Envy and Fairness
 
@@ -16,45 +16,41 @@ Echoing the fairness-driven concepts of benign and malicious envy, some authors 
 
 <!--# Benign envy is associated with greater hope for success, more ambitious goal-setting (Lange & Crusius, 2015), an attentional bias towards means to improve (Crusius & Lange, 2014), increased persistence and performance (van de Ven, Zeelenberg, & Pieters, 2011b), and an increased willingness to pay for envy-inducing consumer products (van de Ven et al., 2011b) -->
 
-High correlation between measures of procedural and distributive justice, *r* = .637, CI95% =[.361, .911], mean across 63 studies [@hauenstein].
+<!-- High correlation between measures of procedural and distributive justice, *r* = .637, CI95% =[.361, .911], mean across 63 studies [@hauenstein]. -->
 
-Behavioural economists have found that participants who earned an advantaged position (versus random assignment) are less generous towards their fellow participants [@hoffman1994]. Similarly, [@vandeven2010] found that under conditions of inequality, those who are better off are more likely to engage in helping behaviours when they believe that their disadvantaged partner is frustrated by the disparity and harboring antagonistic motivations [i.e., "malicious envy"; @crusius2014]. By contrast, "winners" are actually less likely to help if they believe that the observed disparity has motivated their partner to improve themselves (i.e., the partner experiences "benign envy"). While inequality generally causes envy, the emotional and motivational content of these experiences appears to be heavily influenced by the perceived fairness and deservingness of these distributions.
+Behavioural economists have found that participants who earned an advantaged position (versus random assignment) are less generous towards their fellow participants [@hoffman1994]. Similarly, [@vandeven2010] found that under conditions of inequality, those who are better off are more likely to engage in helping behaviours when they believe that their disadvantaged partner is frustrated by the disparity and harboring antagonistic motivations [i.e., "malicious envy"; Crusius & Lange, -@crusius2014]. By contrast, "winners" are actually less likely to help if they believe that the observed disparity has motivated their partner to improve themselves (i.e., the partner experiences "benign envy"). While inequality generally causes envy, the emotional and motivational content of these experiences appears to be heavily influenced by the perceived fairness and deservingness of these distributions.
 
-## Fairness as impartiality
+## Merit as a Fairness Norm
 
 <!--# Together, these results suggest that perceived deservingness or fairness may play a role in individuals' willingness to consume security goods. -->
 
-A growing body of evidence suggests that the roots of fairness lie people's efforts to avoid the appearance of favoritism [@choshen-hillel2018; @shaw2013; @shaw2012; @shaw2017; @shaw2014; @shaw2013; @shaw2012]. @shaw2012 found that many children would rather throw a resource in the trash than distribute it unequally. Likewise, individuals are more willing to behave unfairly towards others if they could appear to be impartial [@shaw2014]; for instance, in the Dictator game, individuals will accept a smaller payoff if they can skip the game and avoid informing partners of their selfish choice [@dana2006].
-
-A reputation for being impartial (and fair) is rewarded by being preferred as a cooperation partner [@shaw2012a]. The benefits of impartiality makes sense considering that strict cooperative relationships such as reciprocity or kin support are unlikely to be optimal in large mixed groups with individual migration. While preferred cooperative partners might not always be available, reputations are comparatively persistent, allowing for individuals to selectively cooperate with those known for fair dealing.
-
-Social norms are exceptionally helpful for guiding and detecting fair behaviour. For instance, in Persian culture, *taarof* is a code of etiquette, dictating for instance, that you refuse what you wish to accept. Failure to adhere to such a ritual of repeated offering and refusing would violate a principle of a fair exchange, and be seen as very disrespectful. Norms have been argued to facilitate and enforce cooperation between otherwise unrelated social partners, allowing for the development of large-scale societies [@henrich2010].
-
-The norms and rules that describe appropriate behaviour can vary across time and groups. For instance, should resources distributions prioritize equality, seniority, need, or productivity? Consider the observed cross-cultural variations in Proposer and Responder behaviours in the Ultimatum Game [@henrich2005] participants frequently exhibited seemingly aberrant patterns, such as offering more than 50% of the wealth, or rejecting offers above 50%. Particularly amongst societies with little market participation, groups appear to adhere to locally-developed norms of fairness.
-
-<!--# The presence of multiple potential norms for guiding resource allocation inevitably leads to disagreements over what constitutes a fair allocation.  -->
-
-### Merit as a fairness norm
+Distributional fairness may impact individuals' anticipation of envy from their partners, and their subsequent willingness to consume security products. Social norms are exceptionally helpful for guiding and detecting fair behaviour. For instance, in Persian culture, *taarof* is a code of etiquette, dictating for instance, that you refuse what you wish to accept. Failure to adhere to such a ritual of repeated offering and refusing would violate a principle of a fair exchange, and be seen as very disrespectful. Someone who violated the norms of *taarof* would then be likely to gain a reputation for being unfair, and less likely to secure cooperative partners.Norms have been argued to facilitate and enforce cooperation between otherwise unrelated social partners, allowing for the development of large-scale societies [@henrich2010].
 
 When evaluating fair distributions, the best rule is often one that everyone follows. At least among western industrialized societies, fairness norms appear to be heavily influenced by meritocratic concerns. In a sample of Norwegian children (grades 5 to 13), @almås2010 found that younger participants were strict egalitarians (averse to any inequality). However, as the participants got older, they increasingly accepted inequality when the disparities came from differences in production. While inequality may be an important antecedent to conflict, Study 2a will test whether a meritocratic distribution of wealth will attenuate inequality's effect on security consumption.
 
-Meritocracy, a commonly-invoked norm of fairness in westernized and industrialized cultures, may influence individuals' perceived need to consume security goods. Namely, those that are wealthy may feel less threatened by their neighbors because they earned their resources "fair and square," according to a shared set of rules. However, in social settings, truly objective assessments of merit are often unavailable or are underused.
+This envy-anticipation theory of distrust and security should incorporate the role of fairness in shaping individuals' experiences of envy, which can vary in their underlying attributions and motivations. This chapter will test the proposition that *the effect of inequality on security consumption will be negatively moderated by greater distributional fairness.* This proposition takes on hypotheses to be tested in Studies 2a and 2b, respectively: **H3)** `r hyp2[3]`, and **H3)** `r hyp2[4]`
+
+When participants believe that their partner is experiencing malicious envy, they are more likely to engage in helping behaviours [@vandeven2010]. In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. Together, the existing research suggests that people are not just sensitive to inequality and fairness, but that their decision-making also considers and anticipates others' psychological reactions to disparities. To this end, Study 2 will examine whether merit-based and apparently group-based allocations of wealth impact security spending in the context of inequality.
+
+<!-- Meritocracy, a commonly-invoked norm of fairness in westernized and industrialized cultures, may influence individuals' perceived need to consume security goods. Namely, those that are wealthy may feel less threatened by their neighbors because they earned their resources "fair and square," according to a shared set of rules. However, in social settings, truly objective assessments of merit are often unavailable or are underused. -->
+
+<!-- A growing body of evidence suggests that the roots of fairness lie people's efforts to avoid the appearance of favoritism [@choshen-hillel2018; @shaw2013; @shaw2012; @shaw2017; @shaw2014; @shaw2013; @shaw2012]. @shaw2012 found that many children would rather throw a resource in the trash than distribute it unequally. Likewise, individuals are more willing to behave unfairly towards others if they could still appear to be impartial [@shaw2014]; for instance, in the Dictator game, individuals will accept a smaller payoff if they can skip the game and avoid informing partners of their selfish choice [@dana2006]. -->
+
+<!-- A reputation for being impartial (and fair) is rewarded by being preferred as a cooperation partner [@shaw2012a]. The benefits of impartiality makes sense considering that strict cooperative relationships such as reciprocity or kin support are unlikely to be optimal in large mixed groups with individual migration. While preferred cooperative partners might not always be available, reputations are comparatively persistent, allowing for individuals to selectively cooperate with those known for fair dealing. -->
+
+<!-- The norms and rules that describe appropriate behaviour can vary across time and groups. For instance, should resources distributions prioritize equality, seniority, need, or productivity? Consider the observed cross-cultural variations in Proposer and Responder behaviours in the Ultimatum Game [@henrich2005] participants frequently exhibited seemingly aberrant patterns, such as offering more than 50% of the wealth, or rejecting offers above 50%. Particularly amongst societies with little market participation, groups appear to adhere to locally-developed norms of fairness. -->
+
+<!--# The presence of multiple potential norms for guiding resource allocation inevitably leads to disagreements over what constitutes a fair allocation.  -->
 
 <!--# The tension between impartiality and loyalty is fascinating: do you reciprocate acts of generosity from your friends and colleagues, or try to follow rules and guidelines that treat everyone the same? a glance at social media or news outlets will often reveal that, in the eyes of an audience, being prosocial is often not as important as the chosen target of your generosity.  -->
 
-<!--# As such, any mechanism allowing for impartial distribution of resources (e.g., a coin flip), ostensibly satisfies the need to justify a privileged position, and may reduce the felt need to consume security products. -->
-
-Acts of partiality often signify the formation of alliances, which inherently exclude others (DeScioli & Kurzban, 2009). Since substantial interpersonal and intergroup conflict is rooted in the perception of unfairness and discrimination (Tajfel & Turner, 1979), it seems important to understand how fairness influences willingness to consume security goods.
-
 <!--# Although many studies focus on the psychological and behavioural impacts of inequality aversion (especially those at a macro level; REF), much focus (especially in behavioural economics) has shifted to the prevalence of inequity aversion in humans -->
 
-In fact, the idea of inequity aversion has been specifically formulated in response to explain the proposer/responder patterns in the Ultimatum and Dictator games [@fehr1999].
+<!-- In fact, the idea of inequity aversion has been specifically formulated in response to explain the proposer/responder patterns in the Ultimatum and Dictator games [@fehr1999]. -->
 
 <!--# Inequality is a reasonable starting point to describe whether valued resources are being distributed fairly. If only some people receive desired goods, with others receiving little, it quickly prompts questions as to why some individuals are being left worse-off (REF).   -->
 
 <!--# For instance, among Norwegian youths deciding whether to share a resource, @almås2010 found that their younger participants were strict egalitarians (averse to any inequality). However, adolescent participants increasingly accepted inequality when the disparities came from differences in productivity. This is only one example of a broad literature suggesting that concerns over equity, deservingness, and fairness are critical in understanding how people respond to inequality. -->
-
-## Equity and Fairness
 
 <!--# When describing human preferences over wealth distribution, equality has often been contrasted with equity. While equality describes whether resources are shared or hoarded, equity captures how resources should (or should not) be shared. The historical definition of inequity is a mismatch between the ratios of individuals' inputs (e.g., effort) versus their outputs (e.g,. wages) [@cook1977; @adams1965]. However, (in)equity has never been conceptualized as a strictly objective and concrete feature of an exchange; rather, equity's "[inputs] are what a man perceives as his contributions to the exchange, for which he expects a just return" [@adams1965, p. 277]. So, any consideration of equity assumes a major role of individuals' mental representations of their circumstances. -->
 
@@ -62,21 +58,17 @@ In fact, the idea of inequity aversion has been specifically formulated in respo
 
 <!--# Inequality has been a persistent topic in public and scientific dialogue because it is fundamental to describing whether valued resources are being shared or monopolized. Distributional fairness has likewise proven to be inextricable from inequality; it captures the various rules defining how resources should (or should not) be shared (REF). Since Chapter 1 focuses on the main effects of inequality on security consumption, this chapter seeks to examine whether distributional fairness intersects with inequality to impact distrust in populations, with less fairness increasing individuals' willingness to consume security products. -->
 
-This envy-anticipation theory of distrust and security should incorporate the role of fairness in shaping individuals' experiences of envy, which can vary in their underlying attributions and motivations. This chapter will test the proposition that *the effect of inequality on security consumption will be negatively moderated by distributional fairness.* This proposition takes on hypotheses to be tested in Studies 2a and 2b, respectively:**H2)** `r hyp2[1]`, and **H3)** `r hyp2[3]`.
-
 <!--# For  instance, benign envy is associated with a motivation to improve oneself, and occurs when the person believes that the envied person's advantage is deserved. By contrast, malicious envy is characterized by a desire to harm the comparison target, and is elicited when the individual believes that their environment is unfair [@vandeven2012]. -->
 
-When participants believe that their partner is experiencing malicious envy, they are more likely to engage in helping behaviours [@vandeven2010]. In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. Together, the existing research suggests that people are not just sensitive to inequality and fairness, but that their decision-making also considers and anticipates others' psychological reactions to disparities.
+<!-- under a state of inequality, group membership and agentic distributions of wealth have main and interacting effects on security consumption. -->
 
-To this end, Study 2 will examine whether merit-based and apparently group-based allocations of wealth impact security spending in the context of inequality.
+<!-- ## Citing marketing research (ideally identify gap) -->
 
-under a state of inequality, group membership and agentic distributions of wealth have main and interacting effects on security consumption.
+<!-- > This research proposes that higher power distance results in weaker perceptions of responsibility to aid others, which decreases charitable behavior. Both correlational and causal evidence is provided in a series of five studies that examine country-level power distance as well as individual and temporarily salient power distance belief. Consistent with the mediating role of perceived responsibility, results reveal that uncontrollable needs and communal relationship norms are boundary conditions that overcome the negative effect of power distance on charitable behavior. [@winterich2014] -->
 
-## Citing marketing research (ideally identify gap)
+<!-- > -->
 
-> This research proposes that higher power distance results in weaker perceptions of responsibility to aid others, which decreases charitable behavior. Both correlational and causal evidence is provided in a series of five studies that examine country-level power distance as well as individual and temporarily salient power distance belief. Consistent with the mediating role of perceived responsibility, results reveal that uncontrollable needs and communal relationship norms are boundary conditions that overcome the negative effect of power distance on charitable behavior. [@winterich2014]
->
-> The results of four studies reveal that perceived economic inequality can induce present‐oriented behavior and suggest that perceived economic mobility accounts for this relationship[@bak2020]
+<!-- > The results of four studies reveal that perceived economic inequality can induce present‐oriented behavior and suggest that perceived economic mobility accounts for this relationship[@bak2020] -->
 
 ## Methods
 
@@ -84,13 +76,14 @@ under a state of inequality, group membership and agentic distributions of wealt
 
 Given the unknown size of the hypothesized inequality\*merit interaction, this study targeted an effect size of cohen's f = .1. To achieve 95% power, studies must have a minimum of `r cell_n_2b2b_f01` participants per cell, or a study-wide total of n=`r format(cell_n_2b2b_f01*4,big.mark = ",", scientific = FALSE)`. This large sample size is necessary given the possibility of a "no-way" interaction, where only one condition is significantly different from the remaining conditions [@simonsohn2015]. In a no-way interaction, the simple effect of inequality is nullified depending on the moderator, and thus requires at least twice as many subjects per cell to achieve as much power as the simple effect. Figures \@ref(fig:2b2b-design) and \@ref(fig:2b2b-powerplot) display the pattern of means and per-condition sample size thresholds to obtain 95% power. Additionally, see Tables \@ref(tab:2b2b-anova-power) and \@ref(tab:2b2b-pairwise-power) for the power and effect sizes of the ANOVA and pairwise comparisons, respectively.
 
-(ref:2b2b-design) Study design for a priori power analysis for 2b\*2b factorial ANOVA (Study 2a & b).
+(ref:2b2b-design) Values for power analysis, 2b\*2b ANOVA (Study 2a & b).
 
 ```{=latex}
-\begin{figure}[t]
+\begin{figure}[H]
+\centering
 \caption{(ref:2b2b-design) \label{fig:2b2b-design}}
 ```
-```{r 2b2b-design,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
+```{r 2b2b-design,fig.align="center",eval = TRUE, include=TRUE, echo=FALSE, out.width='80%'}
 # , fig.cap="(ref:2b2b-design)"
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_design_2b2b_f01.png")
 ```
@@ -101,10 +94,11 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 ```
 <!-- is a "no-way interaction:" that the effect of inequality will be nullified when incomes are invisible. The hypothesis of a no-way interaction suggests firstly that sample sizes must twice the size of an equivalent study just testing a simple effect; secondly, our core hypothesis rests on all three coefficients being significant [d]in the following model: -->
 
-(ref:2b2b-powerplot) Sample size thresholds for 95% a priori power in Studies 2a and b.
+(ref:2b2b-powerplot) Sample size thresholds, 95% power in Studies 2a and b.
 
 ```{=latex}
-\begin{figure}[t]
+\begin{figure}[H]
+\centering
 \caption{(ref:2b2b-powerplot) \label{fig:2b2b-powerplot}}
 ```
 ```{r 2b2b-powerplot,fig.align="center", eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
@@ -122,7 +116,9 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 security_2b2b_f01_exact$main_results$power <- round(security_2b2b_f01_exact$main_results$power,2)
 security_2b2b_f01_exact$main_results$non_centrality <- round(security_2b2b_f01_exact$main_results$non_centrality,2)
 knitr::kable(round(security_2b2b_f01_exact$main_results,4), caption = 'A priori power of main and interaction effects for 2b*2b factorial designs (Studies 2a,b)', booktabs = TRUE,linesep = "")%>%
-kable_styling(latex_options = c("striped", "hold_position"))
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
 ```
 
 ```{r 2b2b-pairwise-power,echo=FALSE, eval = TRUE,  include=TRUE}
@@ -135,21 +131,33 @@ row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2
 row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "((?:[^_]+_){3}[^_]+)_", replacement = "\\1_*VS*_")
 
 
-knitr::kable(round(security_2b2b_f01_exact$pc_results,2), caption = 'A priori power of pairwise comparisons for 2b*2b designs (Studies 2a,b)', booktabs = TRUE,linesep = "") %>%
+knitr::kable(round(security_2b2b_f01_exact$pc_results,2), caption = 'Power of pairwise contrasts, 2b*2b ANOVA (Studies 2a,b)', booktabs = TRUE,linesep = "") %>%
 kable_styling(latex_options = c("striped", "hold_position"))
 
 ```
 
 ### Study 2a: Meritocracy and Inequality
 
-Groups will always be characterized by inequality through some type of currency, whether wealth, income, or status. Indeed, a popular idea is that inequality propels individuals towards productive behaviours [@stearns1999]. In this line of reasoning, the presence of inequality may be less of an issue compared to how the inequality was produced. The next experiment will test whether **H3)** `r tolower(hypotheses[2])` (Table \@ref(tab:design-table); versus **H3~0~)** no significant inequality\*merit interaction). As planned comparisons, Study 2a will examine whether **H3a)** hi-inequality/random income condition will have significantly higher rates of security consumption than all other conditions (i.e., **.1)** hi-inequality/merit income, **.2)** no-inequality/random income, & **.3)** no-inequality/merit income. Study 2a again varies inequality (yes vs. no) as the previous studies, but also manipulates whether one's income is seemingly allocated *randomly or based on task performance* (random vs. merit).
+Groups will always be characterized by inequality through some type of currency, whether wealth, income, or status. Indeed, a popular idea is that inequality propels individuals towards productive behaviours [@stearns1999]. In this line of reasoning, the presence of inequality may be less of an issue compared to how the inequality was produced. <!-- The next experiment will test whether **H3)** `r tolower(hypotheses[2])` (Table \@ref(tab:design-table); versus **H3~0~)** no significant inequality\*merit interaction).  --> As planned comparisons, Study 2a will examine whether **H3a)** hi-inequality/random income condition will have significantly higher rates of security consumption than all other conditions (i.e., **.1)** hi-inequality/merit income, **.2)** no-inequality/random income, & **.3)** no-inequality/merit income. Study 2a again varies inequality (yes vs. no) as the previous studies, but also manipulates whether one's income is seemingly allocated *randomly or based on task performance* (random vs. merit).
 
 For this random vs. merit manipulation, all participants will complete a slider task, where they have one minute to correctly place 40 sliders at the midpoint of various lines that appear on their screens. Participants will then either be told that their incomes were allocated randomly, or because they correctly placed more sliders than their partner. The slider task has been used in several studies to examine the effects of effort in distributional preferences, and has demonstrated that individuals that win their income through performance are less likely to support redistribution of effort-driven income allocations [@cassar2019].
 
-As a manipulation check, before making their consumption decision, participants will be asked to report whether they believed the incomes were disbursed fairly (e.g.,"The way incomes were given for this game is fair"). Participants will be excluded from analyses if they complete fewer than 3 sliders, which would both indicate low engagement in the study and likely undermine the credibility of the manipulation. Results will be analyzed using a 2b\*2b between-subjects ANOVA.
+As a manipulation check, before making their consumption decision, participants will be asked to report whether they believed the incomes were disbursed fairly (e.g.,"The way incomes were given for this game is fair"). Participants will be excluded from analyses if they complete fewer than five sliders, which would both indicate low engagement in the study and likely undermine the credibility of the manipulation. Results will be analyzed using a 2b\*2b between-subjects ANOVA.
+
+<!-- > My partner is probably going to try stealing from me\ -->
+<!-- > My partner probably feels envious of me\ -->
+<!-- > My partner probably feels jealous of me\ -->
+<!-- > My partner probably feels bitter\ -->
+> My partner's assigned income is fair\
+> My assigned income is fair\
+> The way incomes were given for this game is fair
 
 ### Study 2b: Inequality as a Product of Group-Based Discrimination
 
-Fairness appears to have its roots in avoiding perceptions of partiality. For instance, young children will discard a resource in order to avoid sharing it unequally [@shaw2012]. Since Study 2a directly compares meritocratic versus random allocation of resources, it does not answer the more fundamental question: do people become distrustful and consume more security goods when inequality appears to be more discriminatory and unfair? Study 2b will keep a constant presence of inequality, but manipulate whether the partner is a member of an ingroup or outgroup, and whether the incomes are distributed randomly, or by a separate *ingroup individual*. Study 2b will use a 2b\*2b between subjects ANOVA to test whether **H4)** `r tolower(hypotheses[3])` (versus **H4~0~)** no significant outgroup\*agentic-distribution interaction). As planned comparisons, Study 2b will examine whether **H4a)** the outgroup partner/agentic-distribution condition will have significantly higher rates of security consumption than all other conditions (i.e., **.1)** outgroup/random, **.2)** ingroup/agentic, & **.3)** ingroup/random). Participants will complete the same fairness manipulation check as and be powered for the same effect as in Study 2a.
+Fairness appears to have its roots in avoiding perceptions of partiality. For instance, young children will discard a resource in order to avoid sharing it unequally [@shaw2012]. Likewise, individuals are more willing to behave unfairly towards others if they could still appear to be impartial [@shaw2014]; for instance, in the Dictator game, individuals will accept a smaller payoff if they can skip the game and avoid informing partners of their selfish choice [@dana2006]. Acts of partiality often signify the formation of alliances, which inherently exclude others [@descioli2009]. Since substantial interpersonal and intergroup conflict is rooted in the perception of unfairness and discrimination [@tajfel1979], it seems important to understand how fairness influences willingness to consume security goods.
+
+<!--# As such, any mechanism allowing for impartial distribution of resources (e.g., a coin flip), ostensibly satisfies the need to justify a privileged position, and may reduce the felt need to consume security products. -->
+
+Since Study 2a directly compares meritocratic versus random allocation of resources, it does not answer the more fundamental question: do people become distrustful and consume more security goods when inequality appears to be more discriminatory and unfair? Study 2b will keep a constant presence of inequality, but manipulate whether the partner is a member of an ingroup or outgroup, and whether the incomes are distributed randomly, or by a separate *ingroup individual*. Study 2b will use a 2b\*2b between subjects ANOVA to test whether **H4)** `r tolower(hypotheses[3])` (versus **H4~0~)** no significant outgroup\*agentic-distribution interaction). As planned comparisons, Study 2b will examine whether **H4a)** the outgroup partner/agentic-distribution condition will have significantly higher rates of security consumption than all other conditions (i.e., **.1)** outgroup/random, **.2)** ingroup/agentic, & **.3)** ingroup/random). Participants will complete the same fairness manipulation check as and be powered for the same effect as in Study 2a.
 
 Particularly in the presence of increasingly diverse societies, an understanding of how people respond to perceived threats posed by "others" may be instrumental in engineering social infrastructure and policies to improve people's real and felt security.

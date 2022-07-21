@@ -1,26 +1,1162 @@
 `r if(knitr:::is_latex_output()) '\\appendix'`
 
-`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'`
 
+---
+bibliography: bib/thesis.bib
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 # The First Appendix
 
+## Study 1
+
+
+### Data exclusion
+
+Participants will be excluded from analyses if any of the following:
+
+-   failed attention check,
+
+-   failed comprehension check,
+
+-   missing data on model-relevant variables
+
+-   score of \<= 3 on attention boost item
+
+**ATTENTION CHECK:**
+
+"To help us understand how people think about different activities,
+please answer this question correctly. Specifically, we are interested
+in whether you actually take the time to read the directions; if not,
+the results of your responses would not be very useful. To show that you
+have read the instructions carefully, please ignore the items below
+about activities and instead select the option "other," and type "yes"
+in field below.
+
+'Based on the information in the preceding paragraph, which of these
+activities do you engage in most regularly?'
+Watching Athletics
+Attending Cultural Events
+Participating in Athletics
+Reading Outside of Work or School
+Watching Movies
+Travel
+Religious Activities
+Needlework
+Cooking
+Gardening
+Computer Games
+Hiking
+Board or Card Games
+Other:"
+
+**COMPREHENSION CHECK:**
+"What best describes your role in this study?
+
+-   Deciding whether to accept an offer
+
+-   Placing a bid
+
+-   \*\*Deciding whether to purchase a security product\*\* - CORRECT
+
+-   Donating funds to a shared project"
+
+**ATTENTION CHECK/BOOSTER**
+
+-   " It is important for the quality of our research that participants focus as they complete this short study. Please close any other tabs or windows that you might have open, turn off any music or distracting media, and give this study your full attention.
+
+Please indicate your likelihood of paying full attention during this study:" [1: Extremely Unlikely... 7: Extremely Likely]
+
+Given the bounded nature of the minimum and maximum values for the variables in the experimental designs, outliers are considered legitimate values and will not be deleted.
+
+The pre-registered mediation plan was mis-specified. As such, the pre-registered mediation plan can be FOUND IN THE APPENDIX, and the following specification is an adjustment:
+
+
+
+<!-- As a robustness check, analyses were repeated with influential observations being winzorized at the dependent variable to the 5th and 95th percentile values. Influential observations were flagged as having model residuals' cook's distance values exceeding the threshold 4/n; where n = \# of observations. -->
+
+
+<!-- m_mixed_med_large_newnew1 <- lme4::lmer(security_consumed ~ inequality + -->
+
+<!--                                        hi_stake + (1| participant_code), data = data_long) -->
+
+<!-- # predicting mediator with treatment and covariates -->
+
+`m_mixed_med_large_newnew2 <- lme4::lmer(likely_envy ~ inequality + hi_stake  + (1| participant_code), data = data_long)`
+<!-- # predicting outcome with treatment, mediator, and covariates -->
+`m_mixed_med_large_newnew_total <- lme4::lmer(security_consumed ~ inequality + hi_stake + likely_envy + (1| participant_code), data = data_long)`
+
+`mediation::mediate(m_mixed_med_large_newnew2, m_mixed_med_large_newnew_total,sims = 5000, treat="inequality",mediator="likely_envy")`
+
+```{r s1a-mediation-1, eval=FALSE}
+s1a_med_1_tidy1 <- s1a_med_1_tidy
+
+s1a_med_1_tidy1$p_value <- report_pval(s1a_med_1_tidy1$p_value)
+
+s1a_med_1_tidy1 <- s1a_med_1_tidy1 %>% relocate(c(t.value,p_value), .before = estimate)
+
+s1a_med_1_tidy1 <- subset(s1a_med_1_tidy1, select = -c(df, SE))
+
+s1a_med_1_tidy1 <- s1a_med_1_tidy1 %>% 
+  dplyr::rename(
+    "\\textit{b}" = estimate,
+    "95\\% CI" = CI95,
+    "\\textit{t}" = t.value,
+    "\\textit{p}" = p_value
+    )
+
+row.names(s1a_med_1_tidy1)[row.names(s1a_med_1_tidy1) == "hi_stake"] <- "Hi stake"
+row.names(s1a_med_1_tidy1)[row.names(s1a_med_1_tidy1) == "inequality1"] <- "Unequal"
+
+knitr::kable(s1a_med_1_tidy1,
+             format='latex',
+             align = "ccccccc",
+             caption = 'Study 1a, mediation step 1, predicting security consumption',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+
+```
+
+```{r s1a-mediation-2, eval=FALSE}
+s1a_med_2_tidy1 <- s1a_med_2_tidy
+
+s1a_med_2_tidy1$p_value <- report_pval(s1a_med_2_tidy1$p_value)
+
+s1a_med_2_tidy1 <- s1a_med_2_tidy1 %>% relocate(c(t.value,p_value), .before = estimate)
+
+s1a_med_2_tidy1 <- subset(s1a_med_2_tidy1, select = -c(df, SE))
+
+s1a_med_2_tidy1 <- s1a_med_2_tidy1 %>%
+  dplyr::rename(
+    "\\textit{b}" = estimate,
+    "95\\% CI" = CI95,
+    "\\textit{t}" = t.value,
+    "\\textit{p}" = p_value
+    )
+
+
+row.names(s1a_med_2_tidy1)[row.names(s1a_med_2_tidy1) == "hi_stake"] <- "Hi stake"
+row.names(s1a_med_2_tidy1)[row.names(s1a_med_2_tidy1) == "inequality1"] <- "Unequal"
+
+knitr::kable(s1a_med_2_tidy1,
+             format='latex',
+             align = "cccc",
+             caption = 'Study 1a, mediation step 2, predicting perceived envy',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+  kableExtra::footnote(general = c("Perceived envy was mean-centered for informative intercepts"),
+                       footnote_as_chunk=T,
+                       threeparttable = TRUE)
+
+```
+
+```{r s1a-mediation-total, eval=FALSE}
+s1a_med_total_tidy1 <- s1a_med_total_tidy
+
+s1a_med_total_tidy1$p_value <- report_pval(s1a_med_total_tidy1$p_value)
+
+s1a_med_total_tidy1 <- s1a_med_total_tidy1 %>% relocate(c(t.value,p_value), .before = estimate)
+
+s1a_med_total_tidy1 <- subset(s1a_med_total_tidy1, select = -c(df, SE))
+
+
+s1a_med_total_tidy1 <- s1a_med_total_tidy1 %>% 
+  dplyr::rename(
+    "\\textit{b}" = estimate,
+    "95\\% CI" = CI95,
+    "\\textit{t}" = t.value,
+    "\\textit{p}" = p_value
+    )
+
+
+row.names(s1a_med_total_tidy1)[row.names(s1a_med_total_tidy1) == "hi_stake"] <- "Hi stake"
+row.names(s1a_med_total_tidy1)[row.names(s1a_med_total_tidy1) == "inequality1"] <- "Unequal"
+row.names(s1a_med_total_tidy1)[row.names(s1a_med_total_tidy1) == "likely_envy_cent"] <- "Perceived envy"
+
+
+
+knitr::kable(s1a_med_total_tidy1,
+             format='latex',
+             align = "ccccccc",
+             caption = 'Study 1a, mediation total effect, predicting security consumption',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+  kableExtra::footnote(general = c("Perceived envy was mean-centered for informative intercepts"),footnote_as_chunk=T,threeparttable = TRUE)
+```
+
+```{r s1a-security-med-full, eval = F, echo=FALSE}
+s1a_med_full_tidy1 <- s1a_med_full_tidy
+
+s1a_med_full_tidy1$p_value <- report_pval(s1a_med_full_tidy1$p_value)
+
+
+s1a_med_full_tidy1 <- s1a_med_full_tidy1 %>% 
+  dplyr::rename(
+    "95\\% CI" = ci95,
+    "\\textit{p}" = p_value,
+  "\\textit{b}"  = estimate
+    )
+
+knitr::kable(s1a_med_full_tidy1,
+             # format='markdown',
+             align = "ccccccc",
+             caption = 'Study 1a, full mediation model',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  "hold_position"))
+```
+
+Why would the effect of inequality on security consumption go from
+nonsignificant to significant, but opposite sign, when controlling for
+perceived partner envy?
+
+SUPPRESSION EFFECT
+
+MODERATED MEDIATION NECESSARY?
+
+
+### Study 1b pilot
+
+
+
+```{r s1bp-desc-tab}
+s1bdesc_columns <- c("Variable",	"Mean",	"SD", "Cron. $\\alpha$ 95\\% CI")
+
+s1bp_desc <- knitr::kable(s1bp_desc, caption = 'Study 1b pilot Descriptive Statistics',
+                         format = 'latex',
+                         escape = F,
+                   align = "lcccccc",
+                   col.names = s1bdesc_columns,
+                   booktabs = T,
+             linesep = "") %>%
+  kable_styling(full_width = FALSE) %>%
+  column_spec(1,width = "2in", 
+              latex_valign = "b") %>%
+  column_spec(2,width = ".4in", 
+              latex_valign = "b") %>%
+  column_spec(3,width = ".4in", 
+              latex_valign = "b") %>%
+    column_spec(4,width = ".9in", 
+              latex_valign = "b") %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+# %>%
+#   kable_styling(latex_options = "striped")
+
+
+s1bp_desc
+```
+
+
+(ref:s1bp-spending-jitt) Study 1b pilot, within-subjects effects of inequality on security spending.
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s1bp-spending-jitt) \label{fig:s1bp-spending-jitt}}
+```
+```{r s1bp-spending-jitt, eval = TRUE, include=TRUE, echo=FALSE, out.width='70%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1bp_spending_jittolin.png")
+```
+```{=latex}
+\caption*{\textit{Notes:} Means (95\% CI) and raw data, horizontally jittered according to kernel density.}
+\end{figure}
+```
+
+
+(ref:s1bp-spending-med-plot) Study 1b pilot, mediation path diagram.
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s1bp-spending-med-plot) \label{fig:s1bp-spending-med-plot}}
+```
+```{r s1bp-spending-med-plot, eval = TRUE, include=TRUE, echo=FALSE, out.width='80%'}
+knitr::knit_hooks$set(crop = knitr::hook_pdfcrop)
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1bp_spending_med.png")
+```
+```{=latex}
+\caption*{\textit{Notes:} ***$p$ < .001; **$p$ < .01; *$p$ < .05, Table @ref(tab:s1bp-spending-med-full) }
+\end{figure}
+```
+
+
+
+```{r s1bp-spending-med-full, eval = TRUE, echo=FALSE}
+s1bp_spending_med_full_tidy1 <- s1bp_spending_med_full_tidy
+
+s1bp_spending_med_full_tidy1$p_value <- report_pval(s1bp_spending_med_full_tidy1$p_value)
+
+s1bp_spending_med_full_tidy1 <- s1bp_spending_med_full_tidy1 %>% 
+  dplyr::rename(
+    "95\\% CI" = ci95,
+    "\\textit{p}" = p_value,
+  "\\textit{b}"  = estimate
+    )
+
+knitr::kable(s1bp_spending_med_full_tidy1,
+             # format='markdown',
+             align = "ccccccc",
+             caption = 'Study 1b, pilot full mediation model',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+```
+
+
+(ref:s1b-manip-jitt) Study 1b, within-subjects effects of inequality on
+perceived partner envy and attack likelihood.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s1b-manip-jitt) \label{fig:s1b-manip-jitt}}
+```
+```{r s1b-manip-jitt, eval = TRUE, include=TRUE, echo=FALSE, out.width='49%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1b_envy_jittolin.png")
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1b_likelihood_jittolin.png")
+```
+
+```{=latex}
+\caption*{\textit{Notes:} Means (95\% CI) and jittered data.}
+\end{figure}
+```
+```{=html}
 <!--
 If you feel it necessary to include an appendix, it goes here.
 -->
+```
+
+
+## Study 3
+
+### Notes on pre-registered plan
+
+An ordinal regression carries an assumption of proportional odds: that the predictors' effects are consistent across the different levels of the dependent variable. Currently, we are not aware of any available methods for testing the proportional odds assumption for a mixed ordinal regression; existing methods only serve as a test on single-level data. As such, we will attempt to test this assumption using multiple logistic regressions, conducted for each rank threshold (e.g., 0\|1, 1\|2, 2\|3). Since inequality is the major predictor of interest, only this coefficient will be compared across logistic models, which will help attenuate the impact of Type I errors. The proportional odds assumption will be deemed as violated if the regression coefficients for inequality are significantly different across models. If there is a significant difference amongst the predictors (suggesting a violation of the proportional odds assumption), then the separate logistic regressions will be presented as the primary analysis instead.
+
+
+
+Main analyses will be conducted using the r package ordinal, with the following mixed model specification:
+
+> `ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation_cent + num_victim_5yr + age_cent + employed + male + (1 | country)`
+
+
+
+
+
+
+#### Robustness checks
+
+1) A supplementary analysis will be conducted on a different sweep period of the ICVS (1999-2003). Anticipated n = 70,264 (unique participants), with k = 41 countries
+
+
+<!-- > `r glue::glue_collapse(x = iv_2005_countries, ", ", last = ", and the  ")` -->
+
+
+2) For the main model, as determined by contingencies, analyses will be repeated with regular (unwinzorized) security_total
+
+In order to test robustness with the same variables: 
+
+the 3) k = 32 data and the 
+4) k = 41 data will be run with the following reduced model (excluding partnered, employed, and housing)
+
+`ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation_cent + num_victim_5yr + age_cent + male +  (1 | country)`
+
+A sample linear model revealed nonproblematic levels of multicollinearity, maximum VIF of `r round(max(sec_lmer1_iv_vif),2)` 
+
+```{r vif-values, eval =F}
+c(sec_lmer1_iv_vif,sec_lmer1_poly_int_vif, sec_lmer1_int_vif,sec_lmer1_poly_vif)
+```
+
+
+For all of these models, analyses will be repeated with winzorized level-2 variables:
+
+5) regular k = 32 model
+6) unwinzorized security_total k = 32 model
+7) full k = 41 model
+8) small k = 32 model
+9) small k = 41 model
+
+For values within reasonable scope of response variables, outliers are considered legitimate values and will not be deleted. Outliers will be defined using a sample linear model for level-2 variables, and observations flagged as outliers if their residuals have a cook's distance value of \> 4/n will have those predictor variables winzorized (as they are expected to be legitimate values). As a robustness check, analyses will be repeated with influential observations being winzorized at the dependent variable to the 5th and 95th percentile values. Influential observations will be flagged as having model residuals' cook's distance values exceeding the threshold 4/n; where n = \# of observations.
+
+
+<!-- In addition, supplementary analyses will assess whether the effects of inequality persist in a smaller, variable-maximizing dataset (`r sum(summary(iv_2005_mod$country)>0)` countries, `r format(nrow(iv_2005_mod), big.mark = ",", scientific = FALSE)` respondents). -->
+
+<!-- The robustness of the mixed model results will be examined by repeating the analyses on the smaller subsample of observations (k = 28, and n = 48,178), both with the same variables, and with additional variables. We will report on any changes in the patterns of significance. -->
+
+
+
+
+Degrees of freedom were calculated using methods defined in @snijders2011
+
+level 1: *M*-*r*-1
+
+level 2: *N*-*q*-1
+
+*M*: total number of level-one units, *r*: total number of explanatory variables, *N*: number of level-two units, *q*: number of level-2 predictors
+
+
+
+
+
+(ref:icvs-log-robust-scale-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, 2004-6 period robustness variables.
+```{=latex}
+\begin{figure}[H]
+\caption{(ref:icvs-log-robust-scale-dwplot) \label{fig:icvs-log-robust-scale-dwplot}}
+```
+```{r icvs-log-robust-scale-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='90%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_log_robust_scaled_dotwhisker.png")
+```
+```{=latex}
+\end{figure}
+```
+
+
+
+```{r s3-logistic-scaled-robust, eval=T}
+sec_mw100_log_robust_scale_tidy1 <- round_df2(data.frame(sec_mw100_log_robust_scale_tidy))
+
+sec_mw100_log_robust_scale_tidy1 <- data.frame(sec_mw100_log_robust_scale_tidy1) %>%
+  dplyr::rename(
+    "SE" = std.error,
+    "95\\% CI" = CI95,
+    "\\textit{z}" = z_score,
+    "\\textit{p}" = p_value,
+    "\\textit{b}" = estimate
+    )
+
+sec_mw100_log_robust_scale_tidy1 <- subset(sec_mw100_log_robust_scale_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+
+
+sec_mw100_log_robust_scale_tidy1$term <- ifelse(sec_mw100_log_robust_scale_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_robust_scale_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_robust_scale_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_robust_scale_tidy1$term == "gini_1999_03_cent", "Nation gini",
+                                         ifelse(sec_mw100_log_robust_scale_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_robust_scale_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_robust_scale_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_robust_scale_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
+                                                
+                                                ifelse(sec_mw100_log_robust_scale_tidy1$term == "victim_nation_cent","Nation-level victimization",
+                                                       ifelse(sec_mw100_log_robust_scale_tidy1$term == "age_num" | sec_mw100_log_robust_scale_tidy1$term == "age_cent" | sec_mw100_log_robust_scale_tidy1$term == "age_scale", "Age",
+                                                              ifelse(sec_mw100_log_robust_scale_tidy1$term == "num_victim_5yr","Individual victimizations",
+                                                                     ifelse(sec_mw100_log_robust_scale_tidy1$term == "employed1", "Employed", 
+                                                                            ifelse(sec_mw100_log_robust_scale_tidy1$term == "male1","Male",ifelse(sec_mw100_log_robust_scale_tidy1$term == "other_house","Other house type", ifelse(sec_mw100_log_robust_scale_tidy1$term == "partnered1","Partnered", ifelse(sec_mw100_log_robust_scale_tidy1$term == "house","House",sec_mw100_log_robust_scale_tidy1$term)))))
+                                                                     )
+                                                              )
+                                                  
+                                                )
+                                                )
+                                         )
+
+knitr::kable(sec_mw100_log_robust_scale_tidy1,
+             format='latex',
+             escape = FALSE,
+             align = "lcccccc",
+             caption = 'Study 3, mixed weighted logistic regression, 2004-6 period, robust.',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             # escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))  %>%
+  kableExtra::footnote(general = c(paste0("AIC = ",model_fits_sec_mw100_log_robust_scale["AIC"], " , BIC = ",model_fits_sec_mw100_log_robust_scale["BIC"], ", Loglik = ",model_fits_sec_mw100_log_robust_scale["logLik"])),
+                       footnote_as_chunk=T,
+                       threeparttable = TRUE)
+
+```
+
+
+
+
+(ref:icvs-log-robust-scale-1999-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, 1999-03 period, robustness variables.
+```{=latex}
+\begin{figure}[H]
+\caption{(ref:icvs-log-robust-scale-1999-dwplot) \label{fig:icvs-log-robust-scale-1999-dwplot}}
+```
+```{r icvs-log-robust-scale-1999-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='90%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_1999_03_log_robust_scaled_dotwhisker.png")
+```
+```{=latex}
+\end{figure}
+```
+
+
+
+
+```{r s3-logistic-scaled-robust-1999, eval=T}
+sec_mw100_log_robust_scale_1999_tidy1 <- round_df2(data.frame(sec_mw100_log_robust_scale_1999_tidy))
+
+
+sec_mw100_log_robust_scale_1999_tidy1 <- data.frame(sec_mw100_log_robust_scale_1999_tidy1) %>%
+  dplyr::rename(
+    "SE" = std.error,
+    "95\\% CI" = CI95,
+    "\\textit{z}" = z_score,
+    "\\textit{p}" = p_value,
+    "\\textit{b}" = estimate
+    )
+
+sec_mw100_log_robust_scale_1999_tidy1 <- subset(sec_mw100_log_robust_scale_1999_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+
+
+sec_mw100_log_robust_scale_1999_tidy1$term <- ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_robust_scale_1999_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_robust_scale_1999_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_robust_scale_1999_tidy1$term == "gini_1999_03_cent", "Nation gini",
+                                         ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_robust_scale_1999_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_robust_scale_1999_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_robust_scale_1999_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
+                                                
+                                                ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "victim_nation_cent","Nation-level victimization",
+                                                       ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "age_num" | sec_mw100_log_robust_scale_1999_tidy1$term == "age_cent" | sec_mw100_log_robust_scale_1999_tidy1$term == "age_scale", "Age",
+                                                              ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "num_victim_5yr","Individual victimizations",
+                                                                     ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "employed1", "Employed", 
+                                                                            ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "male1","Male",ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "other_house","Other house type", ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "partnered1","Partnered", ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "house","House",sec_mw100_log_robust_scale_1999_tidy1$term)))))
+                                                                     )
+                                                              )
+                                                       )
+                                                )
+                                         )
+knitr::kable(sec_mw100_log_robust_scale_1999_tidy1,
+             format='latex',
+             escape = FALSE,
+             align = "lcccccc",
+             caption = 'Study 3, mixed weighted logistic regression, 1999-03 period, robustness comparison',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             # escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))  %>%
+  kableExtra::footnote(general = c(paste0("AIC = ",model_fits_sec_mw100_log_robust_scale_1999["AIC"], 
+                                          " , BIC = ",model_fits_sec_mw100_log_robust_scale_1999["BIC"], 
+                                          ", Loglik = ", model_fits_sec_mw100_log_robust_scale_1999["logLik"])),
+                       footnote_as_chunk=T,
+                       threeparttable = TRUE)
+
+```
+
+
+
+
+
+```{r ord-log-converg-tab}
+k_opts <- options(knitr.kable.NA = "")
+
+models <- c("base","scaled","robust","robust/scaled")
+
+log_ord <- c("Unweighted log","Unweighted ord","Weighted log","Weighted ord")
+
+mlog_issues <- c(m100_log_nonconverge,m100_log_scale_nonconverge,m100_log_robust_nonconverge,m100_log_robust_scale_nonconverge)
+mord_issues <- c(m100_ord_nonconverge,m100_ord_scale_nonconverge,m100_ord_nonconverge_robust,m100_ord_scale_nonconverge_robust)
+wlog_issues <- c(mw100_log_nonconverge,mw100_log_scale_nonconverge,mw100_log_robust_nonconverge,mw100_log_robust_scale_nonconverge)
+word_issues <- c(mw100_ord_nonconverge,mw100_ord_scale_nonconverge,NA,NA)
+
+converg_tab <- rbind(mlog_issues,mord_issues,wlog_issues,word_issues)
+
+row.names(converg_tab) <- log_ord
+
+converg_tab_k <- knitr::kable(converg_tab, caption = "Convergence issues across 100 analyses for 2004-06 period",
+                         col.names = models,
+                         row.names = T,
+                         booktabs = T,
+                         linesep = "") %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+
+converg_tab_k
+```
+
+```{r ord-log-converg-tab-99}
+
+mlog_issues <- c(m100_log_1999_nonconverge,m100_log_scale_1999_nonconverge,m100_log_robust_1999_nonconverge,m100_log_robust_scale_1999_nonconverge)
+mord_issues <- c(m100_ord_nonconverge_1999,m100_ord_scale_nonconverge_1999 ,m100_ord_nonconverge_1999_robust,m100_ord_scale_nonconverge_1999_robust)
+
+wlog_issues <- c(mw100_log_1999_nonconverge,mw100_log_scale_1999_nonconverge,mw100_log_robust_1999_nonconverge,mw100_log_robust_scale_1999_nonconverge)
+word_issues <- c(mw100_ord_nonconverge_1999,mw100_ord_scale_nonconverge_1999,NA,NA)
+
+converg_tab_99 <- rbind(mlog_issues,mord_issues,wlog_issues,word_issues)
+
+row.names(converg_tab_99) <- log_ord
+
+converg_tab_99_k <- knitr::kable(converg_tab_99, caption = "Convergence issues across 100 analyses for 1999-03 period (robustness check dataset)",
+                         col.names = models,
+                         row.names = T,
+                         booktabs = T,
+                         linesep = "") %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+
+converg_tab_99_k
+```
+
+2)  weighted trimmed ordinal
+
+(ref:icvs-ord-dwplot) Study 3, dot-whisker plot for mixed weighted
+ordinal regression, predicting security consumption.
+
+```{=latex}
+\begin{figure}[H]
+\caption{(ref:icvs-ord-dwplot) \label{fig:icvs-ord-dwplot}}
+```
+```{r icvs-ord-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_ord_drop_dotwhisker.png")
+```
+
+```{=latex}
+\end{figure}
+```
+```{r s3-ord}
+sec_mw100_ord_drop_tidy1 <- round_df2(data.frame(sec_mw100_ord_drop_tidy))
+
+
+sec_mw100_ord_drop_tidy1 <- data.frame(sec_mw100_ord_drop_tidy1) %>%
+  dplyr::rename(
+    "SE" = std.error,
+    "95\\% CI" = CI95,
+    "\\textit{z}" = z_score,
+    "\\textit{p}" = p_value,
+    "\\textit{b}" = estimate
+    )
+
+sec_mw100_ord_drop_tidy1 <- subset(sec_mw100_ord_drop_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+
+
+sec_mw100_ord_drop_tidy1$term <- ifelse(sec_mw100_ord_drop_tidy1$term == "gini_2004_6_scale" | sec_mw100_ord_drop_tidy1$term == "gini_2004_6_cent" | sec_mw100_ord_drop_tidy1$term == "gini_1999_03_scale" | sec_mw100_ord_drop_tidy1$term == "gini_1999_03_cent", "Nation gini",
+                                         ifelse(sec_mw100_ord_drop_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_ord_drop_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_ord_drop_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_ord_drop_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
+                                                
+                                                ifelse(sec_mw100_ord_drop_tidy1$term == "victim_nation_cent","Nation-level victimization",
+                                                       ifelse(sec_mw100_ord_drop_tidy1$term == "age_num" | sec_mw100_ord_drop_tidy1$term == "age_cent" | sec_mw100_ord_drop_tidy1$term == "age_scale", "Age",
+                                                              ifelse(sec_mw100_ord_drop_tidy1$term == "num_victim_5yr","Individual victimizations",
+                                                                     ifelse(sec_mw100_ord_drop_tidy1$term == "employed1", "Employed", 
+                                                                            ifelse(sec_mw100_ord_drop_tidy1$term == "male1","Male",ifelse(sec_mw100_ord_drop_tidy1$term == "other_house","Other house type", ifelse(sec_mw100_ord_drop_tidy1$term == "partnered1","Partnered", ifelse(sec_mw100_ord_drop_tidy1$term == "house","House",sec_mw100_ord_drop_tidy1$term)))))
+                                                                     )
+                                                              )
+                                                       )
+                                                )
+                                         )
+knitr::kable(sec_mw100_ord_drop_tidy1,
+             format='latex',
+             escape = FALSE,
+             align = "lcccccc",
+             caption = 'Study 3, mixed weighted ordinal regression, 2004-6 period.',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             # escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+
+```
+
+<!-- 3)  weighted trimmed ordinal logistic variants -->
+<!-- (ref:icvs-log-scale-01-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, predicting 0 vs. 1 security consumption. -->
+<!-- ```{=latex} -->
+<!-- \begin{figure}[H] -->
+<!-- \caption{(ref:icvs-log-scale-01-dwplot) \label{fig:icvs-log-scale-01-dwplot}} -->
+<!-- ``` -->
+<!-- ```{r icvs-log-scale-01-dwplot,eval = T, include=TRUE, echo=FALSE, out.width='100%'} -->
+<!-- knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_log_scaled_01_dotwhisker.png") -->
+<!-- ``` -->
+
+<!-- ```{=latex} -->
+<!-- \end{figure} -->
+<!-- ``` -->
+<!-- ```{r s3-log-01,eval = T} -->
+<!-- sec_mw100_log_scale_01_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_01_tidy)) -->
+
+
+<!-- sec_mw100_log_scale_01_tidy1 <- data.frame(sec_mw100_log_scale_01_tidy1) %>% -->
+<!--   dplyr::rename( -->
+<!--     "SE" = std.error, -->
+<!--     "95\\% CI" = CI95, -->
+<!--     "\\textit{z}" = z_score, -->
+<!--     "\\textit{p}" = p_value, -->
+<!--     "\\textit{b}" = estimate -->
+<!--     ) -->
+
+<!-- sec_mw100_log_scale_01_tidy1 <- subset(sec_mw100_log_scale_01_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df)) -->
+
+
+<!-- sec_mw100_log_scale_01_tidy1$term <- ifelse(sec_mw100_log_scale_01_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_01_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_01_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_01_tidy1$term == "gini_1999_03_cent", "Nation gini", -->
+<!--                                          ifelse(sec_mw100_log_scale_01_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_01_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_01_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_01_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita", -->
+
+<!--                                                 ifelse(sec_mw100_log_scale_01_tidy1$term == "victim_nation_cent","Nation-level victimization", -->
+<!--                                                        ifelse(sec_mw100_log_scale_01_tidy1$term == "age_num" | sec_mw100_log_scale_01_tidy1$term == "age_cent" | sec_mw100_log_scale_01_tidy1$term == "age_scale", "Age", -->
+<!--                                                               ifelse(sec_mw100_log_scale_01_tidy1$term == "num_victim_5yr","Individual victimizations", -->
+<!--                                                                      ifelse(sec_mw100_log_scale_01_tidy1$term == "employed1", "Employed",  -->
+<!--                                                                             ifelse(sec_mw100_log_scale_01_tidy1$term == "male1","Male",ifelse(sec_mw100_log_scale_01_tidy1$term == "other_house","Other house type", ifelse(sec_mw100_log_scale_01_tidy1$term == "partnered1","Partnered", ifelse(sec_mw100_log_scale_01_tidy1$term == "house","House",sec_mw100_log_scale_01_tidy1$term))))) -->
+<!--                                                                      ) -->
+<!--                                                               ) -->
+<!--                                                        ) -->
+<!--                                                 ) -->
+<!--                                          ) -->
+<!-- knitr::kable(sec_mw100_log_scale_01_tidy1, -->
+<!--              format='latex', -->
+<!--              escape = FALSE, -->
+<!--              align = "lcccccc", -->
+<!--              caption = 'Study 3, mixed weighted logistic regression, predicting 0 vs. 1 security consumption', -->
+<!--              booktabs = TRUE, -->
+<!--              linesep = "", -->
+<!--              # ,format.args=list(floating=TRUE) -->
+<!--              # escape = FALSE -->
+<!--              ) %>% -->
+<!-- kable_styling(latex_options = c( -->
+<!--   # "striped",  -->
+<!--   "hold_position")) -->
+
+<!-- ``` -->
+
+<!-- (ref:icvs-log-scale-12-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, predicting 1 vs. 2 security consumption. -->
+<!-- ```{=latex} -->
+<!-- \begin{figure}[H] -->
+<!-- \caption{(ref:icvs-log-scale-12-dwplot) \label{fig:icvs-log-scale-12-dwplot}} -->
+<!-- ``` -->
+<!-- ```{r icvs-log-scale-12-dwplot,eval,eval = T, include=TRUE, echo=FALSE, out.width='100%'} -->
+<!-- knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_log_scaled_12_dotwhisker.png") -->
+<!-- ``` -->
+<!-- ```{=latex} -->
+<!-- \end{figure} -->
+<!-- ``` -->
+
+<!-- ```{r s3-log-12,eval = T} -->
+
+<!-- sec_mw100_log_scale_12_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_12_tidy)) -->
+
+
+<!-- sec_mw100_log_scale_12_tidy1 <- data.frame(sec_mw100_log_scale_12_tidy1) %>% -->
+<!--   dplyr::rename( -->
+<!--     "SE" = std.error, -->
+<!--     "95\\% CI" = CI95, -->
+<!--     "\\textit{z}" = z_score, -->
+<!--     "\\textit{p}" = p_value, -->
+<!--     "\\textit{b}" = estimate -->
+<!--     ) -->
+
+<!-- sec_mw100_log_scale_12_tidy1 <- subset(sec_mw100_log_scale_12_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df)) -->
+
+
+<!-- sec_mw100_log_scale_12_tidy1$term <- ifelse(sec_mw100_log_scale_12_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_12_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_12_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_12_tidy1$term == "gini_1999_03_cent", "Nation gini", -->
+<!--                                          ifelse(sec_mw100_log_scale_12_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_12_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_12_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_12_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita", -->
+
+<!--                                                 ifelse(sec_mw100_log_scale_12_tidy1$term == "victim_nation_cent","Nation-level victimization", -->
+<!--                                                        ifelse(sec_mw100_log_scale_12_tidy1$term == "age_num" | sec_mw100_log_scale_12_tidy1$term == "age_cent" | sec_mw100_log_scale_12_tidy1$term == "age_scale", "Age", -->
+<!--                                                               ifelse(sec_mw100_log_scale_12_tidy1$term == "num_victim_5yr","Individual victimizations", -->
+<!--                                                                      ifelse(sec_mw100_log_scale_12_tidy1$term == "employed1", "Employed",  -->
+<!--                                                                             ifelse(sec_mw100_log_scale_12_tidy1$term == "male1","Male",ifelse(sec_mw100_log_scale_12_tidy1$term == "other_house","Other house type", ifelse(sec_mw100_log_scale_12_tidy1$term == "partnered1","Partnered", ifelse(sec_mw100_log_scale_12_tidy1$term == "house","House",sec_mw100_log_scale_12_tidy1$term))))) -->
+<!--                                                                      ) -->
+<!--                                                               ) -->
+<!--                                                        ) -->
+<!--                                                 ) -->
+<!--                                          ) -->
+<!-- knitr::kable(sec_mw100_log_scale_12_tidy1, -->
+<!--              format='latex', -->
+<!--              escape = FALSE, -->
+<!--              align = "lcccccc", -->
+<!--              caption = 'Study 3, mixed weighted logistic regression, predicting 1 vs. 2 security consumption', -->
+<!--              booktabs = TRUE, -->
+<!--              linesep = "", -->
+<!--              # ,format.args=list(floating=TRUE) -->
+<!--              # escape = FALSE -->
+<!--              ) %>% -->
+<!-- kable_styling(latex_options = c( -->
+<!--   # "striped",  -->
+<!--   "hold_position")) -->
+
+<!-- ``` -->
+
+<!-- <!-- (ref:icvs-log-scale-23-dwplot) Study 3, dot-whisker plot for mixed --> -->
+<!-- <!-- weighted logistic regression, predicting 2 vs. 3 security consumption. --> -->
+
+<!-- <!-- ```{=latex} --> -->
+<!-- <!-- \begin{figure}[H] --> -->
+<!-- <!-- \caption{(ref:icvs-log-scale-23-dwplot) \label{fig:icvs-log-scale-23-dwplot}} --> -->
+<!-- <!-- ``` --> -->
+<!-- <!-- ```{r icvs-log-scale-23-dwplot,eval = T, include=TRUE, echo=FALSE, out.width='100%'} --> -->
+<!-- <!-- knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_log_scaled_23_dotwhisker.png") --> -->
+<!-- <!-- ``` --> -->
+
+<!-- ```{=latex} -->
+<!-- \end{figure} -->
+<!-- ``` -->
+<!-- ```{r s3-log-23,eval = F} -->
+<!-- sec_mw100_log_scale_23_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_23_tidy)) -->
+
+
+<!-- sec_mw100_log_scale_23_tidy1 <- data.frame(sec_mw100_log_scale_23_tidy1) %>% -->
+<!--   dplyr::rename( -->
+<!--     "SE" = std.error, -->
+<!--     "95\\% CI" = CI95, -->
+<!--     "\\textit{z}" = z_score, -->
+<!--     "\\textit{p}" = p_value, -->
+<!--     "\\textit{b}" = estimate -->
+<!--     ) -->
+
+<!-- sec_mw100_log_scale_23_tidy1 <- subset(sec_mw100_log_scale_23_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df)) -->
+
+
+<!-- sec_mw100_log_scale_23_tidy1$term <- ifelse(sec_mw100_log_scale_23_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_23_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_23_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_23_tidy1$term == "gini_1999_03_cent", "Nation gini", -->
+<!--                                          ifelse(sec_mw100_log_scale_23_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_23_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_23_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_23_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita", -->
+
+<!--                                                 ifelse(sec_mw100_log_scale_23_tidy1$term == "victim_nation_cent","Nation-level victimization", -->
+<!--                                                        ifelse(sec_mw100_log_scale_23_tidy1$term == "age_num" | sec_mw100_log_scale_23_tidy1$term == "age_cent" | sec_mw100_log_scale_23_tidy1$term == "age_scale", "Age", -->
+<!--                                                               ifelse(sec_mw100_log_scale_23_tidy1$term == "num_victim_5yr","Individual victimizations", -->
+<!--                                                                      ifelse(sec_mw100_log_scale_23_tidy1$term == "employed1", "Employed",  -->
+<!--                                                                             ifelse(sec_mw100_log_scale_23_tidy1$term == "male1","Male",ifelse(sec_mw100_log_scale_23_tidy1$term == "other_house","Other house type", ifelse(sec_mw100_log_scale_23_tidy1$term == "partnered1","Partnered", ifelse(sec_mw100_log_scale_23_tidy1$term == "house","House",sec_mw100_log_scale_23_tidy1$term))))) -->
+<!--                                                                      ) -->
+<!--                                                               ) -->
+<!--                                                        ) -->
+<!--                                                 ) -->
+<!--                                          ) -->
+<!-- knitr::kable(sec_mw100_log_scale_23_tidy1, -->
+<!--              format='latex', -->
+<!--              escape = FALSE, -->
+<!--              align = "lcccccc", -->
+<!--              caption = 'Study 3, mixed weighted logistic regression, predicting 2 vs. 3+ security consumption', -->
+<!--              booktabs = TRUE, -->
+<!--              linesep = "", -->
+<!--              # ,format.args=list(floating=TRUE) -->
+<!--              # escape = FALSE -->
+<!--              ) %>% -->
+<!-- kable_styling(latex_options = c( -->
+<!--   # "striped",  -->
+<!--   "hold_position")) -->
+
+<!-- ``` -->
+
+4)  1999 analyses (following same contingency)
+
+weighted ordinal was taking over 48 hours to run (computer restarted)
+
+```{r s3-ord-robust}
+sec_m100_ord_scale_robust_tidy_drop1 <- round_df2(data.frame(sec_m100_ord_scale_robust_tidy_drop))
+
+
+sec_m100_ord_scale_robust_tidy_drop1 <- data.frame(sec_m100_ord_scale_robust_tidy_drop1) %>%
+  dplyr::rename(
+    "SE" = std.error,
+    "95\\% CI" = CI95,
+    "\\textit{z}" = z_score,
+    "\\textit{p}" = p_value,
+    "\\textit{b}" = estimate
+    )
+
+sec_m100_ord_scale_robust_tidy_drop1 <- subset(sec_m100_ord_scale_robust_tidy_drop1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+
+
+sec_m100_ord_scale_robust_tidy_drop1$term <- ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "gini_2004_6_scale" | sec_m100_ord_scale_robust_tidy_drop1$term == "gini_2004_6_cent" | sec_m100_ord_scale_robust_tidy_drop1$term == "gini_1999_03_scale" | sec_m100_ord_scale_robust_tidy_drop1$term == "gini_1999_03_cent", "Nation gini",
+                                         ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "gdppc_2004_6_scale" | sec_m100_ord_scale_robust_tidy_drop1$term == "gdppc_2004_6_cent" | sec_m100_ord_scale_robust_tidy_drop1$term == "gdppc_1999_03_scale" | sec_m100_ord_scale_robust_tidy_drop1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
+                                                
+                                                ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "victim_nation_cent","Nation-level victimization",
+                                                       ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "age_num" | sec_m100_ord_scale_robust_tidy_drop1$term == "age_cent" | sec_m100_ord_scale_robust_tidy_drop1$term == "age_scale", "Age",
+                                                              ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "num_victim_5yr","Individual victimizations",
+                                                                     ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "employed1", "Employed", 
+                                                                            ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "male1","Male",ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "other_house","Other house type", ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "partnered1","Partnered", ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "house","House",sec_m100_ord_scale_robust_tidy_drop1$term)))))
+                                                                     )
+                                                              )
+                                                       )
+                                                )
+                                         )
+knitr::kable(sec_m100_ord_scale_robust_tidy_drop1,
+             format='latex',
+             escape = FALSE,
+             align = "lcccccc",
+             caption = 'Study 3, mixed unweighted ordinal regression, robust set, scaled',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             # escape = FALSE
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+
+```
+
+5)  k = 32 data will be run with the following reduced model (excluding
+    partnered, employed, and housing)
+
+6)  k = 41 reduced model
+
+S1) ordinal analyses will be repeated with regular (unwinzorized)
+security_total
+
+S2) regular k = 32 model S3) unwinzorized security_total k = 32 model
+S4) full k = 41 model S5) small k = 32 model S6) small k = 41 model
+
+(ref:icvs-log-scale-int-1999-dwplot) Study 3, dot-whisker plot for mixed
+weighted logistic regression, 1999, gini\*GDP interaction
+
+```{=latex}
+\begin{figure}[H]
+\caption{(ref:icvs-log-scale-int-1999-dwplot) \label{fig:icvs-log-scale-int-1999-dwplot}}
+```
+```{r icvs-log-scale-int-1999-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_1999_03_log_scale_int_dotwhisker.png")
+```
+
+```{=latex}
+\end{figure}
+```
+```{r s3-logistic-scaled-int-1999}
+sec_mw100_log_scale_int_1999_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_int_1999_tidy))
+
+sec_mw100_log_scale_int_1999_tidy1 <- data.frame(sec_mw100_log_scale_int_1999_tidy1) %>%
+  dplyr::rename(
+    "SE" = std.error,
+    "95\\% CI" = CI95,
+    "\\textit{z}" = z_score,
+    "\\textit{p}" = p_value,
+    "\\textit{b}" = estimate
+    # "z" = z_score,
+    # "p" = p_value,
+    # "b" = estimate
+    )
+
+sec_mw100_log_scale_int_1999_tidy1 <- subset(sec_mw100_log_scale_int_1999_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+
+
+
+sec_mw100_log_scale_int_1999_tidy1$term <- ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_int_1999_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_int_1999_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_int_1999_tidy1$term == "gini_1999_03_cent" | sec_mw100_log_scale_int_1999_tidy1$term == "gini_2004_6_cent"| sec_mw100_log_scale_int_1999_tidy1$term == "gini_2004_6_scale"
+                                             , "Nation gini",
+                                         ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_int_1999_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_int_1999_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_int_1999_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
+
+                                                ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "victim_nation_cent","Nation-level victimization",
+                                                       ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "age_num" | sec_mw100_log_scale_int_1999_tidy1$term == "age_cent" | sec_mw100_log_scale_int_1999_tidy1$term == "age_scale", "Age",
+                                                              ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "num_victim_5yr","Individual victimizations",
+                                                                     ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "employed1", "Employed",
+                                                                            ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "male1","Male",
+                                                                                   ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "gini_gdp","Gini*GDP",
+                                                                                          ifelse(sec_mw100_log_scale_int_1999_tidy1$term=="Inequality^2" | sec_mw100_log_scale_int_1999_tidy1$term=="inequality_sq" ,"Gini$^{2}$",
+ ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "other_house","Other house type",
+        ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "partnered1","Partnered", ifelse(sec_mw100_log_scale_int_1999_tidy1$term == "house","House",sec_mw100_log_scale_int_1999_tidy1$term)
+               )
+        )
+ )
+ )
+                                                                           
+                                                                                                 )))
+                                                                     )
+                                                              )
+
+                                                )
+                                                )
+
+
+
+knitr::kable(sec_mw100_log_scale_int_1999_tidy1,
+             format='latex',
+             escape = FALSE,
+             align = "lcccccc",
+             caption = 'Study 3, weighted mixed logistic regression, 1999, gini*GDP interaction',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped",
+  "hold_position")) %>%
+  kableExtra::footnote(general = c(paste0("AIC = ",model_fits_sec_mw100_log_scale_int_1999["AIC"], " , BIC = ",model_fits_sec_mw100_log_scale_int_1999["BIC"], ", Loglik = ",model_fits_sec_mw100_log_scale_int_1999["logLik"])),
+                       footnote_as_chunk=T,
+                       threeparttable = TRUE)
+
+
+```
+
+(ref:icvs-log-scale-poly-1999-dwplot) Study 3, dot-whisker plot for
+mixed weighted logistic regression, 1999, squared gini
+
+```{=latex}
+\begin{figure}[H]
+\caption{(ref:icvs-log-scale-poly-1999-dwplot) \label{fig:icvs-log-scale-poly-1999-dwplot}}
+```
+```{r icvs-log-scale-poly-1999-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_1999_03_log_scale_poly_dotwhisker.png")
+```
+
+```{=latex}
+\end{figure}
+```
+```{r s3-logistic-scaled-poly-1999}
+sec_mw100_log_scale_poly_1999_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_poly_1999_tidy))
+
+sec_mw100_log_scale_poly_1999_tidy1 <- data.frame(sec_mw100_log_scale_poly_1999_tidy1) %>%
+  dplyr::rename(
+    "SE" = std.error,
+    "95\\% CI" = CI95,
+    "\\textit{z}" = z_score,
+    "\\textit{p}" = p_value,
+    "\\textit{b}" = estimate
+    # "z" = z_score,
+    # "p" = p_value,
+    # "b" = estimate
+    )
+
+sec_mw100_log_scale_poly_1999_tidy1 <- subset(sec_mw100_log_scale_poly_1999_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+
+
+
+sec_mw100_log_scale_poly_1999_tidy1$term <- ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_poly_1999_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_poly_1999_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_poly_1999_tidy1$term == "gini_1999_03_cent" | sec_mw100_log_scale_poly_1999_tidy1$term == "gini_2004_6_cent"| sec_mw100_log_scale_poly_1999_tidy1$term == "gini_2004_6_scale"
+                                             , "Nation gini",
+                                         ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_poly_1999_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_poly_1999_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_poly_1999_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
+
+                                                ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "victim_nation_cent","Nation-level victimization",
+                                                       ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "age_num" | sec_mw100_log_scale_poly_1999_tidy1$term == "age_cent" | sec_mw100_log_scale_poly_1999_tidy1$term == "age_scale", "Age",
+                                                              ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "num_victim_5yr","Individual victimizations",
+                                                                     ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "employed1", "Employed",
+                                                                            ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "male1","Male",
+                                                                                   ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "gini_gdp","Gini*GDP",
+                                                                                          ifelse(sec_mw100_log_scale_poly_1999_tidy1$term=="Inequality^2" | sec_mw100_log_scale_poly_1999_tidy1$term=="inequality_sq" ,"Gini$^{2}$",
+ ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "other_house","Other house type",
+        ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "partnered1","Partnered", ifelse(sec_mw100_log_scale_poly_1999_tidy1$term == "house","House",sec_mw100_log_scale_poly_1999_tidy1$term)
+               )
+        )
+ )
+ )
+                                                                           
+                                                                                                 )))
+                                                                     )
+                                                              )
+
+                                                )
+                                                )
+
+knitr::kable(sec_mw100_log_scale_poly_1999_tidy1,
+             format='latex',
+             escape = FALSE,
+             align = "lcccccc",
+             caption = 'Study 3, weighted mixed logistic regression, 1999, squared gini',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped",
+  "hold_position")) %>%
+  kableExtra::footnote(general = c(paste0("AIC = ",model_fits_sec_mw100_log_scale_poly["AIC"], " , BIC = ",model_fits_sec_mw100_log_scale_poly["BIC"], ", Loglik = ",model_fits_sec_mw100_log_scale_poly["logLik"])),
+                       footnote_as_chunk=T,
+                       threeparttable = TRUE)
+
+
+```
+
+
+
+(ref:icvs-log-scale-poly-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, including polynomial
+```{=latex}
+\begin{figure}[H]
+\caption{(ref:icvs-log-scale-poly-dwplot) \label{fig:icvs-log-scale-poly-dwplot}}
+```
+```{r icvs-log-scale-poly-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_log_scale_poly_dotwhisker.png")
+```
+```{=latex}
+\end{figure}
+```
+
+
+```{r s3-logistic-scaled-poly}
+sec_mw100_log_scale_poly_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_poly_tidy))
+
+sec_mw100_log_scale_poly_tidy1 <- data.frame(sec_mw100_log_scale_poly_tidy1) %>%
+  dplyr::rename(
+    "SE" = std.error,
+    "95\\% CI" = CI95,
+    "\\textit{z}" = z_score,
+    "\\textit{p}" = p_value,
+    "\\textit{b}" = estimate
+    # "z" = z_score,
+    # "p" = p_value,
+    # "b" = estimate
+    )
+
+sec_mw100_log_scale_poly_tidy1 <- subset(sec_mw100_log_scale_poly_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+
+
+
+sec_mw100_log_scale_poly_tidy1$term <- ifelse(sec_mw100_log_scale_poly_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_poly_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_poly_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_poly_tidy1$term == "gini_1999_03_cent" | sec_mw100_log_scale_poly_tidy1$term == "gini_2004_6_cent"| sec_mw100_log_scale_poly_tidy1$term == "gini_2004_6_scale"
+                                             , "Nation gini",
+                                         ifelse(sec_mw100_log_scale_poly_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_poly_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_poly_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_poly_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
+
+                                                ifelse(sec_mw100_log_scale_poly_tidy1$term == "victim_nation_cent","Nation-level victimization",
+                                                       ifelse(sec_mw100_log_scale_poly_tidy1$term == "age_num" | sec_mw100_log_scale_poly_tidy1$term == "age_cent" | sec_mw100_log_scale_poly_tidy1$term == "age_scale", "Age",
+                                                              ifelse(sec_mw100_log_scale_poly_tidy1$term == "num_victim_5yr","Individual victimizations",
+                                                                     ifelse(sec_mw100_log_scale_poly_tidy1$term == "employed1", "Employed",
+                                                                            ifelse(sec_mw100_log_scale_poly_tidy1$term == "male1","Male",
+                                                                                   ifelse(sec_mw100_log_scale_poly_tidy1$term == "gini_gdp","Gini*GDP",
+                                                                                          ifelse(sec_mw100_log_scale_poly_tidy1$term=="Inequality^2" | sec_mw100_log_scale_poly_tidy1$term=="inequality_sq" ,"Gini$^{2}$",sec_mw100_log_scale_poly_tidy1$term))))
+                                                                     )
+                                                              )
+
+                                                )
+                                                )
+                                         )
+
+
+
+knitr::kable(sec_mw100_log_scale_poly_tidy1,
+             format='latex',
+             escape = FALSE,
+             align = "lcccccc",
+             caption = 'Study 3, weighted mixed logistic regression, Gini squared',
+             booktabs = TRUE,
+             linesep = "",
+             # ,format.args=list(floating=TRUE)
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped",
+  "hold_position")) %>%
+  kableExtra::footnote(general = c(paste0("AIC = ",model_fits_sec_mw100_log_scale_poly["AIC"], " , BIC = ",model_fits_sec_mw100_log_scale_poly["BIC"], ", Loglik = ",model_fits_sec_mw100_log_scale_poly["logLik"])),
+                       footnote_as_chunk=T,
+                       threeparttable = TRUE)
+
+```
+
+
 
 ## Ethics information
 
-All procedures for this project have been approved by the University of Calgary Conjoint Faculties Research Ethics Board (REB 20-1860). For the experimental studies, informed consent will be obtained for all participants, who, unless otherwise noted, will be compensated at a rate of \$12.48 CAD/hour. For multilevel analyses, the datasets are archival and publicly-available. As such, ethics approval and informed consent was obtained, and compensation disbursed, by the original researchers.
-
-This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.
+All procedures for this project have been approved by the University of
+Calgary Conjoint Faculties Research Ethics Board (REB 20-1860). For the
+experimental studies, informed consent will be obtained for all
+participants, who, unless otherwise noted, will be compensated at a rate
+of \$12.48 CAD/hour. For multilevel analyses, the datasets are archival
+and publicly-available. As such, ethics approval and informed consent
+was obtained, and compensation disbursed, by the original researchers.
 
 **In the main Rmd file**
 
 ```{r ref.label='include_packages', results='hide', echo = F}
 ```
 
-**In Chapter \@ref(ineq-fair):**
+**In Chapter** \@ref(ineq-fair)**:**
 
 ```{r ref.label='include_packages_2', results='hide', echo = F}
 ```

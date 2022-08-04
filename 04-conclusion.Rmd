@@ -1,13 +1,45 @@
-# Conclusion {-}
+---
+bibliography: bib/thesis.bib
+---
 
-If someone locks their doors to their neighbors, should they be commended for their prudence or ridiculed for their suspicion? A normative prescription for how much security people should consume is unclear; the “right” amount of security consumption can vary both within and across individuals and circumstances (e.g., a rich vs. poor person purchasing security, or weighing the “ultimate price” of dying). 
+# Conclusion {.unnumbered}
+
+If someone locks their doors to their neighbors, should they be commended for their prudence or ridiculed for their suspicion? A normative prescription for how much security people should consume is unclear; the "right" amount of security consumption can vary both within and across individuals and circumstances (e.g., a rich vs. poor person purchasing security, or weighing the "ultimate price" of dying).
 
 @san-juan2012
 
 According to [@dolan2007], fear of crime is, above all, a reason to be concerned about people's self-protective and avoidance measures in response to it, which can have a significant impact
 
+Combined, Studies 1 and 3 provide evidence with both high internal and external validity that inequality is indeed linked to the consumption of security products
 
-blah blah workplaces have inequality and trust too, which seems important
+Study 2... blah blah
 
+## Practical applications
+
+
+The presence of the envy anticipation effect at such a small scale and artificial scenario raises some interesting questions for how inequality affects trust for different types of groups. For instance, a potential implication of this research is in the workplace. Employees can regularly have the chance to harm co-workers in order to benefit themselves (e.g., gossip, taking credit for work, ostracizing, theft). These results suggest that inequality within the workplace may serve to undermine trust, as individuals seek to insulate themselves from potentially harmful behaviours (e.g., communicating less, not sharing resources), and consequently undermining individual and group-level productivity. Given that nearly all workplaces have some degree of stratification, such as a supervisor being paid more, it is worth considering how and social comparisons may cascade into lower trust. In general, inequality should be most likely to produce lower trust under the same conditions as when inequality will produce experiences of envy and relative deprivation. The effect of inequality will be stronger when individuals are judged to be similar on some dimension. Likewise, greater reductions in trust will occur when individuals are likely to compete with each other at later points.
+
+Beyond the workplace, the effects of inequality on security behaviours in a consumer context should generally be strongest at smaller scales. In this respect, the upcoming examination of country-level inequality in Chapter 3 might serve as a conservative test of how inequality affects groups. The trust-eroding effects of inequality might be stronger (and easier to detect) at more "meso" levels of comparison, such as cities or neighborhoods. For instance, Canada may have an intermediate to low level of inequality compared to other countries, but this "macro" picture of income distribution is likely to be an imperfect reflection of whether inequality is a present and noticeable feature in a person's day-to-day life. For instance, as a city Vancouver is likely to be more unequal than St.John's. Likewise, some neighborhoods in these cities will have more or less stratification, such as those areas experiencing gentrification. Depending on one's lifestyle, the relative income of someone in another city or province is unlikely to have a large impact on one's psychology and consumption. By contrast, regularly seeing a large disparity between the "haves" and "have-nots" in one's daily life may come to change one's beliefs and attitudes regarding the social climate.
+
+The next few hundred years may be disproportionately affected by the fortunes of African countries. In addition to their colonial histories, varied ethnic and religious groups, vulnerability to climate change, prevalence of poverty, and rich natural resources, these countries are among the fastest-growing. By 2100, the population in Africa is expected to quadruple from one billion to four billion people. In the meantime, population growth everywhere else has been slowing; in Asia, the most populated region in the world the population will only increase from four billion to five billion @worldometer2022 . These fast-growing countries are also among the most unequal in the world, meaning that over the next 100 years, most people will be born into high-inequality environments.
+
+In addition to the subsequently high rates of poverty and absolute deprivation, these high-inequality countries may also foster populations with extremely high relative deprivation. The bourgening population will also mean increased investment from foreign markets, whether attempting to secure cheap labour forces, or service growing demand across the region (e.g., China's Belt and Road Initiative; G7's Build Back Better World Partnership). In a fast-moving, high-stakes, and competitive region, individuals in these countries may be acutely aware of how another's gain may be their loss. If the envy anticipation hypothesis holds, then these areas may turn out to be incredibly lucrative markets for the security industry to target and develop.
+
+Conversely, if inequality is indeed-trust eroding, high-inequality regions may encounter substantial internal tensions and breakdowns in cooperation when faced with collective action problems.
 
 social comparisons - comparison target selected is the higher-up individual
+
+
+
+
+<!-- ### Competitive ability -->
+
+
+
+<!-- ### Study 1b: Inequality in competitive standing (with real payoffs) -->
+
+<!-- Study 1a is heavily based on a comparison-based extension of risk-sensitivity theory, namely that social comparisons with better-off others make individuals "move the goal-posts" towards more ambitious expectations, eliciting envy and dissatisfaction. One further extension of risk-sensitivity theory is in the relative state model @mishra2017, which posits that both environmental and embodied factors interact with social landscapes to yield a subjective evaluation of overall (dis)advantage. Individuals who have superior resources to bear (e.g., physical ability, money, social contacts) increases the expected value of certain risky activities (e.g., rock climbing), but not others (investment banking), so they engage in domain-specific risk-taking. By contrast, those with disadvantaged relative state (i.e., in a state of need), are more likely to take risks in many areas (e.g., gambling, lying) because their insufficient capital (e.g., money) leaves them unable to effectively reach their goals. -->
+
+<!-- This relative (dis)advantage becomes especially consequential when individuals need to compete for contested resources. Individuals who are advantaged are more likely to win these contests, and have these victories snowball into greater advantage. For instance, an individual with greater intelligence would be more likely to be selected for a desirable job [@ceci1997], with the position leading to experiences, social contacts, and funds that they could leverage into any number of desirable outcomes (mates, prestigious schools). Accordingly. individuals who are immediately worse-off are likely to be disadvantaged for later contests, and will be in a 'state of need,' unable to reach their goals through low-risk alternatives. @mishra2014 found that participants took more risks when they received manipulated feedback on a test suggesting they had below-average intelligence. -->
+
+<!-- <!--# seeks to explain observations that many risk-taking behaviours co-occur within individuals (i.e., risk-taking's domain-generality). The relative state model --> 

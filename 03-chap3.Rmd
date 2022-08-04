@@ -76,11 +76,11 @@ library(knitr)
 
 # Nation-Level Inequality and Individual-Level Security Consumption {#nat-ineq}
 
-Security consumption is a particularly interesting phenomenon because it reflects an individual-level effort to address a collective problem. In fact, a consumer's efforts to improve security generally attempt to decouple oneself from the shared risks of victimization. These consumption decisions allow individuals to tailor their protection to their unique perceived need, but they may also introduce inefficiencies into the collective pursuit of security.
+Security consumption is a particularly interesting phenomenon because it often reflects an individual-level effort to address a collective problem. A consumer's efforts to improve security generally attempt to decouple oneself from the shared risks of victimization. These consumption decisions allow individuals to tailor their protection to their unique perceived need, but they may also introduce inefficiencies into the collective pursuit of security.
 
 For instance, in some cases, security consumption is clearly an overreaction to perceived threats. Consider the case of building high walls around one's home, as seen extensively in high-inequality regions such as South Africa. Paradoxically, costly fortifications can actually increase the vulnerability of one's home and community, as reduced visibility within the neighborhood allows for criminals to enter properties without detection [@marks2015]. This chapter seeks to elaborate on the collective (nation-level) effects of inequality on individual-level security consumption.
 
-The highly-controlled nature of the experiments in Chapters 1 and 2 allow for precise tests of the hypothesized inequality-security consumption relationship. Although one experiment offered real consequences for participants' choices, economic games are highly artificial by design. Insights generated from the security game might not generalize to consumers' daily consumption context. To provide a test with greater external validity, this project supplements these previous experimental results with a multilevel analysis of archival data on respondents' use of security products, to test whether **H5)** `r tolower(hypotheses[4])` (versus **H5~0~)** no significant effect of nation-level inequality). A significant relationship between nation-level inequality and individual security measures does not serve as an an exhaustive test of the envy anticipation hypothesis. That result would likewise be expected under the other models of inequality-distrust discussed in Chapter 1 (social barriers, social inferences, resource conflict, opportunity cost, psychosocial effect). As such, the experiments and this multilevel analysis shall serve as complements to each other, testing the envy anticipation with internal and external validity, respectively.
+The highly-controlled nature of the experiments in Chapters 1 and 2 allow for precise tests of the hypothesized inequality-security consumption relationship. Although one experiment offered real consequences for participants' choices, economic games are highly artificial by design. Insights generated from the security game might not generalize to consumers' daily consumption context. To provide a test of the envy anticipation model with greater external validity, this project supplements these previous experimental results with a multilevel analysis of archival data on respondents' use of security products, to test whether **H5)** `r tolower(hypotheses[4])` (versus **H5~0~)** no significant effect of nation-level inequality). A significant relationship between nation-level inequality and individual security measures does not serve as an an exhaustive test of the envy anticipation hypothesis; a positive effect would likewise be expected under the other models of inequality-distrust discussed in Chapter 1 (social barriers, social inferences, resource conflict, opportunity cost, psychosocial effect). As such, the earlier experiments and this multilevel analysis shall serve as complements to each other, testing the envy anticipation model of distrust with high internal and external validity, respectively.
 
 ## Fear and Security in the Real World
 
@@ -103,16 +103,15 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 
 
 ```
+
 ```{=latex}
 \end{figure}
 ```
+Just as a multilevel analysis examines the effects of inequality on security measures beyond a tightly-controlled experiment, it is also important to consider how individual's psychological and behavioural responses to the threat of crime manifest in their day-to-day lives. Individuals' experiences of crime, and their efforts to protect themselves against it, have been extensive subjects of study in subfields of sociology: criminology and victimology. Perhaps one of the most striking findings from these inquiries is that people's perception of crime rates, as well as their fear of crime, have tended to remain high despite objective crime rate estimates dropping (Figure \@ref(fig:crime-trends)).
 
+Official crime estimates declined in the U.S. between 1980 and 2013 (for instance, recorded homicides dropping from 20,000 cases in 1980 to 12,000 in 2013). However, during this same period, surveyed perceptions and fear of crime remained essentially the same; in 1980, 37% of respondents reported a perceived in increase in crime since the last year, in 2013, 41% reported an increase [reviewed in @rader2017]. This gap between real and perceived crime rates suggests that people's thinking on crime emerges from something more than simply reacting to observed criminality. These perceptions of crime seem to have a meaningful impact on people's attitudes and behaviours. @forde1993 examined survey data throughout the 80s and 90s in Winnipeg, Manitoba, and found that individuals who perceived crime as increasing generally reported feeling less safe, and had generally negative attitudes towards walking alone at nighttime.
 
-Just as a multilevel analysis allows for an examination of the effects of inequality on security measures beyond a tightly-controlled experiment, it is also important to consider how individual's psychological and behavioural responses to the threat of crime manifest in their day-to-day lives. Individuals' experiences of crime, and their efforts to protect themselves against it, have been extensive subjects of study in subfields of sociology: criminology and victimology. Perhaps one of the most striking findings from these inquiries is that people's perception of crime rates, as well as their fear of crime, have tended to remain high despite objective crime rate estimates dropping (Figure \@ref(fig:crime-trends)). 
-
-Official crime estimates declined in the U.S. between 1980 and 2013 (for instance, homicides dropping from 20,000 homicides in 1980 to 12,000 in 2013). However, during this same period, surveys on perceptions and fear of crime remained essentially the same; in 1980, 37% of respondents reported a perceived in increase in crime since the last year, in 2013, 41% reported an increase [reviewed in @rader2017]. This gap between real and perceived crime rates suggests that people's thinking on crime emerges from something more than simply reacting to criminality. These perceptions of crime seem to have a meaningful impact on people's attitudes and behaviours. @forde1993 examined survey data throughout the 80s and 90s in Winnipeg, Manitoba, and found that individuals who perceived crime as increasing generally reported feeling less safe, and had a generally negative, attitude with walking alone at nighttime. 
-
-Borrowing from methods used in sociology, a multilevel analysis allows for participants to be compared both as individuals, as well as members of higher-level groups (e.g., countries, neighborhoods). Moreover, cross-national survey data is generated through responses to survey items that explicitly assess community members' real-life experiences, instead of the fabricated circumstances and measures used in experimental designs. Accordingly, it is important to consider the macro (societal), meso (group), and and micro (individual) factors that lead to the adoption of security measures.
+Borrowing from methods used in sociology, a multilevel analysis allows for participants to be compared both as individuals, as well as members of higher-level groups (e.g., countries, neighborhoods). Similarly, a multilevel analysis of survey data allows for the assessment of community members' real-life experiences, instead of the fabricated circumstances and measures used in experimental designs. Accordingly, it is important to consider the macro (societal), meso (group), and and micro (individual) factors that lead to the adoption of security measures.
 
 <!-- [@cohen2004] Survey of -->
 
@@ -124,19 +123,19 @@ Borrowing from methods used in sociology, a multilevel analysis allows for parti
 
 ### Micro predictors of fear and security
 
-Some of the most obvious documented predictors of security measures are individuals' experiences and fears of criminal victimization [@san-juan2012; @weinstein1989; @barnes1994; @frieze1987; @smith1988; @myersjr1998]. For instance, @guedes2018 found that perceived victimization risk is associated with fear of crime (*r* = .49), and each of these psychological phenomena are associated with the adoption of security behaviours (*r*s = .22, .23, respectively). Moreover, the relationship between victimization and security measures is mediated by increased fear of crime and perceived risk of victimization [@giblin2012]. This pathway of victimizations to security measures is predicted by @ferraro1995's risk interpretation model, which posits that individuals' perceived need to protect themselves from their environment is informed by their own personal experiences. Similarly, experiencing more severe crimes leads to greater adoption of security measures, which has also been found to be mediated by distress, perceived victimization risk, and fear of crime [@chadee2020].
+Some of the most obvious documented predictors of security measures are individuals' experiences and fears of criminal victimization [@san-juan2012; @weinstein1989; @barnes1994; @frieze1987; @smith1988; @myersjr1998]. For instance, @guedes2018 found that perceived victimization risk is associated with fear of crime (*r* = .49), and each of these psychological phenomena are associated with the adoption of security behaviours (*r*s = .22, .23, respectively). Moreover, the relationship between victimization and security measures is mediated by increased fear of crime and perceived risk of victimization [@giblin2012]. This pathway of victimization to security measures is predicted by @ferraro1995's risk interpretation model, which posits that individuals' perceived need to protect themselves from their environment is informed by their own personal experiences. Similarly, experiencing more severe crimes leads to greater adoption of security measures, which has also been found to be mediated by distress, perceived victimization risk, and fear of crime [@chadee2020].
 
 Other studies document positive relationships between fear of crime and perceived victimization risk [@lagrange1992; @ortega1987; @reid1998], and more have linked fear of crime to greater security measures [@jackson2010; @riger1982; @williams1994; @keane1998; @mesch1998; @ortega1987; @reid1998; @rountree1996]. @kleck2011 found that perceived risk of criminal victimization, <!--# even after controlling for past criminal victimization experiences,  --> increases gun purchasing intentions amongst non-owners (and increases the likelihood of owning a gun for defensive reasons). Although there are notable variations in some of these results [e.g., a stronger relationship between fear of crime and household (vs. personal) security measures, @mesch1998], the general consensus is that these victimization variables are positively associated with one another.
 
-Fears of crime, and security measures by extension, have been of substantial interest to researchers, seeming to act as a "sponge" that also expresses vague social concerns, disconnected from any threat of victimization [@jackson2004]. @taylor1986 summarized three models of how fear of crime originates: 1) indirect victimization, with those more likely to be exposed to crime information, and/or those least able to cope with criminal attempts, 2) perceived disorder, caused by increased exposure to 'incivilities', and 3) community concern, with an interaction of increasing crime and lack of structural ties causing increased concerns and fear.
+Fear of crime, and security measures by extension, have been of substantial interest to researchers, seeming to act as a "sponge" that also expresses vague social concerns, disconnected from any real threat of victimization [@jackson2004]. @taylor1986 summarized three models of how fear of crime originates: 1) indirect victimization, with those more likely to be exposed to crime information, and/or those least able to cope with criminal attempts, 2) perceived disorder, caused by increased exposure to 'incivilities', and 3) community concern, with an interaction of increasing crime and lack of structural ties causing increased concerns and fear.
 
 <!-- The threat of victimization model is particularly useful because it explicitly predicts positive and reciprocal relationships between security measures, perceived victimization risk, and fear of crime. This specification is consistent with evidence from cross-sectional studies.  -->
 
 <!-- Some studies show a positive relationship between fear of crime and the ownership and carrying of firearms for protection (Bankston et al., 1990, Smith and Uchida, 1988). -->
 
-Since the majority of studies in victimology are cross-sectional, there has been limited ability to assess the causal order of the the relationships between fear of crime, security measures, and perceived victimization risk. Some longitudinal evidence points to a reciprocal and reinforcing relationship between people's fear of crime, perceived risk, and their adopted security measures. @liska1988 found that 'constrained behaviors' and fear of crime were reciprocal, with a feedback loop occurring between these two variables. They claimed these behaviours constrain "social behavior and thus results in avoiding such situations, which in turn accentuates fear" (p. 835) [see also @ferraro1995; @rountree1998a; @smith1997] . Similarly, @rader2004 suggest "it may be the case that people remain afraid even after buying a security system because the security system is a constant reminder of the potential threat of victimization that might occur if they do not continue to engage in such behaviors" (p. ???). These results should be discouraging for potential consumers of security products; they may actually feel less safe after their purchases.
+Since the majority of studies in victimology are cross-sectional, there has been limited ability to assess the causal order of the the relationships between fear of crime, security measures, and perceived victimization risk. However, some evidence combining archival individual victimization data and simultaneous equation techniques points to a reciprocal and reinforcing relationship between people's fear of crime, perceived risk, and their adopted security measures. @liska1988 found that 'constrained behaviors' and fear of crime were reciprocal, with a feedback loop occurring between these two variables. They claimed these behaviours constrain "social behavior and thus results in avoiding such situations, which in turn accentuates fear" (p. 835) [see also @ferraro1995; @rountree1998a; @smith1997]. Similarly, @rader2004 suggests, "it may be the case that people remain afraid even after buying a security system because the security system is a constant reminder of the potential threat of victimization that might occur if they do not continue to engage in such behaviors" (p. 699-700). These results should be discouraging for potential consumers of security products; they may actually feel less safe after their purchases.
 
-Other authors have highlighted some important distinctions between fear of crimes against property versus crimes against persons. In an survey of Israeli community members, @mesch1998 found that fear of crime was generally more likely to be reported for one's family than for oneself. They also found that protective measures were more likely to be adopted for property offenses than personal crimes. Likewise, only the fear of burglary significantly affected the likelihood of household protective action, and in a full regression, fear of sexual assault, fear of being home at night, fear of family being assaulted, fear of family being sexual assaulted were predictive of personal security measures. Thus, these extra considerations in the conceptualization of ear of crime do indeed to improve the concept's ability to predict the adoption of security measures.
+Other authors have highlighted some important distinctions between fear of crimes against property versus crimes against persons. In an survey of Israeli community members, @mesch1998 found that fear of crime was more often reported for one's family than for oneself. They also found that protective measures were more likely to be adopted for property offenses than personal crimes. Likewise, only the fear of burglary significantly affected the likelihood of household protective action, and in a full regression, fear of sexual assault, fear of being home at night, fear of family being assaulted, and fear of family being sexual assaulted, were all predictive of personal security measures. Thus, these extra considerations in the conceptualization of ear of crime do indeed to improve the concept's ability to predict the adoption of security measures.
 
 <!-- #### Fear of crime -->
 
@@ -154,17 +153,15 @@ Other authors have highlighted some important distinctions between fear of crime
 
 ### Meso predictors of fear and security
 
-Meso systems are probably the most flexible 'level' of society to define. Meso could by used to describe group of individuals playing pick-up sports, a neghborhood, or a powerful multi-national corporation. Perhaps surprisingly then, meso-level predictors of security measures seem to have been scarcely studied. For instance, @san-juan2010 examined a city in northern Spain, and found that residential districts had significantly different adoption rates of security measures. However, they did not carry out any other analyses to further examine the source of the variation (which is probably for the best since they only examined eight districts). @smith1988 analyzed some aggregated neighborhood-level data (but without a multilevel model), and found that individuals in some areas were more likely to have security measures, for instance, those neighborhoods with more single-parent households. Those few meso level studies generally have substantial limitations, accompanying difficulty of surveying a sufficient number of level one and two units
-
-A good example of a meso-level study examined fear of crime. In a study across 5,196 british neighborhoods and 102,133 individuals, @brunton-smith2011 found a number of regional predictors of fear of crime: greater economic disadvantage, urbanization, younger population, housing supply, ethnic heterogeneity, local crime, and disorder. Additionally, they found that individual predictors included being: female, younger, uneducated, nonwhite, a newspaper reader, crime victim, not married, ill, and a long-time resident.
+Meso systems are probably the most flexible 'level' of society to define. Meso could by used to describe group of individuals playing pick-up sports, a neighborhood, or a powerful multi-national corporation. Perhaps surprisingly then, meso-level predictors of security measures seem to have been scarcely studied. For instance, @san-juan2010 examined a city in northern Spain, and found that residential districts had significantly different adoption rates of security measures. However, they did not carry out any other analyses to further examine the source of the variation (which is probably for the best since they only examined eight districts). @smith1988 analyzed some aggregated neighborhood-level data (but without a multilevel model), and found that individuals in some areas were more likely to have security measures, for instance, those neighborhoods with more single-parent households. Those few meso level studies generally have substantial limitations, likely due to the difficulty of surveying a sufficient number of meso-level and individual-level units. A good example of a meso-level study examined fear of crime. In a study across 5,196 british neighborhoods and 102,133 individuals, @brunton-smith2011 found a number of regional predictors of fear of crime: greater economic disadvantage, urbanization, younger population, housing supply, ethnic heterogeneity, local crime, and disorder. Additionally, they found that individual predictors included being: female, younger, uneducated, nonwhite, a newspaper reader, crime victim, not married, ill, and a long-time resident. While Study 3 will only examine micro- and macro-level predictors of security, there is defnitely predictive value to incorporating predictors at the intermediate meso level/
 
 <!--# "Traditionally, these context variables are located at the mesolevel by describing the neighbourhood and community characteristics in which individuals live (for a recent review, see Lorenc et al., 2014)." -->
 
 ### Macro predictors of fear and security
 
-Using the European Social Survey, @vauclair2017 found that individuals in more unequal countries reported a greater fear of crime. The authors also report that income inequality's effect on fear of crime is strongest among ethnic *majority* members. This inequality\*ingroup interaction was in direct contradiction to a key hypothesis in the fear of crime literature: the sense of vulnerability, which predicts that the groups most vulnerable to crime (e.g., older individuals, women, minority groups REF) should be the most afraid. One sobering interpretation of this fear amongst majority groups is the notion of fear of crime as a "sponge," suggesting that 'people are not as "fearful" of personally being victimized as often we think; rather, they are expressing their social concerns through the symbolically dense concept of crime' [@jackson2004, p. 962]. However, this effect must be interpreted with caution, as estimates of cross-level interactions are often unstable when cluster sizes are fewer than 50 [@hox2018].
+Lastly, macro-level factors reflect the largest-scale influences in a country. These can range from economic, cultural, legal, political, and ecological factors. Using the European Social Survey, @vauclair2017 found that individuals in more unequal countries reported a greater fear of crime. The authors also report that income inequality's effect on fear of crime is strongest among ethnic *majority* members. This inequality\*ingroup interaction was in direct contradiction to a key hypothesis in the fear of crime literature: the sense of vulnerability, which predicts that the groups most objectively vulnerable to crime [e.g., older individuals, women, minority groups\\; @hale1996] should be the most afraid. One sobering interpretation of this fear amongst majority groups is the notion of fear of crime as a "sponge," suggesting that 'people are not as "fearful" of personally being victimized as often we think; rather, they are expressing their social concerns through the symbolically dense concept of crime' [@jackson2004, p. 962]. However, this interaction effect must be interpreted with caution, as estimates of cross-level interactions are often unstable when cluster sizes are fewer than 50 [@hox2018].
 
-Other studies provide mixed evidence of the inequality-security/fear relationship. After controlling for many country-level factors (e.g., Benefits in kind for families/children; unemployment rate; registered crimes), @hummelsheim2011 found that across 23 European countires, nation-level gini had no incremental effect when predicting fear of crime. @corvalan2022 reports significant relationship between nation-level inequality and aggregated "private security" measures. However, the authors do not report any methodological details for their analysis, and only report on effects at the country-level. One must be cautious in such a case to avoid the ecological fallacy, where observations and inferences of groups are erroneously applied to the group members. In this case, while an aggregate inequality-security correlation may be observed, this relationship may not persist when making predictions for individuals. Likewise, they present a model whereby inequality increases crime and security consumption, through the increased material incentives of (preventing) criminality.
+Other studies provide mixed evidence of the inequality-security/fear relationship. After controlling for many country-level factors (e.g., Benefits in kind for families/children; unemployment rate; registered crimes), @hummelsheim2011 found that across 23 European countries, nation-level Gini had no incremental effect when predicting fear of crime. @corvalan2022 reports a significant relationship between nation-level inequality and aggregated "private security" measures. However, the authors do not report any methodological details for their analysis, and only report on effects at the country-level. One must be cautious in such a case to avoid the ecological fallacy, where observations and inferences of groups are erroneously applied to the group members. In this case, while an aggregate inequality-security correlation may be observed, this relationship may not persist when making predictions for individuals. Likewise, they present a model whereby inequality increases crime and security consumption, through the increased material incentives of (preventing) criminality.
 
 <!-- Particularly when testing for an effect of envy anticipation, an analysis of the effects of inequality on security consumption should control for experiences and overall prevalence of crime victimization -->
 
@@ -194,27 +191,23 @@ Other studies provide mixed evidence of the inequality-security/fear relationshi
 
 <!-- @hollway1997 and @vanbrunschot2009 suggest that crime prevention measures (such as home safety preparedeness - **preventive and protective** behaviours) are a behavioural expression of anxiety -->
 
-.
-
 ## Methods
 
-The relationship between country-level inequality and the consumption of security products will be tested using a multilevel ordinal regression. This analysis will be accomplished using a combination of three archival datasets: the ICVS [International Crime Victimization Survey; for security and individual-level measures; Van Kesteren, -@vankesteren2010], the Standardized World Income Inequality Database (SWIID; for nation inequality; Solt, -@solt2020) , and the Penn World Tables (PWT, version 10.0; for nation GDP; Feenstra, Inklaar, & Timmer, -@feenstra2015). These databases were accessed as follows: ICVS, September 1, 2020; SWIID, October 21, 2020, and PWT, March 17, 2021.
-
-After a period of data exploration, cleaning, and pilot-testing, the procedure for testing **H5)**  has been pre-registered (LINK HERE??) prior to any hypothesis-relevant analyses. Pre-registration is beneficial when analyzing archival data, as such data-dependent analysis, the so-called "garden of forking paths" [@gelman2014] allows a researcher to pick and choose those data and analyses that best suit their preferred conclusions [@simmons2011]. Hopefully, a pre-commitment to preprocessing and analysis plans before model estimation reduces these researcher degrees of freedom, and leads to the selection of a more procedurally-sound model.
+The relationship between country-level inequality and the consumption of security products was tested in Study 3 using multilevel regressions. These analyses were accomplished using a combination of three archival datasets: the ICVS [International Crime Victimization Survey\; for individual-level measures, including security\; Van Kesteren -@vankesteren2010], the Standardized World Income Inequality Database [SWIID\; for nation inequality\; Solt, -@solt2020], and the Penn World Tables [PWT, version 10.0\; for nation GDP\; Feenstra, Inklaar, & Timmer, -@feenstra2015]. These databases were accessed as follows: ICVS, September 1, 2020; SWIID, October 21, 2020, and PWT, March 17, 2021. After a period of data exploration, cleaning, and pilot-testing, the procedure for testing **H5)** has been pre-registered (Section \@ref(s3-ap)) prior to any hypothesis-relevant analyses. Pre-registration is beneficial when analyzing archival data, as such data-dependent analysis, the so-called "garden of forking paths" [@gelman2014] allows a researcher to pick and choose those data and analyses that best suit their preferred conclusions [@simmons2011]. Hopefully, a pre-commitment to preprocessing and analysis plans before model estimation reduces these researcher degrees of freedom, and leads to the transparent selection of a more procedurally-sound model.
 
 <!-- Atkinson and Brandolini (2001) discuss these and several related pitfalls in their excellent survey on the use of secondary data sets in studies of income inequality. -->
 
-Indicators of individual security consumption and other person-level measures have been accessed from the ICVS [@vankesteren2010], which has surveyed over 300,000 people across `r cleaned_countries` different countries since 1989 on householders' experiences with crime, policing, crime prevention, and feelings of unsafety.
-
-<!-- Second, nation-level inequality in disposable income was accessed through the SWIID [@solt2020]. The SWIID consists of 100 separate dataframes, with varying gini values to reflect the values' uncertainty (i.e., larger standard errors) when making comparisons across different countries or time periods.  -->
+<!-- Second, nation-level inequality in disposable income was accessed through the SWIID [@solt2020]. The SWIID consists of 100 separate dataframes, with varying Gini values to reflect the values' uncertainty (i.e., larger standard errors) when making comparisons across different countries or time periods.  -->
 
 <!-- Lastly, countries' expenditure-side real GDP and populations were retrieved from the PWT. The selected values were adjusted for Purchasing Power Parity, and divided by their nations' population sizes to yield a per-capita GDP value [@feenstra2015]. -->
 
 ### Data Inclusion and Exclusion
 
-Data screening commenced with the ICVS, to find those years and countries that had data to the research aims, particularly participants' reported usage of security measures. The ICVS has been collected across eight different sweeps (1: 1989 [13 countries], 2: 1992-1994 [29], 3: 1995-1998 [44], 4: 1999-2003 [46], 5:2004-2006 [18], 6: 2010 [6], 7: 2014 [5], 8: 2015 [1]; with an additional EU-specific sweep in 2005 [16]). 
+Indicators of individual security consumption and other person-level measures have been accessed from the ICVS [@vankesteren2010], which has surveyed over 300,000 people across `r cleaned_countries` different countries since 1989 on householders' experiences with crime, policing, crime prevention, and feelings of unsafety. Data screening commenced with the ICVS, to find those years and countries that had data to the research aims, particularly participants' reported usage of security measures. The ICVS has been collected across eight different sweeps (1: 1989 [13 countries], 2: 1992-1994 [29], 3: 1995-1998 [44], 4: 1999-2003 [46], 5:2004-2006 [18], 6: 2010 [6], 7: 2014 [5], 8: 2015 [1]; with an additional EU-specific sweep in 2005 [16]).
 
-The ICVS is not a fully standardized survey, and thus varies across countries in its procedure. For instance, sampling methods include 3 stage stratified samples, random digit dialing, and random sample stratified by administrative regions. Likewise, interviews were conducted both with face-to-face and computer-assisted-telephone-interviewing. The average duration of the European component was 23.2 minutes, face-to-face methods took 30% to 50% longer.
+The ICVS is not a fully standardized survey, and thus varies across countries in its procedure. For instance, sampling methods include 3 stage stratified samples, random digit dialing, and random sample stratified by administrative regions. Likewise, interviews were conducted both with face-to-face and computer-assisted-telephone-interviewing.
+
+<!-- The average duration of the European component was 23.2 minutes, face-to-face methods took 30% to 50% longer (REF??). -->
 
 <!-- Surveying entire nations or specific cities -->
 
@@ -244,25 +237,23 @@ The ICVS is not a fully standardized survey, and thus varies across countries in
 
 <!-- split samples -->
 
-Importantly, in each of these sweeps, there is substantial variation in which countries are surveyed, and the questionnaires used; there have been over a dozen different questionnaires that have been implemented across the ICVS's lifespan. With so much variability, one cannot simply compute and compare variables without screening and cleaning. Otherwise, unfair comparisons will be made, such as comparing Norway in 2005 to Indonesia in 1989, with respondents in Norway not even being asked any questions on their security consumption. Some extensive screening was conducted to guide the selection of countries and time periods for analysis, to ensure the comparability of responses. Personal correspondence with an author and maintainer of the ICVS has revealed that the items used in questionnaires were screened for comparability before combination into the full dataset.
+Importantly, in each of the sweeps in the ICVS, there is substantial variation in which countries are surveyed, and the questionnaires used. There have been over a dozen different questionnaires that have been implemented across the ICVS's lifespan. With so much variability, one cannot simply compute and compare variables without screening and cleaning. Otherwise, unfair comparisons will be made, such as comparing Norway in 2005 to Indonesia in 1989, with respondents in Norway not even being asked any questions on their security consumption. Some extensive screening was conducted to guide the selection of countries and time periods for analysis, to ensure the comparability of responses. Personal correspondence with an author and maintainer of the ICVS has revealed that the items used in questionnaires were screened for comparability before combination into the full dataset.
+
+The main analysis for this study opts to combine the 2004-2006 survey sweep with the 2005 EU-specific sweep, yielding an initial count of 34 countries. These sweeps are perfectly complementary, with no countries being measured twice. Just under half of all ICVS-surveyed countries were included between 2004-2006. This 2004-2006 window offers some notable benefits: relatively recent data, a small time window encompassing each observation, and a sufficient number of level 2 clustering variables [30+ clusters are recommended for multilevel models\; Snijders & Bosker, -@snijders2011]. As will be described later, another sweep from 1999-2003 was also analyzed as part of a pre-registered robustness check for the 2004-06 results.
+
+After selecting a time period (2004-06) and cleaning the nation-level identifiers, further screening was guided by attempting to choose the greatest number of relevant variables for analysis. For instance, Hong Kong was dropped due to complete missingness for participant age. Similarly, individual observations were dropped if they were missing responses on age, gender, or employment status. Multiple security measures are also surveyed in the ICVS. These items were screened to assess which variables would be used to construct the dependent variable of security consumption: watch dog, high fence, neighborhood watch scheme, burglar alarm, special door locks, special grills, caretaker security, and gun ownership.
 
 Some of the data collection in the ICVS was ordered and financed by specific governments. As a result, there can be some inconsistencies in the data. For instance, the 2005 period has duplicated data for the UK, due to some separate contracting between the EU and UK governments. These duplicated data have some greater granularity, including Scotland and Northern Ireland as separate countries. Unfortunately, these smaller regions are less likely to systematically collect country-level data, particularly not collecting inequality data regularly, so are only represented at the level of the UK.
 
-The main analysis for this study opts to combine the 2004-2006 survey sweep with the 2005 EU-specific sweep, yielding an initial count of 34 countries. These sweeps are perfectly complementary, with no countries being measured twice. Just under half of all ICVS-surveyed countries were included between 2004-2006. This 2004-2006 window offers some notable benefits: relatively recent data, a small time window encompassing each observation, and a sufficient number (\>30) of level 2 clustering variables (which is needed for multilevel models; @snijders2011). As will be described later, another sweep from 1999-2003 was also analyzed as part of a pre-registered robustness check for the 2004-06 results.
-
-After selecting a time period (2004-06) and cleaning the nation-level identifiers, further screening was guided by attempting to choose the greatest number of relevant variables for analysis. For instance, Hong Kong was dropped due to complete missingness for participant age, an important covariate, especially considering evidence that older people tend to be more fearful of crime (REF). Similarly, individual observations were dropped if they were missing responses on age, gender, or employment status. Multiple security measures are also surveyed in the ICVS. These items were screened to assess which variables would be used to construct the dependent variable of security consumption:
-
-> watch dog, high fence, neighborhood watch scheme, burglar alarm, special door locks, special grills, caretaker security, gun ownership
-
-Approximately 90 participants were dropped because they reported living in an institution, so were not asked any security questions. A reporting feature in the ICVS bears mention. For binary items, such as these above prevention measures, "yes" responses are coded as a "1," whereas "no" answers are coded as missing, effectively not checking a box. As such, it leaves ambiguity as to whether a blank response is a "no," or a true missing value. Fortunately, there is an item for participants to indicate a refusal to respond, so participants were excluded if they refused response (Similarly, participants were excluded if they reported "do not know" when asked about their security measures). As an additional check, each country was screened to see whether any of them had *only* missing values for any of the measures. Switzerland had missing responses for all security items, this country and all its all were removed.
+Approximately 90 participants were dropped because they reported living in an institution, so were not asked any security questions. A reporting feature in the ICVS bears mention. For binary items, such as these above prevention measures, "yes" responses are coded as a "1," whereas "no" answers are coded as missing, effectively not checking a box. As such, it leaves ambiguity as to whether a blank response is a "no," or a true missing value. Fortunately, there is an item for participants to indicate a refusal to respond, so participants were excluded if they refused response (Similarly, participants were excluded if they reported "do not know" when asked about their security measures). As an additional check, each country was screened to see whether any of them had *only* missing values for any of the measures. Switzerland had missing responses for all security items, this country and all its respondents were removed.
 
 <!-- This screening method is not perfect. For instance, it could be true that, as the responses suggest, not a single respondent in the South Africa survey owns a gun. However, given that these surveys generally have a large sample size (1460 individuals in South Africa, minimum of 790 across 2004-2006), if participants were actually asked an item, it becomes exceedingly likely that at least one person would answer in the affirmative. As such, we will assume that complete missingness on an item across a country indicates that the question was not asked at all, and indicates truly missing data. -->
 
-Observations were likewise excluded from the final dataset if they were missing on age, gender, employment status, and number of victimization experiences. After excluding for missing data on security and key independent variables, k = `r sum(summary(iv_2005$country)>0)` countries, and n = `r format(nrow(iv_2005), big.mark = ",", scientific = FALSE)` participants were retained for primary analyses (average `r format(round(iv_2005_nper_country,0), big.mark = ",", scientific = FALSE)` respondents per country). Those retained countries were as follows:
+Observations were likewise excluded from the final 2004-6 dataset if they were missing on age, gender, employment status, and number of victimization experiences. After excluding for missing data on security and key independent variables, k = `r sum(summary(iv_2005$country)>0)` countries, and n = `r format(nrow(iv_2005), big.mark = ",", scientific = FALSE)` participants were retained for primary analyses (average `r format(round(iv_2005_nper_country,0), big.mark = ",", scientific = FALSE)` respondents per country). Those retained countries were as follows:
 
 > `r glue::glue_collapse(x = iv_2005_countries, ", ", last = ", and the  ")`
 
-A notable limitation to this 2004-06 ICVS data is the over-representation of WEIRD countries (Western, Educated, Industrialized, Rich, Democratic). Other, less WEIRD, and more unequal countries (e.g., phillipines, nigeria, india) are better represented throughout sweeps 2 to 4. Further screening information can be found in the supplementary materials (??), but as a summary, this sample specification provides a balance of relative data recency, larger sample size, and a larger range of values on key variables such as inequality and victimization experiences.
+A notable limitation to this 2004-06 ICVS data is the over-representation of WEIRD countries (Western, Educated, Industrialized, Rich, Democratic). Other, less WEIRD, and more unequal countries (e.g., phillipines, nigeria, india) are better represented throughout sweeps 2 to 4. Further screening information can be found in the supplementary materials (Section \@ref(s3-ap)), but as a summary, this 2004-06 period provides a balance of relative data recency, larger sample size, and a larger range of values on key variables such as inequality and victimization experiences.
 
 <!-- comment on confounds between security measures and home ownership -->
 
@@ -275,13 +266,13 @@ prevention_min2 <- dplyr::recode(prevention_min2, "prev_burglar_alarm" = "burgla
 
 ```
 
-A reduced group of prevention measures included burglar alarms, special door locks, special grills, high fence, caretaker security, and gun ownership. However, gun ownership was missing for South Africa, Peru, and Japan. Each of these countries are valuable in making the data more representative of non-WEIRD countries; additionally, South Africa and Peru are some of the highest-inequality countries in this dataset. Excluding these countries and restricting the range of observations for the sake of one additional security measure did not seem to be an acceptable tradeoff, so gun ownership was dropped from the computation of this study's dependent variable.
+A reduced group of prevention measures included burglar alarms, special door locks, special grills, high fence, caretaker security, and gun ownership. However, gun ownership was missing for South Africa, Peru, and Japan. Each of these countries are valuable in making the data more representative of non-WEIRD countries; additionally, South Africa and Peru are some of the highest-inequality countries in this dataset. Excluding these countries and restricting the range of observations for the sake of one additional security measure did not seem to be an acceptable trade-off, so gun ownership was dropped from the computation of this study's dependent variable.
 
-Security consumption (*M* = `r round(mean(iv_2005$total_security),2)`, *SD* = `r round(sd(iv_2005$total_security),2)`) has been computed by summing respondents' self-reported ownership of `r as.english(length(prevention_min2))` different preventative measures: 
+Security consumption (*M* = `r round(mean(iv_2005$total_security),2)`, *SD* = `r round(sd(iv_2005$total_security),2)`) has been computed by summing respondents' self-reported ownership of `r as.english(length(prevention_min2))` different preventative measures:
 
-> `r glue::glue_collapse(x = prevention_min2, ", ", last = ", and ")`. 
+> `r glue::glue_collapse(x = prevention_min2, ", ", last = ", and ")`.
 
-This consumption variable excludes several security items in the ICVS due to missing data, such as owning a watch dog, having surveillance arrangements with neighbors, and purchasing insurance against criminal activities.
+This security consumption variable excludes several security items in the ICVS due to missing data, such as owning a watch dog, having surveillance arrangements with neighbors, and purchasing insurance against criminal activities.
 
 (ref:icvs-security-hist) Count of security measures in the ICVS (Study 3).
 ```{=latex}
@@ -297,7 +288,7 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 ```
 <!-- a burglar alarm, special door locks, special grills, a high perimeter fence, and caretaker security. -->
 
-As much as it pertains to a sense of fear and vulnerability in individuals, security consumption may hold some distinct benefits from psychological self-report measures. For instance, a reported sense of fear or vulnerability may be viewed as unfavorable attitudes to report, especially for men. "Sutton and Farral (2005) even argue that, in reality, men might have a greater fear of crime than women but it is a private experience." In order to avoid reporting their fear, individuals might under-report out of social desirability. By comparison, the existence of a security measure is a far more concrete, and less subjective question; rather than having to gauge a potentially uncomfortable belief or feeling, individuals just have to make a binary observation about a feature of their living space, arguably leaving less room for biased responses.
+Security consumption may hold some methodological benefits from psychological self-report measures of fear of crime and perceived victimization risk. For instance, a reported sense of fear or vulnerability may be viewed as unfavorable attitudes to report, especially for men. "Sutton and Farral (2005) even argue that, in reality, men might have a greater fear of crime than women but it is a private experience" [@san-juan2012, p. 663]. In order to avoid reporting their fear, individuals might under-report out of social desirability. By comparison, the existence of a security measure is a far more concrete, and less subjective question; rather than having to gauge a potentially uncomfortable belief or feeling, individuals just have to make a binary observation about a feature of their living space, arguably leaving less room for biased responses.
 
 #### Predictor variables
 
@@ -319,25 +310,23 @@ vic_var_drop <- dplyr::recode(vic_var_drop, "cartheft_5yrs" = "car thefts",
                               )
 ```
 
-Similar to security measures, self-reported crime victimization was computed as a count variable for the following items: `r glue::glue_collapse(x = vic_var_drop, ", ", last = ", and ")`, summing `r as.character(as.english(length(vic_var_drop)))` binary items on respondent's experiences of victimization. Similar to security measures, not all items appeared to have been administered in all surveys. For instance, Peru is missing responses on assaults, and Australia is missing sexual offences. Reported victimizations will be represented twice in the analyses - once as a nation-average value, and again for the individual respondent, capturing both the contextual effects of a high-crime country, and individuals' own experiences of victimization. Self-reported victimization has been suggested to be a superior way to measure a country's crime rates, as official crime statistics can face many data integrity issues, such as systematic under-reporting [@dijk2007]. For instance, Soares (2002) suggests that poor countries tend to under-report crime more than rich countries. Under-reporting might also be a problem in autocratic regimes.
+Similar to security measures, self-reported crime victimization was computed as a count variable for the following items: `r glue::glue_collapse(x = vic_var_drop, ", ", last = ", and ")`, summing `r as.character(as.english(length(vic_var_drop)))` binary items on respondent's experiences of victimization. Similar to security measures, not all items appeared to have been administered in all surveys. For instance, Peru is missing responses on assaults, and Australia is missing sexual offences. Reported victimizations will be represented twice in the analyses - once as a nation-average value, and again for the individual respondent, capturing both the contextual effects of a high-crime country, and individuals' own experiences of victimization. Self-reported victimization has been suggested to be a superior way to measure a country's crime rates, as official crime statistics can face many data integrity issues, such as systematic under-reporting [@dijk2007]. For instance, @soares2004 suggests that poor countries tend to under-report crime more than rich countries. Under-reporting or under-recording might also be a problem in autocratic regimes.
 
 Age was reported in five-year bins, ranging from 16 to 70+. Individuals were coded as employed if they reported working or being in the army, and not employed if they were "looking for work," "keeping home," "retired," "disabled," "still in school," or "other." Gender was recorded as either male or female.
 
 <!-- > Correlations between the two measures of the levels of different types of crime among industrialised nations were stronger when victimisation rates were adjusted for reporting to the police. In other words there is closer correspondence in relative risks of crime when account is taken of differences in reporting to the police... Correlations between unadjusted victimisation rates and police figures are mostly weak and rarely statistically significant. -->
 
-<!-- >
-
 <!-- > These results confirm that levels of recorded crimes cannot be reliably used for comparing levels of common crime across countries. Crime victim surveys seem a better source of information on levels of crime across countries. -->
 
-The targeted model will include predictor variables at country- and individual-levels: at the nation level, 1) nation-level inequality (gini - disposable income), 2) expenditure-side GDP per capita (matched purchasing power parity), and 3) nation-level self-reported crime victimization. A notable preprocessing step is that gini and GDP values were averaged across 2004-2006 into single indices, to reflect the years where the survey sweeps were conducted. At the respondent level: 1) age (five-year increments), 2) gender (`r round(summary(iv_2005$gender)["female"]/nrow(iv_2005)*100,0)`% female), 3) employment status (`r round(summary(iv_2005$employed)[1]/nrow(iv_2005)*100,0)`% employed), and 4) number of individual victimization experiences. See Table \@ref(tab:s3desc-tab) for remaining descriptive statistics.
+The targeted model sought to include predictor variables at country- and individual-levels: at the nation level, 1) nation inequality (Gini - disposable income), 2) expenditure-side GDP per capita (matched purchasing power parity), and 3) nation-level self-reported crime victimization (computed from individual measures in the ICVS). A notable preprocessing step is that Gini and GDP values were averaged across 2004-2006 into single indices, to accommodate all of the years where the survey sweeps were conducted. At the respondent level: 1) age (five-year increments), 2) gender (`r round(summary(iv_2005$gender)["female"]/nrow(iv_2005)*100,0)`% female), 3) employment status (`r round(summary(iv_2005$employed)[1]/nrow(iv_2005)*100,0)`% employed), and 4) number of individual victimization experiences. See Table \@ref(tab:s3desc-tab) for remaining descriptive statistics, and Appendix Section \@ref(s3-ap) for more detailed data cleaning and preparation procedures.
 
 ##### Income Inequality.
 
-Comparability of statistics across times and countries is a challenge for any nation-level comparisons. Comparing income inequality is no different. The most prevalent measure of income inequality, the gini index, is constructed by surveying the income of sampled households in a target population, and calculating the degree of wealth dispersion (0 being complete equality, 100 being complete inequality). However, measures of household income can vary across countries and times. For instance, since gini coefficients are calculated from households and not individuals, researchers have made different choices whether and how to adjust incomes for the number of household members (e.g., comparing a household of one person making \$100,000 to a household of two adults and three children making \$120,000). In this case, simply copying a gini index from a second dataset with a different computation risks inaccurate comparisons with a corresponding inappropriate amount of confidence. However, if a researcher only wanted perfectly comparable indices, they would be forced to throw out the majority of available gini observations. To this end, the SWIID has been constructed in order to maximize the use of available inequality observations, while incorporating any uncomparability as measurement error.
+For any efforts to make nation-level comparisons, consistency of statistics across times and countries are a challenge. Comparing income inequality is no different. The most prevalent measure of income inequality, the Gini index, is constructed by surveying the income of sampled households in a target population, and calculating the degree of wealth dispersion (0 being complete equality, 100 being complete inequality). However, measures of household income can vary across countries and times. For instance, since Gini coefficients are calculated from households and not individuals, researchers have made different choices whether and how to adjust incomes for the number of household members (e.g., comparing a household of one person making \$100,000 to a household of two adults and three children making \$120,000). In this case, simply copying a Gini index from a second dataset with a different computation risks inaccurate comparisons with a corresponding excessive amount of confidence in the value itself. However, if a researcher only wanted perfectly comparable indices, they would be forced to throw out the majority of available Gini observations. To this end, the SWIID has been constructed in order to maximize the use of available inequality observations, while incorporating any uncomparability as measurement error.
 
-The SWIID is based on the Luxembourg Inequality Study (LIS; AKA. LIS Cross-National Data Center), which consists of micro-level data across countries, harmonized for cross-country comparability. The LIS uses the square-root of household members in order to compare units. These LIS observations serve as baselines to compare against other gini estimates in the same country-year. These relationships are then used to predict the value of the LIS gini, when data from the LIS is absent, but other information is available. Together, the SWIID is made up of "15,730 Gini coefficients from 2,984 country-years in 196 countries or territories [@solt2020, p. 5]," all extracted from 384 different sources. The SWIID has been tested with 'k-fold cross-validation,' a machine-learning technique to iteratively train and test the data in predicting values in the LIS. When handling the data, the SWIID consists of 100 separate tables of data, with varying gini values to reflect the values' uncertainty (i.e., larger standard errors) when making comparisons across different countries or time periods.
+The SWIID is based on the Luxembourg Inequality Study (LIS; AKA. LIS Cross-National Data Center), which consists of micro-level data across countries, harmonized for cross-country comparability. The LIS uses the square-root of household members in order to compare units. These LIS observations serve as baselines to compare against other Gini estimates in the same country-year. These relationships are then used to predict the value of the LIS Gini, when data from the LIS is absent, but other information is available. Together, the SWIID is made up of "15,730 Gini coefficients from 2,984 country-years in 196 countries or territories" [@solt2020, p. 5], all extracted from 384 different sources. The SWIID has been tested with 'k-fold cross-validation,' a machine-learning technique to iteratively train and test a model in predicting values in the LIS. These predicted values manifest in the SWIID as 100 separate tables of data, with varying predicted Gini values to reflect the estimate's uncertainty (i.e., larger standard errors) when making comparisons across different countries or time periods.
 
-The SWIID offers different gini indices depending on the definition of income used. This study will focus on 'disposable income,' representing incomes after taxes and transfers. Disposable income is a good fit for our purposes for two reasons: firstly, it is the most commonly-measured type of income reported in the sourced datasets, resulting in better estimates; secondly, disposable income better represents a household's true purchasing power. Other definitions include 'market income' (pre-tax, pre-transfer), "'absolute redistribution' (the difference between the Ginis for market income and disposable income) and of relative redistribution (this difference divided by the Gini for market income and then multiplied by 100, that is, the percentage by which the market-income Gini is reduced)" (p. 13-14). 
+The SWIID offers a selection of different Gini indices, depending on how income is defined. This study will focus on 'disposable income,' representing incomes after taxes and transfers. Disposable income was selected for this project for two reasons: firstly, it is the most commonly-measured type of income reported in the sourced datasets, resulting in more precise Gini estimates; secondly, disposable income better represents a household's true purchasing power. Other definitions include 'market income' (pre-tax, pre-transfer), "'absolute redistribution' (the difference between the Ginis for market income and disposable income) and of relative redistribution (this difference divided by the Gini for market income and then multiplied by 100, that is, the percentage by which the market-income Gini is reduced)" [@solt2020, p. 13-14].
 
 <!-- This yields nineteen categories (no observations provide information about the distribution of consumption per employee). Due to their superior quality, the two series of LIS data, which are based on household adult-equivalent net and gross income, are considered separate categories, bringing the total number of categories of data to twenty-one. -->
 
@@ -371,12 +360,12 @@ The SWIID offers different gini indices depending on the definition of income us
 
 ##### GDP.
 
-Lastly, countries' expenditure-side real GDP and populations were retrieved from the PWT. This dataset stands out because it has a long history of using price data from the International Comparisons Program to adjust GDP values to purchasing-power-matched U.S. dollars (i.e., their 'real' GDP). Expenditure-side GDP reflects the standard of living in an economy, which is contrasted to production-side GDP, which reflects its industry output. The selected values divided by their nations' population sizes to yield a per-capita GDP value [@feenstra2015].
+Countries' expenditure-side real GDP and populations were retrieved from the PWT. The PWT stands out because it has a long history of using price data from the International Comparisons Program to adjust GDP values to purchasing-power-matched U.S. dollars (i.e., their 'real' GDP). Expenditure-side GDP reflects the standard of living in an economy, as opposed to production-side GDP, which reflects its industry output. The selected values divided by their nations' population sizes to yield a per-capita GDP value [@feenstra2015].
 
 ```{r s3desc-tab}
 s3desc_columns <- c("Variable",	"Mean",	"SD")
 
-Variable <- c("Nation gini","Nation GDP per-capita","Nation-level victimization","Age",
+Variable <- c("Nation  Gini","Nation GDP per-capita","Nation-level victimization","Age",
               # "income quartile",
               "Individual victimizations",
               # "police effectiveness",
@@ -420,6 +409,7 @@ s3_desc_tab
 ### Pre-registered plan
 
 (ref:icvs-2004-6-cont) Data and analyses selection flowchart, 2004-06 period (Study 3).
+
 ```{=latex}
 \begin{figure}[h]
 \caption{(ref:icvs-2004-6-cont) \label{fig:icvs-2004-6-cont}}
@@ -427,46 +417,55 @@ s3_desc_tab
 ```{r icvs-2004-6-cont,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_contingency.png")
 ```
+
 ```{=latex}
 \end{figure}
 ```
 
-The pre-registered analysis plan was to predict security consumption as an ordinal variable (0: no security consumption, 1: one unit of security consumption, 2: two units, or 3: three or more units), using a cumulative link mixed model. Security consumption exhibits excessive skewness, and is not suitable to a linear model. Likewise, despite security consumption being a count variable of multiple binary occurrences, it is unlikely to meet the assumptions for a poisson process, which assumes that the maximum value stretches out indefinitely. Because of these limitations, treating the dependent variable as ordinal strikes a balance of model parsimony (minimizing assumptions about the variable structure), while reaping some benefits of the data's ranked structure.
+The pre-registered analysis plan sought to prioritize treating security consumption as an ordinal variable (0: no security consumption, 1: one unit of security consumption, 2: two units, or 3: three or more units), using a cumulative link mixed model. The distribution of values in security consumption exhibits excessive skewness and asymmetry, and is not suitable to a linear model. Likewise, despite security consumption being a count variable of multiple binary occurrences, it is unlikely to meet the assumptions for a poisson process, which assumes that the maximum value stretches out indefinitely. Because of these limitations, treating the dependent variable as ordinal strikes a balance of model parsimony (minimizing assumptions about the variable), while leveraging information on the data's ranked structure.
 
-Likewise, the ICVS dataset includes frequency weights for all included participants. These weights will be used whenever possible, as country-wide household surveys are unlikely to yield samples that are perfectly representative of their populations. Pilot analyses did indicate possible convergence issues when weights are included. As such, the contingency plan as depicted in Figure \@ref(fig:icvs-2004-6-cont) was proposed for the analysis. 1) Attempt weighted ordinal regression, if the weighted ordinal model fails to converge, 2) the model will be conducted without frequency weights, elsewise, 3) a weighted mixed logistic regresssion will be conducted, then 4) an unweighted mixed logistic regression will be attempted. In the event of logistic regressions being used, security consumption was coded as 0: no consumption, and 1: one or more units reported.
+Likewise, the ICVS dataset includes frequency weights for all included participants. These weights will be used whenever possible, as country-wide household surveys are unlikely to yield samples that are perfectly representative of their populations. Pilot analyses did indicate possible convergence issues when weights are included. As such, the contingency plan as depicted in Figure \@ref(fig:icvs-2004-6-cont) was proposed for the analysis. 1) Attempt weighted ordinal regression, if the weighted ordinal model fails to converge, 2) conducted the model without frequency weights, elsewise, 3) conduct a weighted mixed logistic regresssion, then 4) attempt an unweighted mixed logistic regression. In the event of logistic regressions being used, security consumption was coded as 0: no consumption, and 1: one or more units reported.
 
-A number of variables will have transformations applied to facilitate intelligible intercepts and control size of eigenvalues. The following variables were centered at their appropriate levels: age, gini, and nation-level victimization rates. GDP was scaled to reflect the countries' z-score.
+A number of variables had transformations applied to facilitate intelligible intercepts and control size of eigenvalues. The following variables were centered at their appropriate levels: age, Gini, and nation-level victimization rates. GDP was scaled to reflect the countries' z-score. A supplementary analysis was also proposed as a robustness check, to be conducted on a different sweep period of the ICVS (1999-2003), with a final sample size of n = 70,264 (not repeated from 2004-06), and k = 41 countries (starting with 56 countries and 92,943 participants). In addition to the larger number of countries, this 1999-2003 sweep also has sufficient data on respondent housing to include them in the model (apartment dwelling as reference), which is important because housing is a potential confound in the 2004-06 sweep (the dependent measure is predominantly composed of items on household security). The predictor models for this 1999-03 sweep thus consisted of:
 
-A supplementary analysis was also proposed as a robustness check, to be conducted on a different sweep period of the ICVS (1999-2003). Anticipated n = 70,264 (unique participants), with k = 41 countries (starting with 56 countries and 92,943 participants). In addition to the larger number of countries, this 1999-2003 sweep also has sufficient data on respondent housing to include them in the model (apartment dwelling as reference), which is important because housing is a notable confound in the 2004-06 sweep (the dependent measure is predominantly composed of items on household security). The predictor models for this sweep thus consisted of:
+> Nation inequality, GDP per capita, nation-level victimization rates, individual victimizations, gender, age, house (vs. apartment), shanty (vs. apartment), other house (e.g., townhouse vs. apartment), and relationship status (partnered vs. not partnered)
 
-> Nation inequality, GDP per capita, nation-level victimization rates, individual victimizations, gender, age, house (vs. apartment), shanty (vs. apartment), other house (e.g., townhouse vs. apartment),  and relationship status (partnered vs. not partnered)
+The 1999 sweep covers a number of additional countries outside of the typical WEIRD countries covered in the 2004-06 sweeps:
 
-In order to test robustness with the same variables, the k = 32 data and the k = 41 data were proposed to be rerun with models using a reduced, matching-variable specification (excluding partnered, employed, and housing, substituting 'year' for sweep period)
+> `r glue::glue_collapse(x = setdiff(responders_1999_countries,iv_2005_countries), ", ", last = ", and  ")`
 
-<!-- > `ordered(security_winz) ~ gini_year_cent + gdppc_year_scale + victim_nation_cent + num_victim_5yr + age_cent + male +  (1 | country)` -->
+However, it is missing a number of countries that are included in the 2004-06 period
 
-For all analyses, the coefficient estimates and standard errors were extracted through simulations. The distributions for fixed-effects estimates were generated by simulation (5000 iterations) from 100 dataframes, which were initially supplied by the SWIID, each consisting of coefficients and variance/covariance matrices from a separate model. These fixed-effects distributions were be used to calculate point estimates and standard errors for each coefficient.
+> `r glue::glue_collapse(x = setdiff(iv_2005_countries,responders_1999_countries), ", ", last = ", and  ")`
 
+Each of the 2004-06, and 1999-3 sweeps intersect in covering the following countries:
 
+> `r glue::glue_collapse(x = intersect(iv_2005_countries,responders_1999_countries), ", ", last = ", and  ")`
+
+In order to test model robustness with the same variables, the pre-registration included a proposal to analyze the k = 32 data and the k = 41 data with models using a reduced model specification, only including matching variables (excluding partnered, employed, and housing; substituting Gini and GDP values for appropriate sweep periods).
+
+<!-- > `ordered(security_winz) ~ Gini_year_cent + gdppc_year_scale + victim_nation_cent + num_victim_5yr + age_cent + male +  (1 | country)` -->
+
+For all analyses, the coefficient estimates and standard errors were extracted through simulations. In practice, any specified regression was conducted on 100 separate dataframes; each of which was a combination of one of the SWIID iterations, and an identical PWT/ICVS combination. The distributions for fixed-effects estimates were then generated by simulation (5000 iterations) from 100 dataframes of regression results, each consisting of coefficients and variance/covariance matrices from their respective model. These fixed-effects distributions were used to calculate point estimates and standard errors for each coefficient.
 
 ## Results
 
-### First pass
+Attempting to follow the pre-registered contingency plan, as presented in Figure \@ref(fig:icvs-2004-6-cont), all analyses yielded errors or warnings for at least some of the 100 analyzed datasets. Both the weighted and unweighted ordinal regressions were unable to compute standard errors for `r mw100_ord_nonconverge`/100 analyses. By contrast, each of the weighted and unweighted versions of logistic regressions successfully computed standard errors, but returned warnings for failed convergence for `r mw100_log_nonconverge`/100 of the conducted analyses, along with warnings for excessively large eigenvalues.
 
-Following the pre-registered contingency plan as presented in in Figure \@ref(fig:icvs-2004-6-cont), all specified analyses yielded errors or warnings for at least some of the 100 analyzed datasets. Both the weighted and unweighted ordinal regressions were unable to compute standard errors for `r mw100_ord_nonconverge`/100 analyses. By contrast, each of the weighted and unweighted versions of logistic regressions successfully computed standard errors, but returned warnings for failed convergence for `r mw100_log_nonconverge`/100 of the conducted analyses, along with warnings for excessively large eigenvalues.
+The pre-registered analysis plan did not provide contingencies for such widespread errors, so the relative costs and benefits of choosing analyses must be weighed after the fact. At this next step, it was decided post-hoc to attempt re-scaling age and Gini as standardized variables, in order to address the large eigenvalues, and hopefully eliminate the convergence issues.
 
-The extensive errors were not accounted for by the pre-registered analysis plan, so the relative costs and benefits of choosing these analyses must be weighed after the fact. At this next step, it was decided post-hoc to attempt re-scaling age and gini as standardized variables, in order to address the large eigenvalues, and hopefully eliminate the convergence issues. This method of transforming the logistic analyses seems preferable as it retains more data than entirely deleting the non-identified ordinal models. However, the reduced set of weighted ordinal analyses will be reported for comparison with the logistic regression.
+Both for the models conducted on the 2004-06 and 1999-03 sweeps, scaling predictors for the ordinal analyses either made a negligible improvement to convergence issues (Table \@ref(tab:ord-log-converg-tab-99), or actually increased the number of models with errors (Table \@ref(tab:ord-log-converg-tab). As such, the logistic variants are reported for the main analyses, but the ordinal versions are available in the appendix (e.g., Figures\@ref(fig:icvs-ord-dwplot)).
 
-### 2004-06 sweep period
+<!-- This method of transforming the logistic analyses seems preferable as it retains more data than entirely deleting the non-identified ordinal models. However, the reduced set of weighted ordinal analyses will be reported for comparison with the logistic regression. -->
 
-Initial analyses (scaled for population frequency, two-tailed tests) indicated null effects of income inequality on security consumption, logistic: `r tidy_extract(sec_mw100_log_scale_tidy,"gini_2004_6_scale", is.first=TRUE)`; however, there was a significant effect of GDP, `r tidy_extract(sec_mw100_log_scale_tidy,"gdppc_2004_6_scale",test.stat=FALSE)`. All individual-level predictors, except for gender were likewise significant (victimization experiences, age, employment status, *p* < .001; Figure \@ref(fig:icvs-log-scale-dwplot); Table \@ref(tab:s3-logistic-scaled)).
+Initial analyses (weighted for population frequency, two-tailed tests) indicated null effects of income inequality on security consumption, logistic: `r tidy_extract(sec_mw100_log_scale_tidy,"gini_2004_6_scale", is.first=TRUE,test.stat=FALSE)`; however, there was a significant effect of GDP, `r tidy_extract(sec_mw100_log_scale_tidy,"gdppc_2004_6_scale",test.stat=FALSE)`. All individual-level predictors, except for gender were likewise significant (victimization experiences, age, employment status, *p* \< .001; Figure \@ref(fig:icvs-log-scale-dwplot); Table \@ref(tab:s3-logistic-scaled)).
 
-<!-- ordinal; `r tidy_extract(sec_mw100_ord_drop_tidy,"gini_2004_6_cent")`  (Figures \@ref(fig:icvs-log-scale-dwplot) and \@ref(fig:icvs-ord-dwplot), respectively) -->
+<!-- ordinal; `r tidy_extract(sec_mw100_ord_drop_tidy,"gini_2004_6_cent")`  (Figures @ref(fig:icvs-log-scale-dwplot) and @ref(fig:icvs-ord-dwplot), respectively) -->
 
-
-1) weighted, scaled logistic
+<!-- 1)  weighted, scaled logistic -->
 
 (ref:icvs-log-scale-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, predicting security consumption.
+
 ```{=latex}
 \begin{figure}[H]
 \caption{(ref:icvs-log-scale-dwplot) \label{fig:icvs-log-scale-dwplot}}
@@ -475,12 +474,19 @@ Initial analyses (scaled for population frequency, two-tailed tests) indicated n
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_log_scaled_dotwhisker.png")
 ```
 ```{=latex}
-\textit{Notes:}  Regression results in Table @ref(tab:s3-logistic-scaled)
+\textit{Notes:}  Regression results in Table @ref(tab:s3-logistic-scaled); coefficients in table will be slightly different, as dotplot terms are standardized by multiplying terms by twice the standard deviation of these variables, for  comparable coefficients.
 \end{figure}
 ```
 
+
 ```{r s3-logistic-scaled}
-sec_mw100_log_scale_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_tidy))
+sec_mw100_log_scale_tidy1 <- data.frame(sec_mw100_log_scale_tidy)
+
+# numeric_columns <- sapply(sec_mw100_log_scale_tidy1, mode) == 'numeric'
+# 
+# sec_mw100_log_scale_tidy1[numeric_columns] <- sapply(sec_mw100_log_scale_tidy1[numeric_columns], report_float)
+# 
+
 
 sec_mw100_log_scale_tidy1 <- data.frame(sec_mw100_log_scale_tidy1) %>%
   dplyr::rename(
@@ -494,7 +500,7 @@ sec_mw100_log_scale_tidy1 <- data.frame(sec_mw100_log_scale_tidy1) %>%
 sec_mw100_log_scale_tidy1 <- subset(sec_mw100_log_scale_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
 
 
-sec_mw100_log_scale_tidy1$term <- ifelse(sec_mw100_log_scale_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_tidy1$term == "gini_1999_03_cent", "Nation gini",
+sec_mw100_log_scale_tidy1$term <- ifelse(sec_mw100_log_scale_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_tidy1$term == "gini_1999_03_cent", "Nation  Gini",
                                          ifelse(sec_mw100_log_scale_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
                                                 
                                                 ifelse(sec_mw100_log_scale_tidy1$term == "victim_nation_cent","Nation-level victimization",
@@ -527,9 +533,9 @@ kable_styling(latex_options = c(
 
 ```
 
-When the 1999-03 dataset was analyzed, there was a positive and significant of income inequality on security consumption, `r tidy_extract(sec_mw100_log_scale_1999_tidy,"gini_1999_03_scale")`. In this model, GDP did not reach significance thresholds, `r tidy_extract(sec_mw100_log_scale_1999_tidy,"gdppc_1999_03_scale",test.stat=FALSE)`. (Figure \@ref(fig:icvs-log-scale-1999-dwplot); Table \@ref(tab:s3-logistic-scaled-1999))
+When the 1999-03 dataset was analyzed, there was a positive and significant effect of income inequality on security consumption, `r tidy_extract(sec_mw100_log_scale_1999_tidy,"gini_1999_03_scale")`. In this model, GDP did not reach significance thresholds, `r tidy_extract(sec_mw100_log_scale_1999_tidy,"gdppc_1999_03_scale",test.stat=FALSE)`. (Figure \@ref(fig:icvs-log-scale-1999-dwplot); Table \@ref(tab:s3-logistic-scaled-1999))
 
-(ref:icvs-log-scale-1999-dwplot) Study 3, dot-whisker plot for  logistic regression, 1999-03 period.
+(ref:icvs-log-scale-1999-dwplot) Study 3, dot-whisker plot for logistic regression, 1999-03 period.
 ```{=latex}
 \begin{figure}[H]
 \caption{(ref:icvs-log-scale-1999-dwplot) \label{fig:icvs-log-scale-1999-dwplot}}
@@ -537,15 +543,17 @@ When the 1999-03 dataset was analyzed, there was a positive and significant of i
 ```{r icvs-log-scale-1999-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_1999_03_log_scaled_dotwhisker.png")
 ```
+
 ```{=latex}
 \textit{Notes:} Regression results in Table @ref(tab:s3-logistic-scaled-1999)
 \end{figure}
 ```
-
-
 ```{r s3-logistic-scaled-1999, eval=T}
+sec_mw100_log_scale_1999_tidy1 <- data.frame(sec_mw100_log_scale_1999_tidy)
 
-sec_mw100_log_scale_1999_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_1999_tidy))
+# numeric_columns <- sapply(sec_mw100_log_scale_1999_tidy1, mode) == 'numeric'
+# 
+# sec_mw100_log_scale_1999_tidy1[numeric_columns] <- sapply(sec_mw100_log_scale_1999_tidy1[numeric_columns], report_float)
 
 
 sec_mw100_log_scale_1999_tidy1 <- data.frame(sec_mw100_log_scale_1999_tidy1) %>%
@@ -560,7 +568,7 @@ sec_mw100_log_scale_1999_tidy1 <- data.frame(sec_mw100_log_scale_1999_tidy1) %>%
 sec_mw100_log_scale_1999_tidy1 <- subset(sec_mw100_log_scale_1999_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
 
 
-sec_mw100_log_scale_1999_tidy1$term <- ifelse(sec_mw100_log_scale_1999_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_1999_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_1999_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_1999_tidy1$term == "gini_1999_03_cent", "Nation gini",
+sec_mw100_log_scale_1999_tidy1$term <- ifelse(sec_mw100_log_scale_1999_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_1999_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_1999_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_1999_tidy1$term == "gini_1999_03_cent", "Nation  Gini",
                                          ifelse(sec_mw100_log_scale_1999_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_1999_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_1999_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_1999_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
                                                 
                                                 ifelse(sec_mw100_log_scale_1999_tidy1$term == "victim_nation_cent","Nation-level victimization",
@@ -594,20 +602,30 @@ kable_styling(latex_options = c(
 
 ```
 
+Variability in coefficients between the 2004-06 and 1999-03 periods are difficult to interpret from the above models alone; any differences could be attributable to real differences in the data, or due to differences in model specification. The 1999 period has additional variables such as housing and relationship status, but is missing employment status. As such, robustness check models were conducted with a reduced variable set: Gini, gdp, victimization (nation- and individual-level), gender, and age. 
 
-The differences in coefficients between the 2004-06 and 1999-03 periods may be attributable to real differences in the data, or due to differences in model specification. The 1999 period has additional variables such as housing and relationship status, but is missing employment status. As such, robustness check models were conducted with a reduced variable set: gini, gdp, victimization (nation- and individual-level), gender, and age. The coefficient patterns in the two above models generally held with reduced models.  In the reduced 2004-06 dataset, gender did reach statistical significance, `r tidy_extract(sec_mw100_log_robust_scale_tidy,"male1",test.stat=FALSE)` (Figure \@ref(fig:icvs-log-robust-scale-dwplot) and Table \@ref(tab:s3-logistic-scaled-robust)). In the reduced 1999-03 dataset, GDP reached statistical significance `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gdppc_1999_03_scale",test.stat=FALSE)` (Figure \@ref(fig:icvs-log-robust-scale-1999-dwplot) and Table \@ref(tab:s3-logistic-scaled-robust-1999)).
+The coefficient patterns in the two above models generally held with reduced models. In the reduced model analyzing 2004-06 dataset, Gini continued to have no significant effect `r tidy_extract(sec_mw100_log_robust_scale_tidy,"gini_2004_6_scale",test.stat=FALSE)`. However, in this reduced model, the effect of gender (reporting as male) did change, reaching statistical significance, `r tidy_extract(sec_mw100_log_robust_scale_tidy,"male1",test.stat=FALSE)` (Figure \@ref(fig:icvs-log-robust-scale-dwplot) and Table \@ref(tab:s3-logistic-scaled-robust)). In the reduced 1999-03 model, the effect of the Gini remained positive and significant `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gini_1999_03_scale")`, the effect of GDP varied from the larger model, reaching statistical significance `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gdppc_1999_03_scale",test.stat=FALSE)` (Figure \@ref(fig:icvs-log-robust-scale-1999-dwplot) and Table \@ref(tab:s3-logistic-scaled-robust-1999)). 
+
+The base model across both sweep periods proved to be a better fit than the reduced models. (AIC~(04-06)base-reduced~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_robust_scale["AIC"]`; AIC~(99-03)base-reduced~ = `r round(model_fits_sec_mw100_log_scale_1999["AIC"] - model_fits_sec_mw100_log_robust_scale_1999["AIC"],2)`)
+
+(BIC~(04-06)base-reduced~ = `r model_fits_sec_mw100_log_scale["BIC"] - model_fits_sec_mw100_log_robust_scale["BIC"]`) (BIC~(99-03)base-reduced~ = `r model_fits_sec_mw100_log_scale_1999["BIC"] - model_fits_sec_mw100_log_robust_scale_1999["BIC"]`)
+
+
+Notably, treating security consumption as an ordinal did not change inequality's pattern of significance (nonsignificant for 04-06 period, significant for 99-03; 2004, Table \@ref(tab:s3-ord); 2004 reduced, Table \@ref(tab:s3-ord-robust-scale); 1999, Table \@ref(tab:s3-ord-99); 1999 reduced, Table \@ref(tab:s3-ord-99-robust))
 
 #### Exploratory analyses:
 
-The effect of gini may be better described by something other than a simple linear effect. As exploratory analyses, models were fit for both the 2004 and 1999 datasets with an exponential term for income inequality, and an inequality\*GDP interaction. The exponential and interaction terms had to be conducted within separate models, as within the same model, they introduce excessive multicollinearity in the model (max VIF = `r round(max(sec_lmer1_poly_int_vif),2)` for the gini\*GDP interaction). For the 2004-2006 dataset, analyses of AIC values indicated that compared to the base model, including the interaction term produced a superior fit (AIC~difference~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]`). Conversely, the polynomial model is an insufficient improvement to fit beyond the base model (AIC~difference~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_poly["AIC"]`). Similarly, the polynomial is a worse fit to the interaction model (AIC~difference~ = `r model_fits_sec_mw100_log_scale_poly["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]`.
+The effect of Gini may be better described by something other than a simple linear effect. As exploratory analyses, models were fit for both the 2004 and 1999 datasets with an exponential term for income inequality, and an inequality\*GDP interaction. The exponential and interaction terms are reported within separate models, as within the same model, they introduce excessive multicollinearity in the model (max VIF = `r round(max(sec_lmer1_poly_int_vif),2)` for the Gini\*GDP interaction). For the 2004-2006 dataset, analyses of AIC values indicated that compared to the base model, including the interaction term produced a superior fit (AIC~base-int~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]`). Conversely, the polynomial model is an insufficient improvement to fit beyond the base model (AIC~base-poly~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_poly["AIC"]`). Similarly, the polynomial is a worse fit to the interaction model (AIC~poly-int~ = `r model_fits_sec_mw100_log_scale_poly["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]`.
+
+Another performance metric is the BIC, or Bayesian Information criterion, which has a stronger penalty for additional variables than the AIC. When using the BIC to evaluate the same models as above, the indices recommend using the base model with fewer variables. Smaller BIC values indicate a better fit. Compared to the base model, including the interaction term a worse fit (BIC~base-int~ = `r model_fits_sec_mw100_log_scale["BIC"] - model_fits_sec_mw100_log_scale_int["BIC"]`). Similarly, the polynomial model is an insufficient improvement to fit beyond the base model (BIC~base-poly~ = `r model_fits_sec_mw100_log_scale["BIC"] - model_fits_sec_mw100_log_scale_poly["BIC"]`). Again, the polynomial is a worse fit to the interaction model (BIC~poly-int~ = `r model_fits_sec_mw100_log_scale_poly["BIC"] - model_fits_sec_mw100_log_scale_int["BIC"]`.
+
+Given the exploratory nature of these analyses, the BIC is likely a better fit index to guide decisions and inferences, as a means of controlling for Type I errors. In such a case, any coefficient change should be interpreted  as a spurious change that has no substantive impact on predicting security consumption.
 
 <!-- Reference for BIC Long 1997:112 (0-2 weak, 2-6 positive, 6-10) -->
 
-For the interaction model of the 2004 dataset, both the coefficeints for income inequality, and the gini\*GDP interaction were significant, `r tidy_extract(sec_mw100_log_scale_int_tidy,"gini_2004_6_scale")` and `r tidy_extract(sec_mw100_log_scale_int_tidy,"gini_gdp",test.stat=FALSE)`, respectively. For 1999 dataset, AIC values indicated that the addition of neither interaction nor exponential terms sufficiently improved model fit beyond the base model (AIC differences = `r round(model_fits_sec_mw100_log_scale_1999["AIC"] - model_fits_sec_mw100_log_scale_int_1999["AIC"],3)` and `r round(model_fits_sec_mw100_log_scale_1999["AIC"] - model_fits_sec_mw100_log_scale_poly_1999["AIC"],3)`, respectively. These models are thus only included in the appendix (Figures \@ref(fig:icvs-log-scale-int-1999-dwplot), \@ref(fig:icvs-log-scale-poly-1999-dwplot) and Tables \@ref(tab:s3-logistic-scaled-int-1999), \@ref(tab:s3-logistic-scaled-poly-1999)). In both of those models, inequality has a significant and positive association with security consumption.
+For the interaction-included model of the 2004 dataset, both the coefficients for income inequality, and the Gini\*GDP interaction were significant, `r tidy_extract(sec_mw100_log_scale_int_tidy,"gini_2004_6_scale")` and `r tidy_extract(sec_mw100_log_scale_int_tidy,"gini_gdp",test.stat=FALSE)`, respectively. 
 
-The gini\*GDP interaction could represent how when inequality is high, countries with larger GDPs have more "fuel" to add to the psychological "fire" of high-inequality environments. That is, individuals in high GDP countries should be able to spend more on security goods in their efforts to satisfy the security needs elicited by living in high-inequality countries.
-
-
+For the 1999 dataset, AIC values indicated that the addition of neither interaction nor exponential terms sufficiently improved model fit beyond the base model (AIC differences = `r round(model_fits_sec_mw100_log_scale_1999["AIC"] - model_fits_sec_mw100_log_scale_int_1999["AIC"],3)` and `r round(model_fits_sec_mw100_log_scale_1999["AIC"] - model_fits_sec_mw100_log_scale_poly_1999["AIC"],3)`, respectively. These models are thus only included in the appendix (Figures \@ref(fig:icvs-log-scale-int-1999-dwplot), \@ref(fig:icvs-log-scale-poly-1999-dwplot) and Tables \@ref(tab:s3-logistic-scaled-int-1999), \@ref(tab:s3-logistic-scaled-poly-1999)). In both of those models, inequality still had a significant and positive association with security consumption.
 
 <!-- interaction AIC difference `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]` -->
 
@@ -615,12 +633,10 @@ The gini\*GDP interaction could represent how when inequality is high, countries
 
 <!-- poly-interaction AIC difference `r model_fits_sec_mw100_log_scale_poly["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]` -->
 
-
-
 <!-- 1999 poly-interaction AIC difference `r model_fits_sec_mw100_log_scale_poly_1999["AIC"] - model_fits_sec_mw100_log_scale_int_1999["AIC"]` -->
 
+(ref:icvs-log-scale-int-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, Gini\*gdp interaction
 
-(ref:icvs-log-scale-int-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, gini*gdp interaction
 ```{=latex}
 \begin{figure}[H]
 \caption{(ref:icvs-log-scale-int-dwplot) \label{fig:icvs-log-scale-int-dwplot}}
@@ -635,7 +651,12 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 
 
 ```{r s3-logistic-scaled-int}
-sec_mw100_log_scale_int_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_int_tidy))
+sec_mw100_log_scale_int_tidy1 <- data.frame(sec_mw100_log_scale_int_tidy)
+
+# numeric_columns <- sapply(sec_mw100_log_scale_int_tidy1, mode) == 'numeric'
+# 
+# sec_mw100_log_scale_int_tidy1[numeric_columns] <- sapply(sec_mw100_log_scale_int_tidy1[numeric_columns], report_float)
+
 
 sec_mw100_log_scale_int_tidy1 <- data.frame(sec_mw100_log_scale_int_tidy1) %>%
   dplyr::rename(
@@ -654,7 +675,7 @@ sec_mw100_log_scale_int_tidy1 <- subset(sec_mw100_log_scale_int_tidy1, select = 
 
 
 sec_mw100_log_scale_int_tidy1$term <- ifelse(sec_mw100_log_scale_int_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_int_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_int_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_int_tidy1$term == "gini_1999_03_cent" | sec_mw100_log_scale_int_tidy1$term == "gini_2004_6_cent"| sec_mw100_log_scale_int_tidy1$term == "gini_2004_6_scale"
-                                             , "Nation gini",
+                                             , "Nation  Gini",
                                          ifelse(sec_mw100_log_scale_int_tidy1$term == "gdppc_2004_6_scale" | sec_mw100_log_scale_int_tidy1$term == "gdppc_2004_6_cent" | sec_mw100_log_scale_int_tidy1$term == "gdppc_1999_03_scale" | sec_mw100_log_scale_int_tidy1$term == "gdppc_1999_03_cent","Nation GDP per-capita",
 
                                                 ifelse(sec_mw100_log_scale_int_tidy1$term == "victim_nation_cent","Nation-level victimization",
@@ -691,14 +712,108 @@ kable_styling(latex_options = c(
 
 ```
 
+## Discussion
+
+(ref:icvs-sec-ineq-scat) Study 3, country-level relationship between inequality and security consumption, 2004-06 sweep period (L), 1999-03 (R)
+```{=latex}
+\begin{figure}[H]
+%\centering
+\caption{(ref:icvs-sec-ineq-scat) \label{fig:icvs-sec-ineq-scat}}
+```
+```{r icvs-sec-ineq-scat,eval = TRUE, include=TRUE, echo=FALSE, out.width='49%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_security_gini_full.png")
+
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_security_gini_full_1999.png")
+```
+```{=latex}
+\textit{Notes:} Labelled countries are influential observations; shaded regions correspond to 95\% confidence interval
+\end{figure}
+```
 
 
-### Discussion
+The results of Study 3 show a consistently positive effect of inequality on reported security consumption, with some variability in the effect's statistical significance. In the 1999 dataset, the effect of inequality was positive and significant across all model versions. In the 2004-06 data period, the effect of inequality was null until the Gini\*gdp interaction was added. With the exploratory addition of the (positive and significant) interaction term, the main effect of inequality was significantly positive. However, adding the Gini\*GDP term only improved model fit when assessed by the AIC. When a more conservative index of model fit was used (BIC), adding the Gini\*gdp term did not adequately improve model fit.
 
-Together, the results show an inconsistent effect of inequality on reported security consumption. In the 2004-06 data period, the effect of inequality was null until the gini\*gdp interaction was added. With the addition of the (positive and significant) interaction term, the main effect of inequality was significantly positive. Likewise, in the 1999 dataset, the effect of inequality was positive and significant across all model versions.
+<!-- Notably, these significance patterns would hold if the inequality and Gini\*gdp terms were subject to a bonferonni correction, reducing the significance threshold from .05 to .025.  -->
 
-Disappointingly, there didn't seem to be a single model specification that could be used to consistently describe both sweep periods. For instance, the Gini\*GDP interacton improved the model fit for the 2004-06 period, but not for the 1999-03 period
+Even with reduced analyses with identical predictor variables, a significant effect of inequality was found in the  1999-03 period, but not the 2004-06 period. After ruling out differences in model specifications, the change in inequality's significance between sweep periods may be attributable to the slightly larger number of clustering units for this level-2 effect (k = 41 vs. k = 32), resulting in smaller standard errors. Likewise, the effect of inequality trended towards being larger in the 1999-03 period, `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gini_1999_03_scale",test.stat=FALSE, p.val = FALSE)`, compared to the 2004-06 period, `r tidy_extract(sec_mw100_log_robust_scale_tidy,"gini_2004_6_scale",test.stat=FALSE, p.val = FALSE)`. As discussed earlier, there is a substantial difference in the countries covered between the 1999-03 and 2004-06 period (e.g., 1999-03 is unique in including countries like Botswana, Panama, Philippines, and Ukraine, but is missing countries such as Austria, Iceland, Italy, and Mexico). The 1999-03 sweep generally has better coverage of countries in Africa, South America, and Asia, and has larger Gini values (max~99~ = `r round(max(nation_vars_1999$gini_1999_03),1)`, mean~99~ = `r round(mean(nation_vars_1999$gini_1999_03),1)`; max~04~ = `r round(max(gd$gini_2004_6),1)`, mean~04~ = `r round(mean(gd$gini_2004_6),1)`). 
 
+
+It remains ambiguous why the 1999-03 sweep trended towards a larger effect than the 2004-06 sweep. One feasible explanation is that the 1999-03 sweep included more high-inequality, high-security countries. In addition to lower mean levels of inequality, the 2004-2006 period has higher skewness, skew~2004~ = `r round(moments::skewness(gd$gini_2004_6),1)`, skew~1999~ = `r round(moments::skewness(nation_vars_1999$gini_1999_03),1)`. Such an explanation would suggest that in the 2004-6 sweep, high-inequality countries were simply undersampled, with the few high-inequality countries providing a downward-biased picture of the relationship between inequality ad security consumption, with surveyed countries perhaps having higher country-level trust and institutional integrity to begin with. Another possible explanation is the differences between sweep periods has introduced some meaningful confounding variables. Likely culprits such as GDP or victimization experiences are already accounted for in the regression models. Likewise, a more mature security market seems like an unlikely explanation, as the 1999-03 sweep had reported a higher mean security units consumed than the 2004 period (*M~99~* = `r round(mean(nation_vars_1999$total_security),1)`, *skew~99~* =  `r round(moments::skewness(nation_vars_1999$total_security),1)`; *M~04~* =  `r round(mean(gd$total_security),1)`, *skew~04~* = `r round(moments::skewness(gd$total_security),1)`).
+
+<!-- The inequality-security relationship might be weaker amongst WEIRD countries (particularly those in Western Europe).  -->
+
+One exploratory consideration could be to analyze both the 2004-06 and 1999-03 sweeps with reduced variables, along with reduced countries, so that the only differences between the 2004-06 and 1999-03 models would be the time period and the individual respondents surveyed. However, this analysis would result in only a small number of level-2 units (k = `r length(intersect(iv_2005_countries,responders_1999_countries))`), yielding effect estimates with large standard errors. Figure \@ref(fig:icvs-sec-ineq-scat-min) shows that both sweeps have positive trending relationships, and that this relationship is trending towards being larger in the 1999-03 sweep. Since the models and countries are the same, any difference in the inequality-security effect must be attributable to the time period of the survey, any differences in the survey itself, or the individuals sampled. 
+
+A contrast between Figures \@ref(fig:icvs-sec-ineq-scat) and \@ref(fig:icvs-sec-ineq-scat-min) is also suggestive that the inequality relationship for the 2004-06 period is made stronger by removing the countries that were exclusively surveyed in this time period. The small number of countries examined is too small for any statistical analysis, but raises the possibility that the countries exclusive to the 2004-06 period may have a particularly low correlation between inequality and security consumption. 
+
+
+However, any of these post-hoc, reduced-country analyses are underpowered and should be interpreted with substantial caution. 
+
+
+<!-- Likewise, there seems to be a modestly larger amount of recorded security consumption in the 1999-03 sweep than the 2004-06 sweep. This would be a surprising trend; many of the home security features analyzed in this study are installed devices, such as barred windows or special locks.  After the initial purchase and installation, they would generally remain for a moderate period of time; one would expect that these features wouldn't be removed within five years of being installed, even when new owners would take possession of a property. Such a discrepancy raises the possibility of some systematic aberrations in how the security measures were recorded between the sweep periods - did all of the individuals in all of the countries see the same security items? -->
+
+(ref:icvs-sec-ineq-scat-min) Study 3, country-level relationship between inequality and security consumption, only plotting shared countries, 2004-06 sweep period (L), 1999-03 (R)
+```{=latex}
+\begin{figure}[H]
+%\centering
+\caption{(ref:icvs-sec-ineq-scat-min) \label{fig:icvs-sec-ineq-scat-min}}
+```
+```{r icvs-sec-ineq-scat-min,eval = TRUE, include=TRUE, echo=FALSE, out.width='49%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_security_gini_full_intersected.png")
+
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_security_gini_full_1999_intersected.png")
+```
+```{=latex}
+\textit{Notes:} Labelled countries are influential observations; shaded regions correspond to 95\% confidence interval
+\end{figure}
+```
+
+
+
+<!-- Introducing random slopes for the gini may improve the overall model fit. -->
+
+<!-- min for 1999 is `r round(min(nation_vars_1999$gini_1999_03),2)` -->
+
+<!-- min for 2004 is `r round(min(gd$gini_2004_6),2)` -->
+
+See though Vrieze (2012) for a comparison of the BIC and AIC
+
+
+Given that the measure of security consumption was constructed largely out of items concerning home security, the 1999-03 sweep period was especially important because it offered the opportunity to control for one's housing. For instance, one would expect the result that individuals report more security measures when they lived in a house instead of apartment, as their residences are more likely to be at the ground level, and they have more autonomy to install security measures after moving in. Likewise, the inclusion of these housing variables helps to control for any confounding or suppressing effects. For instance, high-inequality countries could conceivably have fewer individuals in houses, artificially weakening the relationship between inequality and security consumption.
+
+There was no single model specification that could be used to consistently describe both sweep periods. For instance, the Gini\*GDP interaction improved the model fit for the 2004-06 period, but only when using AIC as the index for model evaluation. Similarly, the interaction did not improve the fit on the 1999-03 data.  The Gini\*GDP interaction was an exploratory inclusion, so any interpretations are post-hoc. Although the simultaneous inclusion of Gini and GDP as main effect variables means that Gini and GDP are not confounded in this analysis, their interaction might remain practically, if not theoretically, meaningful.
+
+One possible explanation of the Gini\*GDP interaction is that people are sensitive to the magnitude of economic differences within a society, recognizing that a large Gini in a wealthy country means that the upper crust of a society controls a much larger absolute dollar value than a poorer country (e.g., one person controlling 50% of \$100 versus \$1 million). Additionally, the distrust- and fear-inducing effect of inequality may be obscured by the average individuals' reduced purchasing power. High inequality means that any person is less likely to control a sizeable portion of a country's income, so is more likely to be poorer in absolute terms, so they may have less disposable income to spend on security products. Likewise, at least at a cross-sectional basis, the Gini and GDP are negatively correlated [@ourworldindata2019], generally reflecting that when the pool of a country's income is split more unevenly, the overall standard of living also tends to be lower. The significant Gini\*GDP interaction may suggest that if a country is more unequal and more prosperous, individuals do feel more fearful and distrustful, and they may be using their small "slice" of the large economic "pie" to satisfy their felt need for greater security.
+
+The 1999 sweep failed to find an effect of the Gini\*GDP interaction, which could be attributable to either the different set of countries that was included, or the 3-7 year difference from the 2004-06 sweep. The security market may have matured significantly between 1999 and 2004-06, where even lower-tech security measures such as window grills may have become more accessible, as the market has matured.
+
+#### Limitations
+
+Study 3's use of archival data has some notable limitations. Since many countries in the ICVS were surveyed as part of distinct contracts, they vary to the degree that sampling is representative of an entire country. For instance, some countries are only surveyed from a single city. Similarly, the data reported from the ICVS is fairly old. The overall consumption landscape, and the security industry specifically, has seen some substantial changes since the late 1990s and early 2000s. As such, the relationship between nation-level inequality and security consumption might change over other years. Likewise, any conclusions drawn from analyzing the ICVS will be limited due to the ICVS' biased and restricted selection of countries. The countries that participated were not randomly sampled, but instead out of some degree of convenience and feasibility, introducing a bias into the economic and political makeup of the countries selected.
+
+Sampling bias
+
+The cross-sectional analysis of inequality and security may may be a poor specification of how inequality would actualy impact security. For instance, @daly2016 suggests that for the relationship between homicide and inequality could be better described as time-lagged, where the effects of inequality on behaviour "must be mediated in some sort of cumulative influence of our past experiences" (p.150).
+
+The measurement of security measures is limited to self-report measures of household protection methods. As such, for many individuals, many of their security measures may have been an incidental or pre-existing feature of their residence. For instance, a consumer may choose to purchase a house for its desirable location, but the consumer does not care that the property comes bundled with some security features such as heavy-duty locks or barred windows. Personal protection measures (e.g., carrying a can of mace, avoiding going out at certain times) would likely be more salient and intentional to respondents. With this possibility of consumers being indifferent about some security measures, the self-report nature of security consumption also introduces the possibility of measurement error that respondents simply do not remember or notice some security features on their property.
+
+The use of logistic regressions carries the risk of some  misleading conclusions. Dichotomizing security consumption means treating the variable as all-or-nothing. However, there could be a meaningful loss of information by reducing the full range of values. For instance, it could be the case that many people end up with one unit of security consumption spuriously, but it is the higher units of security consumption  may have the stronger relationship with inequality.
+
+
+
+Additionally, the method of computing security consumption had to make some assumptions of how missing values were generated. 
+
+As it stands, individual weights have not been used when computing compositional variables.
+
+The model specification would be improved by the addition of covariates such as income, ethnicity, neighborhood type
+
+The presence of models that have some convergence issues may reduce the robustness of estimates, whether it is due to the selective use of models without convergence issues, or the inclusion of models that do have convergence issues.
+
+
+
+<!-- but could represent how when inequality is high, countries with larger GDPs have more "fuel" to add to the psychological "fire" of high-inequality environments. In particular, -->
+
+<!-- individuals in high GDP countries should be able to spend more on security goods in their efforts to satisfy the security needs elicited by living in high-inequality countries. -->
 
 <!-- bierman lecture 3 -->
 
@@ -735,9 +850,6 @@ Disappointingly, there didn't seem to be a single model specification that could
 <!-- > ncome inequality and fear of crime The ICC showed that a large proportion of the total variance in respondents' fear of crime was due to individual differences (90.9 percent). Consequently, 9.1 percent of the total variance was associated with differences between countries and the chi-square statistic indicated that the differences in mean scores were significant (chi2(28) = 5708.13, p \< .001), justifying follow-up analyses using country-level predictors. -->
 
 <!-- > -->
-
-<!-- > Consistent with our hypothesis (H1), income inequality predicted fear of crime (Model 1). Figure 1 shows the association between income inequality and country-level scores of fear of crime, r(28) = .46, p \< .05. T -->
-
 
 <!-- One particularly informative analysis is a cross-level interaction between inequality and personal income. In a high-inequality environment, low income individuals may experience a disproportionate contact with envious individuals, combined with an overall increased burden of past victimizations. -->
 

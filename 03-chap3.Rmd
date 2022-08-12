@@ -85,6 +85,7 @@ The highly-controlled nature of the experiments in Chapters 1 and 2 allow for pr
 ## Fear and Security in the Real World
 
 (ref:crime-trends) Actual and perceived U.S. crime trends [@gramlich2020]
+
 ```{=latex}
 \begin{figure}[H]
 \caption{(ref:crime-trends) \label{fig:crime-trends}}
@@ -193,7 +194,7 @@ Other studies provide mixed evidence of the inequality-security/fear relationshi
 
 ## Methods
 
-The relationship between country-level inequality and the consumption of security products was tested in Study 3 using multilevel regressions. These analyses were accomplished using a combination of three archival datasets: the ICVS [International Crime Victimization Survey\; for individual-level measures, including security\; Van Kesteren -@vankesteren2010], the Standardized World Income Inequality Database [SWIID\; for nation inequality\; Solt, -@solt2020], and the Penn World Tables [PWT, version 10.0\; for nation GDP\; Feenstra, Inklaar, & Timmer, -@feenstra2015]. These databases were accessed as follows: ICVS, September 1, 2020; SWIID, October 21, 2020, and PWT, March 17, 2021. After a period of data exploration, cleaning, and pilot-testing, the procedure for testing **H5)** has been pre-registered (Section \@ref(s3-ap)) prior to any hypothesis-relevant analyses. Pre-registration is beneficial when analyzing archival data, as such data-dependent analysis, the so-called "garden of forking paths" [@gelman2014] allows a researcher to pick and choose those data and analyses that best suit their preferred conclusions [@simmons2011]. Hopefully, a pre-commitment to preprocessing and analysis plans before model estimation reduces these researcher degrees of freedom, and leads to the transparent selection of a more procedurally-sound model.
+The relationship between country-level inequality and the consumption of security products was tested in Study 3 using multilevel regressions. These analyses were accomplished using a combination of three archival datasets: the ICVS [International Crime Victimization Survey; for individual-level measures, including security; Van Kesteren -@vankesteren2010], the Standardized World Income Inequality Database [SWIID; for nation inequality; Solt, -@solt2020], and the Penn World Tables [PWT, version 10.0; for nation GDP; Feenstra, Inklaar, & Timmer, -@feenstra2015]. These databases were accessed as follows: ICVS, September 1, 2020; SWIID, October 21, 2020, and PWT, March 17, 2021. After a period of data exploration, cleaning, and pilot-testing, the procedure for testing **H5)** has been pre-registered (Section \@ref(s3-ap)) prior to any hypothesis-relevant analyses. Pre-registration is beneficial when analyzing archival data, as such data-dependent analysis, the so-called "garden of forking paths" [@gelman2014] allows a researcher to pick and choose those data and analyses that best suit their preferred conclusions [@simmons2011]. Hopefully, a pre-commitment to preprocessing and analysis plans before model estimation reduces these researcher degrees of freedom, and leads to the transparent selection of a more procedurally-sound model.
 
 <!-- Atkinson and Brandolini (2001) discuss these and several related pitfalls in their excellent survey on the use of secondary data sets in studies of income inequality. -->
 
@@ -239,7 +240,7 @@ The ICVS is not a fully standardized survey, and thus varies across countries in
 
 Importantly, in each of the sweeps in the ICVS, there is substantial variation in which countries are surveyed, and the questionnaires used. There have been over a dozen different questionnaires that have been implemented across the ICVS's lifespan. With so much variability, one cannot simply compute and compare variables without screening and cleaning. Otherwise, unfair comparisons will be made, such as comparing Norway in 2005 to Indonesia in 1989, with respondents in Norway not even being asked any questions on their security consumption. Some extensive screening was conducted to guide the selection of countries and time periods for analysis, to ensure the comparability of responses. Personal correspondence with an author and maintainer of the ICVS has revealed that the items used in questionnaires were screened for comparability before combination into the full dataset.
 
-The main analysis for this study opts to combine the 2004-2006 survey sweep with the 2005 EU-specific sweep, yielding an initial count of 34 countries. These sweeps are perfectly complementary, with no countries being measured twice. Just under half of all ICVS-surveyed countries were included between 2004-2006. This 2004-2006 window offers some notable benefits: relatively recent data, a small time window encompassing each observation, and a sufficient number of level 2 clustering variables [30+ clusters are recommended for multilevel models\; Snijders & Bosker, -@snijders2011]. As will be described later, another sweep from 1999-2003 was also analyzed as part of a pre-registered robustness check for the 2004-06 results.
+The main analysis for this study opts to combine the 2004-2006 survey sweep with the 2005 EU-specific sweep, yielding an initial count of 34 countries. These sweeps are perfectly complementary, with no countries being measured twice. Just under half of all ICVS-surveyed countries were included between 2004-2006. This 2004-2006 window offers some notable benefits: relatively recent data, a small time window encompassing each observation, and a sufficient number of level 2 clustering variables [30+ clusters are recommended for multilevel models; Snijders & Bosker, -@snijders2011]. As will be described later, another sweep from 1999-2003 was also analyzed as part of a pre-registered robustness check for the 2004-06 results.
 
 After selecting a time period (2004-06) and cleaning the nation-level identifiers, further screening was guided by attempting to choose the greatest number of relevant variables for analysis. For instance, Hong Kong was dropped due to complete missingness for participant age. Similarly, individual observations were dropped if they were missing responses on age, gender, or employment status. Multiple security measures are also surveyed in the ICVS. These items were screened to assess which variables would be used to construct the dependent variable of security consumption: watch dog, high fence, neighborhood watch scheme, burglar alarm, special door locks, special grills, caretaker security, and gun ownership.
 
@@ -275,6 +276,7 @@ Security consumption (*M* = `r round(mean(iv_2005$total_security),2)`, *SD* = `r
 This security consumption variable excludes several security items in the ICVS due to missing data, such as owning a watch dog, having surveillance arrangements with neighbors, and purchasing insurance against criminal activities.
 
 (ref:icvs-security-hist) Count of security measures in the ICVS (Study 3).
+
 ```{=latex}
 \begin{figure}[h]
 \caption{(ref:icvs-security-hist) \label{fig:icvs-security-hist}}
@@ -282,6 +284,7 @@ This security consumption variable excludes several security items in the ICVS d
 ```{r icvs-security-hist,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_hist_iv.png")
 ```
+
 ```{=latex}
 \textit{Notes:}  Dotted line indicates mean ($M$ =`r round(mean(iv_2005$total_security),2)`)
 \end{figure}
@@ -421,7 +424,6 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 ```{=latex}
 \end{figure}
 ```
-
 The pre-registered analysis plan sought to prioritize treating security consumption as an ordinal variable (0: no security consumption, 1: one unit of security consumption, 2: two units, or 3: three or more units), using a cumulative link mixed model. The distribution of values in security consumption exhibits excessive skewness and asymmetry, and is not suitable to a linear model. Likewise, despite security consumption being a count variable of multiple binary occurrences, it is unlikely to meet the assumptions for a poisson process, which assumes that the maximum value stretches out indefinitely. Because of these limitations, treating the dependent variable as ordinal strikes a balance of model parsimony (minimizing assumptions about the variable), while leveraging information on the data's ranked structure.
 
 Likewise, the ICVS dataset includes frequency weights for all included participants. These weights will be used whenever possible, as country-wide household surveys are unlikely to yield samples that are perfectly representative of their populations. Pilot analyses did indicate possible convergence issues when weights are included. As such, the contingency plan as depicted in Figure \@ref(fig:icvs-2004-6-cont) was proposed for the analysis. 1) Attempt weighted ordinal regression, if the weighted ordinal model fails to converge, 2) conducted the model without frequency weights, elsewise, 3) conduct a weighted mixed logistic regresssion, then 4) attempt an unweighted mixed logistic regression. In the event of logistic regressions being used, security consumption was coded as 0: no consumption, and 1: one or more units reported.
@@ -452,7 +454,7 @@ For all analyses, the coefficient estimates and standard errors were extracted t
 
 Attempting to follow the pre-registered contingency plan, as presented in Figure \@ref(fig:icvs-2004-6-cont), all analyses yielded errors or warnings for at least some of the 100 analyzed datasets. Both the weighted and unweighted ordinal regressions were unable to compute standard errors for `r mw100_ord_nonconverge`/100 analyses. By contrast, each of the weighted and unweighted versions of logistic regressions successfully computed standard errors, but returned warnings for failed convergence for `r mw100_log_nonconverge`/100 of the conducted analyses, along with warnings for excessively large eigenvalues.
 
-The pre-registered analysis plan did not provide contingencies for such widespread errors, so the relative costs and benefits of choosing analyses must be weighed after the fact. At this next step, it was decided post-hoc to attempt re-scaling age and Gini as standardized variables, in order to address the large eigenvalues, and hopefully eliminate the convergence issues.
+The pre-registered analysis plan did not provide contingencies for such widespread errors, so the relative costs and benefits of choosing analyses must be weighed after the fact. At this next step, it was decided post-hoc to attempt re-scaling age and Gini as standardized variables, in order to address the large eigenvalues and convergence issues.
 
 Both for the models conducted on the 2004-06 and 1999-03 sweeps, scaling predictors for the ordinal analyses either made a negligible improvement to convergence issues (Table \@ref(tab:ord-log-converg-tab-99), or actually increased the number of models with errors (Table \@ref(tab:ord-log-converg-tab). As such, the logistic variants are reported for the main analyses, but the ordinal versions are available in the appendix (e.g., Figures\@ref(fig:icvs-ord-dwplot)).
 
@@ -473,12 +475,11 @@ Initial analyses (weighted for population frequency, two-tailed tests) indicated
 ```{r icvs-log-scale-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_log_scaled_dotwhisker.png")
 ```
+
 ```{=latex}
 \textit{Notes:}  Regression results in Table @ref(tab:s3-logistic-scaled); coefficients in table will be slightly different, as dotplot terms are standardized by multiplying terms by twice the standard deviation of these variables, for  comparable coefficients.
 \end{figure}
 ```
-
-
 ```{r s3-logistic-scaled}
 sec_mw100_log_scale_tidy1 <- data.frame(sec_mw100_log_scale_tidy)
 
@@ -528,14 +529,16 @@ kable_styling(latex_options = c(
   # "striped", 
   "hold_position"))  %>%
   kableExtra::footnote(general = c(paste0("AIC = ",model_fits_sec_mw100_log_scale["AIC"], " , BIC = ",model_fits_sec_mw100_log_scale["BIC"], ", Loglik = ",model_fits_sec_mw100_log_scale["logLik"])),
-                       footnote_as_chunk=T,
-                       threeparttable = TRUE)
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 
 ```
 
 When the 1999-03 dataset was analyzed, there was a positive and significant effect of income inequality on security consumption, `r tidy_extract(sec_mw100_log_scale_1999_tidy,"gini_1999_03_scale")`. In this model, GDP did not reach significance thresholds, `r tidy_extract(sec_mw100_log_scale_1999_tidy,"gdppc_1999_03_scale",test.stat=FALSE)`. (Figure \@ref(fig:icvs-log-scale-1999-dwplot); Table \@ref(tab:s3-logistic-scaled-1999))
 
 (ref:icvs-log-scale-1999-dwplot) Study 3, dot-whisker plot for logistic regression, 1999-03 period.
+
 ```{=latex}
 \begin{figure}[H]
 \caption{(ref:icvs-log-scale-1999-dwplot) \label{fig:icvs-log-scale-1999-dwplot}}
@@ -598,32 +601,32 @@ kable_styling(latex_options = c(
   "hold_position"))  %>%
   kableExtra::footnote(general = c(paste0("AIC = ",round(model_fits_sec_mw100_log_scale_1999["AIC"],2), " , BIC = ",round(model_fits_sec_mw100_log_scale_1999["BIC"],2), ", Loglik = ",round(model_fits_sec_mw100_log_scale_1999["logLik"],2))),
                        footnote_as_chunk=T,
-                       threeparttable = TRUE)
+                       threeparttable = TRUE
+                       )
 
 ```
 
-Variability in coefficients between the 2004-06 and 1999-03 periods are difficult to interpret from the above models alone; any differences could be attributable to real differences in the data, or due to differences in model specification. The 1999 period has additional variables such as housing and relationship status, but is missing employment status. As such, robustness check models were conducted with a reduced variable set: Gini, gdp, victimization (nation- and individual-level), gender, and age. 
+Variability in coefficients between the 2004-06 and 1999-03 periods are difficult to interpret from the above models alone; any differences could be attributable to real differences in the data, or due to differences in model specification. The 1999 period has additional variables such as housing and relationship status, but is missing employment status. As such, robustness check models were conducted with a reduced variable set: Gini, gdp, victimization (nation- and individual-level), gender, and age.
 
-The coefficient patterns in the two above models generally held with reduced models. In the reduced model analyzing 2004-06 dataset, Gini continued to have no significant effect `r tidy_extract(sec_mw100_log_robust_scale_tidy,"gini_2004_6_scale",test.stat=FALSE)`. However, in this reduced model, the effect of gender (reporting as male) did change, reaching statistical significance, `r tidy_extract(sec_mw100_log_robust_scale_tidy,"male1",test.stat=FALSE)` (Figure \@ref(fig:icvs-log-robust-scale-dwplot) and Table \@ref(tab:s3-logistic-scaled-robust)). In the reduced 1999-03 model, the effect of the Gini remained positive and significant `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gini_1999_03_scale")`, the effect of GDP varied from the larger model, reaching statistical significance `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gdppc_1999_03_scale",test.stat=FALSE)` (Figure \@ref(fig:icvs-log-robust-scale-1999-dwplot) and Table \@ref(tab:s3-logistic-scaled-robust-1999)). 
+The coefficient patterns in the two above models generally held with reduced models. In the reduced model analyzing 2004-06 dataset, Gini continued to have no significant effect `r tidy_extract(sec_mw100_log_robust_scale_tidy,"gini_2004_6_scale",test.stat=FALSE)`. However, in this reduced model, the effect of gender (reporting as male) did change, reaching statistical significance, `r tidy_extract(sec_mw100_log_robust_scale_tidy,"male1",test.stat=FALSE)` (Figure \@ref(fig:icvs-log-robust-scale-dwplot) and Table \@ref(tab:s3-logistic-scaled-robust)). In the reduced 1999-03 model, the effect of the Gini remained positive and significant `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gini_1999_03_scale")`, the effect of GDP varied from the larger model, reaching statistical significance `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gdppc_1999_03_scale",test.stat=FALSE)` (Figure \@ref(fig:icvs-log-robust-scale-1999-dwplot) and Table \@ref(tab:s3-logistic-scaled-robust-1999)).
 
 The base model across both sweep periods proved to be a better fit than the reduced models. (AIC~(04-06)base-reduced~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_robust_scale["AIC"]`; AIC~(99-03)base-reduced~ = `r round(model_fits_sec_mw100_log_scale_1999["AIC"] - model_fits_sec_mw100_log_robust_scale_1999["AIC"],2)`)
 
 (BIC~(04-06)base-reduced~ = `r model_fits_sec_mw100_log_scale["BIC"] - model_fits_sec_mw100_log_robust_scale["BIC"]`) (BIC~(99-03)base-reduced~ = `r model_fits_sec_mw100_log_scale_1999["BIC"] - model_fits_sec_mw100_log_robust_scale_1999["BIC"]`)
 
-
 Notably, treating security consumption as an ordinal did not change inequality's pattern of significance (nonsignificant for 04-06 period, significant for 99-03; 2004, Table \@ref(tab:s3-ord); 2004 reduced, Table \@ref(tab:s3-ord-robust-scale); 1999, Table \@ref(tab:s3-ord-99); 1999 reduced, Table \@ref(tab:s3-ord-99-robust))
 
 #### Exploratory analyses:
 
-The effect of Gini may be better described by something other than a simple linear effect. As exploratory analyses, models were fit for both the 2004 and 1999 datasets with an exponential term for income inequality, and an inequality\*GDP interaction. The exponential and interaction terms are reported within separate models, as within the same model, they introduce excessive multicollinearity in the model (max VIF = `r round(max(sec_lmer1_poly_int_vif),2)` for the Gini\*GDP interaction). For the 2004-2006 dataset, analyses of AIC values indicated that compared to the base model, including the interaction term produced a superior fit (AIC~base-int~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]`). Conversely, the polynomial model is an insufficient improvement to fit beyond the base model (AIC~base-poly~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_poly["AIC"]`). Similarly, the polynomial is a worse fit to the interaction model (AIC~poly-int~ = `r model_fits_sec_mw100_log_scale_poly["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]`.
+The effect of Gini may be better described by something other than a simple linear effect. As exploratory analyses, models were fit for both the 2004 and 1999 datasets with an exponential term for income inequality, and an inequality\*GDP interaction. The exponential and interaction terms are reported within separate models, as within the same model, they introduce excessive multicollinearity in the model (max VIF = `r round(max(sec_lmer1_poly_int_vif),2)` for the Gini\*GDP interaction). For the 2004-2006 dataset, analyses of AIC values indicated that compared to the base model, including the interaction term produced a superior fit (AIC~base-int~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]`). Conversely, the polynomial model is an insufficient improvement to fit beyond the base model (AIC~base-poly~ = `r model_fits_sec_mw100_log_scale["AIC"] - model_fits_sec_mw100_log_scale_poly["AIC"]`). Similarly, the polynomial is a worse fit to the interaction model (AIC~poly-int~ = `r model_fits_sec_mw100_log_scale_poly["AIC"] - model_fits_sec_mw100_log_scale_int["AIC"]`).
 
 Another performance metric is the BIC, or Bayesian Information criterion, which has a stronger penalty for additional variables than the AIC. When using the BIC to evaluate the same models as above, the indices recommend using the base model with fewer variables. Smaller BIC values indicate a better fit. Compared to the base model, including the interaction term a worse fit (BIC~base-int~ = `r model_fits_sec_mw100_log_scale["BIC"] - model_fits_sec_mw100_log_scale_int["BIC"]`). Similarly, the polynomial model is an insufficient improvement to fit beyond the base model (BIC~base-poly~ = `r model_fits_sec_mw100_log_scale["BIC"] - model_fits_sec_mw100_log_scale_poly["BIC"]`). Again, the polynomial is a worse fit to the interaction model (BIC~poly-int~ = `r model_fits_sec_mw100_log_scale_poly["BIC"] - model_fits_sec_mw100_log_scale_int["BIC"]`.
 
-Given the exploratory nature of these analyses, the BIC is likely a better fit index to guide decisions and inferences, as a means of controlling for Type I errors. In such a case, any coefficient change should be interpreted  as a spurious change that has no substantive impact on predicting security consumption.
+Given the exploratory nature of these analyses, the BIC is likely a better fit index to guide decisions and inferences, as a means of controlling for Type I errors. In such a case, any coefficient change should be interpreted as a spurious change that has no substantive impact on predicting security consumption.
 
 <!-- Reference for BIC Long 1997:112 (0-2 weak, 2-6 positive, 6-10) -->
 
-For the interaction-included model of the 2004 dataset, both the coefficients for income inequality, and the Gini\*GDP interaction were significant, `r tidy_extract(sec_mw100_log_scale_int_tidy,"gini_2004_6_scale")` and `r tidy_extract(sec_mw100_log_scale_int_tidy,"gini_gdp",test.stat=FALSE)`, respectively. 
+For the interaction-included model of the 2004 dataset, both the coefficients for income inequality, and the Gini\*GDP interaction were significant, `r tidy_extract(sec_mw100_log_scale_int_tidy,"gini_2004_6_scale")` and `r tidy_extract(sec_mw100_log_scale_int_tidy,"gini_gdp",test.stat=FALSE)`, respectively.
 
 For the 1999 dataset, AIC values indicated that the addition of neither interaction nor exponential terms sufficiently improved model fit beyond the base model (AIC differences = `r round(model_fits_sec_mw100_log_scale_1999["AIC"] - model_fits_sec_mw100_log_scale_int_1999["AIC"],3)` and `r round(model_fits_sec_mw100_log_scale_1999["AIC"] - model_fits_sec_mw100_log_scale_poly_1999["AIC"],3)`, respectively. These models are thus only included in the appendix (Figures \@ref(fig:icvs-log-scale-int-1999-dwplot), \@ref(fig:icvs-log-scale-poly-1999-dwplot) and Tables \@ref(tab:s3-logistic-scaled-int-1999), \@ref(tab:s3-logistic-scaled-poly-1999)). In both of those models, inequality still had a significant and positive association with security consumption.
 
@@ -644,12 +647,11 @@ For the 1999 dataset, AIC values indicated that the addition of neither interact
 ```{r icvs-log-scale-int-dwplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_2004_6_log_scale_int_dotwhisker.png")
 ```
+
 ```{=latex}
 \textit{Notes:} Regression results in Table @ref(tab:s3-logistic-scaled-int)
 \end{figure}
 ```
-
-
 ```{r s3-logistic-scaled-int}
 sec_mw100_log_scale_int_tidy1 <- data.frame(sec_mw100_log_scale_int_tidy)
 
@@ -707,7 +709,8 @@ kable_styling(latex_options = c(
   "hold_position")) %>%
   kableExtra::footnote(general = c(paste0("AIC = ",model_fits_sec_mw100_log_scale_int["AIC"], " , BIC = ",model_fits_sec_mw100_log_scale_int["BIC"], ", Loglik = ",model_fits_sec_mw100_log_scale_int["logLik"])),
                        footnote_as_chunk=T,
-                       threeparttable = TRUE)
+                       # threeparttable = TRUE
+                       )
 
 
 ```
@@ -715,6 +718,7 @@ kable_styling(latex_options = c(
 ## Discussion
 
 (ref:icvs-sec-ineq-scat) Study 3, country-level relationship between inequality and security consumption, 2004-06 sweep period (L), 1999-03 (R)
+
 ```{=latex}
 \begin{figure}[H]
 %\centering
@@ -725,34 +729,31 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_security_gini_full_1999.png")
 ```
+
 ```{=latex}
 \textit{Notes:} Labelled countries are influential observations; shaded regions correspond to 95\% confidence interval
 \end{figure}
 ```
+The results of Study 3 show mixed support for **H5)**. Although there was a consistently positive effect of inequality on reported security consumption, the effect's statistical significance varied across analyses. The pre-registered focal analysis (2004-06 period) failed to find a significant effect of inequality, until the Gini\*GDP interaction was added. The robustness-check dataset from the 1999-03 period found a significant effect of inequality across all model versions. For exploratory analyses of the 2004-06 dataset, the addition of the (positive and significant) interaction term yielded a significant and positive main effect of inequality. However, adding the Gini\*GDP term only improved model fit when assessed by the AIC. When a more conservative index of model fit was used (BIC), adding the Gini\*GDP term did not adequately improve model fit.
 
-
-The results of Study 3 show a consistently positive effect of inequality on reported security consumption, with some variability in the effect's statistical significance. In the 1999 dataset, the effect of inequality was positive and significant across all model versions. In the 2004-06 data period, the effect of inequality was null until the Gini\*gdp interaction was added. With the exploratory addition of the (positive and significant) interaction term, the main effect of inequality was significantly positive. However, adding the Gini\*GDP term only improved model fit when assessed by the AIC. When a more conservative index of model fit was used (BIC), adding the Gini\*gdp term did not adequately improve model fit.
+<!-- However, this interaction model only improved the model fit when assessed with AIC values, using the more conservative BIC, the inclusion of an interaction term did not sufficiently improve the model. -->
 
 <!-- Notably, these significance patterns would hold if the inequality and Gini\*gdp terms were subject to a bonferonni correction, reducing the significance threshold from .05 to .025.  -->
 
-Even with reduced analyses with identical predictor variables, a significant effect of inequality was found in the  1999-03 period, but not the 2004-06 period. After ruling out differences in model specifications, the change in inequality's significance between sweep periods may be attributable to the slightly larger number of clustering units for this level-2 effect (k = 41 vs. k = 32), resulting in smaller standard errors. Likewise, the effect of inequality trended towards being larger in the 1999-03 period, `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gini_1999_03_scale",test.stat=FALSE, p.val = FALSE)`, compared to the 2004-06 period, `r tidy_extract(sec_mw100_log_robust_scale_tidy,"gini_2004_6_scale",test.stat=FALSE, p.val = FALSE)`. As discussed earlier, there is a substantial difference in the countries covered between the 1999-03 and 2004-06 period (e.g., 1999-03 is unique in including countries like Botswana, Panama, Philippines, and Ukraine, but is missing countries such as Austria, Iceland, Italy, and Mexico). The 1999-03 sweep generally has better coverage of countries in Africa, South America, and Asia, and has larger Gini values (max~99~ = `r round(max(nation_vars_1999$gini_1999_03),1)`, mean~99~ = `r round(mean(nation_vars_1999$gini_1999_03),1)`; max~04~ = `r round(max(gd$gini_2004_6),1)`, mean~04~ = `r round(mean(gd$gini_2004_6),1)`). 
+Even with reduced analyses with identical predictor variables, a significant effect of inequality was found in the 1999-03 period, but not the 2004-06 period. After ruling out differences in model specifications, the change in inequality's significance between sweep periods may be attributable to the slightly larger number of clustering units for this level-2 effect (k = 41 vs. k = 32), resulting in smaller standard errors. Likewise, the effect of inequality trended towards being larger in the 1999-03 period, `r tidy_extract(sec_mw100_log_robust_scale_1999_tidy,"gini_1999_03_scale",test.stat=FALSE, p.val = FALSE)`, compared to the 2004-06 period, `r tidy_extract(sec_mw100_log_robust_scale_tidy,"gini_2004_6_scale",test.stat=FALSE, p.val = FALSE)`. As discussed earlier, the two sweep periods differ substantially in the countries covered. For instance, 1999-03 is unique in including countries like Botswana, Panama, Philippines, and Ukraine, but is missing countries such as Austria, Iceland, Italy, and Mexico). The 1999-03 sweep generally has better coverage of countries in Africa, South America, and Asia, and has larger Gini values (max~99~ = `r round(max(nation_vars_1999$gini_1999_03),1)`, mean~99~ = `r round(mean(nation_vars_1999$gini_1999_03),1)`; max~04~ = `r round(max(gd$gini_2004_6),1)`, mean~04~ = `r round(mean(gd$gini_2004_6),1)`).
 
-
-It remains ambiguous why the 1999-03 sweep trended towards a larger effect than the 2004-06 sweep. One feasible explanation is that the 1999-03 sweep included more high-inequality, high-security countries. In addition to lower mean levels of inequality, the 2004-2006 period has higher skewness, skew~2004~ = `r round(moments::skewness(gd$gini_2004_6),1)`, skew~1999~ = `r round(moments::skewness(nation_vars_1999$gini_1999_03),1)`. Such an explanation would suggest that in the 2004-6 sweep, high-inequality countries were simply undersampled, with the few high-inequality countries providing a downward-biased picture of the relationship between inequality ad security consumption, with surveyed countries perhaps having higher country-level trust and institutional integrity to begin with. Another possible explanation is the differences between sweep periods has introduced some meaningful confounding variables. Likely culprits such as GDP or victimization experiences are already accounted for in the regression models. Likewise, a more mature security market seems like an unlikely explanation, as the 1999-03 sweep had reported a higher mean security units consumed than the 2004 period (*M~99~* = `r round(mean(nation_vars_1999$total_security),1)`, *skew~99~* =  `r round(moments::skewness(nation_vars_1999$total_security),1)`; *M~04~* =  `r round(mean(gd$total_security),1)`, *skew~04~* = `r round(moments::skewness(gd$total_security),1)`).
+It is unclear why analyses on the 1999-03 sweep trended towards a larger effect of inequality than the 2004-06 sweep. One feasible explanation is that the 1999-03 sweep included more high-inequality, high-security countries. In addition to lower mean levels of inequality, the 2004-2006 period has higher skewness, skew~2004~ = `r round(moments::skewness(gd$gini_2004_6),1)`, skew~1999~ = `r round(moments::skewness(nation_vars_1999$gini_1999_03),1)`. Such an explanation would suggest that in the 2004-6 sweep, high-inequality countries were simply undersampled, with the few high-inequality countries providing a downward-biased picture of the relationship between inequality ad security consumption, with surveyed countries perhaps having higher country-level trust and institutional integrity to begin with. Another possible explanation is the differences between sweep periods has introduced some meaningful confounding variables. Likely culprits such as GDP or victimization experiences are already accounted for in the regression models. Likewise, a more mature security market seems like an unlikely explanation, as the 1999-03 sweep had reported a higher mean security units consumed than the 2004 period (*M~99~* = `r round(mean(nation_vars_1999$total_security),1)`, *skew~99~* = `r round(moments::skewness(nation_vars_1999$total_security),1)`; *M~04~* = `r round(mean(gd$total_security),1)`, *skew~04~* = `r round(moments::skewness(gd$total_security),1)`).
 
 <!-- The inequality-security relationship might be weaker amongst WEIRD countries (particularly those in Western Europe).  -->
 
-One exploratory consideration could be to analyze both the 2004-06 and 1999-03 sweeps with reduced variables, along with reduced countries, so that the only differences between the 2004-06 and 1999-03 models would be the time period and the individual respondents surveyed. However, this analysis would result in only a small number of level-2 units (k = `r length(intersect(iv_2005_countries,responders_1999_countries))`), yielding effect estimates with large standard errors. Figure \@ref(fig:icvs-sec-ineq-scat-min) shows that both sweeps have positive trending relationships, and that this relationship is trending towards being larger in the 1999-03 sweep. Since the models and countries are the same, any difference in the inequality-security effect must be attributable to the time period of the survey, any differences in the survey itself, or the individuals sampled. 
+One exploratory consideration could be to analyze both the 2004-06 and 1999-03 sweeps with reduced variables, along with reduced countries, so that the only differences between the 2004-06 and 1999-03 models would be the time period and the individual respondents surveyed. However, this analysis would result in only a small number of level-2 units (k = `r length(intersect(iv_2005_countries,responders_1999_countries))`), yielding effect estimates with large standard errors. Figure \@ref(fig:icvs-sec-ineq-scat-min) shows that both sweeps have positive trending relationships, and that this relationship is trending towards being larger in the 1999-03 sweep. Since the models and countries are the same, any difference in the inequality-security effect must be attributable to the time period of the survey, any differences in the survey itself, or the individuals sampled.
 
-A contrast between Figures \@ref(fig:icvs-sec-ineq-scat) and \@ref(fig:icvs-sec-ineq-scat-min) is also suggestive that the inequality relationship for the 2004-06 period is made stronger by removing the countries that were exclusively surveyed in this time period. The small number of countries examined is too small for any statistical analysis, but raises the possibility that the countries exclusive to the 2004-06 period may have a particularly low correlation between inequality and security consumption. 
-
-
-However, any of these post-hoc, reduced-country analyses are underpowered and should be interpreted with substantial caution. 
-
+A contrast between Figures \@ref(fig:icvs-sec-ineq-scat) and \@ref(fig:icvs-sec-ineq-scat-min) is also suggestive that the inequality-security relationship for the 2004-06 period is strengthened by removing the countries that were exclusively surveyed in this time period. The small number of countries examined is too small for any statistical analysis, but raises the possibility that the countries exclusive to the 2004-06 period may have a particularly low correlation between inequality and security consumption, and that their inclusion reduces the overall correlation coefficient. However, any of these post-hoc, reduced-country analyses are underpowered and should be interpreted with substantial caution.
 
 <!-- Likewise, there seems to be a modestly larger amount of recorded security consumption in the 1999-03 sweep than the 2004-06 sweep. This would be a surprising trend; many of the home security features analyzed in this study are installed devices, such as barred windows or special locks.  After the initial purchase and installation, they would generally remain for a moderate period of time; one would expect that these features wouldn't be removed within five years of being installed, even when new owners would take possession of a property. Such a discrepancy raises the possibility of some systematic aberrations in how the security measures were recorded between the sweep periods - did all of the individuals in all of the countries see the same security items? -->
 
 (ref:icvs-sec-ineq-scat-min) Study 3, country-level relationship between inequality and security consumption, only plotting shared countries, 2004-06 sweep period (L), 1999-03 (R)
+
 ```{=latex}
 \begin{figure}[H]
 %\centering
@@ -763,25 +764,22 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s3_icvs_security_gini_full_1999_intersected.png")
 ```
+
 ```{=latex}
 \textit{Notes:} Labelled countries are influential observations; shaded regions correspond to 95\% confidence interval
 \end{figure}
 ```
-
-
-
 <!-- Introducing random slopes for the gini may improve the overall model fit. -->
 
 <!-- min for 1999 is `r round(min(nation_vars_1999$gini_1999_03),2)` -->
 
 <!-- min for 2004 is `r round(min(gd$gini_2004_6),2)` -->
 
-See though Vrieze (2012) for a comparison of the BIC and AIC
-
+See [@vrieze2012] though for a comparison of the BIC and AIC ??
 
 Given that the measure of security consumption was constructed largely out of items concerning home security, the 1999-03 sweep period was especially important because it offered the opportunity to control for one's housing. For instance, one would expect the result that individuals report more security measures when they lived in a house instead of apartment, as their residences are more likely to be at the ground level, and they have more autonomy to install security measures after moving in. Likewise, the inclusion of these housing variables helps to control for any confounding or suppressing effects. For instance, high-inequality countries could conceivably have fewer individuals in houses, artificially weakening the relationship between inequality and security consumption.
 
-There was no single model specification that could be used to consistently describe both sweep periods. For instance, the Gini\*GDP interaction improved the model fit for the 2004-06 period, but only when using AIC as the index for model evaluation. Similarly, the interaction did not improve the fit on the 1999-03 data.  The Gini\*GDP interaction was an exploratory inclusion, so any interpretations are post-hoc. Although the simultaneous inclusion of Gini and GDP as main effect variables means that Gini and GDP are not confounded in this analysis, their interaction might remain practically, if not theoretically, meaningful.
+There was no single model specification that could be used to consistently describe both sweep periods. For instance, the Gini\*GDP interaction improved the model fit for the 2004-06 period, but only when using AIC as the index for model evaluation. Similarly, the interaction did not improve the fit on the 1999-03 data. The Gini\*GDP interaction was an exploratory inclusion, so any interpretations are post-hoc. Although the simultaneous inclusion of Gini and GDP as main effect variables means that Gini and GDP are not confounded in this analysis, their interaction might remain practically, if not theoretically, meaningful.
 
 One possible explanation of the Gini\*GDP interaction is that people are sensitive to the magnitude of economic differences within a society, recognizing that a large Gini in a wealthy country means that the upper crust of a society controls a much larger absolute dollar value than a poorer country (e.g., one person controlling 50% of \$100 versus \$1 million). Additionally, the distrust- and fear-inducing effect of inequality may be obscured by the average individuals' reduced purchasing power. High inequality means that any person is less likely to control a sizeable portion of a country's income, so is more likely to be poorer in absolute terms, so they may have less disposable income to spend on security products. Likewise, at least at a cross-sectional basis, the Gini and GDP are negatively correlated [@ourworldindata2019], generally reflecting that when the pool of a country's income is split more unevenly, the overall standard of living also tends to be lower. The significant Gini\*GDP interaction may suggest that if a country is more unequal and more prosperous, individuals do feel more fearful and distrustful, and they may be using their small "slice" of the large economic "pie" to satisfy their felt need for greater security.
 
@@ -789,27 +787,27 @@ The 1999 sweep failed to find an effect of the Gini\*GDP interaction, which coul
 
 #### Limitations
 
-Study 3's use of archival data has some notable limitations. Since many countries in the ICVS were surveyed as part of distinct contracts, they vary to the degree that sampling is representative of an entire country. For instance, some countries are only surveyed from a single city. Similarly, the data reported from the ICVS is fairly old. The overall consumption landscape, and the security industry specifically, has seen some substantial changes since the late 1990s and early 2000s. As such, the relationship between nation-level inequality and security consumption might change over other years. Likewise, any conclusions drawn from analyzing the ICVS will be limited due to the ICVS' biased and restricted selection of countries. The countries that participated were not randomly sampled, but instead out of some degree of convenience and feasibility, introducing a bias into the economic and political makeup of the countries selected.
+Study 3's use of archival data has some notable limitations. Since many countries in the ICVS were surveyed as part of distinct contracts, they vary to the degree that sampling is representative of an entire country. For instance, some countries are only surveyed from a single city. Similarly, the data reported from the ICVS is fairly old. The overall consumption landscape, and the security industry specifically, has seen some substantial changes since the late 1990s and early 2000s. As such, the relationship between nation-level inequality and security consumption might change over other years. Likewise, any conclusions drawn from analyzing the ICVS will be limited due to the ICVS' restricted selection of countries. The countries that participated were not randomly sampled, but instead out of convenience and feasibility, possibly introducing a bias into the economic and cultural makeup of the countries selected.
 
-Sampling bias
+Another limitation worth acknowledging is that the exact security products used by an individual might vary across countries, depending on cultural, economic, or city infrastructure factors. For instance, in one country, individuals may have almost burglar alarms, but use security goods not included in the ICVS. As such, some countries may seem erroneously low or high in their security consumption, introducing error in the measurement of this dependent variable.
 
-The cross-sectional analysis of inequality and security may may be a poor specification of how inequality would actualy impact security. For instance, @daly2016 suggests that for the relationship between homicide and inequality could be better described as time-lagged, where the effects of inequality on behaviour "must be mediated in some sort of cumulative influence of our past experiences" (p.150).
+<!-- Sampling bias -->
+
+The cross-sectional analysis of inequality and security may may be a poor specification of how inequality would actually impact security. For instance, @daly2016 suggests that for the relationship between homicide and inequality could be better described as time-lagged, where the effects of inequality on behaviour "must be mediated in some sort of cumulative influence of our past experiences" (p.150).
 
 The measurement of security measures is limited to self-report measures of household protection methods. As such, for many individuals, many of their security measures may have been an incidental or pre-existing feature of their residence. For instance, a consumer may choose to purchase a house for its desirable location, but the consumer does not care that the property comes bundled with some security features such as heavy-duty locks or barred windows. Personal protection measures (e.g., carrying a can of mace, avoiding going out at certain times) would likely be more salient and intentional to respondents. With this possibility of consumers being indifferent about some security measures, the self-report nature of security consumption also introduces the possibility of measurement error that respondents simply do not remember or notice some security features on their property.
 
-The use of logistic regressions carries the risk of some  misleading conclusions. Dichotomizing security consumption means treating the variable as all-or-nothing. However, there could be a meaningful loss of information by reducing the full range of values. For instance, it could be the case that many people end up with one unit of security consumption spuriously, but it is the higher units of security consumption  may have the stronger relationship with inequality.
+The use of logistic regressions carries the risk of some misleading conclusions. Dichotomizing security consumption means treating the variable as all-or-nothing. However, there could be a meaningful loss of information by reducing the full range of values. For instance, it could be the case that many people end up with one unit of security consumption spuriously, but it is the higher units of security consumption may have the stronger relationship with inequality.
 
+Chapter 3 provided an exciting opportunity to examine the inequality-security relationship outside of strict experimental designs, with a combination of international archival datasets. Inequality was found to be positively and significantly associated with reported security consumption, but this effect was only robust in the 1999-03 sweep period, which was meant to only be a robustness check. In the 2004-06 period, the effect of inequality was always positive, but only reached statistical significance when accompanied by an inequality\*GDP interaction term. The addition of this interaction term only improved model fit when assessed with a more liberal index of model fit; the conservative BIC indicated that the interaction term did not sufficiently improve explanatory power. Thus, Chapter 3 provides mixed support for **H5)**, with some years, survey methods, or specifications nullifying the effect of inequality on security consumption.
 
+<!-- Additionally, the method of computing security consumption had to make some assumptions of how missing values were generated. -->
 
-Additionally, the method of computing security consumption had to make some assumptions of how missing values were generated. 
+<!-- As it stands, individual weights have not been used when computing compositional variables. -->
 
-As it stands, individual weights have not been used when computing compositional variables.
+<!-- The model specification would be improved by the addition of covariates such as income, ethnicity, neighborhood type -->
 
-The model specification would be improved by the addition of covariates such as income, ethnicity, neighborhood type
-
-The presence of models that have some convergence issues may reduce the robustness of estimates, whether it is due to the selective use of models without convergence issues, or the inclusion of models that do have convergence issues.
-
-
+<!-- The presence of models that have some convergence issues may reduce the robustness of estimates, whether it is due to the selective use of models without convergence issues, or the inclusion of models that do have convergence issues. -->
 
 <!-- but could represent how when inequality is high, countries with larger GDPs have more "fuel" to add to the psychological "fire" of high-inequality environments. In particular, -->
 

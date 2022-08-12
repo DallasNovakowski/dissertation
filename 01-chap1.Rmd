@@ -861,20 +861,6 @@ The use of hypothetical scenarios in Study 1a and 1b may limit the generalizabil
 
 Supporting **H1)**, Study 1c found a significant and positive effect of inequality on security spending, `r anova_extract(s1c_spending_anova,"inequality",test.stat=TRUE)` (Table \@ref(tab:s1c-security-anova)). After controlling for security spending in the introductory scenario, participants spent an average of \$`r round(s1c_m_med1_tidy$estimate[2],2)` more on the security product in the inequality condition (significant effects on perceived envy and attack likelihood; Tables \@ref(tab:s1c-envy-anova) and \@ref(tab:s1c-likelihood-anova), respectively). Replicating Study 1b, a mediation analysis found a significant and positive indirect effect of inequality on security spending through perceived partner envy, `r med_extract(s1c_m_med_full_tidy,"Indirect Effect (ACME)")`, supporting **H2)** (Table \@ref(tab:s1c-spending-med-full)). While Study 1b found a partial mediation of inequality through perceived partner envy, the model in Study 1c indicated a full mediation, with no significant direct effect of inequality on security spending, `r med_extract(s1c_m_med_full_tidy,"Direct Effect (ADE)")`. 
 
-(ref:s1c-spending-med-plot) Study 1c, mediation path diagram.
-```{=latex}
-\begin{figure}[H]
-\centering
-\caption{(ref:s1c-spending-med-plot) \label{fig:s1c-spending-med-plot}}
-```
-```{r s1c-spending-med-plot, eval = TRUE, include=TRUE, echo=FALSE, out.width='80%'}
-knitr::knit_hooks$set(crop = knitr::hook_pdfcrop)
-knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1c_spending_med.png")
-```
-```{=latex}
-\caption*{\textit{Notes:} ***$p$ < .001; **$p$ < .01; *$p$ < .05, Direct Effect in parentheses, Table @ref(tab:s1c-spending-med-full)}
-\end{figure}
-```
 
 
 ```{r s1c-security-anova, eval = TRUE, echo=FALSE}
@@ -932,6 +918,22 @@ knitr::kable(s1c_spending_anova1,
 kable_styling(latex_options = c(
   # "striped", 
   "hold_position"))
+```
+
+
+(ref:s1c-spending-med-plot) Study 1c, mediation path diagram.
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s1c-spending-med-plot) \label{fig:s1c-spending-med-plot}}
+```
+```{r s1c-spending-med-plot, eval = TRUE, include=TRUE, echo=FALSE, out.width='80%'}
+knitr::knit_hooks$set(crop = knitr::hook_pdfcrop)
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1c_spending_med.png")
+```
+```{=latex}
+\caption*{\textit{Notes:} ***$p$ < .001; **$p$ < .01; *$p$ < .05, Direct Effect in parentheses, Table @ref(tab:s1c-spending-med-full)}
+\end{figure}
 ```
 
 

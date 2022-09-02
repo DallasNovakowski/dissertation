@@ -6,420 +6,269 @@
 bibliography: bib/thesis.bib
 editor_options: 
   markdown: 
-    wrap: 72
+    wrap: 60
 ---
 
-# The First Appendix
 
-## Ethics information
 
-All procedures for this project have been approved by the University of
-Calgary Conjoint Faculties Research Ethics Board (REB 20-1860). For the
-experimental studies, informed consent will be obtained for all
-participants, who, unless otherwise noted, will be compensated at a rate
-of \$12.48 CAD/hour. For multilevel analyses, the datasets are archival
-and publicly-available. As such, ethics approval and informed consent
-was obtained, and compensation disbursed, by the original researchers.
+# Supplementary materials
 
-## Study 1
+<style>
+.noindent div {
+ text-indent: 0em;
+} 
+</style>
+
+
+All procedures for this project have been approved by the University of Calgary Conjoint Faculties Research Ethics Board (REB 20-1860). For the experimental studies, informed consent will be obtained for all participants, who, unless otherwise noted, will be compensated at a rate of \$12.48 CAD/hour. For multilevel analyses, the datasets are archival and publicly-available. As such, ethics approval and informed consent was obtained, and compensation disbursed, by the original researchers.
+
+## Study 1 {#s1-ap}
+
+### Methodological notes
+
+Given the bounded nature of the minimum and maximum values for the variables in the experimental designs, outliers are considered legitimate values and will not be deleted. The pre-registered mediation plan was mis-specified. As such, the pre-registered mediation plan can be FOUND IN THE APPENDIX ?? , and the following specification is an adjustment: 1a MEDIATION HERE??
 
 ### Data exclusion
 
 Participants will be excluded from analyses if any of the following:
 
 -   failed attention check,
-
 -   failed comprehension check,
-
 -   missing data on model-relevant variables
-
 -   score of \<= 3 on attention boost item
 
 ### Materials
 
 #### Attention Check
 
-"To help us understand how people think about different activities,
-please answer this question correctly. Specifically, we are interested
-in whether you actually take the time to read the directions; if not,
-the results of your responses would not be very useful. To show that you
-have read the instructions carefully, please ignore the items below
-about activities and instead select the option "other," and type "yes"
-in field below.
+>"To help us understand how people think about different activities, please answer this question correctly. Specifically, we are interested in whether you actually take the time to read the directions; if not, the results of your responses would not be very useful. To show that you have read the instructions carefully, please ignore the items below about activities and instead select the option "other," and type "yes" in field below.
 
-'Based on the information in the preceding paragraph, which of these
-activities do you engage in most regularly?' Watching Athletics
-Attending Cultural Events Participating in Athletics Reading Outside of
-Work or School Watching Movies Travel Religious Activities Needlework
-Cooking Gardening Computer Games Hiking Board or Card Games Other:"
+>'Based on the information in the preceding paragraph, which of these activities do you engage in most regularly?' Watching Athletics, Attending Cultural Events, Participating in Athletics, Reading Outside of Work or School, Watching Movies, Travel, Religious Activities, Needlework, Cooking, Gardening, Computer Games, Hiking, Board or Card Games, Other:"
 
 #### Comprehension check
 
 "What best describes your role in this study?
 
 -   Deciding whether to accept an offer
-
 -   Placing a bid
-
 -   \*\*Deciding whether to purchase a security product\*\* - CORRECT
-
 -   Donating funds to a shared project"
 
 #### Attention Booster
 
--   " It is important for the quality of our research that participants
-    focus as they complete this short study. Please close any other tabs
-    or windows that you might have open, turn off any music or
-    distracting media, and give this study your full attention.
+> "It is important for the quality of our research that participants focus as they complete this short study. Please close any other tabs or windows that you might have open, turn off any music or distracting media, and give this study your full attention. Please indicate your likelihood of paying full attention during this study:" [1: Extremely Unlikely... 7: Extremely Likely]
 
-Please indicate your likelihood of paying full attention during this
-study:" [1: Extremely Unlikely... 7: Extremely Likely]
-
-Given the bounded nature of the minimum and maximum values for the
-variables in the experimental designs, outliers are considered
-legitimate values and will not be deleted.
-
-The pre-registered mediation plan was mis-specified. As such, the
-pre-registered mediation plan can be FOUND IN THE APPENDIX ?? , and the
-following specification is an adjustment:
-
-1a MEDIATION HERE??
 
 ### Study 1a
 
 #### Study 1a pre-registration
 
-**Hypotheses**
-
+##### Hypotheses.
 Hypotheses will be tested in each of 2 studies: 1a and 1b
 
-**Does inequality increase security consumption?** H1) economic
-inequality increases security consumption, versus
+Q: *Does inequality increase security consumption?* H1) economic inequality increases security consumption, versus H1~null~) no significant effect of inequality. H1): Economic inequality increases security consumption, or in terms of the model: H1): In the model `ineq_anova_mixed`, security spending will be larger when income inequality is present (1) vs. absent (0).
 
-H1null) no significant effect of inequality
+Q: *Does envy anticipation mediate the effect of inequality on security consumption?* H2) The indirect effect (ACME) will be significantly different from 0, versus H2~null~) no significant indirect effect through anticipated partner envy from inequality to security consumption.
 
-H1): Economic inequality increases security consumption, or in terms of
-the model: H1): In the model ineq_anova_mixed, security spending will be
-larger when income inequality is present (1) vs. absent (0)
+H2): Economic inequality's effect on security consumption is mediated by the expectation of peers' envy, or in terms of the model, H2): The indirect effect (ACME) will be significantly different from 0. 
 
-**Does envy anticipation mediate the effect of inequality on security
-consumption?** H2) The indirect effect (ACME) will be significantly
-different from 0, versus
+- H2.1), mediation step 1: In the model m_mixed_med1, the coefficient for income inequality will have a significant positive effect on participants' belief that their partner is envious. 
 
-H2null) no significant indirect effect through anticipated partner envy
-from inequality to security consumption.
+- H2.2), mediation step 2: In the model m_mixed_med2, participants' belief that their partner is envious will have a significantly positive effect on security spending. 
 
-H2): Economic inequality's effect on security consumption is mediated by
-the expectation of peers' envy, or in terms of the model, H2): The
-indirect effect (ACME) will be significantly different from 0. H2.1),
-mediation step 1: In the model m_mixed_med1, the coefficient for income
-inequality will have a significant positive effect on participants'
-belief that their partner is envious. H2.2), mediation step 2: In the
-model m_mixed_med2, participants' belief that their partner is envious
-will have a significantly positive effect on security spending. H2.3),
-mediation step 3: In the model m_mixed_med_full, the indirect
-effect/ACME (Average Causal Mediation Effect [total effect - direct
-effect]) will be significantly different from 0. Design Plan
+- H2.3), mediation step 3: In the model m_mixed_med_full, the indirect effect/ACME (Average Causal Mediation Effect [total effect - direct effect]) will be significantly different from 0. Design Plan
 
-**Study type**
+##### Study type. 
+Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.
 
-Experiment - A researcher randomly assigns treatments to study subjects,
-this includes field or lab experiments. This is also known as an
-intervention experiment and includes randomized controlled trials.
+##### Blinding. 
+For studies that involve human subjects, they will not know the treatment group to which they have been assigned.
 
-**Blinding**
+**Is there any additional blinding in this study?**. No response
 
-    For studies that involve human subjects, they will not know the treatment group to which they have been assigned.
-
-**Is there any additional blinding in this study?**
-
-No response
-
-**Study design**
-
-Participants will be asked to consider their participation in a game
-with another participant, where they will each be assigned to different
-roles (Blue or Yellow), and endowed with money. Participants will always
-be assigned to the "Yellow" role, in which their partner will choose
-whether to try stealing from them, beforehand, the participant has the
-option to spend money on a security product that reduces the likelihood
-of a theft being successful.
-
-Random assignment and random ordering for between and within conditions,
-respectively
+##### Study design. 
+Participants will be asked to consider their participation in a game with another participant, where they will each be assigned to different roles (Blue or Yellow), and endowed with money. Participants will always be assigned to the "Yellow" role, in which their partner will choose whether to try stealing from them, beforehand, the participant has the option to spend money on a security product that reduces the likelihoodof a theft being successful. Random assignment and random ordering for between and within conditions, respectively.
 
 Example of condition:
 
-"For this scenario, you have been assigned to Yellow.
+> "For this scenario, you have been assigned to Yellow. You have been given \$300, but your partner (Blue) has been given \$150. Blue knows how much money you each have received. Shortly, Blue will decide whether they will try to steal \$150 from you. If Blue attempts to steal, but fails, you will lose nothing, and they will lose \$150. "
 
-You have been given \$300, but your partner (Blue) has been given \$150.
-Blue knows how much money you each have received.
+Given the mixed design, two sets of responses for game-related self-report items and security consumption decisions will be measured and then analyzed in a mixed model
 
-Shortly, Blue will decide whether they will try to steal \$150 from you.
-If Blue attempts to steal, but fails, you will lose nothing, and they
-will lose \$150. "
+##### Randomization. 
+Simple randomization will be conducted when assigning participants to both between and within conditions Sampling Plan
 
-Given the mixed design, two sets of responses for game-related
-self-report items and security consumption decisions will be measured
-and then analyzed in a mixed model
-
-**Randomization**
-
-Simple randomization will be conducted when assigning participants to
-both between and within conditions Sampling Plan
-
-**Existing Data**
-
+##### Existing Data. 
 Registration prior to creation of data
 
-**Explanation of existing data**
-
+##### Explanation of existing data. 
 No response
 
-**Data collection procedures**
+##### Data collection procedures.
 
-Exclusion: missing data on model-relevant variables, failed atn/comp
-checks, score of \<= 3 on attention boost item
+Participants crowdsourced \@ Prolific Academic, unless otherwise noted, will be compensated at a rate of \$12.48 CAD/hour. Exclusion: missing data on model-relevant variables, failed atn/comp checks, score of \<= 3 on attention boost item
 
-Participants crowdsourced \@ Prolific Academic, unless otherwise noted,
-will be compensated at a rate of \$12.48 CAD/hour.
+##### Sample size. 
 
-**Sample size**
+Study 1a: target n = 978 for analyses, 1,087 participants will be collected, in anticipation of 10% exclusion rate Study 1b: determined by study 1a results
 
-Study 1a: target n = 978 for analyses, 1,087 participants will be
-collected, in anticipation of 10% exclusion rate
+##### Sample size rationale. 
+Study 1a: Determined by A priori power analysis using R package Superpower \@ 95% power, cohen's f = 0.12. Base security spending: M=0.61, SD=0.33. Study 1b: targeted power, and therefore n, determined by observed 1a effect (target 95% power). If Study 1a fails to find a significant effect of inequality, Study 1b will again target an effect size of cohen's f = 0.12 (n=978).
 
-Study 1b: determined by study 1a results
-
-**Sample size rationale**
-
-Study 1a: Determined by A priori power analysis using R package
-Superpower \@ 95% power, cohen's f = 0.12. Base security spending:
-M=0.61, SD=0.33
-
-Study 1b: targeted power, and therefore n, determined by observed 1a
-effect (target 95% power). If Study 1a fails to find a significant
-effect of inequality, Study 1b will again target an effect size of
-cohen's f = 0.12 (n=978).
-
-**Stopping rule**
-
+##### Stopping rule. 
 No response Variables
 
-**Manipulated variables**
+##### Manipulated variables.
 
-Across both studies 1a and 1b:
+Across both studies 1a and 1b: In the equal condition, participants will be told that their partner received the same amount of funds as themselves (e.g., dollar value depending on study/stake size). In the unequal condition, participants will be told that their partner instead received only half their endowment. Stake size and probability within-subjects manipulations will be implemented when describing the scenario to participants. for example:
 
-In the equal condition, participants will be told that their partner
-received the same amount of funds as themselves (e.g., dollar value
-depending on study/stake size). In the unequal condition, participants
-will be told that their partner instead received only half their
-endowment.
+> "Your partner (Blue) still has to decide whether to try stealing from you. After you decide how much of a security product to buy, your partner will see their updated chances of successfully stealing. For this scenario, an attempted theft will succeed 50%[60%] of the time. A successful theft steals \$150[\$1] from you, and a failed attempt to steal will make your partner lose \$150[\$1]. Each unit of security costs \$3[\$0.02], and reduces the chance of successful thefts by 1%. Use the slider below to indicate how much security you would purchase from a budget of \$300[\$2]."
 
-Stake size and probability within-subjects manipulations will be
-implemented when describing the scenario to participants. for example:
+##### Measured variables.
 
-"Your partner (Blue) still has to decide whether to try stealing from
-you.
+H1) and H2) participants will be asked to choose how many units of a security product they wish to consume, ranging from 0 to 50. Perceived partner envy (averaged, checked for cronbach's alpha \>= .7): 
 
-After you decide how much of a security product to buy, your partner
-will see their updated chances of successfully stealing.
+[Strongly disagree(1)-Strongly agree(7)]
 
-For this scenario, an attempted theft will succeed 50%[60%] of the time.
-A successful theft steals \$150[\$1] from you, and a failed attempt to
-steal will make your partner lose \$150[\$1].
-
-Each unit of security costs \$3[\$0.02], and reduces the chance of
-successful thefts by 1%.
-
-Use the slider below to indicate how much security you would purchase
-from a budget of \$300[\$2]."
-
-**Measured variables**
-
-H1) and H2) participants will be asked to choose how many units of a
-security product they wish to consume, ranging from 0 to 50.
-
-H2) perceived partner envy (averaged, checked for cronbach's alpha \>=
-.7) p_partner_envy = "My partner probably feels envious of me"
-p_partner_jealous = "My partner probably feels jealous of me
-p_partner_bitter = "My partner probably feels bitter"
+- p_partner_envy = "My partner probably feels envious of me" 
+- p_partner_jealous = "My partner probably feels jealous of me 
+- p_partner_bitter = "My partner probably feels bitter"
 
 Demographics: Age Gender Education Income
 
-**Indices**
-
+##### Indices. 
 No response
 
-**Analysis Plan**
+##### Analysis Plan.
 
 Statistical models
 
-H1) Mixed anova conducted using r package afex 1a) ineq_anova_mixed \<-
-aov_ez(id='pnum', dv='security_consumed', data=ineq_data_long, within =
-c('stake_cond'), between = c('inequality') )
+H1) Mixed anova conducted using r package afex 
 
-1b) ineq_anova_mixed \<- aov_ez(id='pnum', dv='security_spending',
-data=ineq_data_long, within = c('prob'), between = c('inequality') )
+- 1a) `ineq_anova_mixed <- aov_ez(id='pnum', dv='security_consumed', data=ineq_data_long, within = c('stake_cond'), between = c( 'inequality'))`
 
-*for study 1b substitute 'stake_cond' for 'prob', and
-'security_consumed', for 'security spending* H2) mixed mediation
-conducted using r packages lme4 and mediate m_mixed_med1 \<-
-lme4::lmer(likely_envy \~ inequality + (1\| pnum) + stake_cond, data =
-ineq_data_long)
+- 1b) `ineq_anova_mixed <- aov_ez(id='pnum', dv='security_spending', data=ineq_data_long, within = c('prob'), between = c( 'inequality') )`
 
-m_mixed_med2 \<- lmer(security_consumed\~ likely_envy + inequality +
-(1\| pnum) + stake_cond, data = ineq_data_long)
+*for study 1b substitute 'stake_cond' for 'prob', and 'security_consumed', for 'security spending* 
 
-m_mixed_total \<- lmer(security_consumed\~ inequality + (1\| pnum) +
-stake_cond, data = ineq_data_long)
+H2) mixed mediation conducted using r packages lme4 and mediate 
 
-m_mixed_med_full \<- mediate::mediate(m_mixed_med1, m_mixed_med2,sims =
-5000, treat="inequality",mediator="likely_envy")
+- `m_mixed_med1 \<- lme4::lmer(likely_envy \~ inequality + (1\| pnum) + stake_cond, data = ineq_data_long)`
 
-summary(m_mixed_med_full)
+- `m_mixed_med2 \<- lmer(security_consumed\~ likely_envy + inequality + (1\| pnum) + stake_cond, data = ineq_data_long)`
 
-**Transformations**
+- `m_mixed_total \<- lmer(security_consumed\~ inequality + (1\| pnum) + stake_cond, data = ineq_data_long)`
 
-Security spending will serve as the final dependent variable where
-possible. Security spending will be computed by multiplying the number
-of security units consumed by the good's per-unit cost
+- `m_mixed_med_full \<- mediate::mediate(m_mixed_med1, m_mixed_med2, sims = 5000, treat="inequality",mediator="likely_envy")`
 
-**Inference criteria**
+##### Transformations.
+
+Security spending will serve as the final dependent variable where possible. Security spending will be computed by multiplying the number of security units consumed by the good's per-unit cost
+
+##### Inference criteria. 
 
 p \< .05 for inferring significant differences, one-tailed
 
-**Data exclusion**
-
-Participants will be excluded from analyses if any of the following:
-failed attention check, failed comprehension check, missing data on
-model-relevant variables score of \<= 3 on attention boost item
+##### Data exclusion. 
+Participants will be excluded from analyses if any of the following: failed attention check, failed comprehension check, missing data on model-relevant variables score of \<= 3 on attention boost item
 
 ATTENTION CHECK:
 
-"To help us understand how people think about different activities,
-please answer this question correctly. Specifically, we are interested
-in whether you actually take the time to read the directions; if not,
-the results of your responses would not be very useful. To show that you
-have read the instructions carefully, please ignore the items below
-about activities and instead select the option "other," and type "yes"
-in field below.
+>"To help us understand how people think about different activities, please answer this question correctly. Specifically, we are interested in whether you actually take the time to read the directions; if not, the results of your responses would not be very useful. To show that you have read the instructions carefully, please ignore the items below about activities and instead select the option "other," and type "yes" in field below. 'Based on the information in the preceding paragraph, which of these activities do you engage in most regularly?' 
 
-'Based on the information in the preceding paragraph, which of these
-activities do you engage in most regularly?' Watching Athletics
-Attending Cultural Events Participating in Athletics Reading Outside of
-Work or School Watching Movies Travel Religious Activities Needlework
-Cooking Gardening Computer Games Hiking Board or Card Games Other:"
+>Watching Athletics, Attending Cultural Events, Participating in Athletics, Reading Outside of Work or School, Watching Movies, Travel, Religious Activities, Needlework, Cooking, Gardening, Computer Games, Hiking, Board or Card Games, Other:"
 
 COMPREHENSION CHECK: "What best describes your role in this study?
 
-Deciding whether to accept an offer Placing a bid **Deciding whether to
-purchase a security product** - CORRECT Donating funds to a shared
-project"
+- Deciding whether to accept an offer 
+- Placing a bid **Deciding whether to
+- purchase a security product** - CORRECT 
+- Donating funds to a shared project"
 
-ATTENTION CHECK/BOOSTER " It is important for the quality of our
-research that participants focus as they complete this short study.
-Please close any other tabs or windows that you might have open, turn
-off any music or distracting media, and give this study your full
-attention.
+ATTENTION BOOSTER:
 
-Please indicate your likelihood of paying full attention during this
-study:" [1: Extremely Unlikely... 7: Extremely Likely]
+>"It is important for the quality of our research that participants focus as they complete this short study. Please close any other tabs or windows that you might have open, turn off any music or distracting media, and give this study your full attention. Please indicate your likelihood of paying full attention during this study:" [1: Extremely Unlikely... 7: Extremely Likely]
 
-Given the bounded nature of the minimum and maximum values for the
-variables in the experimental designs, outliers are considered
-legitimate values and will not be deleted.
+Given the bounded nature of the minimum and maximum values for the variables in the experimental designs, outliers are considered legitimate values and will not be deleted. As a robustness check, analyses will be repeated with influential observations being winzorized at the dependent variable to the 5th and 95th percentile values. Influential observations will be flagged as having model residuals' cook's distance values exceeding the threshold 4/n; where n = \# of observations.
 
-As a robustness check, analyses will be repeated with influential
-observations being winzorized at the dependent variable to the 5th and
-95th percentile values. Influential observations will be flagged as
-having model residuals' cook's distance values exceeding the threshold
-4/n; where n = \# of observations.
+##### Missing data. 
 
-Missing data
+Observations with missing data on model-relevant variables will be excluded from analyses
 
-observations with missing data on model-relevant variables will be
-excluded from analyses
+##### Exploratory analysis. 
 
-Exploratory analysis
+No response 
 
-No response Other
+<!-- #### Study 1a Security Game -->
 
-Other
+<!-- **Security Game introduction** -->
 
-No response
+<!-- > "For the following task, imagine that you have been paired with another participant. You will both be given money to play a game, and -->
+<!-- > assigned to different roles: Yellow or Blue. -->
+<!-- > -->
+<!-- > Blue will have the option to try stealing money from Yellow. If Blue -->
+<!-- > tries and fails to steal, Blue loses money instead, with Yellow losing -->
+<!-- > nothing. Before Blue makes their choice, Yellow will have the chance -->
+<!-- > to purchase a "security product," which will cost money, but each unit -->
+<!-- > purchased will reduce Blue's chance of successfully stealing. After -->
+<!-- > Yellow makes their purchasing decision, Blue will see the updated -->
+<!-- > chances of success/failure.You will see multiple scenarios that may -->
+<!-- > differ slightly." -->
 
-#### Study 1a Security Game
+<!-- **Security Game Inequality Manipulation** -->
 
-**Security Game introduction**
+<!-- > "For this scenario, you have been assigned to Yellow. -->
+<!-- > -->
+<!-- > You have been given \$300[\$2], but your partner (Blue) has been given -->
+<!-- > \$150[\$1] [You and your partner (Blue) have each been given -->
+<!-- > \$300[\$2]]. Blue knows how much money you each have received. -->
+<!-- > -->
+<!-- > Shortly, Blue will decide whether they will try to steal \$150[\$1] -->
+<!-- > from you. If Blue attempts to steal, but fails, you will lose nothing, -->
+<!-- > and they will lose \$150[\$1]." -->
 
-> "For the following task, imagine that you have been paired with
-> another participant. You will both be given money to play a game, and
-> assigned to different roles: Yellow or Blue.
->
-> Blue will have the option to try stealing money from Yellow. If Blue
-> tries and fails to steal, Blue loses money instead, with Yellow losing
-> nothing. Before Blue makes their choice, Yellow will have the chance
-> to purchase a "security product," which will cost money, but each unit
-> purchased will reduce Blue's chance of successfully stealing. After
-> Yellow makes their purchasing decision, Blue will see the updated
-> chances of success/failure.You will see multiple scenarios that may
-> differ slightly."
+<!-- **Self-report items, Strongly Disagree(1)-Strongly agree(7)** -->
 
-**Security Game Inequality Manipulation**
+<!-- p_partner_envy = "My partner probably feels envious of me" -->
+<!-- p_partner_jealous = "My partner probably feels jealous of me -->
+<!-- p_partner_bitter = "My partner probably feels bitter" -->
 
-> "For this scenario, you have been assigned to Yellow.
->
-> You have been given \$300[\$2], but your partner (Blue) has been given
-> \$150[\$1] [You and your partner (Blue) have each been given
-> \$300[\$2]]. Blue knows how much money you each have received.
->
-> Shortly, Blue will decide whether they will try to steal \$150[\$1]
-> from you. If Blue attempts to steal, but fails, you will lose nothing,
-> and they will lose \$150[\$1]."
+<!-- **Security Game Decision** -->
 
-**Self-report items, Strongly Disagree(1)-Strongly agree(7)**
-
-p_partner_envy = "My partner probably feels envious of me"
-p_partner_jealous = "My partner probably feels jealous of me
-p_partner_bitter = "My partner probably feels bitter"
-
-**Security Game Decision**
-
-> "Your partner (Blue) still has to decide whether to try stealing from
-> you.
->
-> After you decide how much of a security product to buy, your partner
-> will see their updated chances of successfully stealing.
->
-> For this scenario, an attempted theft will succeed 60% of the time. A
-> successful theft steals \$150[\$1] from you, and a failed attempt to
-> steal will make your partner lose \$150[\$1].
->
-> Each unit of security costs \$3[\$0.02], and reduces the chance of
-> successful thefts by 1%.
->
-> Use the slider below to indicate how much security you would purchase
-> from a budget of \$300[\$2].
->
-> Click the blue slider to begin [Prevents non-responding participants
-> proceeding with default 0 value].
->
-> [SLIDER HERE, 0-50]
->
-> [NEXT SECTION APPEARS AFTER CLICKING SLIDER]
->
-> Purchasing [UPDATING NUMBER] units of security, you will have
-> \$[UPDATING NUMBER] remaining.
->
-> You will reduce your likelihood of being successfully attacked by
-> [UPDATING NUMBER]%.
->
-> After your security purchase, [UPDATING NUMBER]% of attempted attacks
-> against you will be successful.
->
-> Once you are satisfied with your decision, please click the "next"
-> button to move to the next page."
+<!-- > "Your partner (Blue) still has to decide whether to try stealing from -->
+<!-- > you. -->
+<!-- > -->
+<!-- > After you decide how much of a security product to buy, your partner -->
+<!-- > will see their updated chances of successfully stealing. -->
+<!-- > -->
+<!-- > For this scenario, an attempted theft will succeed 60% of the time. A -->
+<!-- > successful theft steals \$150[\$1] from you, and a failed attempt to -->
+<!-- > steal will make your partner lose \$150[\$1]. -->
+<!-- > -->
+<!-- > Each unit of security costs \$3[\$0.02], and reduces the chance of -->
+<!-- > successful thefts by 1%. -->
+<!-- > -->
+<!-- > Use the slider below to indicate how much security you would purchase -->
+<!-- > from a budget of \$300[\$2]. -->
+<!-- > -->
+<!-- > Click the blue slider to begin [Prevents non-responding participants -->
+<!-- > proceeding with default 0 value]. -->
+<!-- > -->
+<!-- > [SLIDER HERE, 0-50] -->
+<!-- > -->
+<!-- > [NEXT SECTION APPEARS AFTER CLICKING SLIDER] -->
+<!-- > -->
+<!-- > Purchasing [UPDATING NUMBER] units of security, you will have -->
+<!-- > \$[UPDATING NUMBER] remaining. -->
+<!-- > -->
+<!-- > You will reduce your likelihood of being successfully attacked by -->
+<!-- > [UPDATING NUMBER]%. -->
+<!-- > -->
+<!-- > After your security purchase, [UPDATING NUMBER]% of attempted attacks -->
+<!-- > against you will be successful. -->
+<!-- > -->
+<!-- > Once you are satisfied with your decision, please click the "next" -->
+<!-- > button to move to the next page." -->
 
 <!-- As a robustness check, analyses were repeated with influential observations being winzorized at the dependent variable to the 5th and 95th percentile values. Influential observations were flagged as having model residuals' cook's distance values exceeding the threshold 4/n; where n = \# of observations. -->
 
@@ -607,11 +456,9 @@ kable_styling(latex_options = c("striped", "hold_position"))
 
 ```
 
-Why would the effect of inequality on security consumption go from
-nonsignificant to significant, but opposite sign, when controlling for
-perceived partner envy?
+Why would the effect of inequality on security consumption go from nonsignificant to significant, but opposite sign, when controlling for perceived partner envy?
 
-SUPPRESSION EFFECT
+SUPPRESSION EFFECT ??
 
 MODERATED MEDIATION NECESSARY?
 
@@ -727,73 +574,50 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 
 #### Study 1b pre-registration
 
-Hypotheses
+##### Hypotheses.
 
-**Does inequality increase security consumption?** H1) In a paired
-t-test, A) security consumption will be higher in the inequality
-condition than the equality condition, versus Anull) no significant
-effect of inequality
+Q: *Does inequality increase security consumption?* H1) In a paired t-test, A) security consumption will be higher in the inequality condition than the equality condition, versus Anull) no significant
+effect of inequality. This positive effect of inequality is also predicted for some manipulation check items: B) perceived inequality C) perceived partner envy D) perceived likelihood of attacking
 
-This positive effect of inequality is also predicted for some
-manipulation check items: B) perceived inequality C) perceived partner
-envy D) perceived likelihood of attacking
+Q: *Does envy anticipation mediate the effect of inequality on security consumption?* H2) The indirect effect (ACME) will be significantly different from 0, versus H2~null~) no significant indirect effect through perceived partner envy from inequality to security consumption. Design Plan
 
-**Does envy anticipation mediate the effect of inequality on security
-consumption?** H2) The indirect effect (ACME) will be significantly
-different from 0, versus
+##### Study type. 
+Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.
 
-H2null) no significant indirect effect through perceived partner envy
-from inequality to security consumption. Design Plan
+##### Blinding. 
 
-**Study type**
+No blinding is involved in this study.
 
-Experiment - A researcher randomly assigns treatments to study subjects,
-this includes field or lab experiments. This is also known as an
-intervention experiment and includes randomized controlled trials.
-
-**Blinding**
-
-    No blinding is involved in this study.
-
-**Is there any additional blinding in this study?**
+##### Is there any additional blinding in this study? 
 
 No response
 
-**Study design**
+##### Study design.
 
-Sequence as follows: 1. Consent 2. Attention boost 3. Demographics 4.
-security game task intro 5. round 1 a) manipulation, b) self-report
-items, c) security consumption 6. next scenario screen 7. round 2) 8.
-Comprehension check
+Sequence as follows: 
+1. Consent 
+2. Attention boost 
+3. Demographics 
+4. security game task intro 
+5. round 1 a) manipulation, b) self-report items, c) security consumption 
+6. next scenario screen 
+7. round 2) 
+8. Comprehension check
 
-For security game:
+<br>
+<br>
+\
+*For security game:*
 
-Participants will be asked to consider their participation in a game
-with another participant, where they will each be assigned to different
-roles (Blue or Yellow), and endowed with money. Participants will always
-be assigned to the "Yellow" role, in which their partner will choose
-whether to try stealing from them, beforehand, the participant has the
-option to spend money on a security product that reduces the likelihood
-of a theft being successful.
+Participants will be asked to consider their participation in a game with another participant, where they will each be assigned to different roles (Blue or Yellow), and endowed with money. Participants will always be assigned to the "Yellow" role, in which their partner will choose whether to try stealing from them, beforehand, the participant has the option to spend money on a security product that reduces the likelihood of a theft being successful. Within-subjects conditions were assigned randomly.
 
-Random assignment of order for within conditions
+<br>
+\
+*Task intro:*
 
-task intro:
+>"For the following task, imagine that you have been paired with another participant. You will both be given money to play a game, and assigned to different roles: Yellow or Blue. Blue will have the option to try stealing money from Yellow. If Blue tries and fails to steal, Blue loses money instead, with Yellow losing nothing. Before Blue makes their choice, Yellow will have the chance to purchase a "security product," which will cost money, but each unit purchased will reduce Blue's chance of successfully stealing. Blue will see how many units of security that Yellow has purchased. You will see multiple scenarios that may differ slightly. "
 
-"For the following task, imagine that you have been paired with another
-participant. You will both be given money to play a game, and assigned
-to different roles: Yellow or Blue.
-
-Blue will have the option to try stealing money from Yellow. If Blue
-tries and fails to steal, Blue loses money instead, with Yellow losing
-nothing.
-
-Before Blue makes their choice, Yellow will have the chance to purchase
-a "security product," which will cost money, but each unit purchased
-will reduce Blue's chance of successfully stealing. Blue will see how
-many units of security that Yellow has purchased.
-
-You will see multiple scenarios that may differ slightly. "
+<br>
 
 Note: for this study, participants will NOT know:
 
@@ -802,19 +626,17 @@ Note: for this study, participants will NOT know:
 3)  the probability of successful thefts
 4)  the efficacy of security (% success decrease per unit consumed)
 
-**Randomization**
-
+##### Randomization. 
 Simple randomization will be implemented Sampling Plan
 
-**Existing Data**
-
+##### Existing Data. 
 Registration prior to creation of data
 
-**Explanation of existing data**
+##### Explanation of existing data. 
 
 No response
 
-**Data collection procedures**
+##### Data collection procedures.
 
 Exclusion: missing data on model-relevant variables, failed atn/comp
 checks, score of \<= 3 on attention boost item
@@ -822,151 +644,107 @@ checks, score of \<= 3 on attention boost item
 Participants crowdsourced \@ Prolific Academic, unless otherwise noted,
 will be compensated at a rate of \$12.48 CAD/hour
 
-**Sample size**
-
+##### Sample size. 
 n = 271 targeted for analysis, n = 301 collected
 
-**Sample size rationale**
+##### Sample size rationale.
 
-using r package pwr, power analysis for one-tailed paired t-test, d=.2,
+Using r package pwr, power analysis for one-tailed paired t-test, d=.2,
 power = .95
 
-pwr.t.test(d=.2,power=.95,sig.level=.05,
-type="paired",alternative="greater")
+`pwr.t.test(d=.2,power=.95,sig.level=.05, type="paired",alternative="greater")`
 
-**Stopping rule**
+##### Stopping rule.
 
-No response Variables
+No response 
 
-**Manipulated variables**
 
-In the equal condition, participants will be told that their partner
-received the same amount of funds as themselves (e.g., dollar value
-depending on study/stake size). In the unequal condition, participants
-will be told that their partner instead received only half their
-endowment.
+##### Manipulated variables.
+
+In the equal condition, participants will be told that their partner received the same amount of funds as themselves (e.g., dollar value depending on study/stake size). In the unequal condition, participants will be told that their partner instead received only half their endowment.
 
 Example:
 
-"For this scenario, you have been assigned to Yellow.
+>"For this scenario, you have been assigned to Yellow. You have been given \$300, but your partner (Blue) has been given only \$150. Blue knows how much money you each have received. Shortly, Blue will decide whether they will try to steal money from you."
 
-You have been given \$300, but your partner (Blue) has been given only
-\$150. Blue knows how much money you each have received.
+##### Measured variables.
 
-Shortly, Blue will decide whether they will try to steal money from
-you."
+*Security consumption*
 
-**Measured variables**
+Example:
 
-Security consumption
+>"Your partner (Blue) still has to decide whether to try stealing from you. A successful theft steals money from you, and a failed attempt to steal will make your partner lose money. Each unit of security costs \$2, and reduces the chance of successful thefts. Use the slider below to indicate how much security you would purchase from a budget of \$300. [0-100] Purchasing 32 units of security, you will have \$236 remaining. "
 
-example:
+Self-report items : 1-7 
+- "In this game, the money has been split unequally"\
+- "My partner is probably going to try stealing from me"\
+- "My partner probably feels envious of me"\
+- "My partner probably feels jealous of me"\
+- "My partner probably feels bitter"
 
-"Your partner (Blue) still has to decide whether to try stealing from
-you.
+*Demographics*: Age, Gender, Education, Income.
 
-A successful theft steals money from you, and a failed attempt to steal
-will make your partner lose money.
-
-Each unit of security costs \$2, and reduces the chance of successful
-thefts.
-
-Use the slider below to indicate how much security you would purchase
-from a budget of \$300. [0-100] Purchasing 32 units of security, you
-will have \$236 remaining. "
-
-Self-report items : 1-7 In this game, the money has been split
-unequally\
-My partner is probably going to try stealing from me\
-My partner probably feels envious of me\
-My partner probably feels jealous of me\
-My partner probably feels bitter
-
-Demographics: Age Gender Education Income
-
-**Indices**
-
+##### Indices. 
 No response
 
-**Analysis Plan**
+##### Analysis Plan.
 
 Statistical models
 
-tidy_ttest(data_long, iv = "inequality", dv = "security_consumed",
-paired = TRUE) based on stats::t.test
+- `tidy_ttest(data_long, iv = "inequality", dv = "security_consumed", paired = TRUE)`, based on stats::t.test
 
-m_mixed_med1 \<- lme4::lmer(security_consumed\~ inequality + (1\|
-participant_code), data = ineq_data_long)
+- `m_mixed_med1 <- lme4::lmer(security_consumed~ inequality + (1| participant_code), data = ineq_data_long)`
 
-m_mixed_med2 \<- lmer(likely_envy_cent \~ inequality + (1\|
-participant_code), data = ineq_data_long)
+- `m_mixed_med2 <- lme4::lmer(likely_envy_cent ~ inequality + ( 1 | participant_code ), data = ineq_data_long)`
 
-m_mixed_total \<- lmer(security_consumed\~ inequality +
-likely_envy_cent + (1\| participant_code), data = ineq_data_long)
 
-m_mixed_med_full \<- mediate::mediate(m_mixed_med2,
-m_mixed_med_total,sims = 5000,
-treat="inequality",mediator="likely_envy_cent")
 
-**Transformations**
+- `m_mixed_total <- lme4::lmer(security_consumed ~ inequality + likely_envy_cent + ( 1 | \n participant_code), data = ineq_data_long)`
 
-envy will be mean-centered in mediation analysis
+- `m_mixed_med_full <- mediation::mediate(m_mixed_med2, m_mixed_med_total,    sims = 5000, treat="inequality", mediator="likely_envy_cent")`
 
-**Inference criteria**
+##### Transformations. 
+
+Envy will be mean-centered in mediation analysis.
+
+##### Inference criteria. 
 
 p \< .05 for inferring significant differences, one-tailed
 
-**Data exclusion**
+##### Data exclusion.
 
-Participants will be excluded from analyses if any of the following:
-failed attention check, failed comprehension check, missing data on
-model-relevant variables score of \<= 3 on attention boost item
+Participants will be excluded from analyses if any of the following: failed attention check, failed comprehension check, missing data onmodel-relevant variables score of \<= 3 on attention boost item
 
 ATTENTION CHECK:
 
-"To help us understand how people think about different activities,
-please answer this question correctly. Specifically, we are interested
-in whether you actually take the time to read the directions; if not,
-the results of your responses would not be very useful. To show that you
-have read the instructions carefully, please ignore the items below
-about activities and instead select the option "other," and type "yes"
-in field below.
+>"To help us understand how people think about different activities, please answer this question correctly. Specifically, we are interested in whether you actually take the time to read the directions; if not, the results of your responses would not be very useful. To show that you have read the instructions carefully, please ignore the items below about activities and instead select the option "other," and type "yes" in field below.
 
-'Based on the information in the preceding paragraph, which of these
-activities do you engage in most regularly?' Watching Athletics
-Attending Cultural Events Participating in Athletics Reading Outside of
-Work or School Watching Movies Travel Religious Activities Needlework
-Cooking Gardening Computer Games Hiking Board or Card Games Other:"
+>'Based on the information in the preceding paragraph, which of these activities do you engage in most regularly?' Watching Athletics, Attending Cultural Events, Participating in Athletics, Reading Outside of Work or School, Watching Movies, Travel, Religious Activities, Needlework, Cooking, Gardening, Computer Games, Hiking, Board or Card Games, Other:"
 
-COMPREHENSION CHECK: "What best describes your role in this study?
+COMPREHENSION CHECK: 
 
-Deciding whether to accept an offer Placing a bid **Deciding whether to
-purchase a security product** - CORRECT Donating funds to a shared
-project"
+"What best describes your role in this study?
 
-ATTENTION CHECK/BOOSTER " It is important for the quality of our
-research that participants focus as they complete this short study.
-Please close any other tabs or windows that you might have open, turn
-off any music or distracting media, and give this study your full
-attention.
+-   Deciding whether to accept an offer
+-   Placing a bid
+-   \*\*Deciding whether to purchase a security product\*\* - CORRECT
+-   Donating funds to a shared project"
 
-Please indicate your likelihood of paying full attention during this
-study:" [1: Extremely Unlikely... 7: Extremely Likely]
+ATTENTION CHECK/BOOSTER 
+
+>" It is important for the quality of our research that participants focus as they complete this short study. Please close any other tabs or windows that you might have open, turn off any music or distracting media, and give this study your full attention. Please indicate your likelihood of paying full attention during this study:" [1: Extremely Unlikely... 7: Extremely Likely]
 
 Given the bounded nature of the minimum and maximum values for the
 variables in the experimental designs, outliers are considered
 legitimate values and will not be deleted.
 
-**Missing data**
+##### Missing data. Observations with missing data on model-relevant variables will be excluded from analyses
 
-observations with missing data on model-relevant variables will be
-excluded from analyses
-
-**Exploratory analysis**
+##### Exploratory analysis.
 
 No response
 
-**Other**
+##### Other.
 
 No response
 
@@ -974,15 +752,7 @@ No response
 
 **Priming intro**
 
-"First Scenario
-
-For this scenario, you have been assigned to Yellow. Your role was randomly assigned.
-
-You and your partner (Blue) have each been given $150. Blue knows how much money you each have received.
-
-Shortly, Blue will decide whether they will try to steal money from you."
-
-
+>"First Scenario. For this scenario, you have been assigned to Yellow. Your role was randomly assigned. You and your partner (Blue) have each been given $150. Blue knows how much money you each have received. Shortly, Blue will decide whether they will try to steal money from you."
 
 ```{r s1c-desc-tab}
 s1cdesc_columns <- c("Variable",	"Mean",	"SD", "Cron. $\\alpha$ 95\\% CI")
@@ -1111,25 +881,20 @@ kable_styling(latex_options = c(
 ```
 
 
-## Study 2
+## Study 2 {#s2-ap}
 
-## Study 2a
+### Study 2a
 
-### Materials
+#### Materials
 
-**Slider task feedback**
 
-"Results
+##### Slider task feedback.
 
-You have correctly moved XX[piped] sliders in xx[piped] seconds. You correctly placed more sliders than your partner.
+> "RESULTS: You have correctly moved XX[piped] sliders in xx[piped] seconds. You correctly placed more sliders than your partner. Performance on this slider task is solely the result of the player's efforts. Studies have found that performance is not related to intelligence or any other personality traits. "
 
-Performance on this slider task is solely the result of the player's efforts. Studies have found that performance is not related to intelligence or any other personality traits. "
+##### Meritocracy manipulation.
 
-**Meritocracy manipulation**
-
-[Merit] "For this scenario, because you correctly moved more sliders than your partner, you have been assigned to Yellow. "
-
-[Random] "For this scenario, you have been assigned to Yellow. Your role was randomly chosen."
+>[Merit] "For this scenario, because you correctly moved more sliders than your partner, you have been assigned to Yellow. " [Random] "For this scenario, you have been assigned to Yellow. Your role was randomly chosen."
 
 (ref:2b2b-design) Values for power analysis, 2b\*2b ANOVA (Study 2a & b).
 ```{=latex}
@@ -1181,27 +946,133 @@ kable_styling(latex_options = c("striped", "hold_position"))
 
 ```
 
+
+### Study 2a pilot
+
+The pilot study replicated the positive main effect of inequality on security spending `r anova_extract(s2ap_spending_anova,"inequality",is.first = TRUE, test.stat = TRUE)`, but no significant merit\*inequality interaction was detected, `r anova_extract(s2ap_spending_anova,"inequality:merit")`. Echoing Study 1a, where inequality increased perceived partner envy but not security consumption, there was a significant merit\*inequality interaction for perceived fairness, `r anova_extract(s2ap_p_fairness_anova,"inequality:merit")`, but this change in fairness doesn't appear to manifest in a merit\*inequality interaction effect on perceived partner envy (`r anova_extract(s2ap_envy_anova,"inequality:merit")`) nor perceived attack likelihood (`r anova_extract(s2ap_likelihood_anova,"inequality:merit")`. What is concerning though, is that the effect of inequality on perceived likelihood of attack looks small (and perhaps non-significant). In particular, the likelihood of attack scores seem high in the equality condition. Are they higher than in the previous studies?
+
+
+
+
+```{r s2ap-security-anova, eval = TRUE, echo=FALSE}
+s2ap_spending_anova1 <- data.frame(s2ap_spending_anova)
+
+s2ap_spending_anova1$Pr..F. <- report_pval(s2ap_spending_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2ap_spending_anova1, mode) == 'numeric'
+
+s2ap_spending_anova1[numeric_columns] <- sapply(s2ap_spending_anova1[numeric_columns], report_float)
+
+
+s2ap_spending_anova1$ci95 <- as.character(paste("[", s2ap_spending_anova1$ci95_lo, ", ", s2ap_spending_anova1$ci95_hi,"]",  sep=""))
+
+s2ap_spending_anova1$df <- as.character(paste(round(as.numeric(s2ap_spending_anova1$NumDF),2), ", ", round(as.numeric(s2ap_spending_anova1$DenDF),2),  sep=""))
+  
+s2ap_spending_anova1 <- s2ap_spending_anova1[,!names(s2ap_spending_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+
+# s2ap_spending_anova1$Pr..F. <- report_pval(s2ap_spending_anova1$Pr..F.)
+
+s2ap_spending_anova1 <- s2ap_spending_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f
+    )
+
+s2ap_spending_anova1 <- s2ap_spending_anova1 %>% relocate(df, .before = MSE)
+
+row.names(s2ap_spending_anova1) <- firstup(row.names(s2ap_spending_anova1))
+
+row.names(s2ap_spending_anova1)[row.names(s2ap_spending_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2ap_spending_anova1)[row.names(s2ap_spending_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+# s2ap_spending_anova1 <- subset(s2ap_spending_anova1, select = -c(df))
+
+
+row.names(s2ap_spending_anova1) <-
+  gsub(
+    x = row.names(s2ap_spending_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2ap_spending_anova1) <-
+  gsub(
+    x = row.names(s2ap_spending_anova1),
+    pattern = "inequality",
+    replacement = "Inequality",
+    fixed = TRUE
+  )
+
+row.names(s2ap_spending_anova1) <-
+  gsub(
+    x = row.names(s2ap_spending_anova1),
+    pattern = "merit",
+    replacement = "Merit",
+    fixed = TRUE
+  )
+
+
+row.names(s2ap_spending_anova1) <-
+  gsub(
+    x = row.names(s2ap_spending_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+row.names(s2ap_spending_anova1) <-
+  gsub(
+    x = row.names(s2ap_spending_anova1),
+    pattern = "Ineq_stolen_okay_cent",
+    replacement = "OK to lose money",
+    fixed = TRUE
+  )
+
+# s2ap_spending_anova1 <- s2ap_spending_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2ap_spending_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = 'Study 2a pilot, ANCOVA; inequality and merit on security consumption.',
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+# %>%
+#   kableExtra::footnote(general = paste0("df = ",s2ap_spending_anova[1,"NumDF"], ", ", s2ap_spending_anova[1,"DenDF"]),
+#                        footnote_as_chunk=T
+#                        # ,threeparttable = TRUE
+#                        )
+```
+
+
 ## Study 3 {#s3-ap}
 
 ### Study 3 pre-registration
 
-**Research Questions**
+#### Research Questions.
 
-Does country-level economic inequality lead to the consumption of
-security products?
+Does country-level economic inequality lead to the consumption of security products?
 
-**Hypotheses**
+#### Hypotheses.
 
-H4) In a multilevel regression, Nation-level income inequality will be
-positively associated with individual-level adoption of security
-measures (adjusting for covariates) versus H4null) No effect of
-inequality Data Description
+H4) In a multilevel regression, Nation-level income inequality will be positively associated with individual-level adoption of security measures (adjusting for covariates) versus H4~null~) No effect of inequality 
 
-**Datasets used**
 
-Combination of three archival datasets: 1) the ICVS [International Crime
-Victimization Survey; for security and individual-level measures; Van
-Kesteren(2010)],
+#### Datasets used. 
+
+Combination of three archival datasets: 
+
+1) the ICVS [International CrimeVictimization Survey; for security and individual-level measures; Van
+Kesteren(2010)]
 
 2)  Standardized World Income Inequality Database (SWIID, version 9; for
     nation inequality; Solt, 2020)
@@ -1209,227 +1080,125 @@ Kesteren(2010)],
 3)  the Penn World Tables (PWT, version 10.0; for nation GDP; Feenstra,
     Inklaar, & Timmer, 2015).
 
-2004-2006 time period as main analysis for these databases, due to
-availability of variables, number of countries, relative recency, and
-data completeness
+2004-2006 time period as main analysis for these databases, due to availability of variables, number of countries, relative recency, and data completeness
 
-**Data availability**
+#### Data availability.
 
-    The dataset is publicly available
+The dataset is publicly available
 
-**Data access**
+#### Data access.
 
 No response
 
-**Data identifiers**
+#### Data identifiers.
 
 ICVS: <http://doi.org/10.17026/DANS-XNJ-RMB2>, SWIID:
 <http://doi.org/10.1111/ssqu.12795>, PWT:
 <http://doi.org/10.1257/aer.20130954>
 
-**Access date**
+#### Access date.
 
-These databases were accessed as follows: ICVS, September 1, 2020;
-SWIID, October 21, 2020, and PWT, March 17, 2021.
+These databases were accessed as follows: ICVS, September 1, 2020; SWIID, October 21, 2020, and PWT, March 17, 2021.
 
-**Data collection procedures**
+#### Data collection procedures.
 
-Together, the SWIID is made up of "15,730 Gini coefficients from 2,984
-country-years in 196 countries or territories [@solt2020, p. 5]," all
-extracted from 384 different sources. The SWIID is based on the
-Luxembourg Inequality Study (AKA. LIS Cross-National Data Center). These
-LIS observations serve as baselines to compare against other gini
-estimates in the same country-year. These relationships are then used to
-predict the value of the LIS gini, when data from the LIS is absent, but
-other information is available. The SWIID is currently tested with
-'k-fold cross-validation,' a machine-learning technique to iteratively
-train and test the data in predicting values in the LIS.
+Together, the SWIID is made up of "15,730 Gini coefficients from 2,984 country-years in 196 countries or territories [@solt2020, p. 5]," all extracted from 384 different sources. The SWIID is based on the Luxembourg Inequality Study (AKA. LIS Cross-National Data Center). These LIS observations serve as baselines to compare against other gini estimates in the same country-year. These relationships are then used to predict the value of the LIS gini, when data from the LIS is absent, but other information is available. The SWIID is currently tested with 'k-fold cross-validation,' a machine-learning technique to iteratively train and test the data in predicting values in the LIS.
 
-See attached documents for additional information
+<!-- See attached documents for additional information -->
 
-**Codebook**
+<!-- **Codebook** -->
 
-See attached for ICVS codebook, <https://fsolt.org/swiid/> for detailed
-SWIID information, and
+See attached for ICVS codebook??, <https://fsolt.org/swiid/> for detailed SWIID information, and
 <https://www.rug.nl/ggdc/productivity/pwt/?lang=en> for PWT information
 
-    s2_01_icvs_prep_report.html
 
-**Variables**
+### Variables
 
-**Manipulated** variables
+#### Manipulated variables. 
 
 NA
 
-**Measured variables**
+#### Measured variables.
 
-Outcome: Security measures (summed following binary items: burglar
-alarm, special door locks, window grills, high perimeter fence, and
-presence of a caretaker who provides security) - variable will be
-winzorized for analysis (robustness check conducted for unwinzorized
-variant), In event of single logistic regression, variable will be coded
-as 0: no consumption, and 1: 1 or more
+Outcome: Security measures (summed following binary items: burglar alarm, special door locks, window grills, high perimeter fence, and presence of a caretaker who provides security) - variable will be winzorized for analysis (robustness check conducted for unwinzorized variant), In event of single logistic regression, variable will be coded as 0: no consumption, and 1: 1 or more
 
 Predictors: Gini index (from SWIID - disposable income)
 
-Covariates Age (5-year bins): 16-70+ Gender (male/female) Employment
-status (employed (army/working)/unemployed("looking for work," "keeping
-home," "retired," "disabled," "still in school," or "other."))
-Individual victimization experiences (summed binary items: car thefts,
-bicycle thefts, burglaries, attempted burglaries, robberies, and thefts)
-Nation-level average of victimization experiences (from above;
-mean-centered at nation-level) Country GDP per capita (from PWT - real
-expenditure side; scaled as z-score)
+Covariates: Age (5-year bins): 16-70+ Gender (male/female) Employment status (employed (army/working)/unemployed("looking for work," "keeping home," "retired," "disabled," "still in school," or "other.")) Individual victimization experiences (summed binary items: car thefts, bicycle thefts, burglaries, attempted burglaries, robberies, and thefts) Nation-level average of victimization experiences (from above; mean-centered at nation-level) Country GDP per capita (from PWT - real expenditure side; scaled as z-score). Gini and GDP values will be averaged across respective study sweep periods and mean-centered at nation-level.
 
-Gini and GDP values will be averaged across study sweep periods and
-mean-centered at nation-level
+#### Unit of analysis.
 
-**Unit of analysis**
+The ICVS (Van Kesteren, 2010), initially had which has surveyed over 338,056 people across 75 different countries since 1989. The ICVS has been collected across eight different sweeps (1: 1989 [13 countries], 2: 1992-1994 [29], 3: 1995-1998 [44], 4: 1999-2003 [46], 5:2004-2006 [18], 6: 2010 [6], 7: 2014 [5], 8: 2015 [1]; with an additional EU-specific sweep in 2005 [16]). This registration opts to combine the 2004-2006 survey sweep with the 2005 EU-specific sweep, yielding an initial count of 34 countries and 88,844 individuals, but see missing data section for final expected sample size. United Kingdom data is duplicated with its constituent countries (e.g., scotland, ireland), so observations from lower-level countries are deleted to increase availability of inequality data.
 
-The ICVS (Van Kesteren, 2010), initially had which has surveyed over
-338,056 people across 75 different countries since 1989
+#### Missing data.
 
-The ICVS has been collected across eight different sweeps (1: 1989 [13
-countries], 2: 1992-1994 [29], 3: 1995-1998 [44], 4: 1999-2003 [46],
-5:2004-2006 [18], 6: 2010 [6], 7: 2014 [5], 8: 2015 [1]; with an
-additional EU-specific sweep in 2005 [16])
+Individuals and countries with missing data on model-relevant variables will be dropped (e.g., Switzerland is completely missing security measures)
 
-United Kingdom data is duplicated with its constituent countries (e.g.,
-scotland, ireland), so observations from lower-level countries are
-deleted to increase availability of inequality data.
+After screening for country-level missingness on key variables, in addition to "refusals" and "do not know" responses for security measures, and individuals who live in an institution (and were not asked security items), k = 32 countries, and n = 79,864 participants were retained for primary analyses (average 2,496 respondents per country)
 
-This registration opts to combine the 2004-2006 survey sweep with the
-2005 EU-specific sweep, yielding an initial count of 34 countries and
-88,844 individuals, but see missing data section for final expected
-sample size
+#### Statistical outliers.
 
-**Missing data**
+Outliers will be defined using a sample linear model for level-2 variables, and observations flagged as outliers (residuals have a cook's distance value of \> 4/n) will have those predictor variables winzorized (as they are expected to be legitimate values) and compared with original analysis as a robustness check
 
-Individuals and countries with missing data on model-relevant variables
-will be dropped (e.g., Switzerland is completely missing security
-measures)
+#### Sampling weights.
 
-After screening for country-level missingness on key variables, in
-addition to "refusals" and "do not know" responses for security
-measures, and individuals who live in an institution (and were not asked
-security items), k = 32 countries, and n = 79,864 participants were
-retained for primary analyses (average 2,496 respondents per country)
+The ICVS dataset includes frequency weights for all included participants. These weights will be used whenever possible, as country-wide household surveys are unlikely to yield samples that are perfectly representative of their populations. Pilot analyses did indicate possible convergence issues when weights are included. As such, the following contingency plan will be followed during analysis. 1) Attempt weighted ordinal regression, if the weighted ordinal model fails to converge, 2) the ordinal model will be conducted without frequency weights, elsewise, 3) a weighted mixed logistic regresssion will be conducted, then 4) an unweighted mixed logistic regression will be attempted. 
 
-**Statistical outliers**
+<!-- Knowledge of Data -->
 
-Outliers will be defined using a sample linear model for level-2
-variables, and observations flagged as outliers (residuals have a cook's
-distance value of \> 4/n) will have those predictor variables winzorized
-(as they are expected to be legitimate values) and compared with
-original analysis as a robustness check
-
-**Sampling weights**
-
-The ICVS dataset includes frequency weights for all included
-participants. These weights will be used whenever possible, as
-country-wide household surveys are unlikely to yield samples that are
-perfectly representative of their populations. Pilot analyses did
-indicate possible convergence issues when weights are included. As such,
-the following contingency plan will be followed during analysis. 1)
-Attempt weighted ordinal regression, if the weighted ordinal model fails
-to converge, 2) the ordinal model will be conducted without frequency
-weights, elsewise, 3) a weighted mixed logistic regresssion will be
-conducted, then 4) an unweighted mixed logistic regression will be
-attempted. Knowledge of Data
-
-**Prior Publication/Dissemination**
+#### Prior Publication/Dissemination. 
 
 NA
 
-**Prior knowledge**
+#### Prior knowledge.
 
-DN: The data has been accessed, cleaned, and explored, with some sample
-analyses conducted on a similarly-constructed (but theoretically
-distinct) dependent variable - victimization experiences. DN has also
-read published research and codebooks on the datasets. Nothing
-pertaining to security measures
+DN: The data has been accessed, cleaned, and explored, with some sample analyses conducted on a similarly-constructed (but theoretically distinct) dependent variable - victimization experiences. DN has also read published research and codebooks on the datasets. Nothing pertaining to security measures
 
 MM: Has seen summary reports of data Analyses
 
-**Statistical models**
+#### Statistical models.
 
-Analyses will predict security consumption as an ordinal variable (0: no
-security consumption, 1: one unit of security consumption, 2: two units,
-or 3: three or more units), using a cumulative link mixed model.
+Analyses will predict security consumption as an ordinal variable (0: no security consumption, 1: one unit of security consumption, 2: two units, or 3: three or more units), using a cumulative link mixed model.
 
-ordered(security_winz) \~ gini_2004_6\_cent + gdppc_2004_6\_scale +
-victim_nation_cent + num_victim_5yr + age_cent + employed + male + (1 \|
-country)
+>`ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation_cent + num_victim_5yr + age_cent + employed + male + (1 |country)`
 
 The hypothesis will be tested based on the significance of the
-coefficient 'gini_2004_6\_cent'
+coefficient `gini_2004_6_cent`
 
-**Effect size**
-
-NA
-
-**Statistical power**
+#### Effect size. 
 
 NA
 
-**Inference criteria**
+#### Statistical power.
+
+NA
+
+#### Inference criteria. 
 
 p \< .05, one-tailed b, 95% confidence intervals.
 
-**Assumption Violation/ Model Non-Convergence**
+#### Assumption Violation/ Model Non-Convergence.
 
-Pilot analyses did indicate possible convergence issues when weights are
-included. As such, the following contingency plan will be followed
-during analysis. 1) Attempt weighted ordinal regression, if the weighted
-ordinal model fails to converge, 2) the model will be conducted without
-frequency weights, elsewise, 3) a weighted mixed logistic regresssion
-will be conducted, then 4) an unweighted mixed logistic regression will
-be attempted.
+Pilot analyses did indicate possible convergence issues when weights are included. As such, the following contingency plan will be followed during analysis. 1) Attempt weighted ordinal regression, if the weighted ordinal model fails to converge, 2) the model will be conducted without frequency weights, elsewise, 3) a weighted mixed logistic regresssion will be conducted, then 4) an unweighted mixed logistic regression will be attempted.
 
-For the ordinal regression, proportional odds tests do not exist yet for
-mixed models. As such, separate logistic regressions will be conducted
-for the analyses for each incremental step in the dependent variable
-(e.g., 0 vs. 1, 1 vs. 2, 2 vs. 3). The regression coefficients for
-inequality will then be compared to one another using z-tests. If there
-is a significant difference amongst the predictors (suggesting a
-violation of the proportional odds assumption), then the separate
-logistic regressions will be presented as the primary analysis instead.
+For the ordinal regression, proportional odds tests do not exist yet for mixed models. As such, separate logistic regressions will be conducted for the analyses for each incremental step in the dependent variable (e.g., 0 vs. 1, 1 vs. 2, 2 vs. 3). The regression coefficients for inequality will then be compared to one another using z-tests. If there is a significant difference amongst the predictors (suggesting a violation of the proportional odds assumption), then the separate logistic regressions will be presented as the primary analysis instead.
 
-**Reliability and Robustness testing**
-
-**Robustness:**
+#### Reliability and Robustness testing.
 
 The focal analysis will be compared with the following models, ordinal
 -\> logistic regressions where applicable:
 
-1)  For the main model, analyses will be repeated with regular
-    (unwinzorized) security_total (for case of ordinal regression - N/A
-    for logistic)
+1)  For the main model, analyses will be repeated with regular (unwinzorized) security_total (for case of ordinal regression - N/A for logistic)
 
-2)  A supplementary analysis will be conducted on a different sweep
-    period of the ICVS (1999-2003). Anticipated n = 70,264
-    (participants, unique observations from 2004-06), with k = 41
-    countries (starting with 56 countries and 92,943 rows)
+2)  A supplementary analysis will be conducted on a different sweep period of the ICVS (1999-2003). Anticipated n = 70,264 (participants, unique observations from 2004-06), with k = 41 countries (starting with 56 countries and 92,943 rows). Partnered: married or living together (vs. single, divorced, widowed)
 
-ordered(security_winz) \~ gini_1999_03_cent + gdppc_1999_03_cent +
-victim_nation_cent + num_victim_5yr + male + age_num + house +
-other_house + shanty + partnered + (1\|country)
+> `ordered(security_winz) ~ gini_1999_03_cent + gdppc_1999_03_cent + victim_nation_cent + num_victim_5yr + male + age_num + house + other_house + shanty + partnered + (1|country)`
 
-partnered: married or living together (vs. single, divorced, widowed)
+In addition to the larger number of countries, this 1999-2003 sweep also has sufficient data on respondent housing to include housing variables in the model (apartment dwelling as reference), which is important because housing is a notable covariate/confounder in the 2004-06 sweep (the dependent measure is predominantly about household measures of security).
 
-In addition to the larger number of countries, this 1999-2003 sweep also
-has sufficient data on respondent housing to include housing variables
-in the model (apartment dwelling as reference), which is important
-because housing is a notable covariate/confounder in the 2004-06 sweep
-(the dependent measure is predominantly about household measures of
-security).
+In order to test robustness with the same variables, the 3) k = 32 data and the 4) k = 41 data will be run with the following reduced model (excluding partnered, employed, and housing)
 
-In order to test robustness with the same variables, the 3) k = 32 data
-and the 4) k = 41 data will be run with the following reduced model
-(excluding partnered, employed, and housing)
-
-ordered(security_winz) \~ gini_2004_6\_cent + gdppc_2004_6\_scale +
-victim_nation_cent + num_victim_5yr + age_cent + male + (1 \| country)
+> `ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation_cent + num_victim_5yr + age_cent + male + (1 | country)`
 
 For all of these models, analyses will be repeated with winzorized
 level-2 variables:
@@ -1440,63 +1209,37 @@ level-2 variables:
 8)  small k = 32 model
 9)  small k = 41 model
 
-**Exploratory analysis**
+#### Exploratory analysis.
 
-Model changes such as interactions and exponents may be added to improve
-model fit
+Model changes such as interactions and exponents may be added to improve model fit. 5-year lagged inequality, gini\*GDP, polynomials
 
-5-year lagged inequality, gini\*GDP, polynomials
+#### Notes on pre-registered plan.
 
-### Notes on pre-registered plan
+An ordinal regression carries an assumption of proportional odds: that the predictors' effects are consistent across the different levels of the dependent variable. Currently, we are not aware of any available methods for testing the proportional odds assumption for a mixed ordinal regression; existing methods only serve as a test on single-level data. As such, we will attempt to test this assumption using multiple logistic regressions, conducted for each rank threshold (e.g., 0\|1, 1\|2, 2\|3). Since inequality is the major predictor of interest, only this coefficient will be compared across logistic models, which will help attenuate the impact of Type I errors. The proportional odds assumption will be deemed as violated if the regression coefficients for inequality are significantly different across models. If there is a significant difference amongst the predictors (suggesting a violation of the proportional odds assumption), then the separate logistic regressions will be presented as the primary analysis instead.
 
-An ordinal regression carries an assumption of proportional odds: that
-the predictors' effects are consistent across the different levels of
-the dependent variable. Currently, we are not aware of any available
-methods for testing the proportional odds assumption for a mixed ordinal
-regression; existing methods only serve as a test on single-level data.
-As such, we will attempt to test this assumption using multiple logistic
-regressions, conducted for each rank threshold (e.g., 0\|1, 1\|2, 2\|3).
-Since inequality is the major predictor of interest, only this
-coefficient will be compared across logistic models, which will help
-attenuate the impact of Type I errors. The proportional odds assumption
-will be deemed as violated if the regression coefficients for inequality
-are significantly different across models. If there is a significant
-difference amongst the predictors (suggesting a violation of the
-proportional odds assumption), then the separate logistic regressions
-will be presented as the primary analysis instead.
-
-Main analyses will be conducted using the r package ordinal, with the
-following mixed model specification:
+Main analyses will be conducted using the r package ordinal, with the following mixed model specification:
 
 > `ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation_cent + num_victim_5yr + age_cent + employed + male + (1 | country)`
 
-#### Robustness checks
+#### Robustness checks,
 
-1)  A supplementary analysis will be conducted on a different sweep
-    period of the ICVS (1999-2003). Anticipated n = 70,264 (unique
-    participants), with k = 41 countries
+1)  A supplementary analysis will be conducted on a different sweep period of the ICVS (1999-2003). Anticipated n = 70,264 (unique participants), with k = 41 countries
 
 <!-- > `r glue::glue_collapse(x = iv_2005_countries, ", ", last = ", and the  ")` -->
 
-2)  For the main model, as determined by contingencies, analyses will be
-    repeated with regular (unwinzorized) security_total
+2)  For the main model, as determined by contingencies, analyses will be repeated with regular (unwinzorized) security_total
 
-In order to test robustness with the same variables:
+In order to test robustness with the same variables, the 3) k = 32 data and the 4) k = 41 data will be run with the following reduced model (excluding partnered, employed, and housing)
 
-the 3) k = 32 data and the 4) k = 41 data will be run with the following
-reduced model (excluding partnered, employed, and housing)
+> `ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation_cent + num_victim_5yr + age_cent + male +  (1 | country)`
 
-`ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation_cent + num_victim_5yr + age_cent + male +  (1 | country)`
-
-A sample linear model revealed nonproblematic levels of
-multicollinearity, maximum VIF of `r round(max(sec_lmer1_iv_vif),2)`
+A sample linear model revealed nonproblematic levels of multicollinearity, maximum VIF of `r round(max(sec_lmer1_iv_vif),2)`
 
 ```{r vif-values, eval =F}
 c(sec_lmer1_iv_vif,sec_lmer1_poly_int_vif, sec_lmer1_int_vif,sec_lmer1_poly_vif)
 ```
 
-For all of these models, analyses will be repeated with winzorized
-level-2 variables:
+For all of these models, analyses will be repeated with winzorized level-2 variables:
 
 5)  regular k = 32 model
 6)  unwinzorized security_total k = 32 model
@@ -1504,15 +1247,7 @@ level-2 variables:
 8)  small k = 32 model
 9)  small k = 41 model
 
-For values within reasonable scope of response variables, outliers are
-considered legitimate values and will not be deleted. Outliers will be
-defined using a sample linear model for level-2 variables, and
-observations flagged as outliers if their residuals have a cook's
-distance value of \> 4/n will have those predictor variables winzorized
-(as they are expected to be legitimate values). As a robustness check,
-analyses will be repeated with influential observations being winzorized
-at the dependent variable to the 5th and 95th percentile values.
-Influential observations will be flagged as having model residuals'
+For values within reasonable scope of response variables, outliers are considered legitimate values and will not be deleted. Outliers will be defined using a sample linear model for level-2 variables, and observations flagged as outliers if their residuals have a cook's distance value of \> 4/n will have those predictor variables winzorized (as they are expected to be legitimate values). As a robustness check, analyses will be repeated with influential observations being winzorized at the dependent variable to the 5th and 95th percentile values. Influential observations will be flagged as having model residuals'
 cook's distance values exceeding the threshold 4/n; where n = \# of
 observations.
 
@@ -1572,16 +1307,13 @@ kable_styling(latex_options = c(
 converg_tab_99_k
 ```
 
-Degrees of freedom were calculated using methods defined in
-@snijders2011
+Degrees of freedom were calculated using methods defined in @snijders2011
 
 level 1: *M*-*r*-1
 
 level 2: *N*-*q*-1
 
-*M*: total number of level-one units, *r*: total number of explanatory
-variables, *N*: number of level-two units, *q*: number of level-2
-predictors.
+*M*: total number of level-one units, *r*: total number of explanatory variables, *N*: number of level-two units, *q*: number of level-2 predictors.
 
 #### Study 3 alternate models
 
@@ -1604,14 +1336,14 @@ sec_mw100_log_robust_scale_tidy1 <- round_df2(data.frame(sec_mw100_log_robust_sc
 
 sec_mw100_log_robust_scale_tidy1 <- data.frame(sec_mw100_log_robust_scale_tidy1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     )
 
-sec_mw100_log_robust_scale_tidy1 <- subset(sec_mw100_log_robust_scale_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_mw100_log_robust_scale_tidy1 <- subset(sec_mw100_log_robust_scale_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 sec_mw100_log_robust_scale_tidy1$term <- ifelse(sec_mw100_log_robust_scale_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_robust_scale_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_robust_scale_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_robust_scale_tidy1$term == "gini_1999_03_cent", "Nation gini",
@@ -1649,9 +1381,7 @@ kable_styling(latex_options = c(
 ```
 
 
-(ref:icvs-log-robust-scale-1999-dwplot) Study 3, dot-whisker plot for
-mixed weighted logistic regression, 1999-03 period, robustness
-variables.
+(ref:icvs-log-robust-scale-1999-dwplot) Study 3, dot-whisker plot for mixed weighted logistic regression, 1999-03 period, robustness variables.
 ```{=latex}
 \begin{figure}[H]
 \caption{(ref:icvs-log-robust-scale-1999-dwplot) \label{fig:icvs-log-robust-scale-1999-dwplot}}
@@ -1669,14 +1399,14 @@ sec_mw100_log_robust_scale_1999_tidy1 <- round_df2(data.frame(sec_mw100_log_robu
 
 sec_mw100_log_robust_scale_1999_tidy1 <- data.frame(sec_mw100_log_robust_scale_1999_tidy1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     )
 
-sec_mw100_log_robust_scale_1999_tidy1 <- subset(sec_mw100_log_robust_scale_1999_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_mw100_log_robust_scale_1999_tidy1 <- subset(sec_mw100_log_robust_scale_1999_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 sec_mw100_log_robust_scale_1999_tidy1$term <- ifelse(sec_mw100_log_robust_scale_1999_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_robust_scale_1999_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_robust_scale_1999_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_robust_scale_1999_tidy1$term == "gini_1999_03_cent", "Nation gini",
@@ -1715,8 +1445,7 @@ kable_styling(latex_options = c(
 
 2)  weighted trimmed ordinal
 
-(ref:icvs-ord-dwplot) Study 3, dot-whisker plot for mixed weighted
-ordinal regression, predicting security consumption.
+(ref:icvs-ord-dwplot) Study 3, dot-whisker plot for mixed weighted ordinal regression, predicting security consumption.
 ```{=latex}
 \begin{figure}[H]
 \caption{(ref:icvs-ord-dwplot) \label{fig:icvs-ord-dwplot}}
@@ -1734,14 +1463,14 @@ sec_mw100_ord_drop_tidy1 <- round_df2(data.frame(sec_mw100_ord_drop_tidy))
 
 sec_mw100_ord_drop_tidy1 <- data.frame(sec_mw100_ord_drop_tidy1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     )
 
-sec_mw100_ord_drop_tidy1 <- subset(sec_mw100_ord_drop_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_mw100_ord_drop_tidy1 <- subset(sec_mw100_ord_drop_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 sec_mw100_ord_drop_tidy1$term <- ifelse(sec_mw100_ord_drop_tidy1$term == "gini_2004_6_scale" | sec_mw100_ord_drop_tidy1$term == "gini_2004_6_cent" | sec_mw100_ord_drop_tidy1$term == "gini_1999_03_scale" | sec_mw100_ord_drop_tidy1$term == "gini_1999_03_cent", "Nation gini",
@@ -1809,11 +1538,11 @@ kable_styling(latex_options = c(
 
 <!--   dplyr::rename( -->
 
-<!--     "SE" = std.error, -->
+<!--     # "SE" = std.error, -->
 
 <!--     "95\\% CI" = CI95, -->
 
-<!--     "\\textit{z}" = z_score, -->
+<!--     "\\textit{t}" = t_value, -->
 
 <!--     "\\textit{p}" = p_value, -->
 
@@ -1821,7 +1550,7 @@ kable_styling(latex_options = c(
 
 <!--     ) -->
 
-<!-- sec_mw100_log_scale_01_tidy1 <- subset(sec_mw100_log_scale_01_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df)) -->
+<!-- sec_mw100_log_scale_01_tidy1 <- subset(sec_mw100_log_scale_01_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value)) -->
 
 <!-- sec_mw100_log_scale_01_tidy1$term <- ifelse(sec_mw100_log_scale_01_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_01_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_01_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_01_tidy1$term == "gini_1999_03_cent", "Nation gini", -->
 
@@ -1905,11 +1634,11 @@ kable_styling(latex_options = c(
 
 <!--   dplyr::rename( -->
 
-<!--     "SE" = std.error, -->
+<!--     # "SE" = std.error, -->
 
 <!--     "95\\% CI" = CI95, -->
 
-<!--     "\\textit{z}" = z_score, -->
+<!--     "\\textit{t}" = t_value, -->
 
 <!--     "\\textit{p}" = p_value, -->
 
@@ -1917,7 +1646,7 @@ kable_styling(latex_options = c(
 
 <!--     ) -->
 
-<!-- sec_mw100_log_scale_12_tidy1 <- subset(sec_mw100_log_scale_12_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df)) -->
+<!-- sec_mw100_log_scale_12_tidy1 <- subset(sec_mw100_log_scale_12_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value)) -->
 
 <!-- sec_mw100_log_scale_12_tidy1$term <- ifelse(sec_mw100_log_scale_12_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_12_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_12_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_12_tidy1$term == "gini_1999_03_cent", "Nation gini", -->
 
@@ -2003,11 +1732,11 @@ kable_styling(latex_options = c(
 
 <!--   dplyr::rename( -->
 
-<!--     "SE" = std.error, -->
+<!--     # "SE" = std.error, -->
 
 <!--     "95\\% CI" = CI95, -->
 
-<!--     "\\textit{z}" = z_score, -->
+<!--     "\\textit{t}" = t_value, -->
 
 <!--     "\\textit{p}" = p_value, -->
 
@@ -2015,7 +1744,7 @@ kable_styling(latex_options = c(
 
 <!--     ) -->
 
-<!-- sec_mw100_log_scale_23_tidy1 <- subset(sec_mw100_log_scale_23_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df)) -->
+<!-- sec_mw100_log_scale_23_tidy1 <- subset(sec_mw100_log_scale_23_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value)) -->
 
 <!-- sec_mw100_log_scale_23_tidy1$term <- ifelse(sec_mw100_log_scale_23_tidy1$term == "gini_2004_6_scale" | sec_mw100_log_scale_23_tidy1$term == "gini_2004_6_cent" | sec_mw100_log_scale_23_tidy1$term == "gini_1999_03_scale" | sec_mw100_log_scale_23_tidy1$term == "gini_1999_03_cent", "Nation gini", -->
 
@@ -2079,14 +1808,14 @@ sec_m100_ord_scale_robust_tidy_drop1 <- round_df2(data.frame(sec_m100_ord_scale_
 
 sec_m100_ord_scale_robust_tidy_drop1 <- data.frame(sec_m100_ord_scale_robust_tidy_drop1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     )
 
-sec_m100_ord_scale_robust_tidy_drop1 <- subset(sec_m100_ord_scale_robust_tidy_drop1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_m100_ord_scale_robust_tidy_drop1 <- subset(sec_m100_ord_scale_robust_tidy_drop1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 sec_m100_ord_scale_robust_tidy_drop1$term <- ifelse(sec_m100_ord_scale_robust_tidy_drop1$term == "gini_2004_6_scale" | sec_m100_ord_scale_robust_tidy_drop1$term == "gini_2004_6_cent" | sec_m100_ord_scale_robust_tidy_drop1$term == "gini_1999_03_scale" | sec_m100_ord_scale_robust_tidy_drop1$term == "gini_1999_03_cent", "Nation gini",
@@ -2147,9 +1876,9 @@ sec_mw100_log_scale_int_1999_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_i
 
 sec_mw100_log_scale_int_1999_tidy1 <- data.frame(sec_mw100_log_scale_int_1999_tidy1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     # "z" = z_score,
@@ -2157,7 +1886,7 @@ sec_mw100_log_scale_int_1999_tidy1 <- data.frame(sec_mw100_log_scale_int_1999_ti
     # "b" = estimate
     )
 
-sec_mw100_log_scale_int_1999_tidy1 <- subset(sec_mw100_log_scale_int_1999_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_mw100_log_scale_int_1999_tidy1 <- subset(sec_mw100_log_scale_int_1999_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 
@@ -2226,9 +1955,9 @@ sec_mw100_log_scale_poly_1999_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_
 
 sec_mw100_log_scale_poly_1999_tidy1 <- data.frame(sec_mw100_log_scale_poly_1999_tidy1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     # "z" = z_score,
@@ -2236,7 +1965,7 @@ sec_mw100_log_scale_poly_1999_tidy1 <- data.frame(sec_mw100_log_scale_poly_1999_
     # "b" = estimate
     )
 
-sec_mw100_log_scale_poly_1999_tidy1 <- subset(sec_mw100_log_scale_poly_1999_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_mw100_log_scale_poly_1999_tidy1 <- subset(sec_mw100_log_scale_poly_1999_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 
@@ -2303,9 +2032,9 @@ sec_mw100_log_scale_poly_tidy1 <- round_df2(data.frame(sec_mw100_log_scale_poly_
 
 sec_mw100_log_scale_poly_tidy1 <- data.frame(sec_mw100_log_scale_poly_tidy1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     # "z" = z_score,
@@ -2313,7 +2042,7 @@ sec_mw100_log_scale_poly_tidy1 <- data.frame(sec_mw100_log_scale_poly_tidy1) %>%
     # "b" = estimate
     )
 
-sec_mw100_log_scale_poly_tidy1 <- subset(sec_mw100_log_scale_poly_tidy1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_mw100_log_scale_poly_tidy1 <- subset(sec_mw100_log_scale_poly_tidy1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 
@@ -2363,9 +2092,9 @@ sec_m100_ord_1999_tidy_drop1 <- round_df2(data.frame(sec_m100_ord_1999_tidy_drop
 
 sec_m100_ord_1999_tidy_drop1 <- data.frame(sec_m100_ord_1999_tidy_drop1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     # "z" = z_score,
@@ -2373,7 +2102,7 @@ sec_m100_ord_1999_tidy_drop1 <- data.frame(sec_m100_ord_1999_tidy_drop1) %>%
     # "b" = estimate
     )
 
-sec_m100_ord_1999_tidy_drop1 <- subset(sec_m100_ord_1999_tidy_drop1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_m100_ord_1999_tidy_drop1 <- subset(sec_m100_ord_1999_tidy_drop1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 
@@ -2430,9 +2159,9 @@ sec_m100_ord_1999_robust_tidy_drop1 <- round_df2(data.frame(sec_m100_ord_1999_ro
 
 sec_m100_ord_1999_robust_tidy_drop1 <- data.frame(sec_m100_ord_1999_robust_tidy_drop1) %>%
   dplyr::rename(
-    "SE" = std.error,
+    # "SE" = std.error,
     "95\\% CI" = CI95,
-    "\\textit{z}" = z_score,
+    "\\textit{t}" = t_value,
     "\\textit{p}" = p_value,
     "\\textit{b}" = estimate
     # "z" = z_score,
@@ -2440,7 +2169,7 @@ sec_m100_ord_1999_robust_tidy_drop1 <- data.frame(sec_m100_ord_1999_robust_tidy_
     # "b" = estimate
     )
 
-sec_m100_ord_1999_robust_tidy_drop1 <- subset(sec_m100_ord_1999_robust_tidy_drop1, select = -c(SE,ci95_lo,ci95_hi,lvl,df))
+sec_m100_ord_1999_robust_tidy_drop1 <- subset(sec_m100_ord_1999_robust_tidy_drop1, select = -c(std.error,ci95_lo,ci95_hi,lvl,df,z_score,z_p_value))
 
 
 

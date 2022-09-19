@@ -24,6 +24,88 @@ All procedures for this project have been approved by the University of Calgary 
 
 ## Study 1 {#s1-ap}
 
+## Pretest
+
+A within-subjects pretest with an initial sample of `r pretest_initial_n` crowdsourced (Prolific) participants was conducted to calibrate the price of security (\$0.02 vs. \$0.04) and the baseline likelihood of successful thefts (50%, 60%, 75%). The pretest had two attention checks and implemented a relaxed comprehension check (selecting one of two options out of five; "Deciding whether to try stealing from my partner," or "Deciding whether to purchase a security product"), as only `r round(screened_n_min/pretest_initial_n*100,0)`% of participants correctly answered a single-item comprehension check, leaving n = `r screened_n` retained participants. As described in the procedure above, participants were told they would be paired with a hypothetical partner, and each would be given \$2. Then, participants were told that this partner would have the opportunity to steal \$1 from them, at a baseline chance of success (50%, 60%, 75%), with unsuccessful thefts instead making the partner lose \$1. Then, participants were asked to indicate how much of a security product they would like to purchase, with each unit of the product costing money (\$.02, or \$.04), and reducing the likelihood of a successful theft by 1%.
+
+A 2w\*3w within-subjects ANOVA failed to detect significant effects of baseline likelihood of successful thefts, `r anova_extract(pretest_anova,"prob", is.first=TRUE,test.stat=TRUE)`, nor security price, `r anova_extract(pretest_anova,"cost")`; see Figure \@ref(fig:pretest-splitplot) and Table \@ref(tab:pretest-anova)). Study 1a used a baseline 50% chance of successful thefts, and each unit of security costing \$0.02 (or equivalent proportional to stake size). This condition seemed to produce the lowest means and the least skewed data, at `r round(base_skew,2)` (vs. skew = `r round(skew_groups["75_02"],2)` when probability is 75% and price \$0.02).
+
+(ref:pretest-splitplot) Study 1 pretest, effect of security cost and starting theft likelihood on security spending.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:pretest-splitplot) \label{fig:pretest-splitplot}}
+```
+```{r pretest-splitplot,eval = TRUE, include=TRUE, echo=FALSE, out.width='90%'}
+# , fig.cap="(ref:pretest-splitplot)"
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/pretest_security_fadecloud.png")
+```
+```{=latex}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI. n=`r screened_n`. ANOVA in Table @ref(tab:pretest-anova), $p$s $\ge$ `r round(sort(pretest_anova[,"Pr(>F)"],FALSE)[1], 2)`.}
+\end{figure}
+```
+
+
+
+
+
+
+
+<!-- 2w*3w ANOVA,  -->
+
+<!-- `r plyr::round_any(sort(pretest_anova[,"Pr(>F)"],FALSE)[1], 0.01, f = floor)` -->
+
+```{r pretest-anova, eval = TRUE, echo=FALSE}
+pretest_anova1 <- round(data.frame(pretest_anova),2)
+
+pretest_anova1$ci95 <- as.character(paste("[", pretest_anova1$ci95_lo, ", ", pretest_anova1$ci95_hi,"]",  sep=""))
+
+# pretest_anova1$df <- paste("[", pretest_anova1$NumDF, ", ", pretest_anova1$ci95_hi,"]",  sep=""))
+
+pretest_anova1$df <- as.character(paste(round(pretest_anova1$NumDF,2), ", ", round(pretest_anova1$DenDF,2),  sep=""))
+  
+pretest_anova1 <- pretest_anova1[,!names(pretest_anova1) %in% 
+                                   c("ci95_lo","ci95_hi", #"pes", 
+                                     "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+# pretest_anova1 <- pretest_anova1 %>% relocate(c(cohens_f,Pr..F.), .before = F)
+
+# This is the sacred way to italicize cells and having special latex characters
+
+pretest_anova1 <- pretest_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
+    )
+
+row.names(pretest_anova1) <- firstup(row.names(pretest_anova1))
+# row.names(pretest_anova1)
+
+row.names(pretest_anova1)[row.names(pretest_anova1) == "Prob:cost"] <- "Prob*cost"
+
+
+pretest_anova1 <- pretest_anova1 %>% relocate(df, .before = MSE)
+
+knitr::kable(pretest_anova1,
+             align = "ccccccc",
+             caption = '2w*3w ANOVA results for Study 1 pretest',
+             booktabs = TRUE,
+             format = "latex"
+             , escape = F  # enables italicizing
+             # ,format.args=list(floating=TRUE)
+             ) %>% kable_styling(latex_options = "hold_position") 
+# %>%
+# kable_styling(latex_options = c("striped", "hold_position"))
+
+  
+```
+
+
 ### Methodological notes
 
 Given the bounded nature of the minimum and maximum values for the variables in the experimental designs, outliers are considered legitimate values and will not be deleted. The pre-registered mediation plan was mis-specified. As such, the pre-registered mediation plan can be FOUND IN THE APPENDIX ?? , and the following specification is an adjustment: 1a MEDIATION HERE??
@@ -60,6 +142,66 @@ Participants will be excluded from analyses if any of the following:
 
 
 ### Study 1a
+
+(ref:mixed-design) Study 1a, values for power analysis, 2b\*2w ANOVA.
+```{=latex}
+\begin{figure}[t]
+\centering
+\caption{(ref:mixed-design) \label{fig:mixed-design}}
+```
+```{r mixed-design,eval = TRUE,include=TRUE, echo=FALSE, out.width='70%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_design_2b2w_f1156_5.png")
+```
+
+```{=latex}
+\textit{Notes:} Max possible value is \$1.00; bars indicate +/-1 $SD$
+\end{figure}
+```
+(ref:powerplot2) Study 1a, sample size thresholds, 95% power 2b\*2w ANOVA.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:powerplot2) 
+\label{fig:powerplot2}}
+```
+```{r powerplot2, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_powerplot_2b2w_f1156_5.png")
+```
+
+```{=latex}
+\textit{Notes:} Specified sample size is per-between-condition for inequality's main effect.
+\end{figure}
+```
+\FloatBarrier
+
+```{r 2b2w-anova-exact,echo=FALSE, eval = TRUE,  include=TRUE}
+security_exact2b2w_f1156_5_main <- data.frame(security_exact2b2w_f1156_5$main_results)
+
+security_exact2b2w_f1156_5_main$power <- round(security_exact2b2w_f1156_5_main$power,2)
+
+security_exact2b2w_f1156_5_main$non_centrality <- round(security_exact2b2w_f1156_5_main$non_centrality,2)
+
+colnames(security_exact2b2w_f1156_5_main) <- firstup(colnames(security_exact2b2w_f1156_5_main))
+
+security_exact2b2w_f1156_5_main <- security_exact2b2w_f1156_5_main %>% 
+  dplyr::rename(
+    "$\\eta_p^2$" = Partial_eta_squared,
+  "Cohen's \\textit{f}"  = Cohen_f,
+  "Non-centrality" = Non_centrality
+    )
+
+
+row.names(security_exact2b2w_f1156_5_main) <- firstup(row.names(security_exact2b2w_f1156_5_main))
+
+row.names(security_exact2b2w_f1156_5_main)[row.names(security_exact2b2w_f1156_5_main) == "Inequality:stake"] <- "Inequality*stake"
+
+knitr::kable(round(security_exact2b2w_f1156_5_main,4), caption = 'Study 1a, power for 2b*2w factorial ANOVA',                   align = "lcccccc",
+             format = 'latex', escape = F,booktabs = TRUE,linesep = "")%>%
+kable_styling(latex_options = c(
+  # "striped", 
+                                "hold_position"))
+```
 
 #### Study 1a pre-registration
 
@@ -493,7 +635,28 @@ kable_styling(latex_options = c(
 s1bp_desc
 ```
 
+In order to examine the presence of effects on an exploratory basis, a pilot study was conducted without a pre-registered design. Recruiting from Prolific, this pilot study collected `r s1b_pilot_n_collected` participants, with n = `r s1b_pilot_n_attended` being retained for analysis (`r round(s1bp_female*100,2)`% female). For this pilot data, significant positive effects of inequality were found for perceived partner envy, `r report_tidy_t(s1bp_envy_t_tidy, test.stat=TRUE,ci.lab = TRUE)`, and perceived likelihood of partner attacking, `r report_tidy_t(s1bp_likelihood_t_tidy)` (Figure \@ref(fig:s1bp-manip-jitt)). There was also a positive and significant effect of inequality on security spending, `r report_tidy_t(s1bp_sec_t_tidy)` (Figure \@ref(fig:s1bp-spending-jitt)). Likewise, a mediation analysis using 5,000 bootstrapped samples found a significant indirect effect of inequality on security consumption through perceived partner envy, `r med_extract(s1bp_spending_med_full_tidy,"Indirect Effect (ACME)")` (Figure \@ref(fig:s1bp-spending-med-plot)). The pilot data found support for **H1)** and **H2)**.
 
+(ref:s1bp-spending-jitt) Study 1b pilot, within-subjects effects of inequality on security spending.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s1bp-spending-jitt) \label{fig:s1bp-spending-jitt}}
+```
+```{r s1bp-spending-jitt, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1bp_spending_fadecloud.png")
+```
+
+```{=latex}
+\caption*{\textit{Notes:} Means (95\% CI) and horizontally jittered data.}
+\end{figure}
+```
+<!-- `r report_tidy_t(s1bp_likelihood_t_tidy,is.latex=TRUE)`. -->
+
+<!-- Notably, the direct effect between inequality and security consumption remained positive in this model, however, the effect is small enough that its statistical significance fluctuates depending on the randomization of the bootstrapping procedure (see Figure @ref(fig:s1bp-spending-med-plot) and Table @ref(tab:s1bp-spending-med-full)). -->
+
+<!-- `r report_tidy_t(s1bp_sec_t_tidy,is.latex=TRUE)`.  -->
 
 (ref:s1bp-manip-jitt) Study 1b pilot, within-subjects effects of inequality on perceived partner envy and attack likelihood.
 ```{=latex}
@@ -502,8 +665,8 @@ s1bp_desc
 \caption{(ref:s1bp-manip-jitt) \label{fig:s1bp-manip-jitt}}
 ```
 ```{r s1bp-manip-jitt, eval = TRUE, include=TRUE, echo=FALSE, out.width='49%'}
-knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1bp_envy_jittolin.png")
-knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1bp_likelihood_jittolin.png")
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1bp_envy_fadecloud.png")
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1bp_likelihood_fadecloud.png")
 ```
 ```{=latex}
 \caption*{\textit{Notes:} Means (95\% CI) and raw data, horizontally jittered according to kernel density.}
@@ -557,19 +720,6 @@ kable_styling(latex_options = c(
 
 
 
-(ref:s1b-spending-jitt) Study 1b, within-subjects effects of inequality on security spending.
-```{=latex}
-\begin{figure}[H]
-\centering
-\caption{(ref:s1b-spending-jitt) \label{fig:s1b-spending-jitt}}
-```
-```{r s1b-spending-jitt, eval = TRUE, include=TRUE, echo=FALSE, out.width='65%'}
-knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1b_spending_jittolin.png")
-```
-```{=latex}
-\caption*{\textit{Notes:} Means (95\% CI) and raw data, horizontally jittered according to kernel density.}
-\end{figure}
-```
 
 
 #### Study 1b pre-registration
@@ -754,73 +904,41 @@ No response
 
 >"First Scenario. For this scenario, you have been assigned to Yellow. Your role was randomly assigned. You and your partner (Blue) have each been given $150. Blue knows how much money you each have received. Shortly, Blue will decide whether they will try to steal money from you."
 
-```{r s1c-desc-tab}
-s1cdesc_columns <- c("Variable",	"Mean",	"SD", "Cron. $\\alpha$ 95\\% CI")
-
-s1c_desc <- knitr::kable(s1c_desc, caption = 'Study 1c Descriptive Statistics',
-                         format = 'latex',
-                         escape = F,
-                   align = "lcccccc",
-                   col.names = s1cdesc_columns,
-                   booktabs = T,
-             linesep = "") %>%
-  kable_styling(full_width = FALSE) %>%
-  column_spec(1,width = "2in", 
-              latex_valign = "b") %>%
-  column_spec(2,width = ".4in", 
-              latex_valign = "b") %>%
-  column_spec(3,width = ".4in", 
-              latex_valign = "b") %>%
-    column_spec(4,width = ".9in", 
-              latex_valign = "b")  %>%
-kable_styling(latex_options = c(
-  # "striped", 
-  "hold_position"))
-# %>%
-#   kable_styling(latex_options = "striped")
-
-s1c_desc
-
-``` 
 
 
 
-
-(ref:s1c-spending-jitt) Study 1c, between-subjects effects of inequality on security spending.
-```{=latex}
-\begin{figure}[H]
-\centering
-\caption{(ref:s1c-spending-jitt) \label{fig:s1c-spending-jitt}}
-```
-```{r s1c-spending-jitt, eval = TRUE, include=TRUE, echo=FALSE, out.width='65%'}
-knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1c_security_jittolin.png")
-```
-```{=latex}
-\caption*{\textit{Notes:} Means (95\% CI) and raw data, horizontally jittered according to kernel density.}
-\end{figure}
-```
 
 ```{r s1c-envy-anova, eval = TRUE, echo=FALSE}
 s1c_envy_anova1 <- round(data.frame(s1c_envy_anova),2)
 
 s1c_envy_anova1$ci95 <- as.character(paste("[", s1c_envy_anova1$ci95_lo, ", ", s1c_envy_anova1$ci95_hi,"]",  sep=""))
 
+s1c_envy_anova1$pes_ci95 <- as.character(paste("[", s1c_envy_anova1$pes_ci95_lo, ", ", s1c_envy_anova1$pes_ci95_hi,"]",  sep=""))
+
 s1c_envy_anova1$df <- as.character(paste(round(s1c_envy_anova1$NumDF,2), ", ", round(s1c_envy_anova1$DenDF,2),  sep=""))
   
-s1c_envy_anova1 <- s1c_envy_anova1[,!names(s1c_envy_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+s1c_envy_anova1 <- s1c_envy_anova1[,!names(s1c_envy_anova1) %in% 
+                                     c("ci95_lo","ci95_hi", "MSE", #"pes", 
+                                       "ci95",
+                                       "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+s1c_envy_anova1 <- s1c_envy_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
 
 s1c_envy_anova1$Pr..F. <- report_pval(s1c_envy_anova1$Pr..F.)
+
 
 s1c_envy_anova1 <- s1c_envy_anova1 %>% 
   dplyr::rename(
     # "b" = estimate,
-    "95\\% CI" = ci95,
+    "95\\% CI" = pes_ci95,
     "\\textit{F}" = F,
     "\\textit{p}" = Pr..F.,
-  "Cohen's \\textit{f}"  = cohens_f
+  "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes
     )
 
-s1c_envy_anova1 <- s1c_envy_anova1 %>% relocate(df, .before = MSE)
 
 row.names(s1c_envy_anova1) <- firstup(row.names(s1c_envy_anova1))
 
@@ -836,7 +954,11 @@ knitr::kable(s1c_envy_anova1,
              ) %>%
 kable_styling(latex_options = c(
   # "striped", 
-  "hold_position"))
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0("MSE = ",round(s1c_envy_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 ```
 
 
@@ -846,22 +968,33 @@ s1c_likelihood_anova1 <- round(data.frame(s1c_likelihood_anova),2)
 
 s1c_likelihood_anova1$ci95 <- as.character(paste("[", s1c_likelihood_anova1$ci95_lo, ", ", s1c_likelihood_anova1$ci95_hi,"]",  sep=""))
 
+s1c_likelihood_anova1$pes_ci95 <- as.character(paste("[", s1c_likelihood_anova1$pes_ci95_lo, ", ", s1c_likelihood_anova1$pes_ci95_hi,"]",  sep=""))
+
+
 s1c_likelihood_anova1$df <- as.character(paste(round(s1c_likelihood_anova1$NumDF,2), ", ", round(s1c_likelihood_anova1$DenDF,2),  sep=""))
   
-s1c_likelihood_anova1 <- s1c_likelihood_anova1[,!names(s1c_likelihood_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+s1c_likelihood_anova1 <- s1c_likelihood_anova1[,!names(s1c_likelihood_anova1) %in% 
+                                                 c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                                   "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
 
 s1c_likelihood_anova1$Pr..F. <- report_pval(s1c_likelihood_anova1$Pr..F.)
+
+
+s1c_likelihood_anova1 <- s1c_likelihood_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+
 
 s1c_likelihood_anova1 <- s1c_likelihood_anova1 %>% 
   dplyr::rename(
     # "b" = estimate,
-    "95\\% CI" = ci95,
+    "95\\% CI" = pes_ci95,
     "\\textit{F}" = F,
     "\\textit{p}" = Pr..F.,
-  "Cohen's \\textit{f}"  = cohens_f
+  "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes
     )
 
-s1c_likelihood_anova1 <- s1c_likelihood_anova1 %>% relocate(df, .before = MSE)
 
 row.names(s1c_likelihood_anova1) <- firstup(row.names(s1c_likelihood_anova1))
 
@@ -877,81 +1010,36 @@ knitr::kable(s1c_likelihood_anova1,
              ) %>%
 kable_styling(latex_options = c(
   # "striped", 
-  "hold_position"))
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0("MSE = ",round(s1c_likelihood_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 ```
 
 
-## Study 2 {#s2-ap}
-
-### Study 2a
-
-#### Materials
+## Study 2 {#s2}
 
 
-##### Slider task feedback.
+### Study 2a pilot {#s2-ap}
 
-> "RESULTS: You have correctly moved XX[piped] sliders in xx[piped] seconds. You correctly placed more sliders than your partner. Performance on this slider task is solely the result of the player's efforts. Studies have found that performance is not related to intelligence or any other personality traits. "
+The pilot study replicated the positive main effect of inequality on security spending `r anova_extract(s2ap_spending_anova,"inequality",is.first = TRUE, test.stat = TRUE)`, but no significant merit\*inequality interaction was detected, `r anova_extract(s2ap_spending_anova,"inequality:merit")`. Echoing Study 1a, where inequality increased perceived partner envy but not security consumption, there was a significant merit\*inequality interaction for perceived fairness, `r anova_extract(s2ap_p_fairness_anova,"inequality:merit")`, but this change in fairness doesn't appear to manifest in a merit\*inequality interaction effect on perceived partner envy (`r anova_extract(s2ap_envy_anova,"inequality:merit")`) nor perceived attack likelihood (`r anova_extract(s2ap_likelihood_anova,"inequality:merit")`). What is concerning though, is that the effect of inequality on perceived likelihood of attack looks small (and perhaps non-significant). In particular, the likelihood of attack scores seem high in the equality condition. Are they higher than in the previous studies?
 
-##### Meritocracy manipulation.
 
->[Merit] "For this scenario, because you correctly moved more sliders than your partner, you have been assigned to Yellow. " [Random] "For this scenario, you have been assigned to Yellow. Your role was randomly chosen."
 
-(ref:2b2b-design) Values for power analysis, 2b\*2b ANOVA (Study 2a & b).
+(ref:s2ap-spending-fade) Study 2a pilot, effects of merit/inequality on security spending.
 ```{=latex}
 \begin{figure}[H]
 \centering
-\caption{(ref:2b2b-design) \label{fig:2b2b-design}}
+\caption{(ref:s2ap-spending-fade) \label{fig:s2ap-spending-fade}}
 ```
-```{r 2b2b-design,eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
-# , fig.cap="(ref:2b2b-design)"
-knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_design_2b2b_f01.png")
+```{r s2ap-spending-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2ap_security_fadecloud.png")
 ```
-
 ```{=latex}
-\textit{Notes:} Max possible value is \$1.00; bars indicate +/-1 $SD$. Specified sample size is per-between-condition in 2b*2b for interaction effects
+\caption*{\textit{Notes:} Dots shows means (95\% CI). Shaded part of density plot shows inner 50\%.}
 \end{figure}
 ```
-<!-- <!-- is a "no-way interaction:" that the effect of inequality will be nullified when incomes are invisible. The hypothesis of a no-way interaction suggests firstly that sample sizes must twice the size of an equivalent study just testing a simple effect; secondly, our core hypothesis rests on all three coefficients being significant [d]in the following model: -->
-
-
-
-(ref:2b2b-powerplot) Sample size thresholds, 95% power in Studies 2a and b.
-```{=latex}
-\begin{figure}[H]
-\centering
-\caption{(ref:2b2b-powerplot) \label{fig:2b2b-powerplot}}
-```
-```{r 2b2b-powerplot, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
-# , fig.cap='(ref:2b2b-powerplot)'
-knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_powerplot_2b2b_f01.png")
-```
-```{=latex}
-\textit{Notes:} Specified sample size is per-between-condition in 2b*2b for interaction effects
-\end{figure}
-```
-\FloatBarrier
-
-```{r 2b2b-pairwise-power,echo=FALSE, eval = TRUE,  include=TRUE}
-row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "yes", replacement = "1")
-row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "no", replacement = "0")
-row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "inequality", replacement = "ineq")
-row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "undeserved", replacement = "undes")
-row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "p_", replacement = "")
-
-row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "((?:[^_]+_){3}[^_]+)_", replacement = "\\1_*VS*_")
-
-
-knitr::kable(round(security_2b2b_f01_exact$pc_results,2), caption = 'Power of pairwise contrasts, 2b*2b ANOVA (Studies 2a,b)', booktabs = TRUE,linesep = "") %>%
-kable_styling(latex_options = c("striped", "hold_position"))
-
-```
-
-
-### Study 2a pilot
-
-The pilot study replicated the positive main effect of inequality on security spending `r anova_extract(s2ap_spending_anova,"inequality",is.first = TRUE, test.stat = TRUE)`, but no significant merit\*inequality interaction was detected, `r anova_extract(s2ap_spending_anova,"inequality:merit")`. Echoing Study 1a, where inequality increased perceived partner envy but not security consumption, there was a significant merit\*inequality interaction for perceived fairness, `r anova_extract(s2ap_p_fairness_anova,"inequality:merit")`, but this change in fairness doesn't appear to manifest in a merit\*inequality interaction effect on perceived partner envy (`r anova_extract(s2ap_envy_anova,"inequality:merit")`) nor perceived attack likelihood (`r anova_extract(s2ap_likelihood_anova,"inequality:merit")`. What is concerning though, is that the effect of inequality on perceived likelihood of attack looks small (and perhaps non-significant). In particular, the likelihood of attack scores seem high in the equality condition. Are they higher than in the previous studies?
-
-
 
 
 ```{r s2ap-security-anova, eval = TRUE, echo=FALSE}
@@ -960,28 +1048,45 @@ s2ap_spending_anova1 <- data.frame(s2ap_spending_anova)
 s2ap_spending_anova1$Pr..F. <- report_pval(s2ap_spending_anova1$Pr..F.)
 
 numeric_columns <- sapply(s2ap_spending_anova1, mode) == 'numeric'
-
 s2ap_spending_anova1[numeric_columns] <- sapply(s2ap_spending_anova1[numeric_columns], report_float)
+
+
+
+s2ap_spending_anova1$pes_ci95 <- as.character(paste("[", s2ap_spending_anova1$pes_ci95_lo, ", ", s2ap_spending_anova1$pes_ci95_hi,"]",  sep=""))
+
 
 
 s2ap_spending_anova1$ci95 <- as.character(paste("[", s2ap_spending_anova1$ci95_lo, ", ", s2ap_spending_anova1$ci95_hi,"]",  sep=""))
 
 s2ap_spending_anova1$df <- as.character(paste(round(as.numeric(s2ap_spending_anova1$NumDF),2), ", ", round(as.numeric(s2ap_spending_anova1$DenDF),2),  sep=""))
   
-s2ap_spending_anova1 <- s2ap_spending_anova1[,!names(s2ap_spending_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+
+
+s2ap_spending_anova1 <- s2ap_spending_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2ap_spending_anova1 <- s2ap_spending_anova1[,!names(s2ap_spending_anova1) %in% 
+                                               c("ci95_lo","ci95_hi", "MSE", "df", "ci95", #"pes", 
+                                                 "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
 
 # s2ap_spending_anova1$Pr..F. <- report_pval(s2ap_spending_anova1$Pr..F.)
+
+
+
+
 
 s2ap_spending_anova1 <- s2ap_spending_anova1 %>% 
   dplyr::rename(
     # "b" = estimate,
-    "95\\% CI" = ci95,
+    "95\\% CI" = pes_ci95,
     "\\textit{F}" = F,
     "\\textit{p}" = Pr..F.,
-  "Cohen's \\textit{f}"  = cohens_f
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
     )
 
-s2ap_spending_anova1 <- s2ap_spending_anova1 %>% relocate(df, .before = MSE)
+# s2ap_spending_anova1 <- s2ap_spending_anova1 %>% relocate(df, .before = MSE)
 
 row.names(s2ap_spending_anova1) <- firstup(row.names(s2ap_spending_anova1))
 
@@ -1045,14 +1150,196 @@ knitr::kable(s2ap_spending_anova1,
              ) %>%
 kable_styling(latex_options = c(
   # "striped", 
-  "hold_position"))
-# %>%
-#   kableExtra::footnote(general = paste0("df = ",s2ap_spending_anova[1,"NumDF"], ", ", s2ap_spending_anova[1,"DenDF"]),
-#                        footnote_as_chunk=T
-#                        # ,threeparttable = TRUE
-#                        )
+  "hold_position"))  %>%
+  kableExtra::footnote(general = paste0("df = ",s2ap_spending_anova[1,"NumDF"], ", ", s2ap_spending_anova[1,"DenDF"], "; MSE = ", round(s2ap_spending_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 ```
 
+<!-- (ref:s2ap-fairness-fade) Study 2a pilot, effects of merit/inequality on perceived fairness. -->
+<!-- ```{=latex} -->
+<!-- \begin{figure}[H] -->
+<!-- \centering -->
+<!-- \caption{(ref:s2ap-fairness-fade) \label{fig:s2ap-fairness-fade}} -->
+<!-- ``` -->
+<!-- ```{r s2ap-fairness-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='49%'} -->
+<!-- knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2ap_fairness_fadecloud.png") -->
+<!-- knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2ap_partner_fair_fadecloud.png") -->
+<!-- ``` -->
+<!-- ```{=latex} -->
+<!-- \caption*{\textit{Notes:} Dots shows means (95\% CI). Shaded part of density plot shows inner 50\%.} -->
+<!-- \end{figure}  -->
+<!-- ``` -->
+
+
+
+<!-- ```{r s2ap-fairness-anova, eval = TRUE, echo=FALSE} -->
+<!-- s2ap_fairness_anova1 <- data.frame(s2ap_fairness_anova) -->
+
+<!-- s2ap_fairness_anova1$Pr..F. <- report_pval(s2ap_fairness_anova1$Pr..F.) -->
+
+<!-- numeric_columns <- sapply(s2ap_fairness_anova1, mode) == 'numeric' -->
+
+<!-- s2ap_fairness_anova1[numeric_columns] <- sapply(s2ap_fairness_anova1[numeric_columns], report_float) -->
+
+
+<!-- s2ap_fairness_anova1$ci95 <- as.character(paste("[", s2ap_fairness_anova1$ci95_lo, ", ", s2ap_fairness_anova1$ci95_hi,"]",  sep="")) -->
+
+<!-- s2ap_fairness_anova1$df <- as.character(paste(round(as.numeric(s2ap_fairness_anova1$NumDF),2), ", ", round(as.numeric(s2ap_fairness_anova1$DenDF),2),  sep="")) -->
+
+<!-- s2ap_fairness_anova1 <- s2ap_fairness_anova1[,!names(s2ap_fairness_anova1) %in% c("ci95_lo","ci95_hi", "pes", "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")] -->
+
+<!-- # s2ap_fairness_anova1$Pr..F. <- report_pval(s2ap_fairness_anova1$Pr..F.) -->
+
+<!-- s2ap_fairness_anova1 <- s2ap_fairness_anova1 %>%  -->
+<!--   dplyr::rename( -->
+<!--     # "b" = estimate, -->
+<!--     "95\\% CI" = ci95, -->
+<!--     "\\textit{F}" = F, -->
+<!--     "\\textit{p}" = Pr..F., -->
+<!--   "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes -->
+<!--     ) -->
+
+<!-- s2ap_fairness_anova1 <- s2ap_fairness_anova1 %>% relocate(df, .before = MSE) -->
+
+<!-- row.names(s2ap_fairness_anova1) <- firstup(row.names(s2ap_fairness_anova1)) -->
+
+<!-- row.names(s2ap_fairness_anova1)[row.names(s2ap_fairness_anova1) == "Stake_cond"] <- "Stake size" -->
+
+<!-- row.names(s2ap_fairness_anova1)[row.names(s2ap_fairness_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake" -->
+
+<!-- # s2ap_fairness_anova1 <- subset(s2ap_fairness_anova1, select = -c(df)) -->
+
+
+<!-- row.names(s2ap_fairness_anova1) <- -->
+<!--   gsub( -->
+<!--     x = row.names(s2ap_fairness_anova1), -->
+<!--     pattern = ":", -->
+<!--     replacement = "*", -->
+<!--     fixed = TRUE -->
+<!--   ) -->
+
+<!-- row.names(s2ap_fairness_anova1) <- -->
+<!--   gsub( -->
+<!--     x = row.names(s2ap_fairness_anova1), -->
+<!--     pattern = "Inequality_merit", -->
+<!--     replacement = "Money distribution", -->
+<!--     fixed = TRUE -->
+<!--   ) -->
+
+<!-- row.names(s2ap_fairness_anova1) <- -->
+<!--   gsub( -->
+<!--     x = row.names(s2ap_fairness_anova1), -->
+<!--     pattern = "Primer_security_spending_cent", -->
+<!--     replacement = "Intro scen. spending", -->
+<!--     fixed = TRUE -->
+<!--   ) -->
+
+<!-- row.names(s2ap_fairness_anova1) <- -->
+<!--   gsub( -->
+<!--     x = row.names(s2ap_fairness_anova1), -->
+<!--     pattern = "Payoff_motiv_cent", -->
+<!--     replacement = "Payoff motivation", -->
+<!--     fixed = TRUE -->
+<!--   ) -->
+
+<!-- # s2ap_fairness_anova1 <- s2ap_fairness_anova1 %>% relocate(p, .before = "$\\eta_p^2$") -->
+
+<!-- knitr::kable(s2ap_fairness_anova1, -->
+<!--              format='latex', -->
+<!--              escape = F, -->
+<!--              align = "ccccccc", -->
+<!--              caption = 'Study 2a pilot, ANCOVA; inequality/merit on perceived fairness.', -->
+<!--              booktabs = TRUE, -->
+<!--              linesep = "" -->
+<!--              ) %>% -->
+<!-- kable_styling(latex_options = c( -->
+<!--   # "striped",  -->
+<!--   "hold_position")) -->
+<!-- # %>% -->
+<!-- #   kableExtra::footnote(general = paste0("df = ",s2ap_fairness_anova[1,"NumDF"], ", ", s2ap_fairness_anova[1,"DenDF"]), -->
+<!-- #                        footnote_as_chunk=T -->
+<!-- #                        # ,threeparttable = TRUE -->
+<!-- #                        ) -->
+<!-- ``` -->
+
+
+
+### Study 2a {#s2-a}
+
+
+
+#### Materials
+
+
+##### Slider task feedback.
+
+> "RESULTS: You have correctly moved XX[piped] sliders in xx[piped] seconds. You correctly placed more sliders than your partner. Performance on this slider task is solely the result of the player's efforts. Studies have found that performance is not related to intelligence or any other personality traits. "
+
+##### Meritocracy manipulation.
+
+>[Merit] "For this scenario, because you correctly moved more sliders than your partner, you have been assigned to Yellow. " [Random] "For this scenario, you have been assigned to Yellow. Your role was randomly chosen."
+
+(ref:2b2b-design) Values for power analysis, 2b\*2b ANOVA (Study 2a & b).
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:2b2b-design) \label{fig:2b2b-design}}
+```
+```{r 2b2b-design,eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+# , fig.cap="(ref:2b2b-design)"
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_design_2b2b_f01.png")
+```
+
+```{=latex}
+\textit{Notes:} Max possible value is \$1.00; bars indicate +/-1 $SD$. Specified sample size is per-between-condition in 2b*2b for interaction effects
+\end{figure}
+```
+<!-- <!-- is a "no-way interaction:" that the effect of inequality will be nullified when incomes are invisible. The hypothesis of a no-way interaction suggests firstly that sample sizes must twice the size of an equivalent study just testing a simple effect; secondly, our core hypothesis rests on all three coefficients being significant [d]in the following model: -->
+
+
+
+(ref:2b2b-powerplot) Sample size thresholds, 95% power in Studies 2a and b.
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:2b2b-powerplot) \label{fig:2b2b-powerplot}}
+```
+```{r 2b2b-powerplot, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+# , fig.cap='(ref:2b2b-powerplot)'
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/security_powerplot_2b2b_f01.png")
+```
+```{=latex}
+\textit{Notes:} Specified sample size is per-between-condition in 2b*2b for interaction effects
+\end{figure}
+```
+\FloatBarrier
+
+```{r 2b2b-pairwise-power,echo=FALSE, eval = TRUE,  include=TRUE}
+row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "yes", replacement = "1")
+row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "no", replacement = "0")
+row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "inequality", replacement = "ineq")
+row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "undeserved", replacement = "undes")
+row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "p_", replacement = "")
+
+row.names(security_2b2b_f01_exact$pc_results) <- gsub(x = row.names(security_2b2b_f01_exact$pc_results), pattern = "((?:[^_]+_){3}[^_]+)_", replacement = "\\1_*VS*_")
+
+
+knitr::kable(round(security_2b2b_f01_exact$pc_results,2), caption = 'Power of pairwise contrasts, 2b*2b ANOVA (Studies 2a,b)', booktabs = TRUE,linesep = "") %>%
+kable_styling(latex_options = c("striped", "hold_position"))
+
+```
+
+
+```{r 2b2b-anova-power,echo=FALSE,  eval = TRUE, include=TRUE}
+security_2b2b_f01_exact$main_results$power <- round(security_2b2b_f01_exact$main_results$power,2)
+security_2b2b_f01_exact$main_results$non_centrality <- round(security_2b2b_f01_exact$main_results$non_centrality,2)
+knitr::kable(round(security_2b2b_f01_exact$main_results,4), caption = 'A priori power of main and interaction effects for 2b*2b factorial designs (Studies 2a,b)', booktabs = TRUE,linesep = "")%>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+```
 
 ## Study 3 {#s3-ap}
 

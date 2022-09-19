@@ -4,19 +4,19 @@ bibliography: bib/thesis.bib
 
 # Effects of Fairness on Security Consumption {#ineq-fair}
 
-Any discussion of inequality must also address distributional fairness. Depending on the equity norms applied by an individual, an unequal distribution can be seen as fair, and an equal distribution can be interpreted as an injustice. Likewise, if inequality generally induces envy, conflict, risk-taking, and distrust, these socially-corrosive effects may be weakened or strengthened depending on how the inequality is produced. An unequal, but fair, distribution of resources may make inequality more tolerable, reducing envy and its downstream consequences, while unfairness may amplify the effects of inequality, making people more likely to engage in risky and hostile behaviours [@vandeven2009].
+The experiments in Chapter 1 provided evidence that inequality can increase security spending, generally supporting the envy anticipation model. However, ample research has found that the effects of inequality can be influenced by fairness. Depending on how an individual develops and applies equity norms, an unequal distribution can be seen as fair, and an equal distribution can be interpreted as an injustice. Consequently, if inequality generally induces envy, conflict, risk-taking, distrust, and security consumption, these socially-corrosive effects may be weakened or strengthened depending on how the inequality is produced. An unequal, but fair, distribution of resources may make inequality more tolerable, reducing envy and its downstream consequences, while unfairness may amplify the effects of inequality, making people more likely to engage in risky and hostile behaviours [@vandeven2009].
 
-Both inequality and equality can be seen as legitimate or unacceptable, depending on whether people are treated fairly.
+<!-- Both inequality and equality can be seen as legitimate or unacceptable, depending on whether people are treated fairly. -->
 
-When deciding how to allocate resources, individuals must balance many different priorities, including self-interest, individual productivity, impartiality, and commitments to certain individuals.
+<!-- When deciding how to allocate resources, individuals must balance many different priorities, including self-interest, individual productivity, impartiality, and commitments to certain individuals. -->
 
-From a political or ethical perspective,
+<!-- From a political or ethical perspective, -->
 
-Being able to justify why some people get different or identical shares of a resource is important for people to forecast their own rewards at later stages.
+<!-- Being able to justify why some people get different or identical shares of a resource is important for people to forecast their own rewards at later stages. -->
 
-Who gets what is tied up in its legitimacy
+<!-- Who gets what is tied up in its legitimacy -->
 
-Likewise, if inequality generally induces envy, conflict, risk-taking, and distrust, these socially-corrosive effects may be weakened or strengthened depending on how the inequality is produced. An unequal, but fair, distribution of resources may make inequality more tolerable, reducing envy and its downstream consequences. Likewise, unfairness may amplify the effects of inequality, making people more likely to engage in risky and hostile behaviours [@vandeven2009].
+<!-- Likewise, if inequality generally induces envy, conflict, risk-taking, and distrust, these socially-corrosive effects may be weakened or strengthened depending on how the inequality is produced. An unequal, but fair, distribution of resources may make inequality more tolerable, reducing envy and its downstream consequences. Likewise, unfairness may amplify the effects of inequality, making people more likely to engage in risky and hostile behaviours [@vandeven2009]. -->
 
 <!-- ENVY WORRY -->
 
@@ -24,197 +24,53 @@ Likewise, if inequality generally induces envy, conflict, risk-taking, and distr
 
 <!-- ENVY DEFENCE -->
 
-The role of fairness on individuals' thoughts, feelings, and behaviours have been increasingly examined within the literature on envy. Although there is some disagreement in the definition construct of envy, the experience of envy generally understood as a process with branching paths. Initially, the first "pangs" of envy are elicited by an unfavourable social comparison (e.g., someone getting a better job, going on a fancy vacation). This experience of *envy proper* is defined as a painful and unpleasant feeling of inferiority, hostility, and resentment(??) when another person or group has a desired advantage [reviewed in @smith2007]. The hostile component of envy can then be either "sanitized" or exacerbated depending on the perceived fairness of the disparity.
-
-The 'sanitized' version of envy is termed *benign envy*, and is free of any hostility towards the comparison target. Benign envy is occurs when the envied person's advantage is perceived as deserved, and the feeling is consequently associated with a sense of control and motivation to improve oneself, in attempt to "reach up" to the level of a better-off other. By contrast, *malicious envy* is characterized by an desire to harm the comparison target, and "dragging them down" to their level, and is elicited when the individual believes that their environment is unfair [@vandeven2012]. In fact, malicious envy has been proposed as the "correct" term for envy proper [@vandeven2009]. In the context of envy anticipation, distrust, and security consumption, it appears that benign envy may warrant less fear from third parties, whereas the destructive threat of malicious envy must be treated with more caution.
+## Fairness and inequality
 
 ## Envy and Fairness
 
-Interestingly, the earlier definition of envy proper directly references a sense of injustice, via resentment. Resentment is defined as an angry response to objective and intentional poor treatment, which does not require a social comparison. However, envy proper does not require the person to suffer a true injustice. Resentment's inclusion in the definition of envy instead appeals to a simmering sense of subjective injustice, best described as a sense of conflict with how the person believes the situation "ought" to be (heider 1958??), in order to have their goals met. A useful distinction is that resentment is a socially-validated emotion, so can be expressed freely in public; however, envy is often discouraged, and is generally experienced and expressed privately [reviewed in @smith2007]. A sense of unfairness in envy proper does not stem from objective violations of fairness principles, but instead reflects a subjective or even fabricated belief that the envier "should" be better-off.
+The role of fairness on individuals' thoughts, feelings, and behaviours have been increasingly examined within the literature on envy. Although there is some disagreement in how envy is defined, the experience of envy can generally understood as a process with branching paths. Initially, the first "pangs" of envy are elicited by an unfavourable social comparison (e.g., someone getting a better job, going on a fancy vacation). This experience of *envy proper* is defined as a painful and unpleasant feeling of inferiority, hostility, and resentment(??) when another person or group has a desired advantage [reviewed in @smith2007]. The hostile component of envy can then be either "sanitized" or exacerbated depending on the perceived fairness of the disparity.
 
-As popularized by Rawls (1971)'s *A Theory of Justice*, envy proper is not considered to be a moral feeling, such as resentment(??), which attributes disadvantage to the wrongful conduct of individuals or institutions. Envy proper appears to be older and more widespread than concerns for fairness; inequity aversion is observed in many other species (capuchins, macaques, chimpanzees, domestic dogs, crows, rats, and ravens), but only as a response to being worse-off [@brosnan2014]. Likewise, this disadvantageous inequity aversion emerges three to five years earlier than advantageous inequity aversion (which is more clearly linked to fairness) in humans [reviewed in @shaw2017].
+Interestingly, the definition of envy proper directly references a sense of injustice, via feelings of resentment. Resentment is defined as an angry response to objective and intentional poor treatment, which by itself does not require a social comparison (REF??). As popularized by Rawls (1971)'s *A Theory of Justice*, envy proper is not considered to be a moral feeling. Instead, envy is largely seen as a fairness-agnostic reaction, which does not require the person to suffer an objective injustice. The presence of resentment in the definition of envy seems to appeal to a simmering sense of *subjective injustice*, best described as a sense of conflict with how the person believes the situation "ought" to be (heider 1958??), in order to have their goals met. Envy proper appears to be older and more widespread than concerns for fairness; inequity aversion is observed in many other species (capuchins, macaques, chimpanzees, domestic dogs, crows, rats, and ravens), but only as a response to being worse-off [@brosnan2014]. Likewise, this disadvantageous inequity aversion emerges three to five years earlier than advantageous inequity aversion (dislikeing being better-off; which is more clearly linked to fairness) in humans [reviewed in @shaw2017]. Thus, a sense of resentment and unfairness in envy proper does not stem from objective violations of fairness norms, but instead reflects a subjective or even fabricated belief that the envier "should" be better-off.
 
-Conceptually, resentment is much closer to malicious envy than envy proper, as both are linked to an objective sense of unfairness. Malicious envy and resentment differ on two major attributes: intentionality and comparativeness [@vandeven2009]. Perhaps most importantly, resentment does not require a social comparison, they just need to have their interests violated; a person may feel resentment at not getting a promised invitation to a party, and this feeling does not require that someone else gets invited. Resentment is likewise distinguished by being triggered by an intentional decision by someone else. For instance, someone getting a promotion because they took credit for your work would likely lead to resentment, because they made the willful choice to wrong you. By comparison, another person getting a promotion because they are the boss's nephew does not involve the person's explicit choice, and thus might lead to malicious envy towards the promoted person, instead of resentment. Because malicious envy is considered independent of others' intentional actions, and is a response to relative standing, it is generally seen as a less justifiable response than resentment, and is less socially acceptable.
+<!-- A useful distinction is that resentment proper is a socially-validated emotion, where anger over mistreatment can be expressed freely in public; however, envy is often discouraged, and is generally experienced and expressed privately [reviewed in @smith2007].  -->
+
+<!-- , such as resentment(??), which attributes disadvantage to the wrongful conduct of individuals or institutions.  -->
+
+### Benign and Malicious envy
+
+Although some categorization of "good" and "bad" envy has been present in the literature for a while (e.g., Rawls, 1971), authors have only recently been developing ideas of a benign and malicious envy. *Benign envy* is the 'sanitized' version of envy, being free of any hostility towards the comparison target. *Malicious envy*, as the name suggests, is defined by ill will towards those who are better-off. Benign envy occurs when the envied person's advantage is perceived as deserved, and the feeling is consequently associated with a sense of control and motivation to improve oneself, in an attempt to "reach up" to the level of a better-off other. By contrast, malicious envy is characterized by a desire to harm the comparison target, and "dragging them down" to their level, and is elicited when the individual believes that their environment is unfair [@vandeven2012]. Although of benign and malicious envy are both rated as being highly unpleasant experiences [@vandeven2009], they appear to be experientially and motivationally distinct. They are so distinct that some authors have suggested that benign envy is not actually a form of envy, since they see the hostile component as integral to any experience of envy [reviewed in @smith2007]. Likewise, other authors have proposed that malicious envy is the "correct" term for envy proper [@vandeven2009]. In any case, the literature seems to suggest that unfairness plays a substantial role in shaping how people react to unfavorable social comparisons.
+
+Conceptually, resentment is much closer to malicious envy than envy proper, since malicious envy has stronger links to a sense of unfairness. Malicious envy and resentment differ on two major attributes: intentionality and comparativeness [@vandeven2009]. Perhaps most importantly, resentment does not require a social comparison, they just need to have their interests violated; a person may feel resentment at not getting a promised invitation to a party, and this feeling does not require that someone else gets invited. Resentment is likewise distinguished by being triggered by an intentional decision by someone else. For instance, someone getting a promotion because they took credit for your work would likely lead to resentment, because they made the willful choice to wrong you. By comparison, another person getting a promotion because they are the boss's nephew does not involve the person's explicit choice, and thus might lead to malicious envy towards the promoted person, instead of resentment. Because malicious envy is considered independent of others' intentional actions, and is a response to relative standing, it is generally seen as a less justifiable response than resentment, and is less socially acceptable.
 
 Benign envy is generally considered the "constructive," "productive," or "good" form of envy, and is elicited by a sense of control and deservingness. Benign envy involves a focus not on the person who posesses the good we desire, but on the desired good itself. Benign envy is then a sort of affirmation to oneself and others that a good is worth obtaining. Rawls (1971) has also called benign envy an "emulative envy", where someone is motivated to obtain the targeted good. To this end, benign envy has been associated with such mimicking of the consumption of status goods. By contrast, malicious envy leads individuals to differentiate themselves by consuming different goods [i.e., BlackBerry versus iPhone; @vandeven2011]. So, benign envy is considered as an essential part of consumer demand, where individuals make comparisons and become motivated to work harder to mimic certain consumption decisions [reviewed in @belk2011].
 
-Notably, the majority of research on benign and malicious has been conducted using individual-recall methods, where participants detail a past experience of a feeling. As such, the role of fairness has generally been examined as a perceived variable, rather than an objective property of a scenario. The closest evidence in testing the role of fairness on malicious versus benign envy is reported in @vandeven2010. The authors found found that people with a deserved advantage (doing better on a task and getting paid more) were less likely to think that their partner was 'jealous' than participants whose advantage was undeserved (doing worse on a task and getting paid more).
+Notably, the majority of research on benign and malicious envy has been conducted using individual-recall methods, where participants detail a past experience of a feeling. As such, the role of fairness has generally been examined as a perceived variable, rather than an objective property of a scenario. The closest evidence in testing the role of fairness on malicious versus benign envy is reported in @vandeven2010. The authors found found that people with a deserved advantage (doing better on a task and getting paid more) were less likely to think that their partner was 'jealous' than participants whose advantage was undeserved (doing worse on a task and getting paid more).
 
-Given the scant research on envy and fairness, the exact typology of envy and its' components' relationships to fairness needs more examination. An intermediate perspective was proposed by @belk2011, suggesting that "benign and malicious envy are very likely parts of a continuum where the middle state is a combination of benign and malicious envy. Thus rather than two types of envy, it is more useful to consider three points on this continuum" (p. 224). We will treat this intermediate type of envy as generally analogous to envy proper, as a "starting" state for disadvantageous social comparisons. Then, depending on later fairness evaluations, the experience of envy can remain the same, or become more hostile (malicious envy), or less hostile (benign envy).
+Given the scant research on envy and fairness, the exact typology of envy and it's relationships to fairness needs more examination. An intermediate perspective was proposed by @belk2011, suggesting that "benign and malicious envy are very likely parts of a continuum where the middle state is a combination of benign and malicious envy. Thus rather than two types of envy, it is more useful to consider three points on this continuum" (p. 224). We will treat this intermediate type of envy as generally analogous to envy proper, as a "starting" state for disadvantageous social comparisons. Then, depending on later fairness evaluations, the experience of envy can remain the same, or become more hostile (malicious envy), or less hostile (benign envy). However, it is noteworthy that one of the principal measures of envy, the Dispositional Envy Scale is associated with dispositional malicious envy, but not dispositional benign envy [@lange2015]. In the context of envy anticipation, distrust, and security consumption, it appears that benign envy may warrant less fear from third parties, whereas the destructive threat of malicious envy must be treated with more caution.
 
 ## Fairness and Envy Anticipation
 
-For the purposes of the envy anticipation hypothesis, it is important to consider whether people *believe* that fairness impacts other people's experiences of envy and willingness to take risks or be hostile. @vandeven2010 found that when participants believed that their disadvantaged partner was experiencing malicious envy, they were more likely to engage in helping behaviours. By contrast, "winners" were actually less likely to help if they believed that the observed disparity had motivated their partner to improve themselves (i.e., the partner experiences "benign envy"). The authors replicated the effect of malicious envy when the participants' advantage was undeserved; those participants were more likely to help an unfairly (vs. deservedly) disadvantaged partner. However, participants who had earned their advantaged position were no more likely to help their partner than in an equality control condition, suggesting that participants expected their disadvantaged partners to experience benign envy in the face of a deserved inequality, and felt little need to help them. Other evidence also points to people exhibiting and anticipating fairness-laden responses. For instance, rejection rates in the Ultimatum game (and offer sizes) decrease when roles are earned through task performance [@fleiß2015]. Together, this evidence suggests that people would be less likely to expect attacks from disadvantaged partners when that disadvantage was produced through a fair process.
+For the purposes of the envy anticipation hypothesis, it is important to consider whether people *believe* that fairness impacts other people's experiences of envy and willingness to take risks or be hostile. @vandeven2010 found that when participants believed that their disadvantaged partner was experiencing malicious envy, they were more likely to engage in helping behaviours. By contrast, "winners" were actually less likely to help if they believed that their partners were experiencing benign envy. @vandeven2010 also replicated their observed effect of malicious envy when the participants' advantage was undeserved; advantaged participants were more likely to help an unfairly (vs. fairly) disadvantaged partner. Likewise, replicating the of benign envy, there was no difference in helping behaviours for "deservedly" advantaged participants compared to a equality control condition (likewise, they were not worried about their their partner's jealousy).
+
+Other evidence also points to people exhibiting and anticipating fairness-laden responses. For instance, rejection rates in the Ultimatum game (and offer sizes) decrease when roles are earned through task performance [@fleiß2015]. Together, this evidence suggests that people would be less likely to expect attacks from disadvantaged partners when that disadvantage was produced through a fair process.
+
+<!-- suggesting that participants expected their disadvantaged partners to experience benign envy in the face of a deserved inequality, and felt little need to help them. -->
 
 <!-- When their advantaged was deserved, participants were no more afraid of their partner's jealousy than in a control condition with equal payoffs, but if they were unfairly better-off, they were more afraid of their partner's jealousy than both the deserved and control conditions [@vandeven2010]. -->
 
-
+Fairness might more of a role in reducing advantageous inequality aversion rather than reducing (anticipated) disadvantageous inequity aversion. A person might always expect a disadvantaged partner to be upset, regardless of the fairness of the distribution. However, adhering to a fairness norm might be important for justifying one's advantaged position to others, and maintaining a reputation for being fair.
 
 <!--# The authors argue that any help directed to the disadvantaged is not due to advantageous inequity aversion. Participants who were undeservedly better-off did not extend their generosity to everyone; when given the chance to help an unfairly advantaged third party that did not know that the participant was better off than them, participants did not increase their helping behaviour. The authors reason that this targeted helping of partners deemed to be maliciously envious is an appeasement strategy in "warding off the evil eye" (p. 1671). However, there is a potential confound in this latter condition. The third party seems to be an actual third person in the procedure, with the initial endowments produced between the participant and their original partner. Individuals might fail to feel any responsibility towards a person outside of their original exchange, and thus display advantageous inequity aversion towards their original partner, but not a third party who just happens to also be worse-off. -->
 
-There is also some contradicting evidence, suggesting that individuals' anticipation of partner envy is unaffected by fairness. In @shaw2017, participants read vignettes about a hypothetical alien species, and were likely to rate displays of advantageous inequity aversion (disliking being paid more) as indicative that the species cared about fairness. However, respondents rated displays of disadvantageous inequity aversion (disliking being paid less) as less indicative of fairness concerns (both compared to the scale midpoint, and advantageous inequity aversion condition).
+There is also some contradicting evidence, suggesting that individuals' anticipation of partner envy is *not* affected by fairness. In @shaw2017, participants read vignettes about a hypothetical alien species, and were likely to rate displays of advantageous inequity aversion (disliking being paid more) as indicative that the species cared about fairness. However, respondents rated displays of disadvantageous inequity aversion (disliking being paid less) as less indicative of fairness concerns (both compared to the scale midpoint, and advantageous inequity aversion condition). @shaw2017 goes on to argue that the links between disadvantageous inequity aversion and fairness may be less clear than other studies suggest. The authors argue that while disadvantaged people would generally prefer equality (or relative advantage), they often settle for equity because it is the best outcome they can reasonably obtain. On a slightly tangential note, benign envy could still be associated with a willingness to attack others. Although benign envy does not contain any motivation to harm another person, benign envy may still foster risk-taking at the expense of someone else, in their efforts to "reach up" to their comparison standard. To this end, benignly envious people may be considered to have less hostile intent, but they may still be viewed as threatening. Together, there is reason to expect that fairness will not reduce the effect of inequality on security spending.
 
-Benign envy could still be associated with a willingness to attack others. Although benign envy does not contain any motivation to harm another person, benign envy may still foster risk-taking at the expense of someone else, in their efforts to "reach up" to their comparison standard.
+Like most theories of other-regarding preferences, Chapter One's envy-anticipation model should address the role of fairness in how individuals expect envy from their partners. Namely, a more fair distribution should make people expect benign envy from their partners, and a partner's benign envy may be less likely to elicit a person's fear, distrust, and security consumption. Following the extensive theory and evidence suggestive that fairness can impact inequality acceptance, Chapter 2 examines whether fairness likewise impacts distrust and security consumption. Specifically, Study 2a tests whether fairness can alleviate envy anticipation, and Study 2b tests whether makes envy anticipation worse. This modulating role of fairness is argued to be driven by a change in the type of envy participants experience; a more fair distribution should make participants expect that their partners experience benign envy (and are thus less threatening), whereas an unfair distribution bring the anticipation of malicious envy in one's partner, which is a far more threatening emotional response.
 
+Study 2a examines competing hypotheses whether fairness reduces concerns over a partner's envy: **H3)** the positive effect of inequality on security spending will be reduced when inequality is deserved, versus **H3~eq~)**: an unequal but deserved distribution of resources will lead to the same amount of security spending compared to an unequal and random distribution. Study 2a's competing hypotheses address conflicting evidence whether people expect fairness to impact others' disadvantageous inequity aversion [@vandeven2010; @shaw2017]. When evaluating the fairness of resource distributions, an effective rule must be recognized and followed by a sufficient number of people. At least among western industrialized societies, most people incorporate individuals' merit when judging whether an allocation is fair. For example, in a sample of Norwegian children (grades 5 to 13), @almås2010 found that younger participants were strict egalitarians in the dictator game (averse to any inequality). However, as the participants got older, they were increasingly willing to give resources unequally when the disparities came from differences in production. So, individuals seem to develop (whether culturally or genetically) increased acceptance of inequality when the different payoffs are deserved.
 
+Study 2b tests whether **H4)** individuals will consume more security when unequal incomes are allocated based on group membership. Group-based discrimination was chosen because it is an extreme form of unfairness. Usual manipulations of unfairness (inequity) involve a violation of a merit norm: you performed worse, yet you were compensated better. Recent studies have suggested that fairness is not simply adherance to rules, but that fairness may be rooted in avoiding perceptions of favoritism/partiality. For instance, young children will discard a resource in order to avoid sharing it unequally [@shaw2012]. Likewise, individuals are more willing to behave unfairly towards others if they could still appear to be impartial [@shaw2014]; for instance, in the Dictator game, individuals will accept a smaller payoff if they can skip the game and avoid informing partners of their selfish choice [@dana2006]. Acts of partiality often signify the formation of alliances, which inherently exclude others [@descioli2009]. Likewise, responders in an Ultimatum game reject more offers when inequalities are due to an intentional and clear decision to produce disparities [@falk2003; @blount1995]. Since substantial interpersonal and intergroup conflict is rooted in the perception of unfairness and discrimination [@tajfel1979], it seems important to understand how fairness influences willingness to consume security goods.
 
-Two accounts have generally developed. The first model suggests that the fairness of an unequal distribution can cause people to experience either a benign or malicious envy. The second focuses on a single-factor construct of envy, which is relatively unaffected by distributional fairness. When examining the effects of inequality on security consumption, the first account generally predicts that a fair inequality should produce less security consumption, because the consumer expects their partners to experience a benign form of envy. This first account also suggests that there would be more security consumption in the presence of an unfair disparity, as individuals fear that their partners are experiencing malicious envy. The latter, unitary account of envy would predict that security consumption would be unaffected by fairness, since consumers expect that their disadvantaged partner will always experience a degree of jealousy, hostility, and risk-proneness that accompanies any experience of envy. Extending Chapter One, the following chapter will explore whether distributional fairness has cascading effects in moderating the effect of inequality on distrust and security consumption, or whether fairness has no effect, and people instead expect envious reactions from disadvantaged partners, regardless of fairness.
-
-## Perspective one: Inequality's effect depends on fairness
-
-<!-- inequality leads to individuals anticipate envy, and subsequently malicious intentions and/or risk-taking behaviours from their social partners. These expectations in turn lead to reduced trust and an increased willingness to consume security products. However, some research suggests that not all envious reactions are equal, and that these experiences of envy are shaped by the perceived fairness of an observed disparity. -->
-
-<!--# The main proposition of the envy anticipation model of distrust is that inequality increases security consumption, because individuals anticipate envy and higher attack likelihoods from worse-off social partners. Notably, different models have emerged to describe how people experience envy. Firstly, a single-factor model of envy proper defines envy as a painful and unpleasant feeling of inferiority, hostility, and resentment when another person or group has a desired advantage (reviewed in Smith & Kim, 2007).  -->
-
-Recent theoretical developments have elaborated on the role of fairness in shaping experiences of envy, yielding a two-factor model composed of a "*benign*" as well as a "*malicious*" envy. Both benign and malicious envy are rated as highly unpleasant experiences (van de Ven, Zeelenberg, & Pieters, 2009??). However benign envy is associated with a sense of control and motivation to improve oneself, in attempt to "reach up" to the level of a better-off other. By contrast, malicious envy is characterized by a desire to harm the comparison target, and "dragging them down" to their level. Benign envy occurs when the person believes that the envied person's advantage is deserved, while malicious envy is elicited when the individual believes that their environment is unfair [@vandeven2012].
-
-Envy proper is similar to malicious envy, as both share a component of hostility. However, while unfairness is a prerequisite(??) for malicious envy, envy proper might not require perceptions of undeservingness, but instead motivate individuals to fabricate or exaggerate evidence of unfairness to justify their envy to themselves and, more importantly, to third party observers (Smith & Kim, 2007). As such, competing hypotheses can be posited. If individuals are experiencing envy proper, the effect of inequality on their willingness to attack and take risks should be unaffected by the fairness of the distribution. However, if they are experiencing either malicious or benign envy, the effect of inequality on their willingness to attack and take risks will be weaker.
-
-Two partially competing hypotheses can be posited. Firstly, the full moderation of inequality by fairness, where unfairness amplifies the trust-eroding effect of inequality, and fairness negatively moderates the effect of inequality. Secondly, the unfairness-worsening moderation hypothesis, where unfairness still amplifies the effect of inequality, but fairness has no effect.
-
-The effect of perceived partner envy on security consumption observed in Chapter 1 reflects only one way to protect oneself from anticipated envy. Indeed, helping may be preferable in cases where it is less costly and helps the agent to cultivate reciprocity and a reputation for fairness and prosociality.
-
-In the context of the envy anticipation model, the predictions follow that the effect of inequality on security consumption should be weaker when the disparity is earned, and stronger when the disparity is unfair.
-
-<!-- Together, the existing research suggests that people are not just sensitive to inequality and fairness, but that their decision-making also considers and anticipates others' psychological reactions to disparities. To this end, an additional proposition can be added to the *envy anticipation model of distrust*: the positive effect of inequality on distrust and security consumption will be negatively moderated by distributional fairness. Chapter 2 will examine whether merit-based (Study 2a) and apparently group-based allocations of wealth (Study 2b) impact security spending in the context of inequality. -->
-
-<!-- concerning people's second-order beliefs of the effects of fairness on other people's   -->
-
-<!--# Evidence for role of fairness on inequity aversion  -->
-
-<!--# Echoing the fairness-driven concepts of benign and malicious envy, some authors have suggested that people are not actually inequality-averse, but instead inequity-averse, predicting that people can actually be very tolerant of an unequal, but fair outcome. -->
-
-<!--# While inequality generally causes envy, the emotional and motivational content of these experiences appears to be heavily influenced by the perceived fairness and deservingness of these distributions. In the ultimatum game, @fleiß2015 found that, when roles are allocated based on performance on a general knowledge task, proposers make, and responders accept, lower offers. The authors interpret these results as consistent with equity theory, where the reference point for a fair allocation moves away from an equal split to recognize other inputs and efforts of the group-members. -->
-
-## Perspective two: Inequality's effect is independent of fairness
-
-As used in day-to-day language, envy generally refers to a single experience: a painful and unpleasant feeling of inferiority, hostility, and resentment(??) when another person or group has a desired advantage (reviewed in @smith2007). This conceptualization is also called *envy proper*. As popularized by Rawls (1971)'s *A Theory of Justice*, envy proper is not considered to be a moral feeling, such as resentment(??), which attributes disadvantage to the wrongful conduct of individuals or institutions. Envy proper appears to be older and more widespread than concerns for fairness; inequity aversion, is observed in many other species (capuchins, macaques, chimpanzees, domestic dogs, crows, rats, and ravens), but only as a response to being worse-off [@brosnan2014]. Likewise, disadvantageous inequity aversion emerges three to five years earlier than advantageous inequity aversion in humans [reviewed in @shaw2017].
-
-@shaw2017 goes on to argue that the links between disadvantageous inequity aversion and fairness may be less clear than other studies suggest. The authors argue that while disadvantaged people would generally prefer equality (or relative advantage), they often settle for equity because it is the best outcome they can reasonably obtain. In fact, @shaw2017 provides direct evidence that people do not always expect fairness to be responsible for inequity aversion. In their study, participants read a vignette of a hypothetical alien species, that either displays disadvantageous inequity aversion (disliking being paid less), or advantageous inequity aversion (disliking being paid more). Respondents rated displays of disadvantageous inequity aversion as less indicative of fairness concerns than vignettes of advantageous inequity aversion.
-
-[@smith2007]
-
-> Generally, if the advantage is unfair, especially in terms of objectively derived and agreed on standards, the full-blown emotions of resentment proper and indignation rather than envy should result, unalloyed with envy, as others have also argued (e.g., D'Arms, 2002; Neu, 1980; R. H. Smith, 1991; Walker & Smith, 2002) or have tried to demonstrate empirically (R. H. Smith, Parrott, Ozer, & Moniz, 1994).
->
-> To the extent that envy contains a sense of injustice, it is argued to be qualitatively different from the kind that produces indignation and resentment in their pristine forms (R. H. Smith, 1991; R. H. Smith et al., 1994).
->
-> In many instances of envy, additional evidence of unfairness is probably nurtured quickly and more so over time so that the feelings seem more legitimate, as suggested by R. H. Smith (1991, 2004).
->
-> experience of envy as a process that can take several paths, one being in the direction of furthering a sense of injustice already present in some form when envy first arises. There may come a point in this process in which a sense of injustice so dominates the emotional experience that the initial envy is quite transformed into resentment proper and the emotion label of envy no longer makes complete sense. Nonetheless, even this kind of justice feeling, inspired by envy in its incipience, might still be distinguished from outright indignation, never tainted by any question of its legitimacy.
->
-> These blended feelings are, arguably, the first pangs of envy. But, these incipient feelings start a process that can take different paths as the envying person copes with the threatening nature of the emotion. The outcome of this process is likely to evolve quickly into displayed emotions and felt emotions that can be described by labels quite different from envy.
-
-> Because both fairness and envy lead to negative reactions to DIA in interpersonal situations,
-
-In this perspective equity is treated as a bargaining tool for individuals to pursue their self-interest.
-
-In this perspective, equity and fairness are treated as points of leverage in bargaining situations, with each party attempting to promote their claim over resources.
-
-often attributed to fairness because people also display advantageous inequity aversion
-
-<!-- the most feasible way to improve their standing -->
-
-<!--# DIA can be motivated by social comparisons and envy, rather than any true taste for fairness.  -->
-
-Instead, the association between envy proper and unfairness may at best, incidental, and at worst, a deliberate fabrication. In this latter case, individuals may go through great efforts to justify their envy to themselves and any observers
-
-Instead, people simply expect envy proper, and do not expect an earned inequality to make their partners any more trustworthy.
-
-<!-- that people's folk intuitions about inequity aversion do not always assign a role to fairness. -->
-
-> However, they do indicate that people are much less likely to see DIA alone as motivated by fairness.
-
-sing that people think that these findings are about fairness. However, as we noted in the introduction, multiple lines of research have indicated that there are several non-human animals that possess DIA, but have no AIA reaction (for a review, see Brosnan & de Waal, 2014).
-
-> Envy "occurs when a person lacks another's superior quality, achievement, or possession and either desires it or wishes that the other lacked it" (Parrott & Smith, 1993, p. 906).
-
-## Perspective three: unfairness worsens, but fairness doesn't improve
-
-<!--# In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. -->
-
-<!-- -->
-
-### Evidence for role of fairness on DIA
-
-<!--# Meanwhile, Responders reject offers when inequalities are due to an intentional and clear decision to produce disparities [@falk2003; @blount1995]. -->
-
-<!-- As it pertains to a willingness to harm others, an experience of envy proper may be  -->
-
-<!-- A notable prediction from these different models of envy -->
-
-<!-- What kind of envy would a person expect from a disadvantaged partner?  -->
-
-<!--# Would they expect fairness to reduce their peer's hostile intent and willingness to attack? -->
-
-<!--# One perspective could be that both benign and malicious envy share a core of reduced envy proper, simply a painful reaction to upward social comparisons. The "direction" of the envious experience is then shaped by further appraisals of fairness/control. -->
-
-<!-- shares a component of hostility with malicious envy. -->
-
-<!-- Envy is an unpleasant experience, being associated with neural activation of the anterior cingulated cortex, which processes cognitive conflict and social pain (Eisenberger, Lieberman, & Williams, 2003; Kerns et al., 2004; Singer et al., 2004). -->
-
-Chapter one
-
-A recent perspective on individuals' social comparisons
-
-<!-- When considering how inequality affects individuals and groups, it may be important to consider not just whether resources are being shared evenly, but also whether the distribution is considered to be fair.  -->
-
-<!-- In particular,  -->
-
-<!-- inequality coupled with unfairness may  -->
-
-<!-- make individuals increasingly unaccepting of disparities, and heightens their chances of engaging in risky and hostile behaviours [@vandeven2009]. Conversely, an unequal, but a fair allocation of wealth may reduce partners' harmful potential. Extending Chapter One, the following chapter will explore whether distributional fairness has cascading effects on distrust and security consumption within individuals. -->
-
-<!-- fairness stabilizes the equilibria cooperative norms -->
-
-<!-- fairness introduces correlated equilibria between cooperation partners -->
-
-<!-- fairness stabilizes cooperative norms/strategies -->
-
-Why do people care about fairness? As discussed in Chapter one, a concern for fairness may have evolved (whether culturally or genetically) as a response to disadvantageous inequality aversion. By internalizing a preference to treat people fairly, an individual can better resist selfish temptations, and prevent themselves from being the target envious feelings in their partners, and any destructive behavioural consequences. Similarly, classifying an individual's behaviour as fair or unfair can help when forming reputation judgments, and applying other decision rules, such as generous tit-for-tat reciprocity [e.g., @rand2009]. A reputation for being impartial (and fair) is likewise rewarded by being preferred as a cooperation partner [@shaw2012a].
-
-<!-- partiality aversion -->
-
-Beyond simple pairs of interacting individuals, fairness has also been argued to be a linchpin for fostering sustainable cooperative strategies, and the development of large-scale societies [@henrich2010]. Some of the most common explanations for cooperative behaviours in humans, such as reciprocity (help those who have helped you) and kin support (help your family) fall short of explaining the full scope of human cooperation. Even early human societies were characterized by a low proportion of genetic relations, and a high degree of intergroup migration. Especially with increasing group size, reciprocity and kin support would not provide a sufficient reason to cooperate with someone you do not know, and is not related to you by blood. While preferred cooperative partners might not always be available, reputations are comparatively persistent, allowing for individuals to selectively cooperate with those known for fair dealing. Having a shared idea of how a person should behave (i.e., common fairness norms) has proved to be a potent force in coordinating large groups of otherwise unrelated individuals towards a shared purpose. In the context of inequality, a distribution's adherence to fairness norms can help individuals to decide whether a disparity should be tolerated, and whether some type of corrective action can be expected.
-
-<!-- Norms have been argued to facilitate and enforce cooperation between otherwise unrelated social partners, allowing for the development of large-scale societies [@henrich2010]. -->
-
-<!-- The benefits of impartiality makes sense considering that strict cooperative relationships such as reciprocity or kin support are unlikely to be optimal in large mixed groups with individual migration.  -->
-
-<!-- Social norms are exceptionally helpful for guiding and detecting fair behaviour. For instance, in Persian culture, *taarof* is a code of etiquette, dictating for instance, that you refuse what you wish to accept. Failure to adhere to such a ritual of repeated offering and refusing would violate a principle of a fair exchange, and gain a reputation for being unfair, and less likely to secure cooperative partners.  -->
-
-<!-- the security game doesn't involve bargaining - more reminiscent to the dictator game in that it is unilateral -->
-
-<!--# Benign envy is associated with greater hope for success, more ambitious goal-setting (Lange & Crusius, 2015), an attentional bias towards means to improve (Crusius & Lange, 2014), increased persistence and performance (van de Ven, Zeelenberg, & Pieters, 2011b), and an increased willingness to pay for envy-inducing consumer products (van de Ven et al., 2011b) -->
-
-<!-- High correlation between measures of procedural and distributive justice, *r* = .637, CI95% =[.361, .911], mean across 63 studies [@hauenstein]. -->
-
-<!-- Similarly, [@vandeven2010] found that under conditions of inequality, those who are better off are more likely to engage in helping behaviours when they believe that their disadvantaged partner is frustrated by the disparity and harboring antagonistic motivations [i.e., "malicious envy"; Crusius & Lange, -@crusius2014].  -->
-
-<!-- When participants believe that their partner is experiencing malicious envy, they are more likely to engage in helping behaviours [@vandeven2010]. In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. Together, the existing research suggests that people are not just sensitive to inequality and fairness, but that their decision-making also considers and anticipates others' psychological reactions to disparities. To this end, an additional proposition can be added to the *envy anticipation model of distrust*: the positive effect of inequality on distrust and security consumption will be negatively moderated by distributional fairness. Chapter 2 will examine whether merit-based (Study 2a) and apparently group-based allocations of wealth (Study 2b) impact security spending in the context of inequality. -->
-
-> These results are in line with equity theory which states that the compensation should be related to the level of effort or input (see e.g. Cook and Parcel 1977).
-
-@fleiß2015 <!-- >There are a number of circumstances that could move the reference point away from the equal split. Tutic and Liebe (2009) present a theory of inequality aversion where the fair reference point depends on the status of the players. In cases of status inequality the fair reference point is not the equal split. -->
-
-<!-- >different levels of merit which serve as justification for differences in rewards (Sen 2000; Breen and Goldthorpe 2001). If a player performs actions that are associated with more merit than the actions of another player, the fair reference point for these two players in an UG would be one where the player with more merit receives a larger share of the pie. -->
-
-> A number of laboratory experiments have introduced some form of merit in the ultimatum game (Hoffman et al. 1994; Rauhut and Winter 2010), the Dictator Game (Cherry 2001; Cherry et al. 2002; Oxoby and Spraggon 2008; Liebe and Tutic 2010; Visser and Roelofs 2011), other bargaining experiments (Gächter and Riedl 2005) and experimental markets (Ball et al. 2001). Usually some kind of knowledge quiz is used to measure a player's merit.
-
-<!-- >For dictator games, Cherry (2001) and Cherry et al. (2002) showed that dictators who received the endowment without effort offer nothing to the receivers significantly less often than when the endowment was earned by the dictator in a knowledge quiz. Oxoby and Spraggon (2008) demonstrated that dictators allocate higher amounts if the receivers earned the money to be divided. These results are in line with equity theory which states that the compensation should be related to the level of effort or input (see e.g. Cook and Parcel 1977). -->
-
-## Merit as a Fairness Norm
-
-<!--# Together, these results suggest that perceived deservingness or fairness may play a role in individuals' willingness to consume security goods. -->
-
-Distributional fairness may impact individuals' anticipation of envy from their partners, and their subsequent willingness to consume security products. When evaluating fair distributions, the best rule is often one that everyone follows. At least among western industrialized societies, fairness norms appear to be heavily influenced by meritocratic concerns. In a sample of Norwegian children (grades 5 to 13), @almås2010 found that younger participants were strict egalitarians in the dictator game (averse to any inequality). However, as the participants got older, they increasingly accepted inequality when the disparities came from differences in production. While inequality may be an important antecedent to conflict, Study 2a will test whether a meritocratic distribution of wealth will attenuate inequality's effect on security consumption.
-
-productivity/efficiency/achievements
-
-Like most theories of other-regarding preferences, this envy-anticipation theory of distrust and security seeks to incorporate the role of fairness into individuals' expectations of discrete envy. If the first chapter is predicated on the expectation of envy in response to inequality, it seems reasonable that individuals will become more distrustful in unfair environments. This chapter will test the proposition that *the effect of inequality on security consumption will be negatively moderated by greater distributional fairness.* This proposition takes on hypotheses to be tested in Studies 2a and 2b, respectively: **H3)** `r hyp2[3]`, and as planned comparisons, **H3a)** hi-inequality/random income condition will have significantly higher rates of security consumption than all other conditions (i.e., **.1)** hi-inequality/merit income, **.2)** no-inequality/random income, & **.3)** no-inequality/merit income).
-
-<!-- `r hyp2[4]` -->
-
-<!-- Meritocracy, a commonly-invoked norm of fairness in westernized and industrialized cultures, may influence individuals' perceived need to consume security goods. Namely, those that are wealthy may feel less threatened by their neighbors because they earned their resources "fair and square," according to a shared set of rules. However, in social settings, truly objective assessments of merit are often unavailable or are underused. -->
+While merit is a widespread norm for judging fairness, it may not be universal/cross-cultural. By contrast, group-based discrimination appears to be a form of unfairness that will be more likely to provoke a perceptions of unfairness.
 
 <!-- A growing body of evidence suggests that the roots of fairness lie people's efforts to avoid the appearance of favoritism [@choshen-hillel2018; @shaw2013; @shaw2012; @shaw2017; @shaw2014; @shaw2013; @shaw2012]. @shaw2012 found that many children would rather throw a resource in the trash than distribute it unequally. Likewise, individuals are more willing to behave unfairly towards others if they could still appear to be impartial [@shaw2014]; for instance, in the Dictator game, individuals will accept a smaller payoff if they can skip the game and avoid informing partners of their selfish choice [@dana2006]. -->
 
@@ -224,75 +80,73 @@ Like most theories of other-regarding preferences, this envy-anticipation theory
 
 <!--# The tension between impartiality and loyalty is fascinating: do you reciprocate acts of generosity from your friends and colleagues, or try to follow rules and guidelines that treat everyone the same? a glance at social media or news outlets will often reveal that, in the eyes of an audience, being prosocial is often not as important as the chosen target of your generosity.  -->
 
-<!--# Although many studies focus on the psychological and behavioural impacts of inequality aversion (especially those at a macro level; REF), much focus (especially in behavioural economics) has shifted to the prevalence of inequity aversion in humans -->
+<!-- When evaluating the fairness of resource distributions, an effective rule must be recognized and followed by a sufficient number of people.  -->
 
-<!-- In fact, the idea of inequity aversion has been specifically formulated in response to explain the proposer/responder patterns in the Ultimatum and Dictator games [@fehr1999]. -->
+More formally, we can predict that
 
-<!--# Inequality is a reasonable starting point to describe whether valued resources are being distributed fairly. If only some people receive desired goods, with others receiving little, it quickly prompts questions as to why some individuals are being left worse-off (REF).   -->
+<!-- Two accounts have generally developed. The first model suggests that the fairness of an unequal distribution can cause people to experience either a benign or malicious envy. The second focuses on a single-factor construct of envy, which is relatively unaffected by distributional fairness.  -->
 
-<!--# For instance, among Norwegian youths deciding whether to share a resource, @almås2010 found that their younger participants were strict egalitarians (averse to any inequality). However, adolescent participants increasingly accepted inequality when the disparities came from differences in productivity. This is only one example of a broad literature suggesting that concerns over equity, deservingness, and fairness are critical in understanding how people respond to inequality. -->
+a fair inequality should produce less security consumption, because the consumer expects their partners to experience a benign form of envy.
 
-<!--# When describing human preferences over wealth distribution, equality has often been contrasted with equity. While equality describes whether resources are shared or hoarded, equity captures how resources should (or should not) be shared. The historical definition of inequity is a mismatch between the ratios of individuals' inputs (e.g., effort) versus their outputs (e.g,. wages) [@cook1977; @adams1965]. However, (in)equity has never been conceptualized as a strictly objective and concrete feature of an exchange; rather, equity's "[inputs] are what a man perceives as his contributions to the exchange, for which he expects a just return" [@adams1965, p. 277]. So, any consideration of equity assumes a major role of individuals' mental representations of their circumstances. -->
+The latter, unitary account of envy would predict that security consumption would be unaffected by fairness, since consumers expect that their disadvantaged partner will always experience a degree of jealousy, hostility, and risk-proneness that accompanies any experience of envy. Extending Chapter One, the following chapter will explore whether distributional fairness has cascading effects in moderating the effect of inequality on distrust and security consumption, or whether fairness has no effect, and people instead expect envious reactions from disadvantaged partners, regardless of fairness. More explicitly, we can predict the equivalence or null hypothesis that **H3~eq~)** an unequal but merit-based distribution of resources will lead to an equivalent amount of security spending compared when inequality is produced by random processes.
 
-<!--# When representing an exchange (e.g., a business contract), individuals' inputs and outputs can have multiple potential currencies (e.,g money, time, experience, company equity, social contacts), which must be assigned some recognition and relevance to arrive at a judgment of (in)equity. Accordingly, equity can be characterized as a process of negotiation, with agents seeking to persuade other parties of their own large contributions and small rewards, compared to their partners. This broad definition of equity has led to it often being used interchangeably with unfairness [e.g., @camerer1995; @henrich2005]. -->
+Conversely, the theory and evidence for the effect of unfairness and malicious envy on potentially harmful behaviours is much more straightforward: inequality amplifies the trust-eroding effects of inequality. **H4)** individuals will consume more security products when their advantage is due to an unfair process.
 
-<!--# Inequality has been a persistent topic in public and scientific dialogue because it is fundamental to describing whether valued resources are being shared or monopolized. Distributional fairness has likewise proven to be inextricable from inequality; it captures the various rules defining how resources should (or should not) be shared (REF). Since Chapter 1 focuses on the main effects of inequality on security consumption, this chapter seeks to examine whether distributional fairness intersects with inequality to impact distrust in populations, with less fairness increasing individuals' willingness to consume security products. -->
-
-<!--# For  instance, benign envy is associated with a motivation to improve oneself, and occurs when the person believes that the envied person's advantage is deserved. By contrast, malicious envy is characterized by a desire to harm the comparison target, and is elicited when the individual believes that their environment is unfair [@vandeven2012]. -->
-
-<!-- under a state of inequality, group membership and agentic distributions of wealth have main and interacting effects on security consumption. -->
-
-<!-- ## Citing marketing research (ideally identify gap) -->
-
-<!-- > This research proposes that higher power distance results in weaker perceptions of responsibility to aid others, which decreases charitable behavior. Both correlational and causal evidence is provided in a series of five studies that examine country-level power distance as well as individual and temporarily salient power distance belief. Consistent with the mediating role of perceived responsibility, results reveal that uncontrollable needs and communal relationship norms are boundary conditions that overcome the negative effect of power distance on charitable behavior. [@winterich2014] -->
-
-<!-- > -->
-
-<!-- > The results of four studies reveal that perceived economic inequality can induce present‐oriented behavior and suggest that perceived economic mobility accounts for this relationship[@bak2020] -->
-
-## Methods
-
-### A priori power analysis
-
-Given the unknown size of the hypothesized inequality\*merit interaction, this study targeted an effect size of cohen's f = .1. To achieve 95% power, studies must have a minimum of `r cell_n_2b2b_f01` participants per cell, or a study-wide total of n = `r format(cell_n_2b2b_f01*4,big.mark = ",", scientific = FALSE)`. This large sample size is necessary given the possibility of a "no-way" interaction, where only one condition is significantly different from the remaining conditions [@simonsohn2015]. In a no-way interaction, the simple effect of inequality is nullified depending on the moderator, and thus requires at least twice as many subjects per cell to achieve as much power as the simple effect. Figures \@ref(fig:2b2b-design) and \@ref(fig:2b2b-powerplot) display the pattern of means and per-condition sample size thresholds to obtain 95% power. Additionally, see Tables \@ref(tab:2b2b-anova-power) and \@ref(tab:2b2b-pairwise-power) for the power and effect sizes of the ANOVA and pairwise comparisons, respectively.
-
-```{r 2b2b-anova-power,echo=FALSE,  eval = TRUE, include=TRUE}
-security_2b2b_f01_exact$main_results$power <- round(security_2b2b_f01_exact$main_results$power,2)
-security_2b2b_f01_exact$main_results$non_centrality <- round(security_2b2b_f01_exact$main_results$non_centrality,2)
-knitr::kable(round(security_2b2b_f01_exact$main_results,4), caption = 'A priori power of main and interaction effects for 2b*2b factorial designs (Studies 2a,b)', booktabs = TRUE,linesep = "")%>%
-kable_styling(latex_options = c(
-  # "striped", 
-  "hold_position"))
-```
+<!-- will become more distrustful in unfair environments. This chapter will test the proposition that *the effect of inequality on security consumption will be negatively moderated by greater distributional fairness.* -->
 
 ### Study 2a: Meritocracy and Inequality
 
-<!-- Groups will always be characterized by inequality through some type of outcome, whether wealth, income, or status. Indeed, a popular idea is that inequality propels individuals towards productive behaviours [@stearns1999]. In this line of reasoning, the presence of inequality may be less of an issue compared to how the inequality was produced.  -->
+Study 2a was conducted by manipulating inequality (yes/no) in the context of a security game, just like in Chapter one. Specifically, Study 2a is most like Study 1c, with a between-subjects design, an introductory security scenario, and uncertain probabilities and stakes of thefts. However, Study 2a was conducted with hypothetical payoffs. Most importantly, Study 2a also manipulated whether one's income was allocated *randomly or based on task performance* (random vs. merit). In addition to replicating **H1)** (inequality increases security spending), Study 2a tested competing hypotheses, whether **H3)** hi-inequality/random income condition will have significantly higher spending than the unequal/merit condition, (Table \@ref(tab:design-table); versus the equivalence hypothesis that **H3~eq~)** an unequal but merit-based distribution of resources will lead to an equivalent amount of security spending compared to the unequal/random condition.
 
-Study 2a again varied inequality (yes vs. no) as the previous studies, but also manipulated whether one's income is seemingly allocated *randomly or based on task performance* (random vs. merit). In addition to replicating **H1)**, Study 2a tested competing hypotheses, whether **H3)** hi-inequality/random income condition will have significantly higher spending than the unequal/merit condition, (Table \@ref(tab:design-table); versus the equivalence hypothesis that **H3~eq~)** an unequal but merit-based distribution of resources will lead to an equivalent amount of security spending compared to the unequal/random condition.
+Pilot data collected using a 2b\*2b design (equal vs. unequal \* random vs. merit; Section \@ref(s2-a), Table \@ref(tab:s2ap-security-anova)) replicated Chapter One's main effect of inequality, but indicated no difference in security spending between an equal/random condition versus an equal/merit condition, *t*(198) = `r round(as.data.frame(s2ap_spending_emmeans1$contrasts)[2,"t.ratio"],2)`, *p* = `r round(as.data.frame(s2ap_spending_emmeans1$contrasts)[2,"p.value"],2)`. Given the lack of empirical or theoretical rationale for a fully crossed-over design, Study 2a was conducted in a three-condition between-subjects design (equal/random vs. unequal/merit vs. unequal random), to examine the effects of income distribution on security spending. Following a power analysis (d=.2, power = .8, two-sample t-test, one-tailed, then multiplied by three - for each condition), `r s2a_n_collected` participants were recruited from Prolific (restricted to computers - no smartphones/tablets), in anticipation of a 10% attrition rate. After initial collection, `r s2a_non_consent` participants did not consent, and `r s2a_n_consented-s2a_n_screened` either failed the comprehension check, attention check, or moved fewer than three sliders. After these exclusions, n = `r s2a_n_screened` individuals were retained for analyses (`r round(s2a_female*100,2)`% female). Following consent, demographics, and an introductory security game, participants were assigned to one of three between-subjects conditions: equal/random, unequal/random, and unequal/merit.
 
-Participants were recruited from Prolific, and could only participate through computer (vs. smartphone/tablet). Participants were excluded from analyses if they completed fewer than three sliders, which would both indicate low engagement in the study and likely undermine the credibility of the manipulation. Following from a power analysis (d=.2, power = .8, two-sample, one-tailed, multiplied by three - for each condition), `r s2a_n_collected` participants were recruited from Prolific, in anticipation of a 10% attrition rate. After initial collection, `r s2a_non_consent` participants did not consent, and `r s2a_n_consented-s2a_n_screened` either failed the comprehension check, attention check, or moved fewer than three sliders. After these exclusions, n = `r s2a_n_screened` individuals were retained for analyses (`r round(s2a_female*100,2)`% female).
+Inequality was manipulated the same as in Study 1c; in the equal condition, participants and their partners both received an endowment of \$300 (differing from Study 1c, this game and endowment were purely hypothetical). In the unequal condition, participants were told that they received \$300, but their partner only received \$150, and that the partner knew how much each person received. For the random vs. merit manipulation, participants in the unequal/merit condition completed a slider task, where they had one minute to correctly place the midpoint on 40 sliders, and were told in advance that their performance would impact the incomes they received. Participants in the equal/random condition or unequal/random condition were told that their incomes were allocated randomly. In the unequal/merit condition they were told that they received their income because they correctly placed more sliders than their partner. The slider task has been used in several studies to examine the effects of effort in distributional preferences, and has demonstrated that individuals who win their income through performance are less likely to support income redistribution [@cassar2019].
 
-Pilot data using a 2b\*2b design (Table \@ref(tab:s2ap-security-anova)) indicated no difference in security spending in an equal/random condition versus an equal/merit condition (*t*(198) = `r round(as.data.frame(s2ap_spending_emmeans1$contrasts)[2,"t.ratio"],2)`, *p* = `r round(as.data.frame(s2ap_spending_emmeans1$contrasts)[2,"p.value"],2)`). Given the lack of empirical or theoretical rationale for a fully crossed-over design, Study 2a was conducted in a three-condition between-subjects design (equal/random vs. unequal/merit vs. unequal random), to examine the effects of income distribution on security spending.
-
-For the random vs. merit manipulation, participants in the unequal/merit condition completed a slider task, where they had one minute to correctly place the midpoint on 40 sliders. Participants in the equal/random condition or unequal/random condition were told that their incomes were allocated randomly. In the unequal/merit condition they were told that they received their income because they correctly placed more sliders than their partner. The slider task has been used in several studies to examine the effects of effort in distributional preferences, and has demonstrated that individuals who win their income through performance are less likely to support redistribution of effort-driven income allocations [@cassar2019].
-
-As a manipulation check (and in addition to the envy items in Study 1), participants were asked to report whether they believed the incomes were disbursed fairly, before making their consumption decision. Likewise, participants reported on their desire to keep their money, as well as whether they believed that their partners thought the incomes were fair:
+As a manipulation check (and in addition to the envy items in Study 1), participants were asked to report whether they believed the incomes were disbursed fairly, before making their consumption decision. Likewise, participants used seven-point likert scales (1 Strongly agree - 7 Strongly disagree) to report on their desire to keep their money, as well as whether they believed that their partners thought the incomes were fair:
 
 > "My partner's assigned income is fair"\
 > "My assigned income is fair"\
 > "The way incomes were given for this game is fair"\
 > "I want to keep as much of my money as possible"\
-> "It is okay with me if some of my money gets stolen"\
+> "It is okay with me if some of my money gets stolen" (reverse-coded)\
 > "My partner probably thinks that the money was split fairly in this game"
+
+After the manipulation check items, participants completed the security game with the same procedure and stimuli as Study 1c, and then completed further attention and comprehension check items before finishing the study. The hypotheses, methods and analysis plan were all pre-registered before data collection.
+
+<!-- Groups will always be characterized by inequality through some type of outcome, whether wealth, income, or status. Indeed, a popular idea is that inequality propels individuals towards productive behaviours [@stearns1999]. In this line of reasoning, the presence of inequality may be less of an issue compared to how the inequality was produced.  -->
+
+```{r s2a-desc-tab}
+s2adesc_columns <- c("Variable",	"Mean",	"SD", "Cron. $\\alpha$ 95\\% CI")
+
+s2a_desc <- knitr::kable(s2a_desc, caption = 'Study 2a Descriptive Statistics',
+                         format = 'latex',
+                         escape = F,
+                   align = "lcccccc",
+                   col.names = s2adesc_columns,
+                   booktabs = T,
+             linesep = "") %>%
+  kable_styling(full_width = FALSE) %>%
+  column_spec(1,width = "2in", 
+              latex_valign = "b") %>%
+  column_spec(2,width = ".4in", 
+              latex_valign = "b") %>%
+  column_spec(3,width = ".4in", 
+              latex_valign = "b") %>%
+    column_spec(4,width = ".9in", 
+              latex_valign = "b")  %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+# %>%
+#   kable_styling(latex_options = "striped")
+
+
+s2a_desc
+```
 
 ## Results
 
-Data were analyzed using a one-way (3b) ANCOVA, controlling for spending in the introductory scenario and payoff motivations, this analysis found a significant effect of the income distribution condition, `r anova_extract(s2a_spending_anova,"inequality_merit",is.first = TRUE)`. Planned comparisons were conducted on estimated marginal means. These pairwise comparisons replicated the effect of inequality as per **H1)**: participants in the unequal/random condition (vs. equal/random) spend \$`r round(s2a_spending_tost_urandom_erandom$effsize["Raw","estimate"], 2)` more on security products, `r report_tost(s2a_spending_tost_urandom_erandom,ci.lab=T,test.stat = T)`. The effect of inequality also persisted when comparing equal/random to unequal/merit, `r report_tost(s2a_spending_tost_umerit_erandom)`
-
-Participants in the unequal/merit condition spent an average of \$`r round(s2a_spending_tost_urandom_umerit$effsize["Raw","estimate"],2)` less on the security product compared to the the unequal/random condition. This effect did not reach statistical significance, `r report_tost(s2a_spending_tost_urandom_umerit)`. However, failing to reject **H3)**'s null hypothesis is not sufficient to accept **H3~null~)**; an effect could be present, but is too small to be detected with the current statistical power. Equivalence tests are used to test whether an effect is *equivalent* to zero, or can be considered 'too small to care'. Equivalence is generally tested using two one-sided tests (TOST); where instead of attempting to reject an effect of 0, each one-sided test seeks to statistically reject the presence of a minimum effect size of interest (either at positive or negative sign). These minimum effect thresholds are defined by the analyst. Using this procedure, equivalence tests can reject the presence of an effect, and provide a proper test of **H3~eq~)**.
-
-As part of the pre-registered analysis plan, a threshold of +/-.2 standardized mean difference units (i.e., Hedge's *g*, the unbiased version of Cohen's *d*) was chosen to test equivalence in this study, since *d* = .2 is the conventionally "small" effect in social sciences ??REF. An equivalence test using TOST (Welch's t-test for unequal variances) found that the \$`r round(s2a_spending_tost_urandom_umerit$effsize["Raw","estimate"], 2)` difference in security spending between unequal/random and unequal/merit condition was statistically equivalent, meaning the effect was significantly smaller than *g* =.2, `r report_tost(s2a_spending_tost_urandom_umerit,equ=T,any_effect = F,test.stat = T,pval=T)`, and larger than *g* = -.2, `r report_tost(s2a_spending_tost_urandom_umerit, equ=T,any_effect = F,test.stat = F,pval=T,tost_lo = T)`. Notably, the upper one-sided test for merit was close to failing to reject *g* =.2 as a plausible value. Thus, an extremely well-powered study may find a real mitigating effect of merit, but it would be so small that it would be unlikely to have any practical significance.
+Data were analyzed using a one-way (3b) ANCOVA, controlling for participants' reported payoff motivations and their spending in the introductory security game scenario. The ANCOVA found a significant effect of the income distribution condition, `r anova_extract(s2a_spending_anova,"inequality_merit",is.first = TRUE)`. Planned comparisons were conducted on estimated marginal means. Pairwise comparisons using r package TOSTER replicated the effect of inequality as per **H1)**: participants in the unequal/random condition (vs. equal/random) spend \$`r round(s2a_spending_tost_urandom_erandom$effsize["Raw","estimate"], 2)` more on security products, `r report_tost(s2a_spending_tost_urandom_erandom, test.stat = T)`. The effect of inequality also persisted when comparing equal/random to unequal/merit, `r report_tost(s2a_spending_tost_umerit_erandom)` (diff = \$`r round(s2a_spending_tost_umerit_erandom$effsize["Raw","estimate"], 2)`).
 
 (ref:s2a-spending-fade) Study 2a, effects of merit/inequality on security spending.
 
@@ -304,11 +158,11 @@ As part of the pre-registered analysis plan, a threshold of +/-.2 standardized m
 ```{r s2a-spending-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2a_security_fadecloud.png")
 ```
+
 ```{=latex}
-\caption*{\textit{Notes:} Dots shows means (95\% CI). Shaded part of density plot shows inner 50\%.}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
 \end{figure}
 ```
-
 ```{r s2a-security-anova, eval = TRUE, echo=FALSE}
 s2a_spending_anova1 <- data.frame(s2a_spending_anova)
 
@@ -318,25 +172,35 @@ numeric_columns <- sapply(s2a_spending_anova1, mode) == 'numeric'
 
 s2a_spending_anova1[numeric_columns] <- sapply(s2a_spending_anova1[numeric_columns], report_float)
 
+s2a_spending_anova1$pes_ci95 <- as.character(paste("[", s2a_spending_anova1$pes_ci95_lo, ", ", s2a_spending_anova1$pes_ci95_hi,"]",  sep=""))
+
 
 s2a_spending_anova1$ci95 <- as.character(paste("[", s2a_spending_anova1$ci95_lo, ", ", s2a_spending_anova1$ci95_hi,"]",  sep=""))
 
 s2a_spending_anova1$df <- as.character(paste(round(as.numeric(s2a_spending_anova1$NumDF),2), ", ", round(as.numeric(s2a_spending_anova1$DenDF),2),  sep=""))
   
-s2a_spending_anova1 <- s2a_spending_anova1[,!names(s2a_spending_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+s2a_spending_anova1 <- s2a_spending_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+
+s2a_spending_anova1 <- s2a_spending_anova1[,!names(s2a_spending_anova1) %in% 
+                                             c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                               "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
 
 # s2a_spending_anova1$Pr..F. <- report_pval(s2a_spending_anova1$Pr..F.)
+
+
 
 s2a_spending_anova1 <- s2a_spending_anova1 %>% 
   dplyr::rename(
     # "b" = estimate,
-    "95\\% CI" = ci95,
+    "95\\% CI" = pes_ci95,
     "\\textit{F}" = F,
     "\\textit{p}" = Pr..F.,
-  "Cohen's \\textit{f}"  = cohens_f
+  "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes
     )
 
-s2a_spending_anova1 <- s2a_spending_anova1 %>% relocate(df, .before = MSE)
 
 row.names(s2a_spending_anova1) <- firstup(row.names(s2a_spending_anova1))
 
@@ -385,26 +249,32 @@ knitr::kable(s2a_spending_anova1,
              format='latex',
              escape = F,
              align = "ccccccc",
-             caption = 'Study 2a, ANCOVA; inequality/merit on security consumption.',
+             caption = 'Study 2a, ANCOVA; inequality/merit on security spending.',
              booktabs = TRUE,
              linesep = ""
              ) %>%
 kable_styling(latex_options = c(
   # "striped", 
-  "hold_position"))
-# %>%
-#   kableExtra::footnote(general = paste0("df = ",s2a_spending_anova[1,"NumDF"], ", ", s2a_spending_anova[1,"DenDF"]),
-#                        footnote_as_chunk=T
-#                        # ,threeparttable = TRUE
-#                        )
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0("MSE = ",round(s2a_spending_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 ```
 
-The merit manipulation was effective in increasing perceived fairness, `r anova_extract(s2a_fairness_anova,"inequality_merit",is.first = TRUE)` (Figure \@ref(fig:s2a-fairness-fade), Table \@ref(tab:s2a-fairness-anova)). Compared to the unequal/random condition, participants in the unequal/merit condition reported that the incomes were more fair, `r emmeans_contrast_extract(df=s2a_fairness_emmeans,comp_name = "unequal_merit - unequal_random")`. Likewise, participants believed that their partners were also more likely to think that the incomes were distributed fairly, `r emmeans_contrast_extract(df=s2a_partner_fair_emmeans,comp_name = "unequal_merit - unequal_random", test.stat=F)` (Table \@ref(tab:s2a-partner-fair-anova)), however, this effect was nearly half the size of merit's effect on one's own perceptions of fairness. All of the above pairwise comparisons, and any following this section, had their significance values adjusted in the r package {{emmeans}} via Tukey's  correction for multiple comparisons.
+Participants in the unequal/merit condition spent an average of \$`r round(s2a_spending_tost_urandom_umerit$effsize["Raw","estimate"],2)` less on the security product compared to the the unequal/random condition. This effect of merit did not reach statistical significance, `r report_tost(s2a_spending_tost_urandom_umerit)`, which failed to find support for **H3)**. However, failing to reject **H3)**'s null hypothesis is not sufficient to accept **H3~null~)**; an effect of merit could be present, but be too small to be detected with the current design and statistical power. Equivalence tests are used to determine whether an effect is 'too small to care,' and can thus be considered as *equivalent* to zero.
+
+Equivalence is generally tested using two one-sided tests (TOST); where instead of attempting to reject an effect of 0, TOST seeks to statistically reject the presence of a minimum effect size of interest (with each one-sided test conducted against either the positive or negative sign). These minimum effect thresholds are defined by the analyst. As part of the pre-registered analysis plan, a threshold of +/-.2 standardized mean difference units (i.e., Hedge's *g*, the unbiased version of Cohen's *d*) was chosen to test equivalence in this study, since *d* = .2 is the conventionally "small" effect in social sciences (Cohen, 1988; although see @lovakov2021 for empirically-derived thresholds based on social psychology research, where *d* = .15 is small, *d* = .36 is medium, and *d* = .65 is large). Using this TOST procedure, equivalence tests can reject the presence of an effect, and provide a proper test of **H3~eq~)**.
+
+An equivalence test using TOST (Welch's t-test for unequal variances) found that the \$`r round(s2a_spending_tost_urandom_umerit$effsize["Raw","estimate"], 2)` difference in security spending between unequal/random and unequal/merit condition was statistically equivalent to zero, meaning the effect was significantly smaller than *g* =.2, `r report_tost(s2a_spending_tost_urandom_umerit,equ=T,any_effect = F,test.stat = T,pval=T)`, and larger than *g* = -.2, `r report_tost(s2a_spending_tost_urandom_umerit, equ=T,any_effect = F,test.stat = F,pval=T,tost_lo = T)`. Notably, the upper one-sided test for merit was close to failing to reject *g* =.2 as a plausible value. Thus, an extremely well-powered study may find a real mitigating effect of merit, but this effect would be so small that it would be unlikely to have any practical significance.
+
+The income/merit manipulation significantly impacted perceived fairness, `r anova_extract(s2a_fairness_anova,"inequality_merit",is.first = TRUE)` (Figure \@ref(fig:s2a-fairness-fade), Table \@ref(tab:s2a-fairness-anova)). Pairwise comparisons found that the merit manipulation increased fairness; compared to the unequal/random condition, participants in the unequal/merit condition reported that the incomes were more fair, `r emmeans_contrast_extract(df=s2a_fairness_emmeans,comp_name = "unequal_merit - unequal_random")`. Likewise, participants in the unequal/random condition (vs. unequal/merit) believed that their partners were also more likely to think that the incomes were distributed fairly, `r emmeans_contrast_extract(df=s2a_partner_fair_emmeans,comp_name = "unequal_merit - unequal_random", test.stat=F)` (Table \@ref(tab:s2a-partner-fair-anova)), however, this effect was nearly half the size of merit's effect on one's own perceptions of fairness. All of the above pairwise comparisons, and any following this section, had their significance values adjusted in the r package {{emmeans}} via Tukey's correction for multiple comparisons.
 
 <!-- `r emmeans_contrast_extract(df=s2a_fairness_emmeans,comp_name = "equal_random - unequal_merit")` -->
-<!-- `r emmeans_contrast_extract(df=s2a_fairness_emmeans,comp_name = "equal_random - unequal_random")` -->
-<!-- `r emmeans_contrast_extract(df=s2a_fairness_emmeans,comp_name = "unequal_merit - unequal_random")` -->
 
+<!-- `r emmeans_contrast_extract(df=s2a_fairness_emmeans,comp_name = "equal_random - unequal_random")` -->
+
+<!-- `r emmeans_contrast_extract(df=s2a_fairness_emmeans,comp_name = "unequal_merit - unequal_random")` -->
 
 (ref:s2a-fairness-fade) Study 2a, effects of merit/inequality on perceived fairness.
 
@@ -417,11 +287,11 @@ The merit manipulation was effective in increasing perceived fairness, `r anova_
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2a_fairness_fadecloud.png")
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2a_partner_fair_fadecloud.png")
 ```
+
 ```{=latex}
-\caption*{\textit{Notes:} Dots shows means (95\% CI). Shaded part of density plot shows inner 50\%.}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
 \end{figure} 
 ```
-
 ```{r s2a-fairness-anova, eval = TRUE, echo=FALSE}
 s2a_fairness_anova1 <- data.frame(s2a_fairness_anova)
 
@@ -431,25 +301,34 @@ numeric_columns <- sapply(s2a_fairness_anova1, mode) == 'numeric'
 
 s2a_fairness_anova1[numeric_columns] <- sapply(s2a_fairness_anova1[numeric_columns], report_float)
 
+s2a_fairness_anova1$pes_ci95 <- as.character(paste("[", s2a_fairness_anova1$pes_ci95_lo, ", ", s2a_fairness_anova1$pes_ci95_hi,"]",  sep=""))
+
 
 s2a_fairness_anova1$ci95 <- as.character(paste("[", s2a_fairness_anova1$ci95_lo, ", ", s2a_fairness_anova1$ci95_hi,"]",  sep=""))
 
 s2a_fairness_anova1$df <- as.character(paste(round(as.numeric(s2a_fairness_anova1$NumDF),2), ", ", round(as.numeric(s2a_fairness_anova1$DenDF),2),  sep=""))
   
-s2a_fairness_anova1 <- s2a_fairness_anova1[,!names(s2a_fairness_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+s2a_fairness_anova1 <- s2a_fairness_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+
+s2a_fairness_anova1 <- s2a_fairness_anova1[,!names(s2a_fairness_anova1) %in% c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                                                               "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
 
 # s2a_fairness_anova1$Pr..F. <- report_pval(s2a_fairness_anova1$Pr..F.)
+
 
 s2a_fairness_anova1 <- s2a_fairness_anova1 %>% 
   dplyr::rename(
     # "b" = estimate,
-    "95\\% CI" = ci95,
+    "95\\% CI" = pes_ci95,
     "\\textit{F}" = F,
     "\\textit{p}" = Pr..F.,
-  "Cohen's \\textit{f}"  = cohens_f
+  "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes
     )
 
-s2a_fairness_anova1 <- s2a_fairness_anova1 %>% relocate(df, .before = MSE)
+
 
 row.names(s2a_fairness_anova1) <- firstup(row.names(s2a_fairness_anova1))
 
@@ -504,14 +383,12 @@ knitr::kable(s2a_fairness_anova1,
              ) %>%
 kable_styling(latex_options = c(
   # "striped", 
-  "hold_position"))
-# %>%
-#   kableExtra::footnote(general = paste0("df = ",s2a_fairness_anova[1,"NumDF"], ", ", s2a_fairness_anova[1,"DenDF"]),
-#                        footnote_as_chunk=T
-#                        # ,threeparttable = TRUE
-#                        )
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0("MSE = ",round(s2a_fairness_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 ```
-
 
 ```{r s2a-partner-fair-anova, eval = TRUE, echo=FALSE}
 s2a_partner_fair_anova1 <- data.frame(s2a_partner_fair_anova)
@@ -522,25 +399,33 @@ numeric_columns <- sapply(s2a_partner_fair_anova1, mode) == 'numeric'
 
 s2a_partner_fair_anova1[numeric_columns] <- sapply(s2a_partner_fair_anova1[numeric_columns], report_float)
 
+s2a_partner_fair_anova1$pes_ci95 <- as.character(paste("[", s2a_partner_fair_anova1$pes_ci95_lo, ", ", s2a_partner_fair_anova1$pes_ci95_hi,"]",  sep=""))
 
 s2a_partner_fair_anova1$ci95 <- as.character(paste("[", s2a_partner_fair_anova1$ci95_lo, ", ", s2a_partner_fair_anova1$ci95_hi,"]",  sep=""))
 
 s2a_partner_fair_anova1$df <- as.character(paste(round(as.numeric(s2a_partner_fair_anova1$NumDF),2), ", ", round(as.numeric(s2a_partner_fair_anova1$DenDF),2),  sep=""))
   
-s2a_partner_fair_anova1 <- s2a_partner_fair_anova1[,!names(s2a_partner_fair_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+s2a_partner_fair_anova1 <- s2a_partner_fair_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2a_partner_fair_anova1 <- s2a_partner_fair_anova1[,!names(s2a_partner_fair_anova1) %in% 
+                                                     c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                                       "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
 
 # s2a_partner_fair_anova1$Pr..F. <- report_pval(s2a_partner_fair_anova1$Pr..F.)
+
+
 
 s2a_partner_fair_anova1 <- s2a_partner_fair_anova1 %>% 
   dplyr::rename(
     # "b" = estimate,
-    "95\\% CI" = ci95,
+    "95\\% CI" = pes_ci95,
     "\\textit{F}" = F,
     "\\textit{p}" = Pr..F.,
-  "Cohen's \\textit{f}"  = cohens_f
+  "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes
     )
 
-s2a_partner_fair_anova1 <- s2a_partner_fair_anova1 %>% relocate(df, .before = MSE)
 
 row.names(s2a_partner_fair_anova1) <- firstup(row.names(s2a_partner_fair_anova1))
 
@@ -595,19 +480,14 @@ knitr::kable(s2a_partner_fair_anova1,
              ) %>%
 kable_styling(latex_options = c(
   # "striped", 
-  "hold_position"))
-# %>%
-#   kableExtra::footnote(general = paste0("df = ",s2a_partner_fair_anova[1,"NumDF"], ", ", s2a_partner_fair_anova[1,"DenDF"]),
-#                        footnote_as_chunk=T
-#                        # ,threeparttable = TRUE
-#                        )
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0("MSE = ",round(s2a_partner_fair_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 ```
 
-
-The pattern of effect for security consumption is repeated for perceived partner envy. The ANCOVA detected a significant effect of the income allocation manipulation on perceived partner envy, `r anova_extract(s2a_envy_anova,"inequality_merit")` (Figure \@ref(fig:s2a-envy-fade), Table \@ref(tab:s2a-envy-anova)) There was a significantly lower perceived partner envy reported the random/equal condition and the random/unequal condition, `r emmeans_contrast_extract(df=s2a_envy_emmeans,comp_name = "equal_random - unequal_random")`, this pattern also held when equal/random was compared with the unequal/merit condition, `r emmeans_contrast_extract(df=s2a_envy_emmeans,comp_name = "equal_random - unequal_merit", test.stat=F)`. There was no significant difference in reported partner envy between the unequal/merit and unequal/random conditions, `r emmeans_contrast_extract(df=s2a_envy_emmeans,comp_name = "unequal_merit - unequal_random", test.stat=F)`.
-<!-- `r report_tost(s2a_envy_tost_umerit_erandom)` -->
-<!-- `r report_tost(s2a_envy_tost_urandom_umerit)` -->
-
+The pattern of effect for security consumption was repeated for perceived partner envy. The ANCOVA detected a significant effect of the income allocation manipulation on perceived partner envy, `r anova_extract(s2a_envy_anova, "inequality_merit")` (Figure \@ref(fig:s2a-envy-fade), Table \@ref(tab:s2a-envy-anova)) There was a significantly lower perceived partner envy reported in the random/equal condition versus the random/unequal condition, `r emmeans_contrast_extract(df=s2a_envy_emmeans,comp_name = "equal_random - unequal_random")`, this pattern also held when equal/random was compared with the unequal/merit condition, `r emmeans_contrast_extract(df=s2a_envy_emmeans,comp_name = "equal_random - unequal_merit", test.stat=F)`. There was no significant difference in reported partner envy between the unequal/merit and unequal/random conditions, `r emmeans_contrast_extract(df=s2a_envy_emmeans,comp_name = "unequal_merit - unequal_random", test.stat=F)`. <!-- `r report_tost(s2a_envy_tost_umerit_erandom)` --> <!-- `r report_tost(s2a_envy_tost_urandom_umerit)` -->
 
 (ref:s2a-envy-fade) Study 2a, effects of merit/inequality on perceived partner envy.
 
@@ -619,11 +499,11 @@ The pattern of effect for security consumption is repeated for perceived partner
 ```{r s2a-envy-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2a_envy_fadecloud.png")
 ```
+
 ```{=latex}
-\caption*{\textit{Notes:} Dots shows means (95\% CI). Shaded part of density plot shows inner 50\%.}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
 \end{figure}
 ```
-
 ```{r s2a-envy-anova, eval = TRUE, echo=FALSE}
 s2a_envy_anova1 <- data.frame(s2a_envy_anova)
 
@@ -633,25 +513,36 @@ numeric_columns <- sapply(s2a_envy_anova1, mode) == 'numeric'
 
 s2a_envy_anova1[numeric_columns] <- sapply(s2a_envy_anova1[numeric_columns], report_float)
 
+s2a_envy_anova1$pes_ci95 <- as.character(paste("[", s2a_envy_anova1$pes_ci95_lo, ", ", s2a_envy_anova1$pes_ci95_hi,"]",  sep=""))
+
 
 s2a_envy_anova1$ci95 <- as.character(paste("[", s2a_envy_anova1$ci95_lo, ", ", s2a_envy_anova1$ci95_hi,"]",  sep=""))
 
 s2a_envy_anova1$df <- as.character(paste(round(as.numeric(s2a_envy_anova1$NumDF),2), ", ", round(as.numeric(s2a_envy_anova1$DenDF),2),  sep=""))
   
-s2a_envy_anova1 <- s2a_envy_anova1[,!names(s2a_envy_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+
+s2a_envy_anova1 <- s2a_envy_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2a_envy_anova1 <- s2a_envy_anova1[,!names(s2a_envy_anova1) %in% 
+                                     c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                       "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
 
 # s2a_envy_anova1$Pr..F. <- report_pval(s2a_envy_anova1$Pr..F.)
+
+
+
 
 s2a_envy_anova1 <- s2a_envy_anova1 %>% 
   dplyr::rename(
     # "b" = estimate,
-    "95\\% CI" = ci95,
+    "95\\% CI" = pes_ci95,
     "\\textit{F}" = F,
     "\\textit{p}" = Pr..F.,
-  "Cohen's \\textit{f}"  = cohens_f
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
     )
-
-s2a_envy_anova1 <- s2a_envy_anova1 %>% relocate(df, .before = MSE)
 
 row.names(s2a_envy_anova1) <- firstup(row.names(s2a_envy_anova1))
 
@@ -682,7 +573,7 @@ row.names(s2a_envy_anova1) <-
   gsub(
     x = row.names(s2a_envy_anova1),
     pattern = "Primer_security_spending_cent",
-    replacement = "Intro scen. envy",
+    replacement = "Intro scen. spending",
     fixed = TRUE
   )
 
@@ -706,23 +597,131 @@ knitr::kable(s2a_envy_anova1,
              ) %>%
 kable_styling(latex_options = c(
   # "striped", 
-  "hold_position"))
-# %>%
-#   kableExtra::footnote(general = paste0("df = ",s2a_envy_anova[1,"NumDF"], ", ", s2a_envy_anova[1,"DenDF"]),
-#                        footnote_as_chunk=T
-#                        # ,threeparttable = TRUE
-#                        )
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0("MSE = ",round(s2a_envy_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 ```
 
+(ref:s2a-payoff-motiv-fade) Study 2a, effects of merit/inequality on payoff motivations.
 
-Income distribution affected participant's perceived likelihood of attack in largely the same way as security consumption and perceived partner envy, `r anova_extract(s2a_likelihood_anova,"inequality_merit")` (Figure \@ref(fig:s2a-likelihood-fade), Table \@ref(tab:s2a-likelihood-anova)). There was a significantly lower perceived partner likelihood reported the equal/random condition and the unequal/random condition, `r emmeans_contrast_extract(df=s2a_likelihood_emmeans,comp_name = "equal_random - unequal_random", test.stat=T)`, this pattern also held when equal/random was compared with the unequal/merit condition, `r emmeans_contrast_extract(df=s2a_likelihood_emmeans,comp_name = "equal_random - unequal_merit", test.stat=F)`. A potentially notable difference is that the difference between the unequal/merit and unequal/random conditions almost reached statistical significance. `r emmeans_contrast_extract(df=s2a_likelihood_emmeans,comp_name = "unequal_merit - unequal_random",, test.stat=F)`.
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s2a-payoff-motiv-fade) \label{fig:s2a-payoff-motiv-fade}}
+```
+```{r s2a-payoff_motiv-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2a_payoff_motiv_fadecloud.png")
+```
+
+```{=latex}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+\end{figure}
+```
+```{r s2a-payoff-motiv-anova, eval = TRUE, echo=FALSE}
+s2a_payoff_motiv_anova1 <- data.frame(s2a_payoff_motiv_anova)
+
+s2a_payoff_motiv_anova1$Pr..F. <- report_pval(s2a_payoff_motiv_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2a_payoff_motiv_anova1, mode) == 'numeric'
+
+s2a_payoff_motiv_anova1[numeric_columns] <- sapply(s2a_payoff_motiv_anova1[numeric_columns], report_float)
+
+s2a_payoff_motiv_anova1$pes_ci95 <- as.character(paste("[", s2a_payoff_motiv_anova1$pes_ci95_lo, ", ", s2a_payoff_motiv_anova1$pes_ci95_hi,"]",  sep=""))
+
+
+s2a_payoff_motiv_anova1$ci95 <- as.character(paste("[", s2a_payoff_motiv_anova1$ci95_lo, ", ", s2a_payoff_motiv_anova1$ci95_hi,"]",  sep=""))
+
+s2a_payoff_motiv_anova1$df <- as.character(paste(round(as.numeric(s2a_payoff_motiv_anova1$NumDF),2), ", ", round(as.numeric(s2a_payoff_motiv_anova1$DenDF),2),  sep=""))
+  
+
+s2a_payoff_motiv_anova1 <- s2a_payoff_motiv_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2a_payoff_motiv_anova1 <- s2a_payoff_motiv_anova1[,!names(s2a_payoff_motiv_anova1) %in% 
+                                     c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                       "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+# s2a_payoff_motiv_anova1$Pr..F. <- report_pval(s2a_payoff_motiv_anova1$Pr..F.)
+
+
+
+
+s2a_payoff_motiv_anova1 <- s2a_payoff_motiv_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = pes_ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
+    )
+
+row.names(s2a_payoff_motiv_anova1) <- firstup(row.names(s2a_payoff_motiv_anova1))
+
+row.names(s2a_payoff_motiv_anova1)[row.names(s2a_payoff_motiv_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2a_payoff_motiv_anova1)[row.names(s2a_payoff_motiv_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+# s2a_payoff_motiv_anova1 <- subset(s2a_payoff_motiv_anova1, select = -c(df))
+
+
+row.names(s2a_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2a_payoff_motiv_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2a_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2a_payoff_motiv_anova1),
+    pattern = "Inequality_merit",
+    replacement = "Money distribution",
+    fixed = TRUE
+  )
+
+row.names(s2a_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2a_payoff_motiv_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+
+# s2a_payoff_motiv_anova1 <- s2a_payoff_motiv_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2a_payoff_motiv_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = "Study 2a, ANCOVA; inequality/merit on payoff motivations.",
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0("MSE = ",round(s2a_payoff_motiv_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
+```
+
+Income distribution affected participant's perceived likelihood of attack in largely the same way as security consumption and perceived partner envy, `r anova_extract(s2a_likelihood_anova,"inequality_merit")` (Figure \@ref(fig:s2a-likelihood-fade), Table \@ref(tab:s2a-likelihood-anova)). There was a significantly lower perceived partner likelihood reported in the equal/random condition compared to the unequal/random condition, `r emmeans_contrast_extract(df=s2a_likelihood_emmeans,comp_name = "equal_random - unequal_random", test.stat=T)`, this pattern also held when equal/random was compared with the unequal/merit condition, `r emmeans_contrast_extract(df=s2a_likelihood_emmeans,comp_name = "equal_random - unequal_merit", test.stat=F)`. A potentially notable deviation is that the difference between the unequal/merit and unequal/random conditions almost reached statistical significance. `r emmeans_contrast_extract(df=s2a_likelihood_emmeans,comp_name = "unequal_merit - unequal_random",, test.stat=F)`.
 
 <!-- `r report_tost(s2a_likelihood_tost_urandom_erandom)` -->
+
 <!-- `r report_tost(s2a_likelihood_tost_umerit_erandom)` -->
 
 <!-- `r report_tost(s2a_likelihood_tost_urandom_umerit)` -->
 
 (ref:s2a-likelihood-fade) Study 2a, effects of merit/inequality on perceived attack likelihood.
+
 ```{=latex}
 \begin{figure}[H]
 \centering
@@ -731,11 +730,11 @@ Income distribution affected participant's perceived likelihood of attack in lar
 ```{r s2a-likelihood-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2a_likelihood_fadecloud.png")
 ```
+
 ```{=latex}
-\caption*{\textit{Notes:} Dots shows means (95\% CI). Shaded part of density plot shows inner 50\%.}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
 \end{figure}
 ```
-
 ```{r s2a-likelihood-anova, eval = TRUE, echo=FALSE}
 s2a_likelihood_anova1 <- data.frame(s2a_likelihood_anova)
 
@@ -748,22 +747,36 @@ s2a_likelihood_anova1[numeric_columns] <- sapply(s2a_likelihood_anova1[numeric_c
 
 s2a_likelihood_anova1$ci95 <- as.character(paste("[", s2a_likelihood_anova1$ci95_lo, ", ", s2a_likelihood_anova1$ci95_hi,"]",  sep=""))
 
+s2a_likelihood_anova1$pes_ci95 <- as.character(paste("[", s2a_likelihood_anova1$pes_ci95_lo, ", ", s2a_likelihood_anova1$pes_ci95_hi,"]",  sep=""))
+
 s2a_likelihood_anova1$df <- as.character(paste(round(as.numeric(s2a_likelihood_anova1$NumDF),2), ", ", round(as.numeric(s2a_likelihood_anova1$DenDF),2),  sep=""))
-  
-s2a_likelihood_anova1 <- s2a_likelihood_anova1[,!names(s2a_likelihood_anova1) %in% c("ci95_lo","ci95_hi", "pes","NumDF","DenDF")]
+
+s2a_likelihood_anova1 <- s2a_likelihood_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2a_likelihood_anova1 <- s2a_likelihood_anova1[,!names(s2a_likelihood_anova1) %in% 
+                                                 c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                                   "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+
+
 
 # s2a_likelihood_anova1$Pr..F. <- report_pval(s2a_likelihood_anova1$Pr..F.)
+
+
+
 
 s2a_likelihood_anova1 <- s2a_likelihood_anova1 %>% 
   dplyr::rename(
     # "b" = estimate,
-    "95\\% CI" = ci95,
+    "95\\% CI" = pes_ci95,
     "\\textit{F}" = F,
     "\\textit{p}" = Pr..F.,
-  "Cohen's \\textit{f}"  = cohens_f
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
     )
 
-s2a_likelihood_anova1 <- s2a_likelihood_anova1 %>% relocate(df, .before = MSE)
 
 row.names(s2a_likelihood_anova1) <- firstup(row.names(s2a_likelihood_anova1))
 
@@ -818,16 +831,14 @@ knitr::kable(s2a_likelihood_anova1,
              ) %>%
 kable_styling(latex_options = c(
   # "striped", 
-  "hold_position"))
-# %>%
-#   kableExtra::footnote(general = paste0("df = ",s2a_likelihood_anova[1,"NumDF"], ", ", s2a_likelihood_anova[1,"DenDF"]),
-#                        footnote_as_chunk=T
-#                        # ,threeparttable = TRUE
-#                        )
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0("MSE = ",round(s2a_likelihood_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
 ```
 
-
-The participants in Study 2a seemed to believe that their disadvantaged partners were unlikely to consider inequality as fair. In fact, there was a discrepancy in the size of merit's effect on perceived fairness, depending on whether participants were reporting their own perceptions of fairness, or whether their partner thought the incomes were fair. When incomes were unequal, merit did make participants believe that the incomes were fair. However, this effect of merit on fairness was much smaller (but still significant) when participants were rating their partner's perceptions of fairness. In this sense, participants seem to expect that their partners are barely willing to acknowledge that one's own disadvantage is deserved. 
+The participants in Study 2a seemed to believe that their disadvantaged partners were unlikely to consider inequality as fair. In fact, there was a discrepancy in the size of merit's effect on perceived fairness, depending on whether participants were reporting their own perceptions of fairness, or whether their partner thought the incomes were fair. When incomes were unequal, merit did make participants believe that the incomes were fair. However, this effect of merit on fairness was much smaller (but still significant) when participants were rating their partner's perceptions of fairness. In this sense, participants seem to expect that their partners are barely willing to acknowledge that one's own disadvantage is deserved.
 
 Other manipulations of fairness may serve to further increase perceptions of fairness. For instance, in many studies of deservingness, merit is more than using effort as a rule to guide the split of pre-existing resources; instead, merit has been operationalized by using individual effort to create those available resources. Adding a production component to meritocracy might increase the likelihood of finding a significant random/unequal vs. merit/unequal difference. Similarly, other methods include having participants and their partners agree on a rule beforehand to split their resources, or adding further rounds to the game so that the superior participant's behaviour can supposedly be emulated.
 
@@ -835,7 +846,7 @@ Other manipulations of fairness may serve to further increase perceptions of fai
 
 <!-- "I don't think that you'll think this is fair" -->
 
-Even when unequal incomes were allocated based on merit, participants continued to believe that their partner would experience a similar amount of envy. This consistent expected elicitation of envy could reflect that partners expect a baseline reaction of envy proper, regardless of fairness. However, it could also be explained by participants expecting their partner to become benignly envious versus maliciously envious, and this study's measure of envy anticipation fails to distinguish the two. This lack of distinction reflects a linguistic barrier in describing envy: many languages refer to envy in benign or malicious forms, but English only describes envy in a unidimensional sense. Some English individual difference measures exist that do distinguish the two @lange2015 , but these measures involve many indirect statements that need to be summed into an index, were excluded to avoid adding to an already substantial number of self-report items.
+Even when unequal incomes were allocated based on merit, participants continued to believe that their partner would experience a similar amount of envy. This consistent expected elicitation of envy could reflect that partners expect a baseline reaction of envy proper, regardless of fairness. However, it could also be explained by participants expecting their partner to become benignly envious versus maliciously envious, and this study's measure of envy anticipation fails to distinguish the two. This lack of distinction reflects a linguistic barrier in describing envy: many languages refer to envy in benign or malicious forms, but English only describes envy in a unidimensional sense. It because of this limited distinction between forms of envy that this study did not pre-register a mediation analysis akin to **H2)** for Study 2; the hypothesized reduction of the effect of inequality was based on the experience of envy being 'sanitized' into benign envy by fairness, rather than fairness reducing envy overall. Some English individual difference measures exist that do distinguish the two @lange2015 , but these measures involve many indirect statements that need to be summed into an index, were excluded to avoid adding to an already substantial number of self-report items.
 
 <!-- A person's (anticipated) begrudging reaction to being deservedly worse-off is also seen in that perceived partner  envy was insensitive to the fairness manipulation. -->
 
@@ -859,14 +870,812 @@ Despite the null effects of merit on security spending and anticipated envy, mer
 
 ### Study 2b: Inequality as a Product of Group-Based Discrimination
 
-Fairness appears to have its roots in avoiding perceptions of partiality. For instance, young children will discard a resource in order to avoid sharing it unequally [@shaw2012]. Likewise, individuals are more willing to behave unfairly towards others if they could still appear to be impartial [@shaw2014]; for instance, in the Dictator game, individuals will accept a smaller payoff if they can skip the game and avoid informing partners of their selfish choice [@dana2006]. Acts of partiality often signify the formation of alliances, which inherently exclude others [@descioli2009]. Since substantial interpersonal and intergroup conflict is rooted in the perception of unfairness and discrimination [@tajfel1979], it seems important to understand how fairness influences willingness to consume security goods.
-
-Likewise, responders reject more offers when inequalities are due to an intentional and clear decision to produce disparities [@falk2003; @blount1995].
-
 <!--# As such, any mechanism allowing for impartial distribution of resources (e.g., a coin flip), ostensibly satisfies the need to justify a privileged position, and may reduce the felt need to consume security products. -->
 
 Since Study 2a directly compares meritocratic versus random allocation of resources, it does not answer the more fundamental question: do people become distrustful and consume more security goods when inequality appears to be more discriminatory and unfair? Study 2b will keep a constant presence of inequality, but manipulate whether the partner is a member of an ingroup or outgroup, and whether the incomes are distributed randomly, or by a separate *ingroup individual*. Study 2b will use a 2b\*2b between subjects ANOVA to test whether **H4)** the effect of partner's outgroup membership on security consumption will be more positive when inequality is produced by the choice of an ingroup member (versus **H4~0~)** no significant outgroup\*agentic-distribution interaction). As planned comparisons, Study 2b will examine whether **H4a)** the outgroup partner/agentic-distribution condition will have significantly higher rates of security consumption than all other conditions (i.e., **.1)** outgroup/random, **.2)** ingroup/agentic, & **.3)** ingroup/random). Participants will complete the same fairness manipulation check as and be powered for the same effect as in Study 2a.
 
 <!-- `r tolower(hypotheses[3])` -->
 
-Particularly in the presence of increasingly diverse societies, an understanding of how people respond to perceived threats posed by "others" may be instrumental in engineering social infrastructure and policies to improve people's real and felt security.
+`r s2b2_n_collected` participants were recruited from Prolific (restricted to computers - no smartphones/tablets), in anticipation of a 10% attrition rate. After initial collection, `r s2b2_non_consent` participants did not consent, and `r s2b2_n_consented-s2b2_n_screened` either failed a comprehension check, attention check, or had missing responses. After these exclusions, n = `r s2b2_n_screened` individuals were retained for analyses (`r round(s2b2_female*100,2)`% female). Following consent, demographics, and an introductory security game, participants were randomly assigned to one of four conditions in  a 2b\*2b design [equal vs. unequal * visible  incomes vs. invisible].
+
+
+<!-- Particularly in the presence of increasingly diverse societies, an understanding of how people respond to perceived threats posed by "others" may be instrumental in engineering social infrastructure and policies to improve people's real and felt security. -->
+
+
+```{r s2b2-desc-tab}
+s2b2desc_columns <- c("Variable",	"Mean",	"SD", "Cron. $\\alpha$ 95\\% CI")
+
+s2b2_desc <- knitr::kable(s2b2_desc, caption = 'Study 2a Descriptive Statistics',
+                         format = 'latex',
+                         escape = F,
+                   align = "lcccccc",
+                   col.names = s2b2desc_columns,
+                   booktabs = T,
+             linesep = "") %>%
+  kable_styling(full_width = FALSE) %>%
+  column_spec(1,width = "2in", 
+              latex_valign = "b") %>%
+  column_spec(2,width = ".4in", 
+              latex_valign = "b") %>%
+  column_spec(3,width = ".4in", 
+              latex_valign = "b") %>%
+    column_spec(4,width = ".9in", 
+              latex_valign = "b")  %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position"))
+# %>%
+#   kable_styling(latex_options = "striped")
+
+
+s2b2_desc
+```
+
+
+
+
+Using estimated marginal means,
+H4a) : The inequality/visible condition will have more security spending than the equality/visible condition
+H4b) the inequality/invisible condition will have equivalent security spending to the equality/invisible condition (equivalence test)
+
+We could also include the contrast for inequality/visible vs. inequality/invisible. Especially in the case of a failed equivalence test, it might be important to test whether security spending in the inequality condition changes based on visibility:
+H4c) the inequality/visible condition will have more security spending than the inequality/invisible condition
+
+### Results
+
+<!-- Replicating **H1)**, the ANCOVA found a significant main effect of inequality, `r anova_extract(s2b2_spending_anova,"inequality")`; when incomes were visible, participants in the inequality condition spent \$`r abs(round(s2b2_spending_emmeans[6,"estimate"],2))` more on security products -->
+
+
+Testing **H4)** a 2b\*2b ANCOVA (controlling for introductory spending and payoff motivations) did not find the predicted significant inequality\*visibility interaction, `r anova_extract(s2b2_spending_anova,"inequality:visible",is.first = TRUE,test.stat=TRUE)`, although this interaction effect was close to statistical significance. Supporting **H4a)** the unequal/visible condition had more security spending than the equal/visible condition, `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality0 visible1 - inequality1 visible1")` (which also replicates **H1)**). Although there was no significant difference in spending between the unequal/invisible condition and the equal/invisible condition, `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality0 visible0 - inequality1 visible0")`, an equivalence test using TOST found that the \$`r round(s2b2_spending_tost_uninv_eqvis$effsize["Raw","estimate"], 2)` difference in security spending between unequal/invisible and the equal/visible condition was not statistically equivalent to zero: the effect was statistically larger than *g* = -.2, `r report_tost(s2b2_spending_tost_uninv_eqvis, equ=T,any_effect = F,test.stat = T,pval=T,tost_lo = T)`, but was not significantly smaller than *g* =.2, `r report_tost(s2b2_spending_tost_uninv_eqvis, equ=T,any_effect = F,test.stat = T,pval=T)`, failing to support **H4b)**. Supporting **H4c)**, participants in the unequal/visible condition had more security spending than the unequal/invisible condition `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality1 visible0 - inequality1 visible1")`
+
+(ref:s2b2-spending-fade) Study 2b, effects of merit/inequality on security spending.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s2b2-spending-fade) \label{fig:s2b2-spending-fade}}
+```
+```{r s2b2-spending-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_security_fadecloud.png")
+```
+
+```{=latex}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+\end{figure}
+```
+```{r s2b2-security-anova, eval = TRUE, echo=FALSE}
+s2b2_spending_anova1 <- data.frame(s2b2_spending_anova)
+
+s2b2_spending_anova1$Pr..F. <- report_pval(s2b2_spending_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2b2_spending_anova1, mode) == 'numeric'
+
+s2b2_spending_anova1[numeric_columns] <- sapply(s2b2_spending_anova1[numeric_columns], report_float)
+
+s2b2_spending_anova1$pes_ci95 <- as.character(paste("[", s2b2_spending_anova1$pes_ci95_lo, ", ", s2b2_spending_anova1$pes_ci95_hi,"]",  sep=""))
+
+
+s2b2_spending_anova1$ci95 <- as.character(paste("[", s2b2_spending_anova1$ci95_lo, ", ", s2b2_spending_anova1$ci95_hi,"]",  sep=""))
+
+s2b2_spending_anova1$df <- as.character(paste(round(as.numeric(s2b2_spending_anova1$NumDF),2), ", ", round(as.numeric(s2b2_spending_anova1$DenDF),2),  sep=""))
+  
+s2b2_spending_anova1 <- s2b2_spending_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+
+s2b2_spending_anova1 <- s2b2_spending_anova1[,!names(s2b2_spending_anova1) %in% 
+                                             c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                               "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+# s2b2_spending_anova1$Pr..F. <- report_pval(s2b2_spending_anova1$Pr..F.)
+
+
+s2b2_spending_anova1 <- subset(s2b2_spending_anova1, select = -c(df))
+
+
+s2b2_spending_anova1 <- s2b2_spending_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = pes_ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes
+    )
+
+
+row.names(s2b2_spending_anova1) <- firstup(row.names(s2b2_spending_anova1))
+
+row.names(s2b2_spending_anova1)[row.names(s2b2_spending_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2b2_spending_anova1)[row.names(s2b2_spending_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+# s2b2_spending_anova1 <- subset(s2b2_spending_anova1, select = -c(df))
+
+
+row.names(s2b2_spending_anova1) <-
+  gsub(
+    x = row.names(s2b2_spending_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2b2_spending_anova1) <-
+  gsub(
+    x = row.names(s2b2_spending_anova1),
+    pattern = "Inequality_merit",
+    replacement = "Money distribution",
+    fixed = TRUE
+  )
+
+row.names(s2b2_spending_anova1) <-
+  gsub(
+    x = row.names(s2b2_spending_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+row.names(s2b2_spending_anova1) <-
+  gsub(
+    x = row.names(s2b2_spending_anova1),
+    pattern = "Payoff_motiv_cent",
+    replacement = "Payoff motivation",
+    fixed = TRUE
+  )
+
+# s2b2_spending_anova1 <- s2b2_spending_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2b2_spending_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = 'Study 2b, ANCOVA; inequality/merit on security spending.',
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0(
+    "df = ",s2b2_spending_anova[1,"NumDF"], ", ", s2b2_spending_anova[1,"DenDF"],
+    ", MSE = ",round(s2b2_spending_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
+
+```
+
+
+(ref:s2b2-fairness-fade) Study 2b, effects of merit/inequality on perceived fairness.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s2b2-fairness-fade) \label{fig:s2b2-fairness-fade}}
+```
+```{r s2b2-fairness-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='49%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_fairness_fadecloud.png")
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_partner_fair_fadecloud.png")
+```
+
+```{=latex}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+\end{figure} 
+```
+```{r s2b2-fairness-anova, eval = TRUE, echo=FALSE}
+s2b2_fairness_anova1 <- data.frame(s2b2_fairness_anova)
+
+s2b2_fairness_anova1$Pr..F. <- report_pval(s2b2_fairness_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2b2_fairness_anova1, mode) == 'numeric'
+
+s2b2_fairness_anova1[numeric_columns] <- sapply(s2b2_fairness_anova1[numeric_columns], report_float)
+
+s2b2_fairness_anova1$pes_ci95 <- as.character(paste("[", s2b2_fairness_anova1$pes_ci95_lo, ", ", s2b2_fairness_anova1$pes_ci95_hi,"]",  sep=""))
+
+
+s2b2_fairness_anova1$ci95 <- as.character(paste("[", s2b2_fairness_anova1$ci95_lo, ", ", s2b2_fairness_anova1$ci95_hi,"]",  sep=""))
+
+s2b2_fairness_anova1$df <- as.character(paste(round(as.numeric(s2b2_fairness_anova1$NumDF),2), ", ", round(as.numeric(s2b2_fairness_anova1$DenDF),2),  sep=""))
+  
+s2b2_fairness_anova1 <- s2b2_fairness_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+
+s2b2_fairness_anova1 <- s2b2_fairness_anova1[,!names(s2b2_fairness_anova1) %in% c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                                                               "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+# s2b2_fairness_anova1$Pr..F. <- report_pval(s2b2_fairness_anova1$Pr..F.)
+
+
+s2b2_fairness_anova1 <- s2b2_fairness_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = pes_ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes
+    )
+
+
+
+row.names(s2b2_fairness_anova1) <- firstup(row.names(s2b2_fairness_anova1))
+
+row.names(s2b2_fairness_anova1)[row.names(s2b2_fairness_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2b2_fairness_anova1)[row.names(s2b2_fairness_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+s2b2_fairness_anova1 <- subset(s2b2_fairness_anova1, select = -c(df))
+
+
+row.names(s2b2_fairness_anova1) <-
+  gsub(
+    x = row.names(s2b2_fairness_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2b2_fairness_anova1) <-
+  gsub(
+    x = row.names(s2b2_fairness_anova1),
+    pattern = "Inequality_merit",
+    replacement = "Money distribution",
+    fixed = TRUE
+  )
+
+row.names(s2b2_fairness_anova1) <-
+  gsub(
+    x = row.names(s2b2_fairness_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+row.names(s2b2_fairness_anova1) <-
+  gsub(
+    x = row.names(s2b2_fairness_anova1),
+    pattern = "Payoff_motiv_cent",
+    replacement = "Payoff motivation",
+    fixed = TRUE
+  )
+
+# s2b2_fairness_anova1 <- s2b2_fairness_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2b2_fairness_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = 'Study 2b, ANCOVA; inequality/merit on perceived fairness.',
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+  kableExtra::footnote(general = paste0(
+    "df = ",s2b2_fairness_anova[1,"NumDF"], ", ", s2b2_fairness_anova[1,"DenDF"],
+    ", MSE = ",round(s2b2_fairness_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       # ,threeparttable = TRUE
+                       )
+```
+
+```{r s2b2-partner-fair-anova, eval = TRUE, echo=FALSE}
+s2b2_partner_fair_anova1 <- data.frame(s2b2_partner_fair_anova)
+
+s2b2_partner_fair_anova1$Pr..F. <- report_pval(s2b2_partner_fair_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2b2_partner_fair_anova1, mode) == 'numeric'
+
+s2b2_partner_fair_anova1[numeric_columns] <- sapply(s2b2_partner_fair_anova1[numeric_columns], report_float)
+
+s2b2_partner_fair_anova1$pes_ci95 <- as.character(paste("[", s2b2_partner_fair_anova1$pes_ci95_lo, ", ", s2b2_partner_fair_anova1$pes_ci95_hi,"]",  sep=""))
+
+s2b2_partner_fair_anova1$ci95 <- as.character(paste("[", s2b2_partner_fair_anova1$ci95_lo, ", ", s2b2_partner_fair_anova1$ci95_hi,"]",  sep=""))
+
+s2b2_partner_fair_anova1$df <- as.character(paste(round(as.numeric(s2b2_partner_fair_anova1$NumDF),2), ", ", round(as.numeric(s2b2_partner_fair_anova1$DenDF),2),  sep=""))
+  
+s2b2_partner_fair_anova1 <- s2b2_partner_fair_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2b2_partner_fair_anova1 <- s2b2_partner_fair_anova1[,!names(s2b2_partner_fair_anova1) %in% 
+                                                     c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                                       "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+# s2b2_partner_fair_anova1$Pr..F. <- report_pval(s2b2_partner_fair_anova1$Pr..F.)
+
+
+
+s2b2_partner_fair_anova1 <- s2b2_partner_fair_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = pes_ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, "$\\eta_p^2$" = pes
+    )
+
+
+row.names(s2b2_partner_fair_anova1) <- firstup(row.names(s2b2_partner_fair_anova1))
+
+row.names(s2b2_partner_fair_anova1)[row.names(s2b2_partner_fair_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2b2_partner_fair_anova1)[row.names(s2b2_partner_fair_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+s2b2_partner_fair_anova1 <- subset(s2b2_partner_fair_anova1, select = -c(df))
+
+
+row.names(s2b2_partner_fair_anova1) <-
+  gsub(
+    x = row.names(s2b2_partner_fair_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2b2_partner_fair_anova1) <-
+  gsub(
+    x = row.names(s2b2_partner_fair_anova1),
+    pattern = "Inequality_merit",
+    replacement = "Money distribution",
+    fixed = TRUE
+  )
+
+row.names(s2b2_partner_fair_anova1) <-
+  gsub(
+    x = row.names(s2b2_partner_fair_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+row.names(s2b2_partner_fair_anova1) <-
+  gsub(
+    x = row.names(s2b2_partner_fair_anova1),
+    pattern = "Payoff_motiv_cent",
+    replacement = "Payoff motivation",
+    fixed = TRUE
+  )
+
+# s2b2_partner_fair_anova1 <- s2b2_partner_fair_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2b2_partner_fair_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = "Study 2b, ANCOVA; inequality/merit on ratings of partner's belief of fairness.",
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0(
+    "df = ",s2b2_partner_fair_anova[1,"NumDF"], ", ", s2b2_partner_fair_anova[1,"DenDF"],
+    ", MSE = ",round(s2b2_partner_fair_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       )
+```
+
+
+(ref:s2b2-envy-fade) Study 2b, effects of merit/inequality on perceived partner envy.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s2b2-envy-fade) \label{fig:s2b2-envy-fade}}
+```
+```{r s2b2-envy-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_envy_fadecloud.png")
+```
+
+```{=latex}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+\end{figure}
+```
+```{r s2b2-envy-anova, eval = TRUE, echo=FALSE}
+s2b2_envy_anova1 <- data.frame(s2b2_envy_anova)
+
+s2b2_envy_anova1$Pr..F. <- report_pval(s2b2_envy_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2b2_envy_anova1, mode) == 'numeric'
+
+s2b2_envy_anova1[numeric_columns] <- sapply(s2b2_envy_anova1[numeric_columns], report_float)
+
+s2b2_envy_anova1$pes_ci95 <- as.character(paste("[", s2b2_envy_anova1$pes_ci95_lo, ", ", s2b2_envy_anova1$pes_ci95_hi,"]",  sep=""))
+
+
+s2b2_envy_anova1$ci95 <- as.character(paste("[", s2b2_envy_anova1$ci95_lo, ", ", s2b2_envy_anova1$ci95_hi,"]",  sep=""))
+
+s2b2_envy_anova1$df <- as.character(paste(round(as.numeric(s2b2_envy_anova1$NumDF),2), ", ", round(as.numeric(s2b2_envy_anova1$DenDF),2),  sep=""))
+  
+
+s2b2_envy_anova1 <- s2b2_envy_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2b2_envy_anova1 <- s2b2_envy_anova1[,!names(s2b2_envy_anova1) %in% 
+                                     c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                       "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+# s2b2_envy_anova1$Pr..F. <- report_pval(s2b2_envy_anova1$Pr..F.)
+
+
+
+
+s2b2_envy_anova1 <- s2b2_envy_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = pes_ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
+    )
+
+row.names(s2b2_envy_anova1) <- firstup(row.names(s2b2_envy_anova1))
+
+row.names(s2b2_envy_anova1)[row.names(s2b2_envy_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2b2_envy_anova1)[row.names(s2b2_envy_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+s2b2_envy_anova1 <- subset(s2b2_envy_anova1, select = -c(df))
+
+
+row.names(s2b2_envy_anova1) <-
+  gsub(
+    x = row.names(s2b2_envy_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2b2_envy_anova1) <-
+  gsub(
+    x = row.names(s2b2_envy_anova1),
+    pattern = "Inequality_merit",
+    replacement = "Money distribution",
+    fixed = TRUE
+  )
+
+row.names(s2b2_envy_anova1) <-
+  gsub(
+    x = row.names(s2b2_envy_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+row.names(s2b2_envy_anova1) <-
+  gsub(
+    x = row.names(s2b2_envy_anova1),
+    pattern = "Payoff_motiv_cent",
+    replacement = "Payoff motivation",
+    fixed = TRUE
+  )
+
+# s2b2_envy_anova1 <- s2b2_envy_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2b2_envy_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = "Study 2b, ANCOVA; inequality/merit on perceived partner envy.",
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0(
+    "df = ",s2b2_envy_anova[1,"NumDF"], ", ", s2b2_envy_anova[1,"DenDF"],
+    ", MSE = ",round(s2b2_envy_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       )
+```
+
+(ref:s2b2-payoff-motiv-fade) Study 2b, effects of merit/inequality on payoff motivations.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s2b2-payoff-motiv-fade) \label{fig:s2b2-payoff-motiv-fade}}
+```
+```{r s2b2-payoff_motiv-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_payoff_motiv_fadecloud.png")
+```
+
+```{=latex}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+\end{figure}
+```
+```{r s2b2-payoff-motiv-anova, eval = TRUE, echo=FALSE}
+s2b2_payoff_motiv_anova1 <- data.frame(s2b2_payoff_motiv_anova)
+
+s2b2_payoff_motiv_anova1$Pr..F. <- report_pval(s2b2_payoff_motiv_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2b2_payoff_motiv_anova1, mode) == 'numeric'
+
+s2b2_payoff_motiv_anova1[numeric_columns] <- sapply(s2b2_payoff_motiv_anova1[numeric_columns], report_float)
+
+s2b2_payoff_motiv_anova1$pes_ci95 <- as.character(paste("[", s2b2_payoff_motiv_anova1$pes_ci95_lo, ", ", s2b2_payoff_motiv_anova1$pes_ci95_hi,"]",  sep=""))
+
+
+s2b2_payoff_motiv_anova1$ci95 <- as.character(paste("[", s2b2_payoff_motiv_anova1$ci95_lo, ", ", s2b2_payoff_motiv_anova1$ci95_hi,"]",  sep=""))
+
+s2b2_payoff_motiv_anova1$df <- as.character(paste(round(as.numeric(s2b2_payoff_motiv_anova1$NumDF),2), ", ", round(as.numeric(s2b2_payoff_motiv_anova1$DenDF),2),  sep=""))
+  
+
+s2b2_payoff_motiv_anova1 <- s2b2_payoff_motiv_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2b2_payoff_motiv_anova1 <- s2b2_payoff_motiv_anova1[,!names(s2b2_payoff_motiv_anova1) %in% 
+                                     c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                       "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+# s2b2_payoff_motiv_anova1$Pr..F. <- report_pval(s2b2_payoff_motiv_anova1$Pr..F.)
+
+
+
+
+s2b2_payoff_motiv_anova1 <- s2b2_payoff_motiv_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = pes_ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
+    )
+
+row.names(s2b2_payoff_motiv_anova1) <- firstup(row.names(s2b2_payoff_motiv_anova1))
+
+row.names(s2b2_payoff_motiv_anova1)[row.names(s2b2_payoff_motiv_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2b2_payoff_motiv_anova1)[row.names(s2b2_payoff_motiv_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+s2b2_payoff_motiv_anova1 <- subset(s2b2_payoff_motiv_anova1, select = -c(df))
+
+
+row.names(s2b2_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2b2_payoff_motiv_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2b2_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2b2_payoff_motiv_anova1),
+    pattern = "Inequality_merit",
+    replacement = "Money distribution",
+    fixed = TRUE
+  )
+
+row.names(s2b2_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2b2_payoff_motiv_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+
+# s2b2_payoff_motiv_anova1 <- s2b2_payoff_motiv_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2b2_payoff_motiv_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = "Study 2b, ANCOVA; inequality/merit on payoff motivations.",
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0(
+    "df = ",s2b2_payoff_motiv_anova[1,"NumDF"], ", ", s2b2_payoff_motiv_anova[1,"DenDF"],
+    ", MSE = ",round(s2b2_payoff_motiv_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       )
+```
+
+(ref:s2b2-likelihood-fade) Study 2b, effects of merit/inequality on perceived attack likelihood.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s2b2-likelihood-fade) \label{fig:s2b2-likelihood-fade}}
+```
+```{r s2b2-likelihood-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_likelihood_fadecloud.png")
+```
+
+```{=latex}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+\end{figure}
+```
+```{r s2b2-likelihood-anova, eval = TRUE, echo=FALSE}
+s2b2_likelihood_anova1 <- data.frame(s2b2_likelihood_anova)
+
+s2b2_likelihood_anova1$Pr..F. <- report_pval(s2b2_likelihood_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2b2_likelihood_anova1, mode) == 'numeric'
+
+s2b2_likelihood_anova1[numeric_columns] <- sapply(s2b2_likelihood_anova1[numeric_columns], report_float)
+
+
+s2b2_likelihood_anova1$ci95 <- as.character(paste("[", s2b2_likelihood_anova1$ci95_lo, ", ", s2b2_likelihood_anova1$ci95_hi,"]",  sep=""))
+
+s2b2_likelihood_anova1$pes_ci95 <- as.character(paste("[", s2b2_likelihood_anova1$pes_ci95_lo, ", ", s2b2_likelihood_anova1$pes_ci95_hi,"]",  sep=""))
+
+s2b2_likelihood_anova1$df <- as.character(paste(round(as.numeric(s2b2_likelihood_anova1$NumDF),2), ", ", round(as.numeric(s2b2_likelihood_anova1$DenDF),2),  sep=""))
+
+s2b2_likelihood_anova1 <- s2b2_likelihood_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2b2_likelihood_anova1 <- s2b2_likelihood_anova1[,!names(s2b2_likelihood_anova1) %in% 
+                                                 c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                                   "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+
+
+
+# s2b2_likelihood_anova1$Pr..F. <- report_pval(s2b2_likelihood_anova1$Pr..F.)
+
+
+
+
+s2b2_likelihood_anova1 <- s2b2_likelihood_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = pes_ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
+    )
+
+
+row.names(s2b2_likelihood_anova1) <- firstup(row.names(s2b2_likelihood_anova1))
+
+row.names(s2b2_likelihood_anova1)[row.names(s2b2_likelihood_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2b2_likelihood_anova1)[row.names(s2b2_likelihood_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+s2b2_likelihood_anova1 <- subset(s2b2_likelihood_anova1, select = -c(df))
+
+
+row.names(s2b2_likelihood_anova1) <-
+  gsub(
+    x = row.names(s2b2_likelihood_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2b2_likelihood_anova1) <-
+  gsub(
+    x = row.names(s2b2_likelihood_anova1),
+    pattern = "Inequality_merit",
+    replacement = "Money distribution",
+    fixed = TRUE
+  )
+
+row.names(s2b2_likelihood_anova1) <-
+  gsub(
+    x = row.names(s2b2_likelihood_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+row.names(s2b2_likelihood_anova1) <-
+  gsub(
+    x = row.names(s2b2_likelihood_anova1),
+    pattern = "Payoff_motiv_cent",
+    replacement = "Payoff motivation",
+    fixed = TRUE
+  )
+
+# s2b2_likelihood_anova1 <- s2b2_likelihood_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2b2_likelihood_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = "Study 2b, ANCOVA; inequality/merit on ratings of attack likelihood.",
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+  kableExtra::footnote(general = paste0(
+    "df = ",s2b2_likelihood_anova[1,"NumDF"], ", ", s2b2_likelihood_anova[1,"DenDF"],
+    ", MSE = ",round(s2b2_likelihood_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       )
+```
+
+
+
+## Discussion
+
+In this perspective, equity and fairness are treated as points of leverage in bargaining situations, with each party attempting to promote their claim over resources.
+
+Instead, people simply expect envy proper, and do not expect an earned inequality to make their partners any more trustworthy.
+
+<!--# The main proposition of the envy anticipation model of distrust is that inequality increases security consumption, because individuals anticipate envy and higher attack likelihoods from worse-off social partners. Notably, different models have emerged to describe how people experience envy. Firstly, a single-factor model of envy proper defines envy as a painful and unpleasant feeling of inferiority, hostility, and resentment when another person or group has a desired advantage (reviewed in Smith & Kim, 2007).  -->
+
+<!-- Together, the existing research suggests that people are not just sensitive to inequality and fairness, but that their decision-making also considers and anticipates others' psychological reactions to disparities. To this end, an additional proposition can be added to the *envy anticipation model of distrust*: the positive effect of inequality on distrust and security consumption will be negatively moderated by distributional fairness. Chapter 2 will examine whether merit-based (Study 2b) and apparently group-based allocations of wealth (Study 2b) impact security spending in the context of inequality. -->
+
+<!-- concerning people's second-order beliefs of the effects of fairness on other people's   -->
+
+<!--# Echoing the fairness-driven concepts of benign and malicious envy, some authors have suggested that people are not actually inequality-averse, but instead inequity-averse, predicting that people can actually be very tolerant of an unequal, but fair outcome. -->
+
+<!--# While inequality generally causes envy, the emotional and motivational content of these experiences appears to be heavily influenced by the perceived fairness and deservingness of these distributions. In the ultimatum game, @fleiß2015 found that, when roles are allocated based on performance on a general knowledge task, proposers make, and responders accept, lower offers. The authors interpret these results as consistent with equity theory, where the reference point for a fair allocation moves away from an equal split to recognize other inputs and efforts of the group-members. -->
+
+The effect of perceived partner envy on security consumption observed in Chapter 1 and Studies 2b and 2b reflects only one way to protect oneself from anticipated envy. Indeed, helping may be preferable in cases where it is less costly and helps the agent to cultivate reciprocity and a reputation for fairness and prosociality.
+
+In the context of the envy anticipation model, the predictions follow that the effect of inequality on security consumption should be weaker when the disparity is earned, and stronger when the disparity is unfair.
+
+<!--# In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. -->
+
+<!-- -->
+
+
+### Evidence for role of fairness on DIA
+
+<!--# Meanwhile, Responders reject offers when inequalities are due to an intentional and clear decision to produce disparities [@falk2003; @blount1995]. -->
+
+<!-- What kind of envy would a person expect from a disadvantaged partner?  -->
+
+<!--# Would they expect fairness to reduce their peer's hostile intent and willingness to attack? -->
+
+<!--# One perspective could be that both benign and malicious envy share a core of reduced envy proper, simply a painful reaction to upward social comparisons. The "direction" of the envious experience is then shaped by further appraisals of fairness/control. -->
+
+<!-- Envy is an unpleasant experience, being associated with neural activation of the anterior cingulated cortex, which processes cognitive conflict and social pain (Eisenberger, Lieberman, & Williams, 2003; Kerns et al., 2004; Singer et al., 2004). -->
+
+A recent perspective on individuals' social comparisons
+
+<!-- When considering how inequality affects individuals and groups, it may be important to consider not just whether resources are being shared evenly, but also whether the distribution is considered to be fair.  -->
+
+<!-- In particular,  -->
+
+<!-- inequality coupled with unfairness may  -->
+
+<!-- make individuals increasingly unaccepting of disparities, and heightens their chances of engaging in risky and hostile behaviours [@vandeven2009]. Conversely, an unequal, but a fair allocation of wealth may reduce partners' harmful potential. Extending Chapter One, the following chapter will explore whether distributional fairness has cascading effects on distrust and security consumption within individuals. -->
+
+<!-- fairness stabilizes the equilibria cooperative norms -->
+
+<!-- fairness introduces correlated equilibria between cooperation partners -->
+
+<!-- fairness stabilizes cooperative norms/strategies -->
+
+Why do people care about fairness? As discussed in Chapter one, a concern for fairness may have evolved (whether culturally or genetically) as a response to disadvantageous inequality aversion. By internalizing a preference to treat people fairly, an individual can better resist selfish temptations, and prevent themselves from being the target envious feelings in their partners, and any destructive behavioural consequences. Similarly, classifying an individual's behaviour as fair or unfair can help when forming reputation judgments, and applying other decision rules, such as generous tit-for-tat reciprocity [e.g., @rand2009]. A reputation for being impartial (and fair) is likewise rewarded by being preferred as a cooperation partner [@shaw2012].
+
+<!-- partiality aversion -->
+
+Beyond simple pairs of interacting individuals, fairness has also been argued to be a linchpin for fostering sustainable cooperative strategies, and the development of large-scale societies [@henrich2010]. Some of the most common explanations for cooperative behaviours in humans, such as reciprocity (help those who have helped you) and kin support (help your family) fall short of explaining the full scope of human cooperation. Even early human societies were characterized by a low proportion of genetic relations, and a high degree of intergroup migration. Especially with increasing group size, reciprocity and kin support would not provide a sufficient reason to cooperate with someone you do not know, and is not related to you by blood. While preferred cooperative partners might not always be available, reputations are comparatively persistent, allowing for individuals to selectively cooperate with those known for fair dealing. Having a shared idea of how a person should behave (i.e., common fairness norms) has proved to be a potent force in coordinating large groups of otherwise unrelated individuals towards a shared purpose. In the context of inequality, a distribution's adherence to fairness norms can help individuals to decide whether a disparity should be tolerated, and whether some type of corrective action can be expected.
+
+
+
+<!-- Norms have been argued to facilitate and enforce cooperation between otherwise unrelated social partners, allowing for the development of large-scale societies [@henrich2010]. -->
+
+<!-- The benefits of impartiality makes sense considering that strict cooperative relationships such as reciprocity or kin support are unlikely to be optimal in large mixed groups with individual migration.  -->
+
+<!-- Social norms are exceptionally helpful for guiding and detecting fair behaviour. For instance, in Persian culture, *taarof* is a code of etiquette, dictating for instance, that you refuse what you wish to accept. Failure to adhere to such a ritual of repeated offering and refusing would violate a principle of a fair exchange, and gain a reputation for being unfair, and less likely to secure cooperative partners.  -->
+
+<!-- the security game doesn't involve bargaining - more reminiscent to the dictator game in that it is unilateral -->
+
+<!--# Benign envy is associated with greater hope for success, more ambitious goal-setting (Lange & Crusius, 2015), an attentional bias towards means to improve (Crusius & Lange, 2014), increased persistence and performance (van de Ven, Zeelenberg, & Pieters, 2011b), and an increased willingness to pay for envy-inducing consumer products (van de Ven et al., 2011b) -->
+
+<!-- High correlation between measures of procedural and distributive justice, *r* = .637, CI95% =[.361, .911], mean across 63 studies [@hauenstein]. -->
+
+<!-- Similarly, [@vandeven2010] found that under conditions of inequality, those who are better off are more likely to engage in helping behaviours when they believe that their disadvantaged partner is frustrated by the disparity and harboring antagonistic motivations [i.e., "malicious envy"; Crusius & Lange, -@crusius2014].  -->
+
+<!-- When participants believe that their partner is experiencing malicious envy, they are more likely to engage in helping behaviours [@vandeven2010]. In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. Together, the existing research suggests that people are not just sensitive to inequality and fairness, but that their decision-making also considers and anticipates others' psychological reactions to disparities. To this end, an additional proposition can be added to the *envy anticipation model of distrust*: the positive effect of inequality on distrust and security consumption will be negatively moderated by distributional fairness. Chapter 2 will examine whether merit-based (Study 2a) and apparently group-based allocations of wealth (Study 2b) impact security spending in the context of inequality. -->

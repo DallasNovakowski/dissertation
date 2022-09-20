@@ -2,9 +2,13 @@
 bibliography: bib/thesis.bib
 ---
 
-# Effects of Fairness on Security Consumption {#ineq-fair}
+# Moderating the Effect of Inequality on Security Consumption {#ineq-mod}
 
-The experiments in Chapter 1 provided evidence that inequality can increase security spending, generally supporting the envy anticipation model. However, ample research has found that the effects of inequality can be influenced by fairness. Depending on how an individual develops and applies equity norms, an unequal distribution can be seen as fair, and an equal distribution can be interpreted as an injustice. Consequently, if inequality generally induces envy, conflict, risk-taking, distrust, and security consumption, these socially-corrosive effects may be weakened or strengthened depending on how the inequality is produced. An unequal, but fair, distribution of resources may make inequality more tolerable, reducing envy and its downstream consequences, while unfairness may amplify the effects of inequality, making people more likely to engage in risky and hostile behaviours [@vandeven2009].
+The experiments in Chapter 1 provided evidence that inequality can increase security spending, and that this effect is largely explained by an expectation and fear of partner envy. This process of imagined social comparisons raises possibilities for circumstances where the effects of inequality on distrust might be exaggerated or nullified. Namely, what if unequal distributions were more fair (Study 2a), or invisible to the disadvantaged party (Study 2b)? 
+
+## Effects of Fairness on Security Consumption {#ineq-fair}
+
+Depending on how an individual develops and applies fairness norms, an unequal distribution can be seen as equitable, and an equal distribution can be interpreted as an injustice. Consequently, if inequality generally induces envy, conflict, risk-taking, distrust, and security consumption, these socially-corrosive effects may be weakened or strengthened depending on how the inequality is produced. An unequal, but fair, distribution of resources may make inequality more tolerable, reducing envy and its downstream consequences, while unfairness may amplify the effects of inequality, making people more likely to engage in risky and hostile behaviours [@vandeven2009].
 
 <!-- Both inequality and equality can be seen as legitimate or unacceptable, depending on whether people are treated fairly. -->
 
@@ -94,7 +98,7 @@ Conversely, the theory and evidence for the effect of unfairness and malicious e
 
 <!-- will become more distrustful in unfair environments. This chapter will test the proposition that *the effect of inequality on security consumption will be negatively moderated by greater distributional fairness.* -->
 
-### Study 2a: Meritocracy and Inequality
+## Study 2a: Meritocracy and Inequality
 
 Study 2a was conducted by manipulating inequality (yes/no) in the context of a security game, just like in Chapter one. Specifically, Study 2a is most like Study 1c, with a between-subjects design, an introductory security scenario, and uncertain probabilities and stakes of thefts. However, Study 2a was conducted with hypothetical payoffs. Most importantly, Study 2a also manipulated whether one's income was allocated *randomly or based on task performance* (random vs. merit). In addition to replicating **H1)** (inequality increases security spending), Study 2a tested competing hypotheses, whether **H3)** hi-inequality/random income condition will have significantly higher spending than the unequal/merit condition, (Table \@ref(tab:design-table); versus the equivalence hypothesis that **H3~eq~)** an unequal but merit-based distribution of resources will lead to an equivalent amount of security spending compared to the unequal/random condition.
 
@@ -144,7 +148,7 @@ kable_styling(latex_options = c(
 s2a_desc
 ```
 
-## Results
+### Results
 
 Data were analyzed using a one-way (3b) ANCOVA, controlling for participants' reported payoff motivations and their spending in the introductory security game scenario. The ANCOVA found a significant effect of the income distribution condition, `r anova_extract(s2a_spending_anova,"inequality_merit",is.first = TRUE)`. Planned comparisons were conducted on estimated marginal means. Pairwise comparisons using r package TOSTER replicated the effect of inequality as per **H1)**: participants in the unequal/random condition (vs. equal/random) spend \$`r round(s2a_spending_tost_urandom_erandom$effsize["Raw","estimate"], 2)` more on security products, `r report_tost(s2a_spending_tost_urandom_erandom, test.stat = T)`. The effect of inequality also persisted when comparing equal/random to unequal/merit, `r report_tost(s2a_spending_tost_umerit_erandom)` (diff = \$`r round(s2a_spending_tost_umerit_erandom$effsize["Raw","estimate"], 2)`).
 
@@ -868,15 +872,19 @@ Despite the null effects of merit on security spending and anticipated envy, mer
 
 <!-- > My partner probably feels bitter\ -->
 
-### Study 2b: Inequality as a Product of Group-Based Discrimination
+## Study 2b: Inequality and Income Visibility
 
 <!--# As such, any mechanism allowing for impartial distribution of resources (e.g., a coin flip), ostensibly satisfies the need to justify a privileged position, and may reduce the felt need to consume security products. -->
 
-Since Study 2a directly compares meritocratic versus random allocation of resources, it does not answer the more fundamental question: do people become distrustful and consume more security goods when inequality appears to be more discriminatory and unfair? Study 2b will keep a constant presence of inequality, but manipulate whether the partner is a member of an ingroup or outgroup, and whether the incomes are distributed randomly, or by a separate *ingroup individual*. Study 2b will use a 2b\*2b between subjects ANOVA to test whether **H4)** the effect of partner's outgroup membership on security consumption will be more positive when inequality is produced by the choice of an ingroup member (versus **H4~0~)** no significant outgroup\*agentic-distribution interaction). As planned comparisons, Study 2b will examine whether **H4a)** the outgroup partner/agentic-distribution condition will have significantly higher rates of security consumption than all other conditions (i.e., **.1)** outgroup/random, **.2)** ingroup/agentic, & **.3)** ingroup/random). Participants will complete the same fairness manipulation check as and be powered for the same effect as in Study 2a.
+Throughout this project, the inequality manipulation has had a potential confound with the Attacker's absolute level of income; in unequal conditions, Attackers had less overall money. This reduction of income is inextricable when manipulating inequality in a dyadic context; someone needs to receive less money, and keeping the Defender's income constant was a greater priority. However, this operationalization of inequality introduces the potential effect of diminishing marginal utility of resources. Since Attackers had less money overall in the high-inequality condition, they might prefer greater risk compared to when they have more money, as a dollar increase from \$150 to  \$151 may be preferred compared to a dollar increase from \$300 to \$301. 
+
+Accordingly, Study 2b manipulates  whether the Defender's income is visible to the Attacker in a 2(inequality)\*2(income visibility) design. A **H4)** positive and significant interaction between inequality and visibility on security spending would suggest that any (expectation of) theft is not due to just the Attacker having less money, but because of the potential for the Attacker to make a social comparison and feel envious. Likewise, using estimated marginal means Stydy 2a will conduct pairwise comparisons testing **H4a)** : The inequality/visible condition will have more security spending than the equality/visible condition, **H4b)** the inequality/invisible condition will have equivalent security spending to the equality/invisible condition (equivalence test), and **H4c)** the inequality/visible condition will have more security spending than the inequality/invisible condition
+
+
 
 <!-- `r tolower(hypotheses[3])` -->
 
-`r s2b2_n_collected` participants were recruited from Prolific (restricted to computers - no smartphones/tablets), in anticipation of a 10% attrition rate. After initial collection, `r s2b2_non_consent` participants did not consent, and `r s2b2_n_consented-s2b2_n_screened` either failed a comprehension check, attention check, or had missing responses. After these exclusions, n = `r s2b2_n_screened` individuals were retained for analyses (`r round(s2b2_female*100,2)`% female). Following consent, demographics, and an introductory security game, participants were randomly assigned to one of four conditions in  a 2b\*2b design [equal vs. unequal * visible  incomes vs. invisible].
+`r s2b2_n_collected` participants were recruited from Prolific (restricted to computers - no smartphones/tablets), in anticipation of a 10% attrition rate. After initial collection, `r s2b2_non_consent` participants did not consent, and `r s2b2_n_consented-s2b2_n_screened` either failed a comprehension check, attention check, or had missing responses. After these exclusions, n = `r s2b2_n_screened` individuals were retained for analyses (`r round(s2b2_female*100,2)`% female). Following consent, demographics, and an introductory security game, participants were randomly assigned to one of four conditions in  a 2b\*2b design [equal vs. unequal * visible  incomes vs. invisible]. Inequality was manipulated in the same manner as the past experiments. Income visibility was manipulated in the same window as inequality, where individuals were told that "Blue knows how much money you each have received," versus "Blue does not know how much money you received"
 
 
 <!-- Particularly in the presence of increasingly diverse societies, an understanding of how people respond to perceived threats posed by "others" may be instrumental in engineering social infrastructure and policies to improve people's real and felt security. -->
@@ -913,20 +921,12 @@ s2b2_desc
 
 
 
-
-Using estimated marginal means,
-H4a) : The inequality/visible condition will have more security spending than the equality/visible condition
-H4b) the inequality/invisible condition will have equivalent security spending to the equality/invisible condition (equivalence test)
-
-We could also include the contrast for inequality/visible vs. inequality/invisible. Especially in the case of a failed equivalence test, it might be important to test whether security spending in the inequality condition changes based on visibility:
-H4c) the inequality/visible condition will have more security spending than the inequality/invisible condition
-
 ### Results
 
 <!-- Replicating **H1)**, the ANCOVA found a significant main effect of inequality, `r anova_extract(s2b2_spending_anova,"inequality")`; when incomes were visible, participants in the inequality condition spent \$`r abs(round(s2b2_spending_emmeans[6,"estimate"],2))` more on security products -->
 
 
-Testing **H4)** a 2b\*2b ANCOVA (controlling for introductory spending and payoff motivations) did not find the predicted significant inequality\*visibility interaction, `r anova_extract(s2b2_spending_anova,"inequality:visible",is.first = TRUE,test.stat=TRUE)`, although this interaction effect was close to statistical significance. Supporting **H4a)** the unequal/visible condition had more security spending than the equal/visible condition, `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality0 visible1 - inequality1 visible1")` (which also replicates **H1)**). Although there was no significant difference in spending between the unequal/invisible condition and the equal/invisible condition, `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality0 visible0 - inequality1 visible0")`, an equivalence test using TOST found that the \$`r round(s2b2_spending_tost_uninv_eqvis$effsize["Raw","estimate"], 2)` difference in security spending between unequal/invisible and the equal/visible condition was not statistically equivalent to zero: the effect was statistically larger than *g* = -.2, `r report_tost(s2b2_spending_tost_uninv_eqvis, equ=T,any_effect = F,test.stat = T,pval=T,tost_lo = T)`, but was not significantly smaller than *g* =.2, `r report_tost(s2b2_spending_tost_uninv_eqvis, equ=T,any_effect = F,test.stat = T,pval=T)`, failing to support **H4b)**. Supporting **H4c)**, participants in the unequal/visible condition had more security spending than the unequal/invisible condition `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality1 visible0 - inequality1 visible1")`
+Testing **H4)** a 2b\*2b ANCOVA (controlling for introductory spending and payoff motivations) did not find the predicted significant inequality\*visibility interaction, `r anova_extract(s2b2_spending_anova,"inequality:visible",is.first = TRUE,test.stat=TRUE)`, although this interaction effect was close to statistical significance. Supporting **H4a)** the unequal/visible condition had more security spending than the equal/visible condition, `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality0 visible1 - inequality1 visible1")` (which also replicates **H1)**). Although there was no significant difference in spending between the unequal/invisible condition and the equal/invisible condition, `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality0 visible0 - inequality1 visible0")`, an equivalence test using TOST found that the \$`r round(s2b2_spending_tost_uninv_eqvis$effsize["Raw","estimate"], 2)` difference in security spending between unequal/invisible and the equal/visible condition was not statistically equivalent to zero: the effect was statistically larger than *g* = -.2, `r report_tost(s2b2_spending_tost_uninv_eqvis, equ=T,any_effect = F,test.stat = T,pval=T,tost_lo = T)`, but was not significantly smaller than *g* =.2, `r report_tost(s2b2_spending_tost_uninv_eqvis, equ=T,any_effect = F,test.stat = T,pval=T)`, failing to support **H4b)**. Supporting **H4c)**, participants in the unequal/visible condition had more security spending than the unequal/invisible condition `r emmeans_contrast_extract(df=s2b2_spending_emmeans,comp_name = "inequality1 visible0 - inequality1 visible1")`; however, this latter effect is consistent with the main effect of visibility.
 
 (ref:s2b2-spending-fade) Study 2b, effects of merit/inequality on security spending.
 
@@ -935,7 +935,7 @@ Testing **H4)** a 2b\*2b ANCOVA (controlling for introductory spending and payof
 \centering
 \caption{(ref:s2b2-spending-fade) \label{fig:s2b2-spending-fade}}
 ```
-```{r s2b2-spending-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+```{r s2b2-spending-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='70%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_security_fadecloud.png")
 ```
 
@@ -1267,7 +1267,7 @@ kable_styling(latex_options = c(
 \centering
 \caption{(ref:s2b2-envy-fade) \label{fig:s2b2-envy-fade}}
 ```
-```{r s2b2-envy-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+```{r s2b2-envy-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='70%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_envy_fadecloud.png")
 ```
 
@@ -1383,7 +1383,7 @@ kable_styling(latex_options = c(
 \centering
 \caption{(ref:s2b2-payoff-motiv-fade) \label{fig:s2b2-payoff-motiv-fade}}
 ```
-```{r s2b2-payoff_motiv-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+```{r s2b2-payoff_motiv-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='70%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_payoff_motiv_fadecloud.png")
 ```
 
@@ -1492,7 +1492,7 @@ kable_styling(latex_options = c(
 \centering
 \caption{(ref:s2b2-likelihood-fade) \label{fig:s2b2-likelihood-fade}}
 ```
-```{r s2b2-likelihood-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+```{r s2b2-likelihood-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='70%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_likelihood_fadecloud.png")
 ```
 
@@ -1601,6 +1601,11 @@ knitr::kable(s2b2_likelihood_anova1,
                        )
 ```
 
+The main effect of income visibility was a surprising effect; why would the simple visibility of incomes induce people to consume more security products? Participants may have inferred that visible incomes gave their partner more information about the potential payoffs of an attack; since the explicit payoffs and penalties of stealing were not explicitly stated, many participants may have inferred that 100% of the available money would be stolen. As such, participants may have believed that their visible income of \$300 gave their partner information about how much money could be stolen. 
+
+However, it is notable that the predicted pattern of effects was found for both perceived partner envy and attack likelihood, namely with the unequal/visible leading to more envy anticipation and distrust than all other conditions (which were predicted to be roughly equivalent)
+
+Some type of competitive mindset
 
 
 ## Discussion
@@ -1621,14 +1626,14 @@ Instead, people simply expect envy proper, and do not expect an earned inequalit
 
 The effect of perceived partner envy on security consumption observed in Chapter 1 and Studies 2b and 2b reflects only one way to protect oneself from anticipated envy. Indeed, helping may be preferable in cases where it is less costly and helps the agent to cultivate reciprocity and a reputation for fairness and prosociality.
 
-In the context of the envy anticipation model, the predictions follow that the effect of inequality on security consumption should be weaker when the disparity is earned, and stronger when the disparity is unfair.
+<!-- In the context of the envy anticipation model, the predictions follow that the effect of inequality on security consumption should be weaker when the disparity is earned, and stronger when the disparity is unfair. -->
 
 <!--# In contrast, participants who earned an advantaged position (which is associated with benign envy) tend to be less generous [@hoffman1994]. -->
 
 <!-- -->
 
 
-### Evidence for role of fairness on DIA
+<!-- ### Evidence for role of fairness on DIA -->
 
 <!--# Meanwhile, Responders reject offers when inequalities are due to an intentional and clear decision to produce disparities [@falk2003; @blount1995]. -->
 
@@ -1640,7 +1645,7 @@ In the context of the envy anticipation model, the predictions follow that the e
 
 <!-- Envy is an unpleasant experience, being associated with neural activation of the anterior cingulated cortex, which processes cognitive conflict and social pain (Eisenberger, Lieberman, & Williams, 2003; Kerns et al., 2004; Singer et al., 2004). -->
 
-A recent perspective on individuals' social comparisons
+<!-- A recent perspective on individuals' social comparisons -->
 
 <!-- When considering how inequality affects individuals and groups, it may be important to consider not just whether resources are being shared evenly, but also whether the distribution is considered to be fair.  -->
 
@@ -1656,11 +1661,11 @@ A recent perspective on individuals' social comparisons
 
 <!-- fairness stabilizes cooperative norms/strategies -->
 
-Why do people care about fairness? As discussed in Chapter one, a concern for fairness may have evolved (whether culturally or genetically) as a response to disadvantageous inequality aversion. By internalizing a preference to treat people fairly, an individual can better resist selfish temptations, and prevent themselves from being the target envious feelings in their partners, and any destructive behavioural consequences. Similarly, classifying an individual's behaviour as fair or unfair can help when forming reputation judgments, and applying other decision rules, such as generous tit-for-tat reciprocity [e.g., @rand2009]. A reputation for being impartial (and fair) is likewise rewarded by being preferred as a cooperation partner [@shaw2012].
+<!-- Why do people care about fairness? As discussed in Chapter one, a concern for fairness may have evolved (whether culturally or genetically) as a response to disadvantageous inequality aversion. By internalizing a preference to treat people fairly, an individual can better resist selfish temptations, and prevent themselves from being the target envious feelings in their partners, and any destructive behavioural consequences. Similarly, classifying an individual's behaviour as fair or unfair can help when forming reputation judgments, and applying other decision rules, such as generous tit-for-tat reciprocity [e.g., @rand2009]. A reputation for being impartial (and fair) is likewise rewarded by being preferred as a cooperation partner [@shaw2012]. -->
 
 <!-- partiality aversion -->
 
-Beyond simple pairs of interacting individuals, fairness has also been argued to be a linchpin for fostering sustainable cooperative strategies, and the development of large-scale societies [@henrich2010]. Some of the most common explanations for cooperative behaviours in humans, such as reciprocity (help those who have helped you) and kin support (help your family) fall short of explaining the full scope of human cooperation. Even early human societies were characterized by a low proportion of genetic relations, and a high degree of intergroup migration. Especially with increasing group size, reciprocity and kin support would not provide a sufficient reason to cooperate with someone you do not know, and is not related to you by blood. While preferred cooperative partners might not always be available, reputations are comparatively persistent, allowing for individuals to selectively cooperate with those known for fair dealing. Having a shared idea of how a person should behave (i.e., common fairness norms) has proved to be a potent force in coordinating large groups of otherwise unrelated individuals towards a shared purpose. In the context of inequality, a distribution's adherence to fairness norms can help individuals to decide whether a disparity should be tolerated, and whether some type of corrective action can be expected.
+<!-- Beyond simple pairs of interacting individuals, fairness has also been argued to be a linchpin for fostering sustainable cooperative strategies, and the development of large-scale societies [@henrich2010]. Some of the most common explanations for cooperative behaviours in humans, such as reciprocity (help those who have helped you) and kin support (help your family) fall short of explaining the full scope of human cooperation. Even early human societies were characterized by a low proportion of genetic relations, and a high degree of intergroup migration. Especially with increasing group size, reciprocity and kin support would not provide a sufficient reason to cooperate with someone you do not know, and is not related to you by blood. While preferred cooperative partners might not always be available, reputations are comparatively persistent, allowing for individuals to selectively cooperate with those known for fair dealing. Having a shared idea of how a person should behave (i.e., common fairness norms) has proved to be a potent force in coordinating large groups of otherwise unrelated individuals towards a shared purpose. In the context of inequality, a distribution's adherence to fairness norms can help individuals to decide whether a disparity should be tolerated, and whether some type of corrective action can be expected. -->
 
 
 

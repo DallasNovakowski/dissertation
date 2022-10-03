@@ -802,7 +802,7 @@ n = 271 targeted for analysis, n = 301 collected
 Using r package pwr, power analysis for one-tailed paired t-test, d=.2,
 power = .95
 
-`pwr.t.test(d=.2,power=.95,sig.level=.05, type="paired",alternative="greater")`
+> `pwr.t.test(d=.2,power=.95,sig.level=.05, type="paired",alternative="greater")`
 
 ##### Stopping rule.
 
@@ -848,10 +848,9 @@ Statistical models
 - `m_mixed_med2 <- lme4::lmer(likely_envy_cent ~ inequality + ( 1 | participant_code ), data = ineq_data_long)`
 
 
+> - `m_mixed_total <- lme4::lmer(security_consumed ~ inequality + likely_envy_cent + ( 1 | \n participant_code), data = ineq_data_long)`
 
-- `m_mixed_total <- lme4::lmer(security_consumed ~ inequality + likely_envy_cent + ( 1 | \n participant_code), data = ineq_data_long)`
-
-- `m_mixed_med_full <- mediation::mediate(m_mixed_med2, m_mixed_med_total,    sims = 5000, treat="inequality", mediator="likely_envy_cent")`
+> - `m_mixed_med_full <- mediation::mediate(m_mixed_med2, m_mixed_med_total,    sims = 5000, treat="inequality", mediator="likely_envy_cent")`
 
 ##### Transformations. 
 

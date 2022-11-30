@@ -13,22 +13,215 @@ editor_options:
 
 # Supplementary materials
 
+
+
 <style>
-.noindent div {
- text-indent: 0em;
-} 
+p {
+  text-indent: 0em;
+}
 </style>
 
+\parindent0pt
 
-All procedures for this project have been approved by the University of Calgary Conjoint Faculties Research Ethics Board (REB 20-1860). For the experimental studies, informed consent will be obtained for all participants, who, unless otherwise noted, will be compensated at a rate of \$12.48 CAD/hour. For multilevel analyses, the datasets are archival and publicly-available. As such, ethics approval and informed consent was obtained, and compensation disbursed, by the original researchers.
+
+All procedures for this project have been approved by the University of Calgary Conjoint Faculties Research Ethics Board (REB 20-1860). For the experimental studies, informed consent was be obtained for all participants, who, unless otherwise noted, were be compensated at a rate of \$12.48 CAD/hour. For multilevel analyses, the datasets are archival and publicly-available. As such, ethics approval and informed consent was obtained, and compensation disbursed, by the original researchers.
+
+
+
+```{r dis-design}
+
+#First design table ____________________________________
+
+design_columns <- c("Question",	"Hypothesis",	"Sampling plan", "Analysis Plan"
+                    # ,	"Interpretation given to different outcomes"
+                    )
+
+h3_min1 <- "+ inequality\\*visibility interaction"
+
+h3.2m2 <-"pc: inequality/visible > other conds."
+
+
+h4_min1 <- "Positive effect of nation gini on security consumption"
+
+h2_min_1 <- "Negative effect of merit (between unequal conditions)"
+
+Question <- c("Does inequality increase security consumption?",
+              "Does envy anticipation mediate the effect of inequality on security consumption?",
+              "Does deservingness reduce inequality's effect on security consumption?", 
+              "Does inequality only impact security consumption when incomes are visible?", 
+              "Is country-level inequality associated with individual-level security consumption?")
+Hypothesis <- c(paste("\\textbf{H1)}",h1_min),
+                paste("\\textbf{H2)}", hyp2_min1),
+                paste("\\textbf{H3)} ",h2_min_1,". ",h2.2m1,sep=""), 
+                paste("\\textbf{H4)} ",h3_min1,". ", h3.2m2,sep=""), 
+                paste("\\textbf{H5)}",h4_min1))
+Sampling <- c(paste("Study 1a; n = ",format(round(cell_n2b2w_f1156_5*2,0),big.mark = ",", scientific = FALSE)," crowdsourced. Power: cohen's f = ", round(security_exact2b2w_f1156_5$main_results$cohen_f[1],2),". Study 1b: n = 279. Study 1c: n= 633. Exclusion: missing data, failed atn/comp checks", sep = ""),
+              "Study 1a, 1b, \\& 1c, same samples as above",
+              paste("Study 2a; n = ",format(cell_n_2b2b_f01*4,big.mark = ",", scientific = FALSE), "crowdsourced. Power: cohen's f = .1. Exclusion < 3 sliders; missing data, failed atn/comp checks"), 
+              paste("Study 2b; n = ",format(cell_n_2b2b_f01*4,big.mark = ",", scientific = FALSE), "crowdsourced, following from power analysis in Study 2a. Exclusion: missing data, failed atn/comp checks"), 
+              paste("Study 3; k = 32 countries, and n = ", format(nrow(iv_2005),big.mark = ",", scientific = FALSE), "participants; Exclusion: missing data"))
+Analysis<- c("S1a: 2b*2w ANOVA and estimated marginal means, r package {{afex}}. S1b: within-subjects t-tests, S1c: between-subjects ANCOVA",
+             "Mediation analysis; r package {{mediate}}",
+             "3b ANCOVA and Pairwise comparisons, r package {{afex}} \\& emmeans",
+             "2b*2b ANCOVA and Pairwise comparisons, r package {{afex}} \\& emmeans", 
+             "Multi-level logistic regression model, r package {{lme4}}")
+Interpretation <- c("Task complexity (low comprehension of partner's income)",
+                    "Low comprehension",
+                    "1) Task complexity, 2)increased desire to keep funds (and thus purchase security)",
+                    "Task complexity (comprehending group membership, and allocation process)", 
+                    "Country is too broad (stronger effects at province, city, neighborhood)")
+
+dis_design <- data.frame(Question, Hypothesis, Sampling, Analysis)
+```
+
+```{r design-table}
+kd <- knitr::kable(dis_design, caption = 'Design table (pre-registered)', format = "latex",
+                   # booktabs = TRUE,
+                   escape = F,
+                   col.names = design_columns) %>%
+  kable_styling(full_width = T) %>%
+  # column_spec(1,width = "1.7in") %>%
+  # column_spec(2,width = "1.3in") %>%
+  # column_spec(3,width = "1.7in") %>%
+  # column_spec(4,width = "1.3in") %>%
+  # column_spec(5,width = "1.7in") %>%
+  kableExtra::landscape()
+
+kd
+```
+
 
 ## Study 1 {#s1-ap}
+
+### The Security Game
+
+As a more formal summary of the procedure: After being assigned roles and receiving initial incomes ($x_D$ = Defender's income, $x_A$ = Attacker's income), the Defender will be told that the Attacker will have the option to attempt to steal (*q*: 1 = steal, 0 = do not steal) amount $s$ (0 \< $s$ $\le$ $x_D$) from the Defender with a base probability of $p_g$ (*g* : successful thievery, 0 \< $p_g$ \< 1). However, if the Attacker has an unsuccessful thievery attempt (with probability = 1 -- $p_g$), they will lose the amount *k* (0 \< *k* $\le$ $x_A$). After learning this information, the Defender will have the option to purchase *z* units of security; each unit of security costs *m* (0 \< *m*), and reduces the probability of a successful thievery attempt by $p_z$ (0 \< $p_z$ \< 1). See Table \@ref(tab:gloss-table) for glossary of terms for this game. The expected value functions for the Defender (Equation \eqref{eq:defender-ev}) and Attacker (Equation \eqref{eq:attacker-ev}) can be expressed as:
+
+```{=tex}
+\begin{equation}
+\begin{aligned}
+  \pi_D &= x_D - zm - q\{s(p_g - zp_z)\}
+  \label{eq:defender-ev}
+\end{aligned}
+\end{equation}
+```
+```{=tex}
+\begin{equation}
+\begin{aligned}
+  \pi_A &= x_A + q\{s(p_g - zp_z) -k [1 - (p_g - zp_z)]\}
+  \label{eq:attacker-ev}
+\end{aligned}
+\end{equation}
+```
+\renewcommand{\arraystretch}{2}
+
+```{r gloss-table}
+gloss_kab <- knitr::kable(my_glossary, caption = 'Glossary of terms in the security game', format = "latex",align = "clcc"
+                          ,escape=FALSE
+                   # booktabs = TRUE, 
+                   # col.names = design_columns
+                   ) %>%
+  kable_styling(full_width = FALSE) %>%
+  column_spec(1,width = ".6in") %>%
+  column_spec(2,width = "1.7in") %>%
+  column_spec(3,width = "1.2in") %>%
+  column_spec(4,width = "1.7in")
+
+gloss_kab
+```
+
+\renewcommand{\arraystretch}{1}
+
+<!-- \clearpage -->
+
+In written terms, a payoff-maximizing Attacker will seek to maximize their payoff through the combination of their initial endowment and the expected payoff of their decision to attempt an attack. Their ability to profit from an attack is determined by the base probability of attacks being successful, which may be reduced by the amount of security purchased by the Defender. Likewise, Attackers lose from unsuccessful attempts. Intuitively, a payoff-maximizing Attacker will choose to attempt an attack when the attack's expected value exceeds the payoff of not attacking.
+
+Incentive compatibility
+
+Attacker
+
+Max. $\pi_A$
+
+With respect to z, $p_q$
+
+```{=tex}
+\begin{equation}
+\begin{aligned}
+  {{\rm{\pi }}_{\rm{A}}} = {\rm{\;}}{x_A} + E\left[ {{y_A}} \right]
+  \label{eq:att-incent}
+\end{aligned}
+\end{equation}
+```
+```{=tex}
+\begin{equation}
+\begin{aligned}
+  % \pi_A = x_A + E[y_A]\\
+  {y_A} =    \left\{ {\begin{array}{*{20}{c}}
+  { + S,\;\;\left( {{p_g} - z{p_z}} \right){p_q}}\\
+  { - K,\;\;1 - \left( {{p_g} - z{p_z}} \right){p_q}}\\
+  {0,\;\;\;\;\;\;\;\;\;(1 - {p_q})}
+  \end{array}} \right.
+  \label{eq:att-incent-array}
+\end{aligned}
+\end{equation}
+```
+```{=tex}
+\begin{equation}
+\begin{aligned}
+  E\left[ {{y_A}} \right]\; \ge 0 \Rightarrow
+  \label{eq:att-incent-arrow}
+\end{aligned}
+\end{equation}
+```
+```{=tex}
+\begin{equation}
+\begin{aligned}
+  z \ge 0,\;\;m \ge 0,\;\;zm \le {x_D}
+  \label{eq:att-bounds}
+\end{aligned}
+\end{equation}
+```
+```{=tex}
+\begin{equation}
+\begin{aligned}
+  max.\;\;\;\;{x_A} + \left( {{p_q}*E[{y_A}\;|\;q = 1]} \right) + \left( {1 - {p_q}} \right)E[{y_A}\;|\;q = 0])
+  \label{eq:att-max}
+\end{aligned}
+\end{equation}
+```
+\linebreak
+
+Constrained by their budget, an expected value-maximizing Defender then seeks the optimal combination of their initial endowment, the price spent on security, and the expected loss of being targeted by the Attacker. As such, expensive security products need to be accompanied with substantial reductions in an attack's success rate or benefit/cost ratio in order to be worth the investment.
+
+Defender Max. $\pi_D$ With respect to $m$, $p_q$, $p_z$
+
+```{=tex}
+\begin{equation}
+\begin{aligned}
+    {{\rm{\pi }}_{\rm{D}}} = {\rm{\;}}{x_D} -z{m} - E\left[ {{y_D}} \right]
+  \label{eq:def-incent}
+\end{aligned}
+\end{equation}
+```
+```{=tex}
+\begin{equation}
+\begin{aligned}
+  {y_D} = \left\{ {\begin{array}{*{20}{c}}
+{S,\;\;\left( {{p_g} - z{p_z}} \right){p_q}}\\
+{0,\;\;1 - \left( {{p_g} - z{p_z}} \right){p_q} + \;(1 - {p_q})}
+\end{array}} \right.
+  \label{eq:def-incent-array}
+\end{aligned}
+\end{equation}
+```
+<!-- Notably, the expected cost of being attacked is weighted by the probability of the attacker making the attempt (*p~q~* Equation @ref(eq:att-max)). A Defender is generally worse off if they consume some security, but not enough to make an attack unprofitable. This formulation thus emphasizes (and assumes) that security measures can be a credible deterrent, where security consumption reduces the Attackers' likelihood of successfully stealing. Given that the Attacker's decision to attempt a risky theft should be heavily influenced by the effort's probability of success, visible security consumption reduces the probability of an attack being attempted. -->
+
 
 ## Pretest
 
 A within-subjects pretest with an initial sample of `r pretest_initial_n` crowdsourced (Prolific) participants was conducted to calibrate the price of security (\$0.02 vs. \$0.04) and the baseline likelihood of successful thefts (50%, 60%, 75%). The pretest had two attention checks and implemented a relaxed comprehension check (selecting one of two options out of five; "Deciding whether to try stealing from my partner," or "Deciding whether to purchase a security product"), as only `r round(screened_n_min/pretest_initial_n*100,0)`% of participants correctly answered a single-item comprehension check, leaving n = `r screened_n` retained participants. As described in the procedure above, participants were told they would be paired with a hypothetical partner, and each would be given \$2. Then, participants were told that this partner would have the opportunity to steal \$1 from them, at a baseline chance of success (50%, 60%, 75%), with unsuccessful thefts instead making the partner lose \$1. Then, participants were asked to indicate how much of a security product they would like to purchase, with each unit of the product costing money (\$.02, or \$.04), and reducing the likelihood of a successful theft by 1%.
 
-A 2w\*3w within-subjects ANOVA failed to detect significant effects of baseline likelihood of successful thefts, `r anova_extract(pretest_anova,"prob", is.first=TRUE,test.stat=TRUE)`, nor security price, `r anova_extract(pretest_anova,"cost")`; see Figure \@ref(fig:pretest-splitplot) and Table \@ref(tab:pretest-anova)). Study 1a used a baseline 50% chance of successful thefts, and each unit of security costing \$0.02 (or equivalent proportional to stake size). This condition seemed to produce the lowest means and the least skewed data, at `r round(base_skew,2)` (vs. skew = `r round(skew_groups["75_02"],2)` when probability is 75% and price \$0.02).
+|    A 2w\*3w within-subjects ANOVA failed to detect significant effects of baseline likelihood of successful thefts, `r anova_extract(pretest_anova,"prob", is.first=TRUE,test.stat=TRUE)`, nor security price, `r anova_extract(pretest_anova,"cost")`; see Figure \@ref(fig:pretest-splitplot) and Table \@ref(tab:pretest-anova)). Study 1a used a baseline 50% chance of successful thefts, and each unit of security costing \$0.02 (or equivalent proportional to stake size). This condition seemed to produce the lowest means and the least skewed data, at `r round(base_skew,2)` (vs. skew = `r round(skew_groups["75_02"],2)` when probability is 75% and price \$0.02).
 
 (ref:pretest-splitplot) Study 1 pretest, effect of security cost and starting theft likelihood on security spending.
 
@@ -58,6 +251,9 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 
 ```{r pretest-anova, eval = TRUE, echo=FALSE}
 pretest_anova1 <- round(data.frame(pretest_anova),2)
+
+pretest_anova1[c("pes", "pes_ci95_lo", "pes_ci95_hi")] <- as.data.frame(sapply(pretest_anova1[,c("pes", "pes_ci95_lo", "pes_ci95_hi")], function(x) gsub('^(-)?0[.]', '\\1.', x)))
+
 
 pretest_anova1$ci95 <- as.character(paste("[", pretest_anova1$ci95_lo, ", ", pretest_anova1$ci95_hi,"]",  sep=""))
 
@@ -108,7 +304,7 @@ knitr::kable(pretest_anova1,
 
 ### Methodological notes
 
-Given the bounded nature of the minimum and maximum values for the variables in the experimental designs, outliers are considered legitimate values and will not be deleted. The pre-registered mediation plan was mis-specified. As such, the pre-registered mediation plan can be FOUND IN THE APPENDIX ?? , and the following specification is an adjustment: 1a MEDIATION HERE??
+Given the bounded nature of the minimum and maximum values for the variables in the experimental designs, outliers are considered legitimate values and will not be deleted. The pre-registered mediation plan was mis-specified. 
 
 ### Data exclusion
 
@@ -206,15 +402,22 @@ kable_styling(latex_options = c(
 #### Study 1a pre-registration
 
 ##### Hypotheses.
+
 Hypotheses will be tested in each of 2 studies: 1a and 1b
+
+\  
 
 Q: *Does inequality increase security consumption?* H1) economic inequality increases security consumption, versus H1~null~) no significant effect of inequality. H1): Economic inequality increases security consumption, or in terms of the model: H1): In the model `ineq_anova_mixed`, security spending will be larger when income inequality is present (1) vs. absent (0).
 
+\  
+
 Q: *Does envy anticipation mediate the effect of inequality on security consumption?* H2) The indirect effect (ACME) will be significantly different from 0, versus H2~null~) no significant indirect effect through anticipated partner envy from inequality to security consumption.
+
 
 H2): Economic inequality's effect on security consumption is mediated by the expectation of peers' envy, or in terms of the model, H2): The indirect effect (ACME) will be significantly different from 0. 
 
 - H2.1), mediation step 1: In the model m_mixed_med1, the coefficient for income inequality will have a significant positive effect on participants' belief that their partner is envious. 
+
 
 - H2.2), mediation step 2: In the model m_mixed_med2, participants' belief that their partner is envious will have a significantly positive effect on security spending. 
 
@@ -226,10 +429,15 @@ Experiment - A researcher randomly assigns treatments to study subjects, this in
 ##### Blinding. 
 For studies that involve human subjects, they will not know the treatment group to which they have been assigned.
 
+\  
+
 **Is there any additional blinding in this study?**. No response
 
 ##### Study design. 
+
 Participants will be asked to consider their participation in a game with another participant, where they will each be assigned to different roles (Blue or Yellow), and endowed with money. Participants will always be assigned to the "Yellow" role, in which their partner will choose whether to try stealing from them, beforehand, the participant has the option to spend money on a security product that reduces the likelihoodof a theft being successful. Random assignment and random ordering for between and within conditions, respectively.
+
+\hfill\break
 
 Example of condition:
 
@@ -292,6 +500,8 @@ H1) Mixed anova conducted using r package afex
 - 1b) `ineq_anova_mixed <- aov_ez(id='pnum', dv='security_spending', data=ineq_data_long, within = c('prob'), between = c( 'inequality') )`
 
 *for study 1b substitute 'stake_cond' for 'prob', and 'security_consumed', for 'security spending* 
+
+\  
 
 H2) mixed mediation conducted using r packages lme4 and mediate 
 
@@ -600,9 +810,9 @@ kable_styling(latex_options = c("striped", "hold_position"))
 
 Why would the effect of inequality on security consumption go from nonsignificant to significant, but opposite sign, when controlling for perceived partner envy?
 
-SUPPRESSION EFFECT ??
+<!-- SUPPRESSION EFFECT ?? -->
 
-MODERATED MEDIATION NECESSARY?
+<!-- MODERATED MEDIATION NECESSARY? -->
 
 ### Study 1b pilot
 
@@ -635,7 +845,7 @@ kable_styling(latex_options = c(
 s1bp_desc
 ```
 
-In order to examine the presence of effects on an exploratory basis, a pilot study was conducted without a pre-registered design. Recruiting from Prolific, this pilot study collected `r s1b_pilot_n_collected` participants, with n = `r s1b_pilot_n_attended` being retained for analysis (`r round(s1bp_female*100,2)`% female). For this pilot data, significant positive effects of inequality were found for perceived partner envy, `r report_tidy_t(s1bp_envy_t_tidy, test.stat=TRUE,ci.lab = TRUE)`, and perceived likelihood of partner attacking, `r report_tidy_t(s1bp_likelihood_t_tidy)` (Figure \@ref(fig:s1bp-manip-jitt)). There was also a positive and significant effect of inequality on security spending, `r report_tidy_t(s1bp_sec_t_tidy)` (Figure \@ref(fig:s1bp-spending-jitt)). Likewise, a mediation analysis using 5,000 bootstrapped samples found a significant indirect effect of inequality on security consumption through perceived partner envy, `r med_extract(s1bp_spending_med_full_tidy,"Indirect Effect (ACME)")` (Figure \@ref(fig:s1bp-spending-med-plot)). The pilot data found support for **H1)** and **H2)**.
+In order to examine the presence of effects on an exploratory basis, a pilot study was conducted without using a within-subjects study and with uncertainty in the amounts stolen, the efficacy of security, and the probability of a successful theft. Recruiting from Prolific, this pilot study collected `r s1b_pilot_n_collected` participants, with n = `r s1b_pilot_n_attended` being retained for analysis (`r round(s1bp_female*100,2)`% female). For this pilot data, significant positive effects of inequality were found for perceived partner envy, `r report_tidy_t(s1bp_envy_t_tidy, test.stat=TRUE,ci.lab = TRUE)`, and perceived likelihood of partner attacking, `r report_tidy_t(s1bp_likelihood_t_tidy)` (Figure \@ref(fig:s1bp-manip-jitt)). There was also a positive and significant effect of inequality on security spending, `r report_tidy_t(s1bp_sec_t_tidy)` (Figure \@ref(fig:s1bp-spending-jitt)). Likewise, a mediation analysis using 5,000 bootstrapped samples found a significant indirect effect of inequality on security consumption through perceived partner envy, `r med_extract(s1bp_spending_med_full_tidy,"Indirect Effect (ACME)")` (Figure \@ref(fig:s1bp-spending-med-plot)). The pilot data found support for **H1)** and **H2)**.
 
 (ref:s1bp-spending-jitt) Study 1b pilot, within-subjects effects of inequality on security spending.
 
@@ -716,7 +926,7 @@ kable_styling(latex_options = c(
 ```
 
 
-### Study 1b {#s1b-ap}
+### Study 1b uncertain and within-subjects {#s1b-ap}
 
 
 
@@ -729,7 +939,9 @@ kable_styling(latex_options = c(
 Q: *Does inequality increase security consumption?* H1) In a paired t-test, A) security consumption will be higher in the inequality condition than the equality condition, versus Anull) no significant
 effect of inequality. This positive effect of inequality is also predicted for some manipulation check items: B) perceived inequality C) perceived partner envy D) perceived likelihood of attacking
 
-Q: *Does envy anticipation mediate the effect of inequality on security consumption?* H2) The indirect effect (ACME) will be significantly different from 0, versus H2~null~) no significant indirect effect through perceived partner envy from inequality to security consumption. Design Plan
+Q: *Does envy anticipation mediate the effect of inequality on security consumption?* H2) The indirect effect (ACME) will be significantly different from 0, versus H2~null~) no significant indirect effect through perceived partner envy from inequality to security consumption. 
+
+##### Design Plan
 
 ##### Study type. 
 Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.
@@ -802,7 +1014,7 @@ n = 271 targeted for analysis, n = 301 collected
 Using r package pwr, power analysis for one-tailed paired t-test, d=.2,
 power = .95
 
-> `pwr.t.test(d=.2,power=.95,sig.level=.05, type="paired",alternative="greater")`
+> `pwr::pwr.t.test(d=.2, power=.95, sig.level=.05, type="paired", alternative="greater")`
 
 ##### Stopping rule.
 
@@ -848,7 +1060,7 @@ Statistical models
 - `m_mixed_med2 <- lme4::lmer(likely_envy_cent ~ inequality + ( 1 | participant_code ), data = ineq_data_long)`
 
 
-> - `m_mixed_total <- lme4::lmer(security_consumed ~ inequality + likely_envy_cent + ( 1 | \n participant_code), data = ineq_data_long)`
+> - `m_mixed_total <- lme4::lmer(security_consumed ~ inequality + likely_envy_cent + ( 1 | \hfill\break participant_code), data = ineq_data_long)`
 
 > - `m_mixed_med_full <- mediation::mediate(m_mixed_med2, m_mixed_med_total,    sims = 5000, treat="inequality", mediator="likely_envy_cent")`
 
@@ -897,7 +1109,7 @@ No response
 
 No response
 
-### Study 1c
+### Study 1c real payoffs
 
 **Priming intro**
 
@@ -909,6 +1121,9 @@ No response
 
 ```{r s1c-envy-anova, eval = TRUE, echo=FALSE}
 s1c_envy_anova1 <- round(data.frame(s1c_envy_anova),2)
+
+s1c_envy_anova1[c("pes", "pes_ci95_lo", "pes_ci95_hi")] <- as.data.frame(sapply(s1c_envy_anova1[,c("pes", "pes_ci95_lo", "pes_ci95_hi")], function(x) gsub('^(-)?0[.]', '\\1.', x)))
+
 
 s1c_envy_anova1$ci95 <- as.character(paste("[", s1c_envy_anova1$ci95_lo, ", ", s1c_envy_anova1$ci95_hi,"]",  sep=""))
 
@@ -964,6 +1179,9 @@ kable_styling(latex_options = c(
 
 ```{r s1c-likelihood-anova, eval = TRUE, echo=FALSE}
 s1c_likelihood_anova1 <- round(data.frame(s1c_likelihood_anova),2)
+
+s1c_likelihood_anova1[c("pes", "pes_ci95_lo", "pes_ci95_hi")] <- as.data.frame(sapply(s1c_likelihood_anova1[,c("pes", "pes_ci95_lo", "pes_ci95_hi")], function(x) gsub('^(-)?0[.]', '\\1.', x)))
+
 
 s1c_likelihood_anova1$ci95 <- as.character(paste("[", s1c_likelihood_anova1$ci95_lo, ", ", s1c_likelihood_anova1$ci95_hi,"]",  sep=""))
 
@@ -1022,7 +1240,11 @@ kable_styling(latex_options = c(
 
 ### Study 2a pilot {#s2-ap}
 
-The pilot study replicated the positive main effect of inequality on security spending `r anova_extract(s2ap_spending_anova,"inequality",is.first = TRUE, test.stat = TRUE)`, but no significant merit\*inequality interaction was detected, `r anova_extract(s2ap_spending_anova,"inequality:merit")`. Echoing Study 1a, where inequality increased perceived partner envy but not security consumption, there was a significant merit\*inequality interaction for perceived fairness, `r anova_extract(s2ap_p_fairness_anova,"inequality:merit")`, but this change in fairness doesn't appear to manifest in a merit\*inequality interaction effect on perceived partner envy (`r anova_extract(s2ap_envy_anova,"inequality:merit")`) nor perceived attack likelihood (`r anova_extract(s2ap_likelihood_anova,"inequality:merit")`). What is concerning though, is that the effect of inequality on perceived likelihood of attack looks small (and perhaps non-significant). In particular, the likelihood of attack scores seem high in the equality condition. Are they higher than in the previous studies?
+Pilot data collected using a 2b\*2b design (equality vs. merit; Table \@ref(tab:s2ap-security-anova)) replicated Chapter One's main effect of inequality on security spending, `r anova_extract(s2ap_spending_anova,"inequality",is.first = TRUE)`, but indicated no significant inequality\*merit interaction, `r anova_extract(s2ap_spending_anova,"inequality:merit",is.first = TRUE)`. Pairwise comparisons indicated no difference in security spending between an equal/random condition versus an equal/merit condition, *t*(198) = `r round(as.data.frame(s2ap_spending_emmeans1$contrasts)[2,"t.ratio"],2)`, *p* = `r round(as.data.frame(s2ap_spending_emmeans1$contrasts)[2,"p.value"],2)`. Given the lack of empirical or theoretical rationale for a fully crossed-over design, Study 2a was conducted in a three-condition between-subjects design (equal/random vs. unequal/merit vs. unequal random), to examine the effects of income distribution on security spending.
+
+Echoing Study 1a, where inequality increased perceived partner envy but not security consumption, there was a significant merit\*inequality interaction for perceived fairness, `r anova_extract(s2ap_p_fairness_anova,"inequality:merit")`, but this change in fairness doesn't appear to manifest in a merit\*inequality interaction effect on perceived partner envy (`r anova_extract(s2ap_envy_anova,"inequality:merit")`) nor perceived attack likelihood (`r anova_extract(s2ap_likelihood_anova,"inequality:merit")`). 
+
+<!-- What is concerning though, is that the effect of inequality on perceived likelihood of attack looks small (and perhaps non-significant). In particular, the likelihood of attack scores seem high in the equality condition. Are they higher than in the previous studies? -->
 
 
 
@@ -1032,11 +1254,11 @@ The pilot study replicated the positive main effect of inequality on security sp
 \centering
 \caption{(ref:s2ap-spending-fade) \label{fig:s2ap-spending-fade}}
 ```
-```{r s2ap-spending-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='60%'}
+```{r s2ap-spending-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='80%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2ap_security_fadecloud.png")
 ```
 ```{=latex}
-\caption*{\textit{Notes:} Dots shows means (95\% CI). Shaded part of density plot shows inner 50\%.}
+%\caption*{\textit{Notes:} Dots shows means (95\% CI). Shaded part of density plot shows inner 50\%.}
 \end{figure}
 ```
 
@@ -1049,7 +1271,7 @@ s2ap_spending_anova1$Pr..F. <- report_pval(s2ap_spending_anova1$Pr..F.)
 numeric_columns <- sapply(s2ap_spending_anova1, mode) == 'numeric'
 s2ap_spending_anova1[numeric_columns] <- sapply(s2ap_spending_anova1[numeric_columns], report_float)
 
-
+s2ap_spending_anova1[c("pes", "pes_ci95_lo", "pes_ci95_hi")] <- as.data.frame(sapply(s2ap_spending_anova1[,c("pes", "pes_ci95_lo", "pes_ci95_hi")], function(x) gsub('^(-)?0[.]', '\\1.', x)))
 
 s2ap_spending_anova1$pes_ci95 <- as.character(paste("[", s2ap_spending_anova1$pes_ci95_lo, ", ", s2ap_spending_anova1$pes_ci95_hi,"]",  sep=""))
 
@@ -1265,7 +1487,7 @@ kable_styling(latex_options = c(
 
 
 
-### Study 2a {#s2-a}
+### Study 2a merit {#s2-a}
 
 
 
@@ -1340,6 +1562,140 @@ kable_styling(latex_options = c(
   "hold_position"))
 ```
 
+### Study 2 unfairness pilot {#s2-unfair}
+
+One poorly-powered pilot study (n = `r s2bp1_n_screened`, three between-subjects conditions) found no significant difference in security spending when unequal incomes were distributed randomly versus when they were undeserved (i.e., participants moving fewer sliders in the slider task, but getting paid more), `r emmeans_contrast_extract(df=s2bp1_spending_emmeans, comp_name = "unequal_random - unequal_unmerit", reverse = TRUE)`. It seems that regardless of whether incomes are allocated randomly, according to merit, or unfairly, fairness has little impact in attenuating the effect of inequality on security spending.
+
+(ref:s2-unfair-spending-fade) Pilot test, effects of unfairness/inequality on security spending.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s2-unfair-spending-fade) \label{fig:s2-unfair-spending-fade}}
+```
+```{r s2-unfair-spending-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='70%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2bp1_security_fadecloud.png")
+```
+```{=latex}
+\end{figure}
+```
+
+
+
+### Study 2b income visibility
+
+(ref:s2b2-payoff-motiv-fade) Study 2b, effects of visibility/inequality on payoff motivations.
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\caption{(ref:s2b2-payoff-motiv-fade) \label{fig:s2b2-payoff-motiv-fade}}
+```
+```{r s2b2-payoff_motiv-fade, eval = TRUE, include=TRUE, echo=FALSE, out.width='70%'}
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s2b2_payoff_motiv_fadecloud.png")
+```
+```{=latex}
+\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+\end{figure}
+```
+
+```{r s2b2-payoff-motiv-anova, eval = TRUE, echo=FALSE}
+s2b2_payoff_motiv_anova1 <- data.frame(s2b2_payoff_motiv_anova)
+
+s2b2_payoff_motiv_anova1$Pr..F. <- report_pval(s2b2_payoff_motiv_anova1$Pr..F.)
+
+numeric_columns <- sapply(s2b2_payoff_motiv_anova1, mode) == 'numeric'
+
+s2b2_payoff_motiv_anova1[numeric_columns] <- sapply(s2b2_payoff_motiv_anova1[numeric_columns], report_float)
+
+s2b2_payoff_motiv_anova1[c("pes", "pes_ci95_lo", "pes_ci95_hi")] <- as.data.frame(sapply(s2b2_payoff_motiv_anova1[,c("pes", "pes_ci95_lo", "pes_ci95_hi")], function(x) gsub('^(-)?0[.]', '\\1.', x)))
+
+s2b2_payoff_motiv_anova1$pes_ci95 <- as.character(paste("[", s2b2_payoff_motiv_anova1$pes_ci95_lo, ", ", s2b2_payoff_motiv_anova1$pes_ci95_hi,"]",  sep=""))
+
+
+s2b2_payoff_motiv_anova1$ci95 <- as.character(paste("[", s2b2_payoff_motiv_anova1$ci95_lo, ", ", s2b2_payoff_motiv_anova1$ci95_hi,"]",  sep=""))
+
+s2b2_payoff_motiv_anova1$df <- as.character(paste(round(as.numeric(s2b2_payoff_motiv_anova1$NumDF),2), ", ", round(as.numeric(s2b2_payoff_motiv_anova1$DenDF),2),  sep=""))
+  
+
+s2b2_payoff_motiv_anova1 <- s2b2_payoff_motiv_anova1 %>% relocate(df, .before = F) %>% 
+  relocate(Pr..F., .before = pes) %>% 
+  relocate(cohens_f, .before = pes)
+
+s2b2_payoff_motiv_anova1 <- s2b2_payoff_motiv_anova1[,!names(s2b2_payoff_motiv_anova1) %in% 
+                                     c("ci95_lo","ci95_hi", "MSE", "ci95", #"pes", 
+                                       "pes_ci95_lo", "pes_ci95_hi","NumDF","DenDF")]
+
+# s2b2_payoff_motiv_anova1$Pr..F. <- report_pval(s2b2_payoff_motiv_anova1$Pr..F.)
+
+
+
+
+s2b2_payoff_motiv_anova1 <- s2b2_payoff_motiv_anova1 %>% 
+  dplyr::rename(
+    # "b" = estimate,
+    "95\\% CI" = pes_ci95,
+    "\\textit{F}" = F,
+    "\\textit{p}" = Pr..F.,
+  "Cohen's \\textit{f}"  = cohens_f, 
+  "$\\eta_p^2$" = pes
+    )
+
+row.names(s2b2_payoff_motiv_anova1) <- firstup(row.names(s2b2_payoff_motiv_anova1))
+
+row.names(s2b2_payoff_motiv_anova1)[row.names(s2b2_payoff_motiv_anova1) == "Stake_cond"] <- "Stake size"
+
+row.names(s2b2_payoff_motiv_anova1)[row.names(s2b2_payoff_motiv_anova1) == "Inequality:stake_cond"] <- "Ineq*Stake"
+
+s2b2_payoff_motiv_anova1 <- subset(s2b2_payoff_motiv_anova1, select = -c(df))
+
+
+row.names(s2b2_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2b2_payoff_motiv_anova1),
+    pattern = ":",
+    replacement = "*",
+    fixed = TRUE
+  )
+
+row.names(s2b2_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2b2_payoff_motiv_anova1),
+    pattern = "Inequality_merit",
+    replacement = "Money distribution",
+    fixed = TRUE
+  )
+
+row.names(s2b2_payoff_motiv_anova1) <-
+  gsub(
+    x = row.names(s2b2_payoff_motiv_anova1),
+    pattern = "Primer_security_spending_cent",
+    replacement = "Intro scen. spending",
+    fixed = TRUE
+  )
+
+
+# s2b2_payoff_motiv_anova1 <- s2b2_payoff_motiv_anova1 %>% relocate(p, .before = "$\\eta_p^2$")
+
+knitr::kable(s2b2_payoff_motiv_anova1,
+             format='latex',
+             escape = F,
+             align = "ccccccc",
+             caption = "Study 2b, ANCOVA; inequality/merit on payoff motivations.",
+             booktabs = TRUE,
+             linesep = ""
+             ) %>%
+kable_styling(latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+  kableExtra::footnote(general = paste0(
+    "df = ",s2b2_payoff_motiv_anova[1,"NumDF"], ", ", s2b2_payoff_motiv_anova[1,"DenDF"],
+    ", MSE = ",round(s2b2_payoff_motiv_anova[1,"MSE"],2)),
+                       footnote_as_chunk=T
+                       )
+```
+
+
 ## Study 3 {#s3-ap}
 
 ### Study 3 pre-registration
@@ -1357,8 +1713,8 @@ H4) In a multilevel regression, Nation-level income inequality will be positivel
 
 Combination of three archival datasets: 
 
-1) the ICVS [International CrimeVictimization Survey; for security and individual-level measures; Van
-Kesteren(2010)]
+1) the ICVS (International CrimeVictimization Survey; for security and individual-level measures; Van
+Kesteren, 2010)
 
 2)  Standardized World Income Inequality Database (SWIID, version 9; for
     nation inequality; Solt, 2020)
@@ -1394,7 +1750,9 @@ Together, the SWIID is made up of "15,730 Gini coefficients from 2,984 country-y
 
 <!-- **Codebook** -->
 
-See attached for ICVS codebook??, <https://fsolt.org/swiid/> for detailed SWIID information, and
+\  
+
+See ICVS codebook, <https://fsolt.org/swiid/> for detailed SWIID information, and
 <https://www.rug.nl/ggdc/productivity/pwt/?lang=en> for PWT information
 
 
@@ -1408,7 +1766,11 @@ NA
 
 Outcome: Security measures (summed following binary items: burglar alarm, special door locks, window grills, high perimeter fence, and presence of a caretaker who provides security) - variable will be winzorized for analysis (robustness check conducted for unwinzorized variant), In event of single logistic regression, variable will be coded as 0: no consumption, and 1: 1 or more
 
+\  
+
 Predictors: Gini index (from SWIID - disposable income)
+
+\  
 
 Covariates: Age (5-year bins): 16-70+ Gender (male/female) Employment status (employed (army/working)/unemployed("looking for work," "keeping home," "retired," "disabled," "still in school," or "other.")) Individual victimization experiences (summed binary items: car thefts, bicycle thefts, burglaries, attempted burglaries, robberies, and thefts) Nation-level average of victimization experiences (from above; mean-centered at nation-level) Country GDP per capita (from PWT - real expenditure side; scaled as z-score). Gini and GDP values will be averaged across respective study sweep periods and mean-centered at nation-level.
 
@@ -1440,6 +1802,8 @@ NA
 
 DN: The data has been accessed, cleaned, and explored, with some sample analyses conducted on a similarly-constructed (but theoretically distinct) dependent variable - victimization experiences. DN has also read published research and codebooks on the datasets. Nothing pertaining to security measures
 
+\  
+
 MM: Has seen summary reports of data Analyses
 
 #### Statistical models.
@@ -1467,6 +1831,8 @@ p \< .05, one-tailed b, 95% confidence intervals.
 
 Pilot analyses did indicate possible convergence issues when weights are included. As such, the following contingency plan will be followed during analysis. 1) Attempt weighted ordinal regression, if the weighted ordinal model fails to converge, 2) the model will be conducted without frequency weights, elsewise, 3) a weighted mixed logistic regresssion will be conducted, then 4) an unweighted mixed logistic regression will be attempted.
 
+\  
+
 For the ordinal regression, proportional odds tests do not exist yet for mixed models. As such, separate logistic regressions will be conducted for the analyses for each incremental step in the dependent variable (e.g., 0 vs. 1, 1 vs. 2, 2 vs. 3). The regression coefficients for inequality will then be compared to one another using z-tests. If there is a significant difference amongst the predictors (suggesting a violation of the proportional odds assumption), then the separate logistic regressions will be presented as the primary analysis instead.
 
 #### Reliability and Robustness testing.
@@ -1481,6 +1847,8 @@ The focal analysis will be compared with the following models, ordinal
 > `ordered(security_winz) ~ gini_1999_03_cent + gdppc_1999_03_cent + victim_nation_cent + num_victim_5yr + male + age_num + house + other_house + shanty + partnered + (1|country)`
 
 In addition to the larger number of countries, this 1999-2003 sweep also has sufficient data on respondent housing to include housing variables in the model (apartment dwelling as reference), which is important because housing is a notable covariate/confounder in the 2004-06 sweep (the dependent measure is predominantly about household measures of security).
+
+\  
 
 In order to test robustness with the same variables, the 3) k = 32 data and the 4) k = 41 data will be run with the following reduced model (excluding partnered, employed, and housing)
 
@@ -1503,6 +1871,8 @@ Model changes such as interactions and exponents may be added to improve model f
 
 An ordinal regression carries an assumption of proportional odds: that the predictors' effects are consistent across the different levels of the dependent variable. Currently, we are not aware of any available methods for testing the proportional odds assumption for a mixed ordinal regression; existing methods only serve as a test on single-level data. As such, we will attempt to test this assumption using multiple logistic regressions, conducted for each rank threshold (e.g., 0\|1, 1\|2, 2\|3). Since inequality is the major predictor of interest, only this coefficient will be compared across logistic models, which will help attenuate the impact of Type I errors. The proportional odds assumption will be deemed as violated if the regression coefficients for inequality are significantly different across models. If there is a significant difference amongst the predictors (suggesting a violation of the proportional odds assumption), then the separate logistic regressions will be presented as the primary analysis instead.
 
+\  
+
 Main analyses will be conducted using the r package ordinal, with the following mixed model specification:
 
 > `ordered(security_winz) ~ gini_2004_6_cent + gdppc_2004_6_scale + victim_nation_cent + num_victim_5yr + age_cent + employed + male + (1 | country)`
@@ -1521,6 +1891,8 @@ In order to test robustness with the same variables, the 3) k = 32 data and the 
 
 A sample linear model revealed nonproblematic levels of multicollinearity, maximum VIF of `r round(max(sec_lmer1_iv_vif),2)`
 
+\  
+
 ```{r vif-values, eval =F}
 c(sec_lmer1_iv_vif,sec_lmer1_poly_int_vif, sec_lmer1_int_vif,sec_lmer1_poly_vif)
 ```
@@ -1533,8 +1905,7 @@ For all of these models, analyses will be repeated with winzorized level-2 varia
 8)  small k = 32 model
 9)  small k = 41 model
 
-For values within reasonable scope of response variables, outliers are considered legitimate values and will not be deleted. Outliers will be defined using a sample linear model for level-2 variables, and observations flagged as outliers if their residuals have a cook's distance value of \> 4/n will have those predictor variables winzorized (as they are expected to be legitimate values). As a robustness check, analyses will be repeated with influential observations being winzorized at the dependent variable to the 5th and 95th percentile values. Influential observations will be flagged as having model residuals'
-cook's distance values exceeding the threshold 4/n; where n = \# of
+For values within reasonable scope of response variables, outliers are considered legitimate values and will not be deleted. Outliers will be defined using a sample linear model for level-2 variables, and observations flagged as outliers if their residuals have a cook's distance value of \> 4/n will have those predictor variables winzorized (as they are expected to be legitimate values). As a robustness check, analyses will be repeated with influential observations being winzorized at the dependent variable to the 5th and 95th percentile values. Influential observations will be flagged as having model residuals' cook's distance values exceeding the threshold 4/n; where n = \# of
 observations.
 
 <!-- In addition, supplementary analyses will assess whether the effects of inequality persist in a smaller, variable-maximizing dataset (`r sum(summary(iv_2005_mod$country)>0)` countries, `r format(nrow(iv_2005_mod), big.mark = ",", scientific = FALSE)` respondents). -->
@@ -1592,6 +1963,8 @@ kable_styling(latex_options = c(
 
 converg_tab_99_k
 ```
+
+\  
 
 Degrees of freedom were calculated using methods defined in @snijders2011
 

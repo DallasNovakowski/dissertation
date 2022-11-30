@@ -16,19 +16,20 @@ The {#rmd-basics} text after the chapter declaration will allow us to link throu
 ```
 # Experiments on Inequality and Security Consumption {#ineq-exp}
 
-Despite evidence for inequality's role in increasing risk-taking, there are data from simulation, cross-country, and panel studies suggesting that inequality also fosters a special case of risk aversion: low social trust [@knack1997; @zak2001; @berggren2006; @leigh2006; @bjørnskov2007; @wilkinson2010; @elgar2010; @decourson2021]. For instance, @barone2016 found that among OECD countries, inequality is associated with lower country-level trust, as computed from the World Values Survey. Several theoretical streams have emerged to explain how inequality reduces trust.
+Despite evidence for inequality's role in increasing risk-taking, there are data from simulation, cross-country, and panel studies suggesting that inequality also fosters a special case of risk aversion: low social trust [@knack1997; @zak2001; @berggren2006; @leigh2006; @bjørnskov2007; @wilkinson2010; @elgar2010; @decourson2021]. For instance, @barone2016 found that among OECD countries, inequality is associated with lower country-level trust, as computed from the World Values Survey.
 
 <!--# Each of these explanations are limited to certain contexts; for example, ranging from changes in intergroup contact, opportunity costs of vigilance, and incentives for antisocial behaviour [reviewed in @jordahl2007]. -->
 
-??MOVE UP ENVY ANTICIPATION? OR JUST EXPAND IT
-
 ## Inequality and Distrust
 
-Scholarly work on the relationship between inequality and trust remains in its early stages, although a few theoretical streams have emerged for different mechanisms by which inequality reduces trust [reviewed in @jordahl2007]. The **social barriers** argument suggests that with inequality, income level increasingly becomes a source of dissimilarity between individuals, and that people begin to demonstrate a group membership bias, favoring individuals of their own income group, and exhibit less trust for the income outgroup. The **social inferences** explanation argues that people interpret the presence of inequality as evidence of exploitation and injustice, and infer that other individuals (especially those at the top of the income distribution) are untrustworthy. The **resource conflict** explanation posits that inequality "magnifies the incentives for deceitful behaviour," which "will make people with more resources less inclined to trust [poor people]" (p. 5) [@jordahl2007]. The **opportunity cost** explanation lastly assumes that inequality causes poor people to spend more time and resources verifying whether social partners can be trusted, because poor people's opportunities tend to be less profitable (i.e., their opportunity costs of distrusting are lower) than for wealthy people.
+Scholarly work on the relationship between inequality and trust remains in its early stages, although a few theoretical streams have emerged for different mechanisms by which inequality reduces trust [reviewed in @jordahl2007]. The **social barriers** argument suggests that with inequality, income level increasingly becomes a source of dissimilarity between individuals, and that people begin to demonstrate a group membership bias, favoring individuals of their own income group, and exhibit less trust for the income outgroup. The **social inferences** explanation argues that people interpret the presence of inequality as evidence of exploitation and injustice, and infer that other individuals (especially those at the top of the income distribution) are untrustworthy. The **resource conflict** explanation posits that inequality "magnifies the incentives for deceitful behaviour," which "will make people with more resources less inclined to trust [poor people]" [@jordahl2007, p. 5]. The **opportunity cost** explanation lastly assumes that inequality causes poor people to spend more time and resources verifying whether social partners can be trusted, because poor people's opportunities tend to be less profitable (i.e., their opportunity costs of distrusting are lower) than for wealthy people.
 
 <!--# NEED TO REINTRODUCE RISK-INEQUALITY, RISK SENSITIVITY -->
 
-Another account of how economic inequality leads to distrust is a so-called **psychosocial effect** [@decourson2021], which follows after one observes inequality-driven selfishness. Borrowing from risk-sensitivity theory, the authors provide simulation how in an unequal environment, worse-off are more likely to be impoverished, and exploit cooperative groups in an effort to to satisfy desperation thresholds (e.g., hospital bills) . After observing those exploitative behaviours, others in a population become distrustful, eventually avoiding cooperation altogether. These proposed psychosocial effects of inequality focus on the downstream consequences of *absolute deprivation*. This project seeks to introduce considerations of *relative deprivation* (i.e., envy) in eliciting distrust. In particular, this theory of envy anticipation argues that inequality will lead to reduced trust *without* individuals needing to observe the risky or criminal activities in the population, because people will try to protect themselves from envious partners, fearing their partners' potential willingness to take risks and be inflict harms.
+Another account of how economic inequality leads to distrust is a so-called **psychosocial effect** [@decourson2021], which follows after one observes inequality-driven selfishness. The authors conducted a simulation study assuming that 1) higher inequality leaves more people impoverished and 2) following from risk-sensitivity theory, people take more risks when unable to satisfy desperation thresholds (e.g., hospital bills). The authors found that inequality made some disadvantaged people more likely to take the risk of exploiting a cooperative group. After observing those exploitative behaviours, others in the population became distrustful, eventually avoiding cooperation altogether. 
+
+The above psychosocial effects of inequality focus on the downstream consequences of *absolute deprivation* (i.e., poverty). This project seeks to introduce considerations of *relative deprivation* (i.e., envy) in eliciting distrust. In particular, this theory of envy anticipation argues that inequality will lead to reduced trust *without* individuals needing to observe the risky or criminal activities in the population, because people will try to protect themselves from envious partners, fearing their partners' potential willingness to take risks and be inflict harms.
+
 
 <!-- engage in risky and malicious behaviours. -->
 
@@ -40,17 +41,19 @@ Another account of how economic inequality leads to distrust is a so-called **ps
 
 ## Inequality Aversion, Relative Deprivation, and Envy
 
-People do not like being worse-off than others. This general tendency has gone by different names depending on the discipline: envy (psychology), inequality aversion (behavioural economics; see also (dis)advantageous inequity aversion), and relative deprivation (sociology). This project will primarily refer to the label of envy, but these terms will be used interchangeably as they are largely equivalent, reflecting one's dissatisfaction when another person or group is perceived as being better off [e.g., @dawes2007; @smith2012; @smith2007]. Feelings of envy are most likely to be elicited when an unflattering comparison is made with a similar other, and in a domain that is relevant to the person's goals [reviewed in @smith2007]. Feeling envy has been shown to mediate dislike of coworkers who had been promoted [@schaubroeck2004] and has been associated with *schadenfreude*, the experience of pleasure at the misfortune of others [@brigham1996; @smith1996; but see @feather2002 for a null effect].
+People do not like being worse-off than others. This general tendency has gone by different names depending on the discipline: envy (psychology), inequality aversion (behavioural economics; see also disadvantageous inequity aversion), and relative deprivation (sociology). This project will primarily refer to the label of envy, but these terms will be used interchangeably as they are largely equivalent, reflecting one's dissatisfaction when another person or group is perceived as being better off [e.g., @dawes2007; @smith2012; @smith2007]. Feelings of envy are most likely to be elicited when an unflattering comparison is made with a similar other, and in a domain that is relevant to the person's goals [reviewed in @smith2007]. Envious feelings mediate dislike of coworkers who had been promoted [@schaubroeck2004] and have been associated with *schadenfreude*, the experience of pleasure at the misfortune of others [@brigham1996; @smith1996; but see @feather2002 for a null effect].
 
 <!-- painful and unpleasant feeling of inferiority, hostility, and resentment when another person or group is perceived has having a desired advantage. -->
 
-These feelings of disadvantage have potent psychological and behavioural consequences. For instance, people are more likely to report lower life satisfaction when they make less money than their co-workers [@frank2001], and many prefer less purchasing power in order to have more money relative to peers [@solnick1998a]. People's sensitivity to relative to position can be surprisingly easy to trigger; merely suggesting to participants that they have less money than "similar others" induces feelings of anger and dissatisfaction, which in turn lead to gambling behaviours [@callan2008]. When offered an unequal sum, many participants will reject it, instead forcing themselves and their partners to receive nothing [reviewed in @cooper2016]. Likewise, experimentally-manipulated inequality leads to spiteful behaviours, a willingness to incur costs to reduce others' welfare [@wobker2015; @zizzo2001].
+These feelings of disadvantage have potent psychological and behavioural consequences. For instance, people are more likely to report lower life and job satisfaction when they make less money than their co-workers [@frank2001; @clark1996], and many prefer less purchasing power in order to have more money relative to peers [@solnick1998a]. People's sensitivity to relative position can be surprisingly easy to trigger; merely suggesting to participants that they have less money than "similar others" induces feelings of anger and dissatisfaction, which in turn lead to gambling behaviours [@callan2008]. When offered an unequal sum, many participants will reject it, instead forcing themselves and their partners to receive nothing [reviewed in @cooper2016]. Likewise, experimentally-manipulated inequality leads to spiteful behaviours, a willingness to incur costs to reduce others' welfare [@wobker2015; @zizzo2001].
 
-Why would social comparisons lead to such feelings of disatisfaction and potentially harmful behaviours? At a psychological level, people exhibit a "positional bias," whereby humans judge success relative to others, instead of solely in absolute terms [@hill2006]. With a positional bias, an objectively positive situation (e.g., living in a developed country, being debt-free, and having job security with an above-average salary) can seem insufficient when compared with people who are better-off (e.g., living in a high-class area, having a large net worth, and a high-paying and prestigious job). The sociological literature suggests that these people may not be experiencing *absolute deprivation*, but they are instead *relatively deprived* compared to these comparison standards. Individuals who make upward comparisons may feel that they cannot reach those lofty states through their status quo strategies, and resort to strategies that may be risky or harmful to others.
+Why would social comparisons lead to such feelings of disatisfaction and potentially harmful behaviours? At a psychological level, people exhibit a "positional bias," whereby humans judge success relative to others, instead of solely in absolute terms [@hill2006]. With a positional bias, an objectively positive situation (e.g., living in a developed country, being debt-free, and having job security with an above-average salary) can seem insufficient when compared with people who are better-off (e.g., living in a high-class area, having a large net worth, and a high-paying and prestigious job). The sociological literature suggests that these people may not be experiencing *absolute deprivation*, but they are instead *relatively deprived* compared to these comparison standards. As described in the introductory chapter, individuals who make upward comparisons may feel that they cannot reach those lofty states through their status quo strategies, and resort to strategies that may be risky or harmful to others.
 
-The general pattern of comparison-driven risk-taking has been predicted across disciplines. For example, in psychology, the need-based pathway to domain-general risk-taking suggests that competitively disadvantaged individuals take risks to have a chance at obtaining contested and otherwise unreachable goals. In behavioural economics' prospect theory [@kahneman1979], a comparison-defined reference point can put individuals in the "domain of losses," where further payoffs are valued on a convex curve, leading to increased risk-acceptance as they attempt to reach the reference point. Lastly, the strain theory of deviance in sociology and criminology [e.g., @agnew1996] suggests that criminal activities are caused by a "strain" between societal goals (primarily monetary) and legitimate means to achieve them, which leads to an overall dissatisfaction with one's lot in life. Thus, theories in the social sciences have converged to an impressive degree in predicting increased risk-taking and conflict in the face of unfavorable social comparisons.
+The general pattern of comparison-driven risk-taking has been predicted across disciplines. For example, in psychology, the need-based pathway to domain-general risk-taking suggests that competitively disadvantaged individuals take risks in accordance with risk-sensitivity theory: to have a chance at obtaining contested and otherwise unreachable goals. In behavioural economics' prospect theory [@kahneman1979], a comparison-defined reference point can put individuals in the "domain of losses," where further payoffs are valued on a convex curve, leading to increased risk-acceptance as they attempt to reach the reference point. Lastly, the strain theory of deviance in sociology and criminology [e.g., @agnew1996] suggests that criminal activities are caused by a "strain" between societal goals (primarily monetary) and legitimate means to achieve them, which leads to an overall dissatisfaction with one's lot in life. Thus, theories in the social sciences have converged to an impressive degree in predicting increased risk-taking and conflict in the face of unfavorable social comparisons.
 
-At an ultimate/functional/material level, @hill2006 suggest that the positional bias is an adaptive response to the inherently competitive nature of biological fitness. Since resource access is necessary for survival, health, and reproduction, individuals who monopolize resources will pass a greater share of their genes onto future generations [@hamilton1964]. Accordingly, many different resources can elicit envy, but those strongest effects should be observed when the resourse is highly correlated with biological fitness (e.g., food, children, health, crops; especially in less developed societies). In competitive environments, organisms that fail to notice or counter their own disadvantage (i.e., those that lack a positional bias) should see their genetic representation decline over time [@garay2011]. Even at the proximate level, beyond the "ultimate" level of the Darwinian struggle for existence, relative deprivation or advantage are self-reinforcing. Consider two employees applying for the same promotion, although both may be qualified from an absolute perspective, whoever is judged to be the best candidate between the two (e.g., experience, aptitude) is more likely to get the job. Then, whoever gets the contested job may benefit from increased prestige, salary, valued experiences, and a new professional network; if there is ever further competition between these two individuals (e.g., other jobs, grants, romantic partners, clients), those contests will become increasingly favored towards whoever is already privileged. In this lens, risk-taking and hostile behaviours can be viable options to prevent oneself from falling behind in competitive contexts.
+At an functional level, @hill2006 suggest that the positional bias is an adaptive response to the inherently competitive nature of biological fitness. Since resource access is necessary for survival, health, and reproduction, individuals who monopolize resources will pass a greater share of their genes onto future generations [@hamilton1964]. Accordingly, many different resources can elicit envy, but those strongest effects should be observed when the resourse is highly correlated with biological fitness (e.g., food, children, health, crops; especially in less developed societies). In competitive environments, organisms that fail to notice or counter their own disadvantage (i.e., those that lack a positional bias) should see their genetic representation decline over time [@garay2011]. Even at the proximate level, beyond the "ultimate" level of the Darwinian struggle for existence, relative deprivation or advantage are self-reinforcing.
+
+Consider two employees applying for the same promotion, although both may be qualified from an absolute perspective, whoever is judged to be the best candidate between the two (e.g., experience, aptitude) is more likely to get the job. Then, whoever gets the contested job may benefit from increased prestige, salary, valued experiences, and a new professional network; if there is ever further competition between these two individuals (e.g., other jobs, grants, romantic partners, clients), those contests will become increasingly favored towards whoever is already privileged. In this lens, risk-taking and hostile behaviours can be viable options to prevent oneself from falling behind in competitive contexts.
 
 <!--# Envy is the major emotional response studied when trying to understand how inequality aversion manifests in people. Although there is some disagreement in how it is defined,  -->
 
@@ -64,15 +67,33 @@ At an ultimate/functional/material level, @hill2006 suggest that the positional 
 
 Existing research has firmly established that inequality impacts people's thoughts, feelings, and behaviours. If envious peers are more likely to be hostile and take risks, it may be helpful to anticipate when one's neighbors will feel relatively deprived, and to try to protect oneself from spiteful or desperate behaviours [@gershman2014; @brams2005]. Indeed people do anticipate and fear partners' envious reactions, and take costly actions to protect themselves from this envy. For instance, individuals who are told that they did better on a test of ability than another student reported greater anxiety about meeting this partner [@juola-exline1997]. Similarly, @horner1968 and @ishiyama1984 found that participants imagining experiencing outstanding academic success often feared being socially rejected by their peers. Such second-order effects of envy have generally attracted less attention in the social sciences, but seem to be widespread.
 
-Cross-cultural ethnographic studies have also observed behaviours of concealment, appeasement, and vigilance in an effort to "ward off the evil eye" of envy. These strategies can manifest in behaviours ranging from hiding or ritualistically sharing food, to refusing to share any personal information that may provoke an envious response [reviewed in @schoeck1969]. This proliferation of socially-wary behaviours suggests that there are large incentives to accurately anticipating envy in one's partners. Data from small-scale preindustrial societies suggests that many individuals hold "evil eye beliefs," superstitions that a mere envious glance can cause real, material harm. These beliefs are most prevalent in societies with high wealth inequality, and especially where one's resources are easily visible and vulnerable to third parties [@gershman2015]. Likewise, a major feature of scandinavian culture is the "Jante Law" (or Janteloven/Jantelagen), which explicitly discourages individual superiority, ambition, and nonconformity. [e.g., "You musn't think you are anything special;" @sandemose1936]. Similarly, Anglo-Saxon societies refer to the 'cutting down' of 'tall poppies.' Like @gershman2015, this manuscript argues that these envy avoidance and status-reducing norms have propogated as a "useful rule of thumb approximating rational envy-avoidance behavior under conditions in which destructive envy is a real threat" (p.120). In fact, some existing theories already predict a "fear-of-envy" equilibrium, where concerns over partner's destructive envy can reduce people's likelihood to engage in wealth-creating behaviours [@gershman2014; @brams2005].
+Cross-cultural ethnographic studies have also observed widespread  concealment, appeasement, and vigilance behaviours, conducted in an effort to "ward off the evil eye" of envy. These strategies can manifest in behaviours ranging from hiding or ritualistically sharing food, to refusing to share any personal information that may provoke an envious response [reviewed in @schoeck1969]. This proliferation of socially-wary behaviours suggests that there are substantial consequences to (in)accurately anticipating envy in one's partners. Data from small-scale preindustrial societies suggests that many individuals hold "evil eye beliefs," superstitions that a mere envious glance can cause real, material harm. These beliefs are most prevalent in societies with high wealth inequality, and especially where one's resources are easily visible and vulnerable to third parties [@gershman2015]. Likewise, a major feature of scandinavian culture is the "Jante Law" (or Janteloven/Jantelagen), which explicitly discourages individual superiority, ambition, and nonconformity. [e.g., "You musn't think you are anything special;" @sandemose1936]. Similarly, Anglo-Saxon societies refer to the 'cutting down' of 'tall poppies.' Like @gershman2015, this manuscript argues that these envy avoidance and status-reducing norms have propogated as a "useful rule of thumb approximating rational envy-avoidance behavior under conditions in which destructive envy is a real threat" (p.120). In fact, some existing theories already predict a "fear-of-envy" equilibrium, where concerns over partner's destructive envy can reduce people's likelihood to engage in wealth-creating behaviours [@gershman2014; @brams2005].
 
-For more systematic observations on the impacts of inequality on distrust and social dynamics, consider the two-player Ultimatum Game, where a Proposer offers a take-it-or-leave-it split of money, and the Responder either accepts the offer, or rejects it, with both parties getting nothing. About half of (western undergraduate) participants reject proposals that represent less than 20% of the total resource. Likewise, modal proposals in this game are generally 50% of the total wealth. [reviewed in @camerer2011]. Why would Proposers ever offer an equal split of resources in the Ultimatum Game? Such generosity is unexpected under classical economic models, which predict that a 'rational' payoff-maximizing Proposer would offer the smallest amount possible. A similarly 'rational' Responder would accept any non-zero sum, since some money is always better than none. According to classical models, a Proposer would, in anticipation of these dispassionate preferences, offer the lowest non-zero amount possible without fear of rejection or reprisal, and the Responder would always accept this trivial amount. Generosity in this game (and the rejection of unequal offers) is considered an anomaly under traditional economic models.
+For more systematic observations on the impacts of inequality on distrust and social dynamics, consider the two-player Ultimatum Game, where a Proposer offers a take-it-or-leave-it split of money, and the Responder either accepts the offer, or rejects it, with both parties getting nothing. About half of (western undergraduate) participants reject proposals that represent less than 20% of the total resource. Likewise, modal proposals in this game are generally 50% of the total wealth. [reviewed in @camerer2011]. Why would Proposers ever offer an equal split of resources in the Ultimatum Game? Such generosity is unexpected under classical economic models, which predict that a 'rational' payoff-maximizing Proposer would offer the smallest amount possible. A similarly 'rational' Responder would accept any non-zero amount, since some money is always better than none. According to classical models, a Proposer would, in anticipation of these dispassionate preferences, offer the lowest non-zero amount possible without fear of rejection or reprisal, and the Responder would always accept this trivial amount. Generosity in this game (and the rejection of unequal offers) is considered an anomaly under traditional economic models.
 
-Proposers' surprisingly equal offers has sparked many active programs of research, with one of the key questions being to what extent this generosity is due to Proposers' tastes for fairness (they dislike producing inequality), versus Proposers' strategic efforts to prevent costly rejections [reviewed in @cooper2016]. This latter strategy hypothesis has been supported by observations in the Dictator Game. When participants cannot reject a proposed split; modal offers drop from 50% in the Ultimatum Game to 0% of the available wealth, but more equal splits remain common [@forsythe1994]. If Proposers only cared about fairness in these games, their offers would stay consistent across these games, opting to a more equal split of the funds. Instead, Proposers seem to anticipate inequality aversion in the Responders, and strategically offer more money in order to have the proposal accepted.
+Proposers' surprisingly equal offers in the Ultimatum Game has sparked many active programs of research, with one of the key questions being to what extent this generosity is due to Proposers' tastes for fairness (they dislike producing inequality), versus Proposers' strategic efforts to prevent costly rejections [reviewed in @cooper2016]. This latter strategy hypothesis has been supported by observations in the Dictator Game. When participants cannot reject a proposed split; modal offers drop from 50% in the Ultimatum Game to 0% of the available wealth, but more equal splits remain common [@forsythe1994]. If Proposers only cared about fairness in these games, their offers would stay consistent across these games, opting to a more equal split of the funds. Instead, Proposers seem to anticipate inequality aversion in the Responders, and strategically offer more money in order to have the proposal accepted.
 
-The anticipation of inequality aversion reflects one of the main functions of emotion in general: to help communicate and coordinate behaviours between social actors. Since emotions visibly and predictably predispose individuals to certain actions [e.g., @smith1990; @sznycer2021], emotions such as jealousy, anger, and envy can serve as psychological commitment devices, steering decision-makers away from dispassionate assessments of alternatives [@frank1988]. Emotional reactions in the face of inequities create a credible threat: "if I am worse off, I will get envious and make life worse for you." Thus, Proposers in the Ultimatum game are better off by anticipating and accommodating the Responder's preference for equality. Indeed, some researchers have suggested that the human sense of fairness evolved as a response to the threats of inequity aversion and spiteful behaviours [@brosnan2014; @forber2014; @frank1988].
+The anticipation of inequality aversion reflects one of the main functions of emotion in general: to help communicate and coordinate behaviours between social actors. Since emotions visibly and predictably predispose individuals to certain actions [e.g., @smith1990; @sznycer2021], social partners can read these emotional cues and choose strategies that are more likely to provoke a favorable response. Emotions such as jealousy, anger, and envy can serve as psychological commitment devices, steering decision-makers away from dispassionate assessments of alternatives [@frank1988]. Emotional reactions in the face of inequities create a credible threat: "if I am worse off, I will get envious and make life worse for you." Thus, Proposers in the Ultimatum game are better off by anticipating and accommodating the Responder's preference for equality. Indeed, some researchers have suggested that the human sense of fairness evolved as a response to the threats of inequity aversion and spiteful behaviours [@brosnan2014; @forber2014; @frank1988].
 
 This project will develop and test a model of **envy anticipation**, which generally predicts that <!-- *inequality makes people expect envy in worse-off partners* --> *inequality reduces trust towards worse-off individuals.* This anticipation of envy is accompanied by an expectation that an envious peer is more likely to harm someone else, whether through outright hostility, or a higher willingness to take risks (that just happen to be harmful to others). Finally, in response to this anticipated hazard the agent incurs greater costs to protect themselves against hostile or risky behaviours. This envy-anticipation theory of distrust assumes that people anticipate social comparisons and emotional reactions from their peers, requiring a sophisticated theory of mind from individuals [@gershman2015; @shaw2017], and if supported, is an impressive testament to humans' social reasoning abilities. Altogether, this model makes similar directional predictions as some existing inequality-distrust theories, but makes these predictions under more generalized circumstances. Even in the absence of absolute poverty, observations of antisocial behaviour, changes in intergroup contact, larger material incentives for antisocial behaviour, or different opportunity costs, this model would still predict that **H1)** `r tolower(hypotheses[1])`, and that **H2)** inequality's effect on security consumption will be mediated by individuals' anticipation of their partners' envy.
+
+
+(ref:envy-ant-flow) Visual representation of envy anticipation model
+
+```{=latex}
+\begin{figure}[t]
+\caption{(ref:envy-ant-flow) \label{fig:envy-ant-flow}}
+```
+```{r envy-ant-flow,eval = TRUE, include=TRUE, echo=FALSE, out.width='100%'}
+# , fig.cap="(ref:-ant-flow)"
+knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/envy_ant_flow_full.png")
+```
+
+```{=latex}
+%\textit{Notes:} Full experimental procedures available at https://security-h.herokuapp.com/demo
+\end{figure}
+```
+
 
 <!--# makes agents expect envious feelings from worse-off individuals, causing agents to be -->
 
@@ -82,7 +103,7 @@ Two existing models both predict that better-off individuals are afraid of envio
 
 Together the STTUC [@exline1999] and "axes of envy" [@foster1972] models map out how individuals might come to anticipate and be concerned about a peer's envy. The STTUC model provides an explicit stepwise process where three conditions must be met for a person to "be STTUC:" (1) they must believe that they are targeted for upward comparison, (2) that the outperformed person is threatened by the upward comparison, and (3) they must be concerned about the outperformed person's response (either impacting a) the envier's well-being, (b) one's own well-being, or (c) the relationship between the envier and the outperformer [@exline1999, p. 313].
 
-The STTUC and "axes of envy" models both suggest that people who are better-off often feel ambivalent about their superior status. In addition to fear, people may feel some other, equally strong emotions, notably guilt and/or pride. The guilt component is reminiscent to advantageous inequity aversion - people express an empathic sadness for those partners perceived to be envious [@exline1999]. @foster1972 suggests that in some cases of "guilt" cultures (where advantaged people can be confident of their ability maintain their status), fear over others' perceived envy may be replaced by guilt. In Western society, as long as their victory is seen as legitimate, they feel entitled to enjoying the rewards, and society protects them from the fear of others. As Study 2a will explore one can thus predict that anticipated envy will to lead less of a fearful response, and instead perhaps a feeling of pride, when the inequality is perceived as deserved as per 'the rules of the game.' All told, it seems widely expected that being envied can make people more afraid. This envy avoidance seem adaptive when considering the risk- and conflict-inducing effects of inequality. This project's proposed idea of **envy anticipation** seeks to further formalize and develop existing hypotheses on the relationship between inequality and distrust, and apply this effect to predict concrete and costly security behaviours.
+The STTUC and "axes of envy" models both suggest that people who are better-off often feel ambivalent about their superior status. In addition to fear, people may feel some other, equally strong emotions, notably guilt and/or pride. The guilt component is reminiscent to advantageous inequity aversion - people express an empathic sadness for those partners perceived to be envious [@exline1999]. @foster1972 suggests that in some cases of "guilt" cultures (where advantaged people can be confident of their ability to maintain their status), fear over others' perceived envy may be replaced by guilt. In Western society, as long as their victory is seen as legitimate, they feel entitled to enjoying the rewards, and society protects them from the fear of others. As Study 2a will explore, one can thus predict that anticipated envy will lead to less of a fearful response, and instead perhaps a feeling of pride, when the inequality is perceived as deserved as per 'the rules of the game.' All told, it seems widely expected that being envied can make people more afraid. This envy avoidance seems adaptive when considering the risk- and conflict-inducing effects of inequality. This project's proposed idea of **envy anticipation** seeks to further formalize and develop existing hypotheses on the relationship between inequality and distrust, and apply this effect to predict concrete and costly security behaviours.
 
 <!--# Envy anticipation is intertwined with the psychology of status; individuals' reactions can be colored by their own attitudes to their superior status, in addition to their expectations of others' attitudes. @foster1972 posited two "axes" of envy. The competitive axis captures someone's efforts to gain status relative to their peers, resulting in outperformers enjoying possessing a socially-desired good. When individuals respond to envy through the competitive axis, they may feel good about inducing envy in others, as it is evidence of their superior status. In Western society, as long as their victory is seen as legitimate, they feel entitled to enjoying the rewards, and society protects them from the fear of others. The fear axis refers to their anxieties of experiencing and being the target of envious feelings. Such patterns of envy avoidance seem adaptive when considering the risk- and conflict-inducing effects of inequality. -->
 
@@ -172,9 +193,9 @@ Despite the extant literature making predictions consistent with the envy antici
 
 Participants were recruited through the crowdsourcing platform Prolific Academic. Sampled participants were filtered for fluency in English, residing in the United States, balanced for an equal gender representation, and only eligible if they had not completed an earlier experiment in this series. All experiments also restricted eligible participants to those with a 97% approval rate. After data collection, participants were excluded from analyses if they fail an attention or comprehension check items, or if they had erroneous or missing data for any of the model-relevant measures.
 
-The Prolific-recruited participants completed the studies on oTree [@chen2016], an open-source platform for conducting single- and multi-player experiments and surveys. oTree studies are written largely in html, python, and javascript, which can be saved and shared in their raw code form, allowing for extensive sharing, reproduction, and customization of protocols. Protocols, materials, data, and cleaning scripts were pre-registered and posted on the Open Science Framework. In anticipation of blind peer review, the corresponding OSF project and pre-registrations have been placed under private embargo. Thus, the pre-registrations have been copied to the appendix. Experimental code for all experiments can be found at <https://github.com/DallasNovakowski/security_game>; data and analysis/cleaning scripts are located at <https://github.com/DallasNovakowski/inequality_security>.
+The Prolific-recruited participants completed the studies on oTree [@chen2016], an open-source platform for conducting single- and multi-player experiments and surveys. oTree studies are written largely in html, python, and javascript, which can be saved and shared in their raw code form, allowing for extensive sharing, reproduction, and customization of protocols. Protocols, materials, data, and cleaning scripts were pre-registered and posted on the Open Science Framework. In anticipation of blind peer review, the corresponding OSF project and pre-registrations have been placed under private embargo. Thus, the pre-registrations have been copied to the appendix. Experimental code can be found at <https://github.com/DallasNovakowski/security_game>; data and analysis/cleaning scripts are located at <https://github.com/DallasNovakowski/inequality_security>.
 
-The experiments across both Chapters 1 and 2 were conducted in the context of a two-player economic game, called the security game [@tambe2011]. At its base form, the game is one-shot, extensive-form, and conducted with complete information. The original specification of the security game describes how a Defender should allocate limited security resources (e.g., personnel at an airport) to protect against the threat of an Attacker, who benefits by carrying out a successful attack against a target. In this modification of the security game, participants are paired with an anonymous partner, with each being given an endowment of funds (e.g., \$300 each). Then, participants are told that their partner will have the opportunity to try to steal money from them (e.g., \$150 at a 50% chance of success, with failed thievery attempts instead making the partner lose \$150). Together, the incomes, purchasing of security, and decision to attempt a risky theft come together to determine the players' final payoffs ($\pi_i$) After learning this information, participants can spend some of their money on security products (e.g., \$2.00 per unit), with each unit of security visibly reducing the probability of a successful thievery attempt (1% reduction per unit).
+The experiments across both Chapters 1 and 2 were conducted in the context of a two-player economic game, called the security game [@tambe2011]. The game's base form is one-shot, extensive-form, and conducted with complete information. The original specification of the security game describes how a Defender should allocate limited security resources (e.g., personnel at an airport) to protect against the threat of an Attacker, who benefits by carrying out a successful attack against a target. In this modification of the security game, participants are paired with an anonymous partner, with each being given an endowment of funds (e.g., \$300 each). Then, participants are told that their partner will have the opportunity to try to steal money from them (e.g., \$150 at a 50% chance of success, with failed thievery attempts instead making the partner lose \$150). After learning this information, participants can spend some of their money on security products (e.g., \$2.00 per unit), with each unit of security visibly reducing the probability of a successful thievery attempt (1% reduction per unit). Together, the incomes, purchasing of security, and decision to attempt a risky theft determine the players' final payoffs. 
 
 (ref:sg-view) Example of participants' view in the security game.
 
@@ -193,151 +214,82 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 ```
 <!-- \clearpage -->
 
-#### The Security Game
+In general, a payoff-maximizing Attacker will try to steal when the probability and/or the rewards of success  are suitably high, and the costs of failure are suitably low. For a budget-constrained Defender, an expected value-maximizing individual then seeks the optimal combination of their initial endowment, the price spent on security, and the expected loss of being targeted by the Attacker. As such, expensive security products need to be accompanied with substantial reductions in an attack's success rate or benefit/cost ratio in order to be worth the investment.
 
-As a more formal summary of the procedure: After being assigned roles and receiving initial incomes ($x_D$ = Defender's income, $x_A$ = Attacker's income), the Defender will be told that the Attacker will have the option to attempt to steal (*q*: 1 = steal, 0 = do not steal) amount $s$ (0 \< $s$ $\le$ $x_D$) from the Defender with a base probability of $p_g$ (*g* : successful thievery, 0 \< $p_g$ \< 1). However, if the Attacker has an unsuccessful thievery attempt (with probability = 1 -- $p_g$), they will lose the amount *k* (0 \< *k* $\le$ $x_A$). After learning this information, the Defender will have the option to purchase *z* units of security; each unit of security costs *m* (0 \< *m*), and reduces the probability of a successful thievery attempt by $p_z$ (0 \< $p_z$ \< 1). See Table \@ref(tab:gloss-table) for glossary of terms for this game. The expected value functions for the Defender (Equation \eqref{eq:defender-ev}) and Attacker (Equation \eqref{eq:attacker-ev}) can be expressed as:
+The security game experiments will take place across five studies, split across Chapters 1 and 2, testing the effects of inequality on security consumption (Study 1a), with uncertain probabilities and stakes of theft in a within-subjects design (1b), and with real potential monetary payoffs (1c). The last two experiments (in Chapter 2) will assess the effects of inequality when endowments are due to one's own efforts (versus random; 2a), and whether income visibility reduces the impact of inequality (2b). Except for Study 1b, for each study, inequality will be randomly assigned as a between-subjects condition.
 
-```{=tex}
-\begin{equation}
-\begin{aligned}
-  \pi_D &= x_D - zm - q\{s(p_g - zp_z)\}
-  \label{eq:defender-ev}
-\end{aligned}
-\end{equation}
-```
-```{=tex}
-\begin{equation}
-\begin{aligned}
-  \pi_A &= x_A + q\{s(p_g - zp_z) -k [1 - (p_g - zp_z)]\}
-  \label{eq:attacker-ev}
-\end{aligned}
-\end{equation}
-```
-\renewcommand{\arraystretch}{2}
+Economic games examining self-protection are not new. Most notably, @mcevily2012 devised a behavioural distrust game, and found that participants are very willing to pay money to guarantee that their partner splits a surplus income equally. Compared to the distrust game, the security game is explicitly probabilistic; partners have a risky choice to try stealing funds for themselves, and security expenditures reduce the probability of successful "attacks." In the behavioural distrust game, the potentially selfish behaviour (partner keeping shared funds), is risk-free, holding no objective or immediate downside costs. The risky nature of the security game is particularly useful for this project because the proposed theory of envy anticipation incorporates the possibility of increased risk-taking in an envious partner.
 
-```{r gloss-table}
-gloss_kab <- knitr::kable(my_glossary, caption = 'Glossary of terms in the security game', format = "latex",align = "clcc"
-                          ,escape=FALSE
-                   # booktabs = TRUE, 
-                   # col.names = design_columns
-                   ) %>%
-  kable_styling(full_width = FALSE) %>%
-  column_spec(1,width = ".6in") %>%
-  column_spec(2,width = "1.7in") %>%
-  column_spec(3,width = "1.2in") %>%
-  column_spec(4,width = "1.7in")
-
-gloss_kab
-```
-
-\renewcommand{\arraystretch}{1}
-
-<!-- \clearpage -->
-
-In written terms, a payoff-maximizing Attacker will seek to maximize their payoff through the combination of their initial endowment and the expected payoff of their decision to attempt an attack. Their ability to profit from an attack is determined by the base probability of attacks being successful, which may be reduced by the amount of security purchased by the Defender. Likewise, Attackers lose from unsuccessful attempts. Intuitively, a payoff-maximizing Attacker will choose to attempt an attack when the attack's expected value exceeds the payoff of not attacking.
-
-Incentive compatibility
-
-Attacker
-
-Max. $\pi_A$
-
-With respect to z, $p_q$
-
-```{=tex}
-\begin{equation}
-\begin{aligned}
-  {{\rm{\pi }}_{\rm{A}}} = {\rm{\;}}{x_A} + E\left[ {{y_A}} \right]
-  \label{eq:att-incent}
-\end{aligned}
-\end{equation}
-```
-```{=tex}
-\begin{equation}
-\begin{aligned}
-  % \pi_A = x_A + E[y_A]\\
-  {y_A} =    \left\{ {\begin{array}{*{20}{c}}
-  { + S,\;\;\left( {{p_g} - z{p_z}} \right){p_q}}\\
-  { - K,\;\;1 - \left( {{p_g} - z{p_z}} \right){p_q}}\\
-  {0,\;\;\;\;\;\;\;\;\;(1 - {p_q})}
-  \end{array}} \right.
-  \label{eq:att-incent-array}
-\end{aligned}
-\end{equation}
-```
-```{=tex}
-\begin{equation}
-\begin{aligned}
-  E\left[ {{y_A}} \right]\; \ge 0 \Rightarrow
-  \label{eq:att-incent-arrow}
-\end{aligned}
-\end{equation}
-```
-```{=tex}
-\begin{equation}
-\begin{aligned}
-  z \ge 0,\;\;m \ge 0,\;\;zm \le {x_D}
-  \label{eq:att-bounds}
-\end{aligned}
-\end{equation}
-```
-```{=tex}
-\begin{equation}
-\begin{aligned}
-  max.\;\;\;\;{x_A} + \left( {{p_q}*E[{y_A}\;|\;q = 1]} \right) + \left( {1 - {p_q}} \right)E[{y_A}\;|\;q = 0])
-  \label{eq:att-max}
-\end{aligned}
-\end{equation}
-```
-\linebreak
-
-Constrained by their budget, an expected value-maximizing Defender then seeks the optimal combination of their initial endowment, the price spent on security, and the expected loss of being targeted by the Attacker. As such, expensive security products need to be accompanied with substantial reductions in an attack's success rate or benefit/cost ratio in order to be worth the investment.
-
-Defender Max. $\pi_D$ With respect to $m$, $p_q$, $p_z$
-
-```{=tex}
-\begin{equation}
-\begin{aligned}
-    {{\rm{\pi }}_{\rm{D}}} = {\rm{\;}}{x_D} -z{m} - E\left[ {{y_D}} \right]
-  \label{eq:def-incent}
-\end{aligned}
-\end{equation}
-```
-```{=tex}
-\begin{equation}
-\begin{aligned}
-  {y_D} = \left\{ {\begin{array}{*{20}{c}}
-{S,\;\;\left( {{p_g} - z{p_z}} \right){p_q}}\\
-{0,\;\;1 - \left( {{p_g} - z{p_z}} \right){p_q} + \;(1 - {p_q})}
-\end{array}} \right.
-  \label{eq:def-incent-array}
-\end{aligned}
-\end{equation}
-```
-<!-- Notably, the expected cost of being attacked is weighted by the probability of the attacker making the attempt (*p~q~* Equation @ref(eq:att-max)). A Defender is generally worse off if they consume some security, but not enough to make an attack unprofitable. This formulation thus emphasizes (and assumes) that security measures can be a credible deterrent, where security consumption reduces the Attackers' likelihood of successfully stealing. Given that the Attacker's decision to attempt a risky theft should be heavily influenced by the effort's probability of success, visible security consumption reduces the probability of an attack being attempted. -->
-
-The security game experiments will take place across five studies, split across Chapters 1 and 2, testing the effects of inequality on security consumption (Study 1a), with uncertain probabilities and stakes of theft in a within-subjects design (1b), and with real potential monetary payoffs (1c). The last two experiments (in Chapter 2) will assess the effects of inequality when endowments are due to one's own efforts (versus random; 2a), and whether apparent group-based discrimination increases security consumption under constant of inequality (2b). Except for Study 1b, for each study, inequality will be randomly assigned as a between-subjects condition.
-
-Economic games examining self-protection are not new. Most notably, @mcevily2012 devised a behavioural distrust game, and found that participants are very willing to pay money to guarantee that their partner splits a surplus income equally. Compared to the distrust game, the security game is explicitly probabilistic; partners have a risky choice to try stealing funds for themselves, and security expenditures reduce the probability of successful "attacks." In the behavioural distrust game, the potentially selfish behaviour (partner keeping shared funds), is risk-free, holding no objective or immediate downside costs. The risky nature of the security game is particularly useful for this project because the proposed theory of envy anticipation will focus on the expectation of increased risk-taking in an envious partner.
-
-<!--# Regardless of sampling method, you must list all criteria for data inclusion and/or data exclusion and how this affects your sampling strategy. This includes a full description of proposed sample characteristics. Procedures for objectively defining exclusion criteria due to technical errors or for any other reasons must be specified, including details of how and under what conditions data would be replaced. These details must be summarized in the mandatory Design table (Table @ref(tab:design-table)). -->
+<!--# Regardless of sampling method, you must list all criteria for data inclusion and/or data exclusion and how this affects your sampling strategy. This includes a full description of proposed sample characteristics. Procedures for objectively defining exclusion criteria due to technical errors or for any other reasons must be specified, including details of how and under what conditions data would be replaced. These details must be summarized in the mandatory Design table (Table @ref(tab:hyp-des)). -->
 
 <!-- participants has already been conducted to find which values of base successful thefts and security prices yielded a favourable distribution in security consumption, while avoiding ceiling/floor effects. After examining the data (Figure @ref(fig:pretest-splitplot)), baseline probabilities of successful thefts and security price had  -->
 
 ### Measurement and variables (Study 1)
 
-Throughout these experiments, participants were asked to choose how many units of a security product they wished to consume, ranging from 0 to 50 (Study 1a; max 100 for remaining studies). For the purposes of analysis and interpretation, security spending serves as the final dependent variable where possible. Security spending is computed by multiplying the number of security units consumed by the good's per-unit cost. Before participants made their security decisions, they were asked a battery of self-report questions about the game. For example, before their security decision, participants rated their agreement with the statements, <!-- "my partner is probably going to try stealing from me", and "my partner probably feels jealous of me." -->
+Throughout these experiments, participants were asked to choose how many units of a security product they wished to consume, ranging from 0 to 50 (Study 1a; max 100 for remaining studies). For the purposes of analysis and interpretation, security spending serves as the final dependent variable where possible. Security spending was computed by multiplying the number of security units consumed by the good's per-unit cost. Before participants made their security decisions, they were asked a battery of self-report questions about the game. For example, before their security decision, participants rated their agreement with the statements, <!-- "my partner is probably going to try stealing from me", and "my partner probably feels jealous of me." -->
 
-> "My partner is probably going to try stealing from me"\
-> "My partner probably feels envious of me"\
-> "My partner probably feels jealous of me"\
-> "My partner probably feels bitter"
+
+```{r measures-tab}
+
+meas_columns <- c("Construct",	"Items")
+
+
+meas_cons <- c(
+  paste("Security consumption"),
+  paste("Perceived attack likelihood"),
+  paste("Perceived partner envy"), 
+  paste("Perceived fairness*"),
+  paste("Perceived partner fairness*"),
+  paste("Payoff motivations*"))
+
+
+meas_item <- c("'Use the slider below to indicate how much security you would purchase from a budget of ...' (0-50; Study 1a, 0-100, remaining studies) ",
+  "'My partner is probably going to try stealing from me'", 
+               "'My partner probably feels envious of me'\n
+               'My partner probably feels jealous of me'\n
+               'My partner probably feels bitter'",
+               
+               "'My partner’s assigned income is fair'\n
+               'My assigned income is fair'\n
+               'The way incomes were given for this game is fair'",
+               
+               "'My partner probably thinks that the money was split fairly in this game'",
+               
+               "'I want to keep as much of my money as possible'\n
+'It is okay with me if some of my money gets stolen' (reverse-coded)"
+               
+)
+
+
+meas_table <- data.frame(meas_cons, meas_item)
+
+kab_meas <- knitr::kable(meas_table, caption = 'Constructs/measures table', format = "latex",
+                   booktabs = TRUE,
+                   escape = F,
+                   col.names = meas_columns,
+             linesep = "\\addlinespace") %>%
+  kable_styling(
+    # full_width = T, 
+    latex_options = c(
+  # "striped", 
+  "hold_position")) %>%
+    column_spec(1,width = "2in") %>%
+  column_spec(2,width = "3.5in")  %>%
+  kableExtra::footnote(general = "Items rated 1 (Strongly disagree) - 7 (Strongly agree), * Items only present in Studies 2a and 2b",
+                       footnote_as_chunk=T
+                       ,threeparttable = TRUE
+                       )
+
+kab_meas
+
+```
+
 
 Given the bounded nature of the minimum and maximum values for the variables in the experimental designs, outliers were considered legitimate values and not deleted.
 
 ### Study 1a: Inequality and security spending
 
-The first experiment used a mixed (2b\*2w) design in a hypothetical context, manipulating economic inequality (yes vs. no) between-subjects, and stake size (\$2 vs. \$300) within-subjects, to test whether **H1)** `r tolower(hypotheses[1])` (Table \@ref(tab:design-table)), versus **H1~0~)** no significant effect of inequality. Using mean and standard deviation values of security expenditure from the pretest (*M*=`r round(base_mean,2)`, *SD*=`r round(base_sd,2)`), an a priori power analysis was conducted using r package SuperPower [@lakens2021] (see Figures \@ref(fig:mixed-design) and \@ref(fig:powerplot2) and and Tables \@ref(tab:2b2w-anova-exact) and \@ref(tab:2b2w-pairwise-power)).
+The first experiment used a mixed (2b\*2w) design in a hypothetical context, manipulating economic inequality (yes vs. no) between-subjects, and stake size (\$2 vs. \$300) within-subjects, to test whether **H1)** `r tolower(hypotheses[1])` (Table \@ref(tab:hyp-des)). Using mean and standard deviation values of security expenditure from the pretest (*M*=`r round(base_mean,2)`, *SD*=`r round(base_sd,2)`), an a priori power analysis was conducted using r package SuperPower [@lakens2021] (see Figures \@ref(fig:mixed-design) and \@ref(fig:powerplot2) and and Tables \@ref(tab:2b2w-anova-exact) and \@ref(tab:2b2w-pairwise-power)).
 
 Given the unknown size of the hypothesized effect, this study targeted an effect size of Cohen's *f* = `r round(security_exact2b2w_f1156_5$main_results$cohen_f[1],2)`, which corresponds cohen's *d* = .2 for an independent-samples t-test; a small effect according to statistical convention [@cohen1988]. To achieve 95% power with one tail, studies must have a minimum of n = `r round(cell_n2b2w_f1156_5,0)` participants per between-subjects cell, or a study-wide total of n = `r format(round(cell_n2b2w_f1156_5*2,0),big.mark = ",", scientific = FALSE)`. Following from the power analysis, `r s1a_n_collected` participants were recruited from Prolific, in anticipation of a 10% attrition rate. After initial collection, `r s1a_n_collected-s1a_n_consented` participants did not consent, and `r s1a_n_consented-s1a_n_attended` either failed the comprehension check or attention check. After these exclusions, n = `r s1a_n_attended` individuals were retained for analyses (`r round(s1a_female*100,2)`% female).
 
@@ -351,7 +303,7 @@ Given the unknown size of the hypothesized effect, this study targeted an effect
 
 In the study, participants were asked to imagine that they were paired with another participant, where they would each be assigned to different roles (Blue or Yellow), and endowed with money. In the equal condition, participants were told that their partner received the same amount of funds as themselves (e.g., \$2; \$300 for large stakes). In the unequal condition, participants were told that their partner instead received only half their endowment (e.g. \$1; \$150 for large stakes). As will be repeated across this project, this inequality manipulation has the notable strength of controlling the participants' income across levels of inequality (as the partner's money is the only income that changes). On the same page as the inequality manipulation, participants were told that they were randomly assigned to the role of Yellow (the Defender role, but was not so explicitly stated in order to reduce demand effects).
 
-Before participants made their security decisions, they were asked four questions on whether they think their partner would be envious of them (e.g., "My partner probably feels envious of me"). Checked for internal consistency (Cronbach's $\alpha$ $\ge$ .7), these items were summed and used to test whether **H2)** `r hyp2_min[1]` versus **H2~0~)** no significant indirect effect of inequality on security consumption through anticipated partner envy. Since stake size was manipulated within-subjects, two sets of responses for game-related self-report items and security consumption decisions were available, so were analyzed using mixed models.
+Before participants made their security decisions, they were asked four questions on whether they think their partner would be envious of them (e.g., "My partner probably feels envious of me"). Checked for internal consistency (Cronbach's $\alpha$ $\ge$ .7), these items were summed and used to test whether **H2)** the effect of inequality on security consumption will be mediated by anticipated partner envy. Since stake size was manipulated within-subjects, two sets of responses for game-related self-report items and security consumption decisions were available, so were analyzed using mixed models.
 
 ```{r s1adesc-tab}
 s1adesc_columns <- c("Variable",	"Mean",	"SD", "Cron. $\\alpha$ 95\\% CI")
@@ -384,6 +336,7 @@ s1a_desc
 As seen in Figure \@ref(fig:s1a-security-jitt) and Table \@ref(tab:s1a-security-anova), a 2b\*2w mixed ANOVA did not detect any significant effect of inequality on security consumption, `r anova_extract(ineq_anova_mixed,"inequality",is.first = TRUE)`, failing to reject **H1~0~)**. On an exploratory note, stake size had a significant and positive effect on security consumption, `r anova_extract(ineq_anova_mixed,"stake_cond")`. The effect of stake size does not correspond to any theory-relevant hypotheses, but may reflect increased risk aversion for larger values - participants seemed more willing to risk having trivial quantities stolen from them.
 
 (ref:s1a-security-jitt) Study 1a, effects of inequality and stake size on security consumption.
+
 ```{=latex}
 \begin{figure}[H]
 \centering
@@ -392,12 +345,12 @@ As seen in Figure \@ref(fig:s1a-security-jitt) and Table \@ref(tab:s1a-security-
 ```{r s1a-security-jitt, eval = TRUE, include=TRUE, echo=FALSE, out.width='70%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1a_security_fadecloud.png")
 ```
+
 ```{=latex}
-\caption*{\textit{Notes: Datapoints mirrored with densiy plots, overlaid with means and 95\% CI. Dots aggregate observations into 30 quantile groups, such that each point represents 3.33\% of observations. Density plot shading corresponds to inner 50\%, 95\%, and outer 5\% of distribution.} 
+\caption*{\textit{Notes:} Datapoints represent aggregated observations into 30 quantile groups. Densiy plot shading corresponds to inner 50\%, 95\%, and outer 5\% of distribution, overlaid with means and 95\% CI. 
 }
 \end{figure}
 ```
-
 <!-- Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI. -->
 
 ```{r s1a-security-anova, eval = TRUE, echo=FALSE}
@@ -486,7 +439,7 @@ kable_styling(latex_options = c(
 
 ##### Exploratory analyses
 
-The manipulation check suggests that inequality does indeed increase perceived envy, as predicted, `r anova_extract(ineq_anova_mixed_envy,"inequality")`. In addition, a positive and significant interaction was detected between stake size and inequality; inequality led to more perceived envy when stake sizes were large, `r anova_extract(ineq_anova_mixed_envy,"inequality:stake_cond")`. The higher ratings of partner envy in the inequality condition suggest that inequality was noticeable by participants, and that they also believed that inequality could impact their partner. See Figure \@ref(fig:s1a-envy-jitt) and Table \@ref(tab:s1a-envy-anova).
+Inequality did indeed increase perceived envy, as predicted, `r anova_extract(ineq_anova_mixed_envy,"inequality")`. In addition, a positive and significant interaction was detected between stake size and inequality; inequality led to more perceived envy when stake sizes were large, `r anova_extract(ineq_anova_mixed_envy,"inequality:stake_cond")`. The higher ratings of partner envy in the inequality condition suggest that inequality was noticeable by participants, and that they also believed that inequality could impact their partner. See Figure \@ref(fig:s1a-envy-jitt) and Table \@ref(tab:s1a-envy-anova).
 
 (ref:s1a-envy-jitt) Study 1a, effects of inequality and stake size on perceived partner envy and perceived attack likelihood.
 
@@ -503,7 +456,7 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 ```
 
 ```{=latex}
-\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+%\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
 \end{figure}
 ```
 ```{r s1a-envy-anova, eval = TRUE, echo=FALSE}
@@ -720,7 +673,7 @@ kable_styling(latex_options = c(
                        )
 ```
 
-The results of Study 1a are discouraging for the proposed theory of envy anticipation. In this experiment, inequality did indeed cause participants to anticipate envy in their partner, but inequality did not increase the fear of any behavioural reactions from this partner, in the form of perceived attack likelihood. The null results in Study 1a might be attributable to the complete-information nature of the security game. The presence of explicit probabilities and payoffs may have distracted participants from considering the larger social context of their decision. For instance, some of the comments from participants explicitly stated that they were attempting to maximize expected values. Such efforts to calculate optimal payoffs necessarily emphasize the numbers presented, with little consideration whether the surrounding context made their partner more or less likely to attack. As such, Study 1b was not conducted as was initially pre-registered (which sought to replicate 1a with changing probabilities). Instead, Study 1b was designed with a number of methodological changes to remove potentially distracting or artificial features of the task.
+The results of Study 1a are discouraging for the proposed theory of envy anticipation. In this experiment, inequality did indeed cause participants to anticipate envy in their partner, but inequality did not increase the fear of any behavioural reactions from this partner, in the form of perceived attack likelihood. The null results in Study 1a might be attributable to the complete-information nature of the security game. The presence of explicit probabilities and payoffs may have distracted participants from considering the larger social context of their decision. For instance, some of the comments from participants explicitly stated that they were attempting to maximize expected values. Such efforts to calculate optimal payoffs necessarily emphasize the numbers presented, with little consideration whether the surrounding context made their partner more or less likely to attack. As such, Study 1b differed from the initial pre-registration (which sought to replicate 1a with changing probabilities). Instead, Study 1b was designed with a number of methodological changes to remove potentially distracting or artificial features of the task.
 
 <!-- the manipulation check suggested that  -->
 
@@ -734,11 +687,11 @@ The results of Study 1a are discouraging for the proposed theory of envy anticip
 
 ### Study 1b: Within-subjects inequality with uncertain decisions
 
-Study 1b was a corrective effort after the null results in Study 1a, and sought to refine the materials and procedure to see whether the predicted inequality-security relationship could be detected. The most notable change was that the decisions made in Study 1b are made under uncertainty: participants only knew that a successful theft has a chance of stealing some money, they did not know the exact values stolen nor the probabilities. Similarly, they did not know the effectiveness of the security product; they were simply told that the security product reduces the chances of a theft being successful. They were then told that the number of units of security consumed will be visible to the participants.
+Study 1b was a corrective effort after the null results in Study 1a, and sought to refine the materials and procedure to see whether the predicted inequality-security relationship could be detected. The most notable change was that the decisions made in Study 1b are made under uncertainty: participants only knew that a successful theft has a chance of stealing some money, they did not know the exact values stolen nor the probabilities. Similarly, they did not know the effectiveness of the security product; they were simply told that the security product reduces the chances of a theft being successful. They were then told that the number of units of security consumed will be visible to their partners.
 
 In addition to removing some potentially distracting stimuli, the introduction of uncertainty provides a better reflection of how security consumption decisions are likely made. Almost always, consumers do not know the exact stakes or probabilities of hazards. Instead, decision-makers are left to invest money in the vague hope that a security product will protect them from unknown possibilities. Another noteworthy change was that the inequality manipulation was made more salient by a within-subjects format (randomized order), and adding extra contrastive information (i.e., stating that the partner received **only \$150**, emphasis in original). The security consumption variable also had its maximum range increased from 50 to 100, allowing for a larger range of responses. Likewise, since stake size was not manipulated, security spending was used as the final dependent variable, at \$2 per unit, yielding a maximum value of \$200.
 
-Following an identical but smaller pilot study, (Section \@ref(s1b-ap)), Study 1b was conducted based on a pre-registered power analysis targeting *d* = 0.2 with 95% power for a paired t-test design. `r s1b_n_collected` participants were recruited, in anticipation of a 10% exclusion rate. After exclusions, n = `r s1b_n_attended` participants were retained for analyses (`r round(s1b_female*100,2)`% female).
+Following an identical but smaller pilot study, (Section \@ref(s1b-ap)), Study 1b was conducted based on a pre-registered power analysis targeting *d* = 0.2 with 95% power for a paired t-test design. `r s1b_n_collected` participants were recruited. After exclusions, n = `r s1b_n_attended` participants were retained for analyses (`r round(s1b_female*100,2)`% female).
 
 ```{r s1b-desc-tab}
 s1bdesc_columns <- c("Variable",	"Mean",	"SD", "Cron. $\\alpha$ 95\\% CI")
@@ -771,7 +724,7 @@ s1b_desc
 
 #### Results
 
-Study 1b found support for **H1)**: in the inequality condition, participants spent an average of \$`r round(s1b_spend_t_tidy$mean_difference,2)` more on security products compared to the scenario with no inequality, `r report_tidy_t(s1b_spend_t_tidy, test.stat=TRUE)`, corresponding to a medium effect size (Figure \@ref(fig:s1b-spending-jitt)). There were significant positive effects of inequality on perceived partner envy and attack likelihood (Figure \@ref(fig:s1b-manip-jitt)), indicating a successful manipulation. Likewise, a mediation analysis detected a positive indirect effect of inequality on security spending through perceived partner envy, `r med_extract(s1b_spending_med_full_tidy,"Indirect Effect (ACME)")`, supporting **H2)** (see Figure \@ref(fig:s1b-spending-med-plot) and Table \@ref(tab:s1b-spending-med-full)). The mediation analysis indicated that the direct effect of inequality on security spending remained positive, `r med_extract(s1b_spending_med_full_tidy,"Direct Effect (ADE)")`.
+Study 1b found support for **H1)**: in the inequality condition, participants spent an average of \$`r round(s1b_spend_t_tidy$mean_difference,2)` more on security products compared to the scenario with no inequality, `r report_tidy_t(s1b_spend_t_tidy, test.stat=TRUE, ci.lab = TRUE)`, corresponding to a medium effect size (Figure \@ref(fig:s1b-spending-jitt)). There were significant positive effects of inequality on perceived partner envy and attack likelihood (Figure \@ref(fig:s1b-manip-jitt)), indicating a successful manipulation. Likewise, a mediation analysis detected a positive indirect effect of inequality on security spending through perceived partner envy, `r med_extract(s1b_spending_med_full_tidy,"Indirect Effect (ACME)")`, supporting **H2)**, (see Figure \@ref(fig:s1b-spending-med-plot) and Table \@ref(tab:s1b-spending-med-full)). The mediation analysis indicated that the direct effect of inequality on security spending remained positive, `r med_extract(s1b_spending_med_full_tidy,"Direct Effect (ADE)")`.
 
 (ref:s1b-spending-jitt) Study 1b, within-subjects effects of inequality on security spending.
 
@@ -785,7 +738,7 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 ```
 
 ```{=latex}
-\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+%\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
 \end{figure} 
 ```
 (ref:s1b-manip-jitt) Study 1b, within-subjects effects of inequality on perceived partner envy and attack likelihood.
@@ -801,7 +754,7 @@ knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_se
 ```
 
 ```{=latex}
-\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+%\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
 \end{figure}
 ```
 ```{=html}
@@ -886,7 +839,7 @@ s1c_desc
 
 #### Results
 
-Given the use of an introductory scenario, an ANCOVA was used to control for spending in the introductory scenario, effectively allowing for a better contrast of the effect of inequality, since individuals' initial security spending preferences were already observed. Supporting **H1)**, an ANCOVA found a significant and positive effect of inequality on security spending, `r anova_extract(s1c_spending_anova,"inequality",test.stat=TRUE)` (Table \@ref(tab:s1c-security-anova)). After controlling for spending in the introductory scenario, participants spent an average of \$`r round(s1c_m_med1_tidy$estimate[2],2)` more on the security product in the inequality condition (significant positive effects of inequality also observed on perceived envy and attack likelihood; Tables \@ref(tab:s1c-envy-anova) and \@ref(tab:s1c-likelihood-anova), respectively). Replicating Study 1b, a mediation analysis found a significant and positive indirect effect of inequality on security spending through perceived partner envy, `r med_extract(s1c_m_med_full_tidy,"Indirect Effect (ACME)")`, supporting **H2)** (Table \@ref(tab:s1c-spending-med-full) & Figure \@ref(fig:s1c-spending-med-plot)). While Study 1b found a partial mediation of inequality through perceived partner envy, the model in Study 1c indicated a full mediation, with no significant direct effect of inequality on security spending, `r med_extract(s1c_m_med_full_tidy,"Direct Effect (ADE)")`.
+The use of an introductory scenario offers observations of individuals' initial security spending preferences. As such, an ANCOVA was used to control for spending in the introductory scenario, effectively allowing for a clearer contrast of the effect of inequality. Supporting **H1)**, an ANCOVA found a significant and positive effect of inequality on security spending, `r anova_extract(s1c_spending_anova,"inequality",test.stat=TRUE)` (Table \@ref(tab:s1c-security-anova)). After controlling for spending in the introductory scenario, participants spent an average of \$`r round(s1c_m_med1_tidy$estimate[2],2)` more on the security product in the inequality condition (significant positive effects of inequality also observed on perceived envy and attack likelihood; Tables \@ref(tab:s1c-envy-anova) and \@ref(tab:s1c-likelihood-anova), respectively). Replicating Study 1b, a mediation analysis found a significant and positive indirect effect of inequality on security spending through perceived partner envy, `r med_extract(s1c_m_med_full_tidy,"Indirect Effect (ACME)")`, supporting **H2)** (Table \@ref(tab:s1c-spending-med-full) & Figure \@ref(fig:s1c-spending-med-plot)). While Study 1b found a partial mediation of inequality through perceived partner envy, the model in Study 1c indicated a full mediation, with no significant direct effect of inequality on security spending, `r med_extract(s1c_m_med_full_tidy,"Direct Effect (ADE)")`.
 
 (ref:s1c-spending-jitt) Study 1c, between-subjects effects of inequality on security spending.
 
@@ -898,13 +851,16 @@ Given the use of an introductory scenario, an ANCOVA was used to control for spe
 ```{r s1c-spending-jitt, eval = TRUE, include=TRUE, echo=FALSE, out.width='65%'}
 knitr::include_graphics("C:/Users/dalla/Google Drive/project_files/inequality_security/figures/s1c_security_fadecloud.png")
 ```
-
 ```{=latex}
-\caption*{\textit{Notes:} Stacked datapoints mirrored with density plot (shaded middle 50\%), overlaid with means and 95\% CI.}
+\caption*{\textit{Notes:} Estimated marginal means used for dot-whiskers.}
 \end{figure}
 ```
+
 ```{r s1c-security-anova, eval = TRUE, echo=FALSE}
 s1c_spending_anova1 <- round(data.frame(s1c_spending_anova),2)
+
+s1c_spending_anova1[c("pes", "pes_ci95_lo", "pes_ci95_hi")] <- as.data.frame(sapply(s1c_spending_anova1[,c("pes", "pes_ci95_lo", "pes_ci95_hi")], function(x) gsub('^(-)?0[.]', '\\1.', x)))
+
 
 s1c_spending_anova1$ci95 <- as.character(paste("[", s1c_spending_anova1$ci95_lo, ", ", s1c_spending_anova1$ci95_hi,"]",  sep=""))
 
@@ -1022,7 +978,7 @@ kable_styling(latex_options = c(
 
 ## Discussion
 
-Over three experiments, Study 1 provides evidence that inequality can indeed increase security consumption, and that this effect is mediated by participants' anticipation of their partner's envy. Study 1a failed to find support for **H1)** and **H2)**; although inequality increased perceived partner envy, this effect did not cascade into the expectation of partners attacking, nor security consumption. After introducing uncertain probabilities and quantities, and a within-subjects design, Study 1b found support both **H1)** and **H2)** across both a pilot and identical pre-registered procedure. Lastly, Study 1c replicated Study 1b, while introducing the potential for real and large payoffs in a between-subjects design, supporting both hypotheses, and further supporting **H2)** with a full mediation of the effect of inequality through perceived partner envy.
+Over three experiments, Study 1 provides evidence that inequality can indeed increase security consumption, and that this effect is mediated by participants' anticipation of their partner's envy. Study 1a failed to find support for **H1)** and **H2)**; although inequality increased perceived partner envy, this effect did not cascade into the expectation of partners attacking, nor security consumption. After introducing uncertain probabilities and quantities, and a within-subjects design, Study 1b found support both **H1)** and **H2)** across a pre-registered procedure. Lastly, Study 1c replicated Study 1b, while introducing the potential for real and large payoffs in a between-subjects design, supporting both hypotheses, and further supporting **H2)** with a full mediation of the effect of inequality through perceived partner envy.
 
 Notably, participants expressed a high level of distrust of their partners. Even in the equality condition, respondents generally believed that their partners would try stealing from them, approaching the maximum possible value on the likert scale. This large amount of distrust could be an artifact of the task environment itself, but is consistent with other studies. For instance, @mcevily2012 found that when facing the possibility of a partner taking an unequal share of a common resource, participants spent more on forcing an equal split than partners would actually take. These high levels of distrust are interesting given that humans are a "hyper-cooperative" species, and speaks to humans' many genetic and cultural adaptations that have developed to stabilize and propagate cooperative behaviours.
 
@@ -1034,9 +990,10 @@ Another interesting observation is the bimodal characteristic of participants' r
 
 The null effect in Study 1a raises the possibility that some decision features can distract participants from considering how inequality affects their peers' decision-making. Study 1a was conducted with full information; not only did participants know the probabilities and exact stakes of thefts, but these probabilities were updated in real-time as participants adjusted their security spending. It is likely that providing so much information made participants focus on optimizing the displayed probabilities, rather than considering their partner's mental state. The introduction of decision uncertainty in Studies 1b and 1c is a better reflection of security consumption in the day-to-day consumer context. When people make real security decisions, hazards will generally have unknown probabilities and consequences. In this case, modifying the experimental design to include uncertainty likely improves the generalizablity of the results, and provides the conditions for inequality to have a significant effect on security spending.
 
-Any conclusions drawn from Chapter 1 may be limited, because inequality only had a significant effect on security consumption when another, low-inequality scenario was present (as in Studies 1b&c). The use of a low-inequality contrasting scenario could introduce demand characteristics that influence participants' responses. When participants see both a scenario with no inequality, and another scenario with unequal wealth distributions, they may guess at how they are expected to behave, and adjust their behaviour to consume more security in the high-inequality condition. Concern over these demand characteristics may be mitigated by recognizing that there was still a significant effect of inequality in Study 1c, when participants had an opportunity to win a real and large payoff. With real payoffs, participants have a larger incentive to act according to their true preferences, rather than try conform to a researcher's expectations.
+A similar change from Study 1a to Studies 1b and 1c was the use of multiple decision-making scenarios. The additional scenario served to both familiarize the participants with the game context, and improve the salience of the inequality manipulation. The use of multiple scenarios does raise the possibility of demand characteristics influencing participants' responses, with participants guessing how they 'should' behave based on how the scenarios differ from one another. Concern over these demand characteristics may be mitigated by recognizing that there was still a significant effect of inequality in Study 1c, when participants had an opportunity to win a real and large payoff. With real payoffs, participants have a larger incentive to act according to their true preferences, rather than try to conform to a researcher's expectations. There is thus a strong reason to suspect that people's security spending (and reported anticipated envy and attack likelihood) are truly due to an individual's expectation and wariness of their partner's envious reactions.
 
-In addition to potential demand characteristics, the fact that inequality's effect was only detected in the presence of a supplementary scenario raises the possibility that individuals must be made explicitly aware that inequality is present. If the effect of inequality is conditional on the presence of a contrastive scenario, the scope of the envy anticipation hypothesis would have to be substantially reduced. An informative future study would test the between-subjects security game procedure with uncertainty, but without any introductory scenarios.
+
+<!-- Any conclusions drawn from Chapter 1 may be limited, because inequality only had a significant effect on security consumption when another, low-inequality scenario was present (as in Studies 1b&c). The use of a low-inequality contrasting scenario could introduce demand characteristics that influence participants' responses. When participants see both a scenario with no inequality, and another scenario with unequal wealth distributions, they may guess at how they are expected to behave, and adjust their behaviour to consume more security in the high-inequality condition.  -->
 
 <!-- validity of -->
 
@@ -1046,17 +1003,21 @@ In addition to potential demand characteristics, the fact that inequality's effe
 
 <!-- Confounding of inequality with partner income -->
 
-Chapter 1 exclusively tested the impact of inequality with a pair of interacting partners, so although inequality was meant to manipulate relative income, it also manipulated one player's *absolute* income. Consequently, Chapter 1's manipulation of income inequality was confounded with the participant either being better off or equally endowed compared to their partner. This confounding variable limits any strong inferences about inequality on individual behaviour. Instead, the results of Chapter 1 suggest that a person who is better-off than their peer is more likely to purchase security products. Any practical consideration of inequality should consider how those disparities manifesting in larger groups, rather than within a single pair of individuals.
+<!-- Chapter 1 exclusively tested the impact of inequality with a pair of interacting partners, so although inequality was meant to manipulate relative income, it also manipulated one player's *absolute* income. Consequently, Chapter 1's manipulation of income inequality was confounded with the participant either being better off or equally endowed compared to their partner. This confounding variable limits any strong inferences about inequality on individual behaviour. Instead, the results of Chapter 1 suggest that a person who is better-off than their peer is more likely to purchase security products.  -->
 
-How can we expect group-level inequality to impact individuals' envy anticipation and distrust when they might experience some of their own relative deprivation? An informative procedure may be a type of three-player (A,B,C) security game, where participants (A; the Defender) always get the same endowment as their potential attacker (B). Income inequality would be manipulated not between usual Defender-Attacker dyad (A-B), but rather at the larger group level, with players A and B always receiving identical endowments, and the third player (C) either receiving a larger or equal endowment compared to A and B. The context of this three-player game better resembles how inequality manifests in real-world groups, with few individuals holding many resources, and many individuals holding few. This three-player context would be informative because it places participants in a position both to be envious, and to anticipate envy in their partner; both individuals would receive less money than the third person in the inequality condition.
+A proper consideration of inequality should incorporate how stratification manifests in groups larger than a single pair of individuals. After all, the many types of pairs formed by individuals are generally nested within larger groups, such as families, teams, friends, schools, neighborhoods, and workplaces. Introducing larger groups raises many important questions for how inequality actually affects people. For instance, does inequality impact distrust only when the person is better-off than a peer? For instance, if two people (A, B) received equal payoffs, but a third person (C) was better-off. Would person A trust their 'equally disadvantaged' partner B to not steal from them? Or would person A be wary of being targeted by partner B's envious striving and frustrations? The envy anticipation model as formulated thus far would generally predict that being better-off should strengthen the relationship between inequality and security behaviours. There may still be an effect of inequality on distrust when person A is 'equally disadvantaged' to partner B, as partner B can use the opportunity to gain resources (and approach the position of C) and harm a potential competitor and comparator (making A worse-off). However, being better-off should elicit more distrust. If the motivations of envy are to reduce disparities, then attacking someone better-off accomplishes this task through two pathways: gaining resources (striving up), and directly reducing the advantage of the superior comparison target (dragging down). Likewise, being better-off than others in a group creates an obvious dissimilarity and makes it easy to become the target of these comparisons to begin with.
 
-If an unequal environment leaves participants just as "worse-off" as their partners, risk-sensitivity theory does not make a straightforward prediction of security consumption. At first impression, risk-sensitivity would seem to predict less security consumption with greater inequality, as A and B are worse-off than C, and might elicit greater risk-acceptance in both A and B. However, risk-sensitivity theory predicts greater risk-taking when a low-risk option cannot reach a desired goal state. In the case of security consumption, the high-risk option of not purchasing any security product only reduces the likelihood of losing more money; this risky choice does not offer any chance for the individual to reach the level of a lofty comparison standard (player C).
 
-Conversely, in this three-player context, the Attacker's (B) risky option of stealing could offer them a chance of improving both their absolute and relative income. By attacking, player B can try to exploit their neighbor (player A), and if successful, they can potentially reach the income level of the relatively privileged player C. In this case, an envious player B remains a real threat to player A, and gives an incentive for player A to anticipate this envy, and purchase more security, even if player A is not the beneficiary of an unequal distribution.
+
+<!-- How can we expect group-level inequality to impact individuals' envy anticipation and distrust when they might experience some of their own relative deprivation? An informative procedure may be a type of three-player (A,B,C) security game, where participants (A; the Defender) always get the same endowment as their potential attacker (B). Income inequality would be manipulated not between usual Defender-Attacker dyad (A-B), but rather at the larger group level, with players A and B always receiving identical endowments, and the third player (C) either receiving a larger or equal endowment compared to A and B. The context of this three-player game better resembles how inequality manifests in real-world groups, with few individuals holding many resources, and many individuals holding few. This three-player context would be informative because it places participants in a position both to be envious, and to anticipate envy in their partner; both individuals would receive less money than the third person in the inequality condition. -->
+
+<!-- If an unequal environment leaves participants just as "worse-off" as their partners, risk-sensitivity theory does not make a straightforward prediction of security consumption. At first impression, risk-sensitivity would seem to predict less security consumption with greater inequality, as A and B are worse-off than C, and might elicit greater risk-acceptance in both A and B. However, risk-sensitivity theory predicts greater risk-taking when a low-risk option cannot reach a desired goal state. In the case of security consumption, the high-risk option of not purchasing any security product only reduces the likelihood of losing more money; this risky choice does not offer any chance for the individual to reach the level of a lofty comparison standard (player C). -->
+
+<!-- Conversely, in this three-player context, the Attacker's (B) risky option of stealing could offer them a chance of improving both their absolute and relative income. By attacking, player B can try to exploit their neighbor (player A), and if successful, they can potentially reach the income level of the relatively privileged player C. In this case, an envious player B remains a real threat to player A, and gives an incentive for player A to anticipate this envy, and purchase more security, even if player A is not the beneficiary of an unequal distribution. -->
 
 <!-- this risk-seeking prediction does not seem to be the most probable outcome. Notably,  -->
 
-An interesting test of these mechanisms of personal relative deprivation versus envy anticipation would be to allow participants to occupy both the roles of Attacker and Defender; for instance, participants (player A) could have the option to attack the third party (player C), but they would also face the risk of being attacked by player B. In this case, Player A can try to improve their relative standing. It could be the case that Player A would exhibit an all-or-nothing risky decision, for instance choosing to try stealing, but purchasing no security; vice versa, they could purchase security, and choose not to steal. However, most participants in Chapter 1 display some degree of risk-intermediate preferences, purchasing some security, but not the maximum possible. Similarly, many participants may choose to purchase security products, and also try stealing from their partner. This latter possibility is reminiscent of the Hobbesian Trap, with a fear spiral leading to poorer individual and collective outcomes, as individuals are preoccupied by the desire and fear of stealing, leading to a life that "is solitary, poor, nasty, brutish and short."
+An interesting test of these mechanisms of envy anticipation would be to allow participants to occupy both the roles of Attacker and Defender; for instance, participants (player A) could have the option to attack the third party (player C), but they would also face the risk of being attacked by player B. In this case, Player A can try to improve their relative standing. It could be the case that Player A would exhibit an all-or-nothing risky decision, for instance choosing to try stealing, but purchasing no security; vice versa, they could purchase security, and choose not to steal. However, most participants in Chapter 1 display some degree of risk-intermediate preferences, purchasing some security, but not the maximum possible. Similarly, many participants may choose to purchase security products, and also try stealing from their partner. This latter possibility is reminiscent of the Hobbesian Trap, with a fear spiral leading to poorer individual and collective outcomes, as individuals are preoccupied by the desire and fear of stealing, leading to a life that "is solitary, poor, nasty, brutish and short."
 
 <!-- For the sake of completeness, player C might also attack player B.  -->
 
@@ -1064,7 +1025,7 @@ An interesting test of these mechanisms of personal relative deprivation versus 
 
 <!-- There was some evidence that inequality significantly impacted security spending, even after controlling for anticipated partner envy. Although Study 1c found a full mediating effect of envy anticipation, Study 1b only found a partial mediation. Explanations of the partial mediation, and the different results between Study 1b and 1c are post-hoc and speculative. BUUUUUUUT??   -->
 
-Together, Chapter 1 provides initial support for the envy anticipation model of distrust. When they received more money than their peer, participants did indeed consume more of a security product. The results also indicated that the positive effect of inequality on security spending was accounted for by an increase in participants' beliefs that their partner was envious. These effects were replicated in a non-hypothetical scenario, when participants had an opportunity to get a large payoff due to their decision-making. The joint support of **H1)** and **H2)** indicates that inequality can make people expect the worst from their peers, and invest in costly measures to protect themselves from potentially antagonistic behaviours. However, some further research is still needed to explore the possible roles of supplementary scenarios in the effect, which could introduce demand effects or reduce the generalizability of the effect of inequality on security spending. The next chapter will expand on the effects of economic inequality on distrust by exploring moderators, particularly through manipulations of meritocracy and income visibility.
+Together, Chapter 1 provides initial support for the envy anticipation model of distrust. When they received more money than their peer, participants did indeed consume more of a security product. The results also indicated that the positive effect of inequality on security spending was accounted for by an increase in participants' beliefs that their partner was envious. These effects were replicated in a non-hypothetical scenario, when participants had an opportunity to get a large payoff due to their decision-making. The joint support of **H1)** and **H2)** indicates that inequality can make people expect the worst from their peers, and invest in costly measures to protect themselves from potentially antagonistic behaviours. The next chapter will expand on the effects of economic inequality on distrust by exploring moderators, particularly through manipulations of meritocracy and income visibility.
 
 <!--  Study 1b will serve to replicate Study 1a, with the sole difference being that  -->
 
